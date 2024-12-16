@@ -48,11 +48,11 @@ function App() {
     { word: "eye", emoji: "👁️" },
     { word: "leg", emoji: "🦵" },
     
-    // Fun/Games
-    { word: "toy", emoji: "🧸" },
-    { word: "win", emoji: "🏆" },
-    { word: "fun", emoji: "🎈" },
-    { word: "bow", emoji: "🎀" }
+   // Replace the "Fun/Games" section with these:
+   { word: "tree", emoji: "🌲" },
+   { word: "star", emoji: "⭐" },
+   { word: "moon", emoji: "🌙" },
+   { word: "fish", emoji: "🐟" }
 ];
 
   const [cards, setCards] = useState([]);
