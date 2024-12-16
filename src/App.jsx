@@ -2,17 +2,58 @@ import { useState, useEffect } from 'react';
 
 function App() {
   const allWordPairs = [
+    // Animals
     { word: "cat", emoji: "🐱" },
     { word: "dog", emoji: "🐶" },
-    { word: "sun", emoji: "☀️" },
     { word: "pig", emoji: "🐷" },
-    { word: "hat", emoji: "🎩" },
-    { word: "bus", emoji: "🚌" },
     { word: "fox", emoji: "🦊" },
     { word: "owl", emoji: "🦉" },
     { word: "bee", emoji: "🐝" },
-    { word: "cow", emoji: "🐮" }
-  ];
+    { word: "cow", emoji: "🐮" },
+    { word: "rat", emoji: "🐀" },
+    { word: "ant", emoji: "🐜" },
+    { word: "bat", emoji: "🦇" },
+    { word: "hen", emoji: "🐔" },
+    { word: "ram", emoji: "🐏" },
+    
+    // Nature
+    { word: "sun", emoji: "☀️" },
+    { word: "sky", emoji: "🌤️" },
+    { word: "sea", emoji: "🌊" },
+    { word: "bug", emoji: "🐛" },
+    { word: "ice", emoji: "🧊" },
+    
+    // Objects/Transport
+    { word: "hat", emoji: "🎩" },
+    { word: "bus", emoji: "🚌" },
+    { word: "car", emoji: "🚗" },
+    { word: "bed", emoji: "🛏️" },
+    { word: "cup", emoji: "☕" },
+    { word: "pen", emoji: "✏️" },
+    { word: "key", emoji: "🔑" },
+    { word: "box", emoji: "📦" },
+    { word: "bag", emoji: "👜" },
+    { word: "fan", emoji: "🌀" },
+    
+    // Food
+    { word: "pie", emoji: "🥧" },
+    { word: "egg", emoji: "🥚" },
+    { word: "jam", emoji: "🫐" },
+    { word: "nut", emoji: "🥜" },
+    
+    // People/Body
+    { word: "man", emoji: "👨" },
+    { word: "boy", emoji: "👦" },
+    { word: "ear", emoji: "👂" },
+    { word: "eye", emoji: "👁️" },
+    { word: "leg", emoji: "🦵" },
+    
+    // Fun/Games
+    { word: "toy", emoji: "🧸" },
+    { word: "win", emoji: "🏆" },
+    { word: "fun", emoji: "🎈" },
+    { word: "bow", emoji: "🎀" }
+];
 
   const [cards, setCards] = useState([]);
   const [flipped, setFlipped] = useState([]);
@@ -22,8 +63,8 @@ function App() {
   useEffect(() => {
     // Randomly select 6 pairs from the pool
     const shuffledPairs = [...allWordPairs].sort(() => Math.random() - 0.5);
-    const selectedPairs = shuffledPairs.slice(0, 6);
-
+    const selectedPairs = shuffledPairs.slice(0, 8); // Change from 6 to 8 pairs
+    
     // Create and shuffle the cards
     const cardPairs = [...selectedPairs.flatMap(pair => [
       { id: `word-${pair.word}`, content: pair.word, type: 'word', match: pair.word },
@@ -77,18 +118,19 @@ function App() {
     },
     grid: {
       display: 'grid',
-      gridTemplateColumns: 'repeat(4, 1fr)',
-      gap: '1rem',
-    },
-    card: {
-      aspectRatio: '1',
-      border: 'none',
-      borderRadius: '0.75rem',
-      fontSize: '1.5rem',
-      fontWeight: 'bold',
-      cursor: 'pointer',
-      transition: 'transform 0.3s ease',
-    },
+      gridTemplateColumns: 'repeat(4, 1fr)', // Keep 4 columns
+      gap: '0.75rem', // Slightly reduce gap to fit more cards
+  },
+  card: {
+    aspectRatio: '1',
+    border: 'none',
+    borderRadius: '0.75rem',
+    fontSize: '1.25rem', // Slightly smaller font
+    fontWeight: 'bold',
+    cursor: 'pointer',
+    transition: 'transform 0.3s ease',
+    minHeight: '80px', // Adjust size to fit more cards
+},
     button: {
       backgroundColor: '#6d28d9',
       color: 'white',
