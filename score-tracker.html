@@ -1,0 +1,696 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="theme-color" content="#0f172a" />
+    <title>Board Game Score Tracker</title>
+    <style>
+      :root {
+        --bg: #0f172a;
+        --surface: #1e293b;
+        --surface-2: #334155;
+        --line: #475569;
+        --text: #f1f5f9;
+        --muted: #94a3b8;
+        --accent: #38bdf8;
+        --accent-strong: #0ea5e9;
+        --leader: #facc15;
+        --danger: #f87171;
+        --good: #4ade80;
+        --radius: 14px;
+        --tap: 52px;
+      }
+
+      * {
+        box-sizing: border-box;
+        -webkit-tap-highlight-color: transparent;
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background: var(--bg);
+        color: var(--text);
+        font-family:
+          system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial,
+          sans-serif;
+        font-size: 17px;
+        line-height: 1.4;
+        padding: 0 0 calc(env(safe-area-inset-bottom) + 16px);
+      }
+
+      .app {
+        max-width: 640px;
+        margin: 0 auto;
+        padding: 16px 14px 0;
+      }
+
+      header.top {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background: linear-gradient(var(--bg) 70%, transparent);
+        padding-top: calc(env(safe-area-inset-top) + 12px);
+        margin: 0 -14px;
+        padding-left: 14px;
+        padding-right: 14px;
+      }
+
+      .title-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        padding-bottom: 12px;
+      }
+
+      h1 {
+        font-size: 1.25rem;
+        margin: 0;
+        letter-spacing: 0.3px;
+      }
+
+      h2 {
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: var(--muted);
+        margin: 0 0 10px;
+      }
+
+      section {
+        background: var(--surface);
+        border-radius: var(--radius);
+        padding: 16px 14px;
+        margin-bottom: 16px;
+      }
+
+      /* Buttons */
+      button {
+        font: inherit;
+        cursor: pointer;
+        border: none;
+        border-radius: 12px;
+        min-height: var(--tap);
+        padding: 0 18px;
+        color: var(--text);
+        background: var(--surface-2);
+        font-weight: 600;
+        transition: transform 0.05s ease, filter 0.15s ease;
+        touch-action: manipulation;
+      }
+      button:active {
+        transform: scale(0.97);
+      }
+      button:disabled {
+        opacity: 0.4;
+        cursor: not-allowed;
+      }
+      .btn-accent {
+        background: var(--accent-strong);
+        color: #042f3f;
+      }
+      .btn-block {
+        width: 100%;
+      }
+      .btn-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+      }
+      .btn-ghost {
+        background: transparent;
+        border: 1px solid var(--line);
+        color: var(--muted);
+        font-size: 0.9rem;
+        min-height: 44px;
+        padding: 0 12px;
+      }
+
+      /* Inputs */
+      input[type="text"],
+      input[type="number"] {
+        font: inherit;
+        background: var(--surface-2);
+        border: 1px solid var(--line);
+        color: var(--text);
+        border-radius: 12px;
+        padding: 12px 14px;
+        width: 100%;
+        outline: none;
+      }
+      input:focus {
+        border-color: var(--accent);
+      }
+      input::placeholder {
+        color: var(--muted);
+      }
+
+      .add-player {
+        display: flex;
+        gap: 10px;
+      }
+      .add-player input {
+        flex: 1;
+        min-height: var(--tap);
+      }
+      .add-player button {
+        flex-shrink: 0;
+        padding: 0 22px;
+      }
+
+      /* Player list */
+      .players {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .player {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background: var(--surface-2);
+        border-radius: 12px;
+        padding: 8px 10px 8px 14px;
+        border: 2px solid transparent;
+      }
+      .player.leader {
+        border-color: var(--leader);
+        background: #3a3413;
+      }
+      .player .name {
+        flex: 1;
+        background: transparent;
+        border: none;
+        padding: 6px 0;
+        font-size: 1.05rem;
+        font-weight: 600;
+      }
+      .player .name:focus {
+        border-bottom: 1px solid var(--accent);
+      }
+      .player .total {
+        font-size: 1.5rem;
+        font-weight: 800;
+        font-variant-numeric: tabular-nums;
+        min-width: 2.4ch;
+        text-align: right;
+      }
+      .player.leader .total {
+        color: var(--leader);
+      }
+      .crown {
+        font-size: 1.1rem;
+        width: 1.4rem;
+        text-align: center;
+      }
+      .remove {
+        background: transparent;
+        color: var(--danger);
+        min-height: 40px;
+        min-width: 40px;
+        padding: 0;
+        font-size: 1.4rem;
+        line-height: 1;
+        border-radius: 10px;
+        flex-shrink: 0;
+      }
+
+      /* Round entry */
+      .round-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-bottom: 14px;
+      }
+      .round-row {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .round-row label {
+        flex: 1;
+        font-weight: 600;
+        font-size: 1.05rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      .round-row input {
+        width: 7.5rem;
+        flex-shrink: 0;
+        font-size: 1.6rem;
+        font-weight: 700;
+        text-align: center;
+        font-variant-numeric: tabular-nums;
+        padding: 10px;
+      }
+
+      /* History table */
+      .history-wrap {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        font-variant-numeric: tabular-nums;
+      }
+      th,
+      td {
+        padding: 10px 12px;
+        text-align: center;
+        white-space: nowrap;
+        border-bottom: 1px solid var(--line);
+      }
+      thead th {
+        color: var(--muted);
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        position: sticky;
+        top: 0;
+      }
+      th.rnd,
+      td.rnd {
+        text-align: left;
+        color: var(--muted);
+        font-weight: 700;
+      }
+      tfoot td {
+        font-weight: 800;
+        font-size: 1.05rem;
+        border-bottom: none;
+        border-top: 2px solid var(--line);
+      }
+      tfoot td.leader-cell {
+        color: var(--leader);
+      }
+
+      .empty {
+        color: var(--muted);
+        text-align: center;
+        padding: 8px 0;
+        font-size: 0.95rem;
+      }
+
+      .hint {
+        color: var(--muted);
+        font-size: 0.85rem;
+        margin-top: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="app">
+      <header class="top">
+        <div class="title-row">
+          <h1>🎲 Score Tracker</h1>
+          <button class="btn-ghost" id="new-game">New Game</button>
+        </div>
+      </header>
+
+      <section id="players-section">
+        <h2>Players</h2>
+        <ul class="players" id="player-list"></ul>
+        <p class="empty" id="players-empty">
+          Add players to start scoring.
+        </p>
+        <form class="add-player" id="add-player-form" autocomplete="off">
+          <input
+            type="text"
+            id="new-player-name"
+            placeholder="Player name"
+            maxlength="24"
+            aria-label="New player name"
+          />
+          <button type="submit" class="btn-accent">Add</button>
+        </form>
+      </section>
+
+      <section id="round-section">
+        <h2>Round <span id="round-number"></span></h2>
+        <div class="round-grid" id="round-grid"></div>
+        <button class="btn-accent btn-block" id="end-round">End Round</button>
+        <p class="hint">Leave a field blank to score 0.</p>
+      </section>
+
+      <section id="history-section">
+        <h2>History</h2>
+        <div class="history-wrap">
+          <table id="history-table"></table>
+        </div>
+        <p class="empty" id="history-empty">No rounds played yet.</p>
+        <div class="btn-row" style="margin-top: 14px">
+          <button class="btn-ghost" id="undo-round">↶ Undo Last Round</button>
+          <button class="btn-ghost" id="clear-history" disabled></button>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      (function () {
+        "use strict";
+
+        var STORAGE_KEY = "boardGameScoreTracker.v1";
+
+        // ---- State -------------------------------------------------------
+        // players: [{ id, name }]
+        // rounds:  [{ [playerId]: number }]   one object per completed round
+        // roundDraft: { [playerId]: string }  in-progress (unsaved) inputs
+        var state = { players: [], rounds: [], nextId: 1 };
+        var roundDraft = {};
+
+        function load() {
+          try {
+            var raw = localStorage.getItem(STORAGE_KEY);
+            if (!raw) return;
+            var parsed = JSON.parse(raw);
+            if (parsed && Array.isArray(parsed.players) && Array.isArray(parsed.rounds)) {
+              state.players = parsed.players;
+              state.rounds = parsed.rounds;
+              state.nextId =
+                typeof parsed.nextId === "number"
+                  ? parsed.nextId
+                  : maxId(parsed.players) + 1;
+            }
+          } catch (e) {
+            console.warn("Could not load saved game:", e);
+          }
+        }
+
+        function maxId(players) {
+          return players.reduce(function (m, p) {
+            return Math.max(m, p.id || 0);
+          }, 0);
+        }
+
+        function save() {
+          try {
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+          } catch (e) {
+            console.warn("Could not save game:", e);
+          }
+        }
+
+        // ---- Derived -----------------------------------------------------
+        function totalFor(playerId) {
+          return state.rounds.reduce(function (sum, round) {
+            var v = round[playerId];
+            return sum + (typeof v === "number" ? v : 0);
+          }, 0);
+        }
+
+        // Returns a Set of player ids that are tied for the highest total.
+        // Only meaningful once at least one round has been played.
+        function leaderIds() {
+          var leaders = new Set();
+          if (state.players.length === 0 || state.rounds.length === 0) {
+            return leaders;
+          }
+          var max = -Infinity;
+          state.players.forEach(function (p) {
+            var t = totalFor(p.id);
+            if (t > max) max = t;
+          });
+          state.players.forEach(function (p) {
+            if (totalFor(p.id) === max) leaders.add(p.id);
+          });
+          return leaders;
+        }
+
+        // ---- DOM refs ----------------------------------------------------
+        var $ = function (id) {
+          return document.getElementById(id);
+        };
+        var playerList = $("player-list");
+        var playersEmpty = $("players-empty");
+        var roundSection = $("round-section");
+        var roundGrid = $("round-grid");
+        var roundNumber = $("round-number");
+        var historyTable = $("history-table");
+        var historyEmpty = $("history-empty");
+        var historySection = $("history-section");
+        var clearHistoryBtn = $("clear-history");
+
+        // ---- Render ------------------------------------------------------
+        function render() {
+          var leaders = leaderIds();
+          renderPlayers(leaders);
+          renderRound();
+          renderHistory(leaders);
+          save();
+        }
+
+        function renderPlayers(leaders) {
+          playerList.innerHTML = "";
+          state.players.forEach(function (p) {
+            var li = document.createElement("li");
+            li.className = "player" + (leaders.has(p.id) ? " leader" : "");
+
+            var crown = document.createElement("span");
+            crown.className = "crown";
+            crown.textContent = leaders.has(p.id) ? "👑" : "";
+
+            var name = document.createElement("input");
+            name.type = "text";
+            name.className = "name";
+            name.value = p.name;
+            name.maxLength = 24;
+            name.setAttribute("aria-label", "Player name");
+            // Use change (fires on blur) so we don't re-render mid-typing.
+            name.addEventListener("change", function () {
+              var v = name.value.trim();
+              p.name = v || p.name;
+              render();
+            });
+
+            var total = document.createElement("span");
+            total.className = "total";
+            total.textContent = totalFor(p.id);
+
+            var remove = document.createElement("button");
+            remove.className = "remove";
+            remove.setAttribute("aria-label", "Remove " + p.name);
+            remove.textContent = "✕";
+            remove.addEventListener("click", function () {
+              removePlayer(p.id);
+            });
+
+            li.appendChild(crown);
+            li.appendChild(name);
+            li.appendChild(total);
+            li.appendChild(remove);
+            playerList.appendChild(li);
+          });
+
+          playersEmpty.style.display =
+            state.players.length === 0 ? "block" : "none";
+        }
+
+        function renderRound() {
+          var hasPlayers = state.players.length > 0;
+          roundSection.style.display = hasPlayers ? "block" : "none";
+          if (!hasPlayers) return;
+
+          roundNumber.textContent = state.rounds.length + 1;
+          roundGrid.innerHTML = "";
+
+          state.players.forEach(function (p) {
+            var row = document.createElement("div");
+            row.className = "round-row";
+
+            var label = document.createElement("label");
+            label.textContent = p.name;
+            label.setAttribute("for", "score-" + p.id);
+
+            var input = document.createElement("input");
+            input.type = "number";
+            input.inputMode = "numeric";
+            input.id = "score-" + p.id;
+            input.placeholder = "0";
+            input.value = roundDraft[p.id] != null ? roundDraft[p.id] : "";
+            input.addEventListener("input", function () {
+              roundDraft[p.id] = input.value;
+            });
+            // Enter / Next on the last field ends the round.
+            input.addEventListener("keydown", function (e) {
+              if (e.key === "Enter") {
+                e.preventDefault();
+                endRound();
+              }
+            });
+
+            row.appendChild(label);
+            row.appendChild(input);
+            roundGrid.appendChild(row);
+          });
+        }
+
+        function renderHistory(leaders) {
+          var hasRounds = state.rounds.length > 0;
+          var hasPlayers = state.players.length > 0;
+
+          historySection.style.display = hasPlayers ? "block" : "none";
+          historyEmpty.style.display = hasRounds ? "none" : "block";
+          historyTable.style.display = hasRounds ? "table" : "none";
+
+          clearHistoryBtn.textContent = "Clear Rounds";
+          clearHistoryBtn.disabled = !hasRounds;
+
+          historyTable.innerHTML = "";
+          if (!hasRounds) return;
+
+          // Head
+          var thead = document.createElement("thead");
+          var hr = document.createElement("tr");
+          hr.appendChild(th("Rnd", "rnd"));
+          state.players.forEach(function (p) {
+            hr.appendChild(th(p.name));
+          });
+          thead.appendChild(hr);
+          historyTable.appendChild(thead);
+
+          // Body
+          var tbody = document.createElement("tbody");
+          state.rounds.forEach(function (round, i) {
+            var tr = document.createElement("tr");
+            tr.appendChild(td(String(i + 1), "rnd"));
+            state.players.forEach(function (p) {
+              var v = round[p.id];
+              tr.appendChild(td(typeof v === "number" ? String(v) : "–"));
+            });
+            tbody.appendChild(tr);
+          });
+          historyTable.appendChild(tbody);
+
+          // Foot — running totals
+          var tfoot = document.createElement("tfoot");
+          var fr = document.createElement("tr");
+          fr.appendChild(td("Total", "rnd"));
+          state.players.forEach(function (p) {
+            fr.appendChild(
+              td(String(totalFor(p.id)), leaders.has(p.id) ? "leader-cell" : "")
+            );
+          });
+          tfoot.appendChild(fr);
+          historyTable.appendChild(tfoot);
+        }
+
+        function th(text, cls) {
+          var el = document.createElement("th");
+          el.textContent = text;
+          if (cls) el.className = cls;
+          return el;
+        }
+        function td(text, cls) {
+          var el = document.createElement("td");
+          el.textContent = text;
+          if (cls) el.className = cls;
+          return el;
+        }
+
+        // ---- Actions -----------------------------------------------------
+        function addPlayer(name) {
+          var clean = name.trim();
+          if (!clean) return;
+          state.players.push({ id: state.nextId++, name: clean });
+          render();
+        }
+
+        function removePlayer(id) {
+          var player = state.players.find(function (p) {
+            return p.id === id;
+          });
+          var label = player ? player.name : "this player";
+          if (
+            state.rounds.length > 0 &&
+            !confirm(
+              "Remove " + label + "? Their scores will be deleted from all rounds."
+            )
+          ) {
+            return;
+          }
+          state.players = state.players.filter(function (p) {
+            return p.id !== id;
+          });
+          state.rounds.forEach(function (round) {
+            delete round[id];
+          });
+          delete roundDraft[id];
+          render();
+        }
+
+        function endRound() {
+          if (state.players.length === 0) return;
+          var round = {};
+          state.players.forEach(function (p) {
+            var raw = roundDraft[p.id];
+            var n = parseFloat(raw);
+            round[p.id] = isNaN(n) ? 0 : n;
+          });
+          state.rounds.push(round);
+          roundDraft = {};
+          render();
+        }
+
+        function undoRound() {
+          if (state.rounds.length === 0) return;
+          state.rounds.pop();
+          render();
+        }
+
+        function clearRounds() {
+          if (state.rounds.length === 0) return;
+          if (!confirm("Clear all rounds? Players will be kept with a score of 0."))
+            return;
+          state.rounds = [];
+          render();
+        }
+
+        function newGame() {
+          if (
+            (state.players.length > 0 || state.rounds.length > 0) &&
+            !confirm("Start a new game? This removes all players and scores.")
+          ) {
+            return;
+          }
+          state.players = [];
+          state.rounds = [];
+          state.nextId = 1;
+          roundDraft = {};
+          render();
+        }
+
+        // ---- Wire up -----------------------------------------------------
+        $("add-player-form").addEventListener("submit", function (e) {
+          e.preventDefault();
+          var input = $("new-player-name");
+          addPlayer(input.value);
+          input.value = "";
+          input.focus();
+        });
+        $("end-round").addEventListener("click", endRound);
+        $("undo-round").addEventListener("click", undoRound);
+        $("new-game").addEventListener("click", newGame);
+        clearHistoryBtn.addEventListener("click", clearRounds);
+
+        // ---- Go ----------------------------------------------------------
+        load();
+        render();
+      })();
+    </script>
+  </body>
+</html>
