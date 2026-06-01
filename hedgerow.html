@@ -1,0 +1,843 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Hedgerow — an English Countryside Deck-Builder</title>
+<style>
+  /* ============================================================
+     PALETTE — sage green, warm cream, earthy brown, soft sky blue,
+     wildflower purple & yellow. (No external assets; CSS + SVG only.)
+     ============================================================ */
+  :root{
+    --sage:#7f9b6a; --sage-deep:#5f7c4c; --sage-soft:#dfe7d2;
+    --cream:#f6f0e2; --cream-deep:#ece2cb;
+    --brown:#7a5c3e; --brown-soft:#b79a78;
+    --sky:#a9d2e6; --sky-deep:#5f9ec4;
+    --purple:#8e6fb0; --yellow:#e7c34a; --amber:#d98f3c;
+    --ink:#3c3326; --ink-soft:#6b5e49;
+    --shadow:0 3px 7px rgba(60,51,38,.18);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    font-family:"Segoe UI",Verdana,system-ui,sans-serif;
+    color:var(--ink);
+    background:
+      radial-gradient(circle at 20% 0%, #eef3e3 0%, transparent 40%),
+      radial-gradient(circle at 90% 10%, #eaf3f7 0%, transparent 35%),
+      var(--cream);
+    min-height:100vh;
+  }
+  h1,h2,h3{margin:0;font-weight:700}
+  .wrap{max-width:1180px;margin:0 auto;padding:14px 16px 40px}
+
+  /* ---- Header / status bar ---- */
+  header{
+    display:flex;align-items:center;gap:16px;flex-wrap:wrap;
+    background:linear-gradient(180deg,var(--sage) 0%,var(--sage-deep) 100%);
+    color:#fff;border-radius:16px;padding:12px 18px;box-shadow:var(--shadow);
+  }
+  header h1{font-size:24px;letter-spacing:.3px;display:flex;align-items:center;gap:10px}
+  header .tag{font-size:12px;opacity:.9;font-weight:400}
+  .statgrid{display:flex;gap:10px;flex-wrap:wrap;margin-left:auto}
+  .stat{
+    background:rgba(255,255,255,.16);border-radius:10px;padding:6px 11px;
+    font-size:12px;line-height:1.25;text-align:center;min-width:64px;
+  }
+  .stat b{display:block;font-size:17px}
+  .stat.sun{background:rgba(231,195,74,.35)}
+  .stat .who{font-size:10px;opacity:.85;text-transform:uppercase;letter-spacing:.5px}
+
+  /* ---- Player score panels ---- */
+  .players{display:flex;gap:12px;margin:12px 0}
+  .pcard{
+    flex:1;background:var(--cream-deep);border:2px solid var(--sage-soft);
+    border-radius:14px;padding:10px 14px;display:flex;align-items:center;gap:12px;
+  }
+  .pcard.active{border-color:var(--sage-deep);box-shadow:0 0 0 3px rgba(95,124,76,.18)}
+  .pcard .vp{font-size:30px;font-weight:800;color:var(--sage-deep);min-width:46px;text-align:center}
+  .pcard .pmeta{font-size:12px;color:var(--ink-soft);line-height:1.5}
+  .pcard .pname{font-size:15px;font-weight:700;color:var(--ink)}
+  .pcard.ai .vp{color:var(--brown)}
+  .pill{display:inline-block;background:#fff;border-radius:20px;padding:1px 8px;margin-right:4px;border:1px solid var(--sage-soft)}
+
+  /* ---- Section layout ---- */
+  .layout{display:grid;grid-template-columns:1fr 300px;gap:14px}
+  @media(max-width:900px){.layout{grid-template-columns:1fr}}
+  .panel{background:#fff8ec;border:2px solid var(--cream-deep);border-radius:16px;padding:12px 14px;box-shadow:var(--shadow)}
+  .panel h2{font-size:15px;color:var(--sage-deep);margin-bottom:10px;display:flex;align-items:center;gap:8px}
+  .panel h2 .sub{font-weight:400;font-size:12px;color:var(--ink-soft);margin-left:auto}
+
+  /* ---- Card grid ---- */
+  .grid{display:flex;flex-wrap:wrap;gap:10px}
+  .market .grid{gap:9px}
+
+  /* ============================================================
+     CARD VISUALS — warm, hand-crafted feel. Coloured top band +
+     SVG icon identifies each category at a glance.
+     ============================================================ */
+  .card{
+    width:124px;border-radius:13px;background:var(--cream);
+    border:1.5px solid var(--cream-deep);overflow:hidden;position:relative;
+    box-shadow:var(--shadow);display:flex;flex-direction:column;
+    transition:transform .12s ease, box-shadow .12s ease;
+  }
+  .card .band{height:30px;display:flex;align-items:center;gap:5px;padding:0 8px;color:#fff}
+  .card .band .ttl{font-size:11.5px;font-weight:700;line-height:1.05;text-shadow:0 1px 1px rgba(0,0,0,.18)}
+  .card .icon{width:38px;height:38px;position:absolute;right:6px;top:24px;
+    background:#fff;border-radius:50%;padding:3px;box-shadow:0 1px 3px rgba(0,0,0,.2)}
+  .card .body{padding:20px 9px 8px;flex:1;display:flex;flex-direction:column;gap:5px}
+  .card .txt{font-size:10.5px;color:var(--ink);line-height:1.3;min-height:42px}
+  .card .flav{font-size:9px;font-style:italic;color:var(--ink-soft);line-height:1.25}
+  .card .foot{display:flex;align-items:center;gap:6px;padding:6px 9px;border-top:1px dashed var(--cream-deep)}
+  .cost{display:flex;align-items:center;gap:3px;font-weight:800;font-size:13px;color:var(--amber)}
+  .cost svg{width:15px;height:15px}
+  .vpbadge{margin-left:auto;background:var(--sage-soft);color:var(--sage-deep);
+    font-weight:800;font-size:11px;border-radius:20px;padding:2px 8px}
+  .supply{margin-left:auto;font-size:10px;color:var(--ink-soft)}
+  .card .supply.few{color:var(--amber);font-weight:700}
+
+  /* category band colours */
+  .b-starter{background:linear-gradient(90deg,#d9b94a,#e7c34a)}
+  .b-engine{background:linear-gradient(90deg,#8a6a48,var(--brown))}
+  .b-chain{background:linear-gradient(90deg,#9b78c0,var(--purple))}
+  .b-mult{background:linear-gradient(90deg,#e7c34a,var(--amber))}
+  .b-draw{background:linear-gradient(90deg,var(--sky),var(--sky-deep))}
+  .b-vp{background:linear-gradient(90deg,var(--sage),var(--sage-deep))}
+  .b-event{background:linear-gradient(90deg,var(--amber),#b96a2a)}
+
+  /* interactive states */
+  .card.click{cursor:pointer}
+  .card.click:hover{transform:translateY(-4px);box-shadow:0 8px 16px rgba(60,51,38,.26)}
+  .card.afford{outline:2px solid var(--sage-deep);outline-offset:1px}
+  .card.cantbuy{opacity:.55;filter:saturate(.7)}
+  .card.played{opacity:.85}
+  .hand .card{width:130px}
+
+  /* ---- Buttons ---- */
+  .btnrow{display:flex;gap:10px;flex-wrap:wrap;margin-top:6px}
+  button.act{
+    font:inherit;font-weight:700;font-size:14px;cursor:pointer;color:#fff;border:none;
+    background:linear-gradient(180deg,var(--sage) 0%,var(--sage-deep) 100%);
+    border-radius:11px;padding:11px 18px;box-shadow:var(--shadow);
+  }
+  button.act:hover{filter:brightness(1.06)}
+  button.act.alt{background:linear-gradient(180deg,var(--sky) 0%,var(--sky-deep) 100%)}
+  button.act.ghost{background:#fff;color:var(--sage-deep);border:2px solid var(--sage-soft);box-shadow:none}
+  button.act:disabled{opacity:.45;cursor:not-allowed;filter:none}
+
+  /* ---- Action log ---- */
+  .log{height:330px;overflow-y:auto;font-size:12.5px;line-height:1.5;display:flex;flex-direction:column-reverse}
+  .log .e{padding:5px 8px;border-radius:8px;margin-bottom:5px;background:#fff}
+  .log .e.ai{background:#eef3e3;border-left:3px solid var(--sage)}
+  .log .e.you{background:#eaf3f7;border-left:3px solid var(--sky-deep)}
+  .log .e.sys{background:#f7efe0;border-left:3px solid var(--amber);font-weight:600}
+  .log .e .t{font-size:10px;color:var(--ink-soft)}
+
+  .hint{font-size:12px;color:var(--ink-soft);margin:2px 0 8px}
+  .empty{color:var(--ink-soft);font-style:italic;font-size:13px;padding:10px}
+
+  /* ---- Game-over overlay ---- */
+  .overlay{position:fixed;inset:0;background:rgba(60,51,38,.55);display:flex;
+    align-items:center;justify-content:center;z-index:50;padding:20px}
+  .modal{background:var(--cream);border-radius:20px;max-width:520px;width:100%;
+    padding:26px;box-shadow:0 12px 40px rgba(0,0,0,.4);text-align:center}
+  .modal h2{font-size:26px;color:var(--sage-deep);margin-bottom:6px}
+  .modal .res{font-size:15px;margin:14px 0}
+  .modal table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+  .modal td,.modal th{padding:6px 8px;border-bottom:1px solid var(--cream-deep);text-align:left}
+  .modal td.num{text-align:right;font-weight:700}
+  .hidden{display:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1><span id="hleaf"></span> Hedgerow <span class="tag">an English countryside deck-builder</span></h1>
+    <div class="statgrid" id="statgrid"></div>
+  </header>
+
+  <div class="players" id="players"></div>
+
+  <div class="layout">
+    <div>
+      <!-- MARKET -->
+      <div class="panel market">
+        <h2>The Market <span class="sub" id="marketSub"></span></h2>
+        <div class="hint" id="marketHint"></div>
+        <div class="grid" id="market"></div>
+      </div>
+
+      <!-- HAND / PLAY AREA -->
+      <div class="panel" style="margin-top:14px">
+        <h2>Your Hand <span class="sub" id="handSub"></span></h2>
+        <div class="grid hand" id="hand"></div>
+        <div class="btnrow">
+          <button class="act" id="btnPlayAll">☀ Play all Sunlight</button>
+          <button class="act alt" id="btnEnd">Rest &amp; End Turn ▸</button>
+          <button class="act ghost" id="btnRestart">↻ New Game</button>
+        </div>
+        <div id="playArea"></div>
+      </div>
+    </div>
+
+    <!-- LOG -->
+    <div class="panel">
+      <h2>Around the Hedgerow</h2>
+      <div class="log" id="log"></div>
+    </div>
+  </div>
+</div>
+
+<div class="overlay hidden" id="overlay"><div class="modal" id="modal"></div></div>
+
+<script>
+"use strict";
+/* ================================================================
+   HEDGEROW — single-file prototype.
+
+   ARCHITECTURE (per the design brief):
+   • SECTION 1  CARD DATA  ......  the ONLY place to edit to add/change cards.
+   • SECTION 2  SVG ICONS  ......  hand-drawn-style inline art, no assets.
+   • SECTION 3  GAME STATE  .....  the single state object lives here.
+   • SECTION 4  GAME LOGIC  .....  pure rules; never touches the DOM.
+   • SECTION 5  AI OPPONENT  ....  legal play + weighted strategy.
+   • SECTION 6  RENDERING  ......  reads state, draws the DOM. No rules here.
+   • SECTION 7  WIRE-UP  ........  buttons + boot.
+
+   To add a card: add one entry to CARDS and (if buyable) push its id into
+   KINGDOM_IDS. The engine interprets the declarative fields below — no other
+   code needs to change.
+   ================================================================ */
+
+/* ============================================================
+   SECTION 1 — CARD DATA  (edit cards here, nowhere else)
+
+   Fields:
+     id      unique key
+     name    display name
+     cat     category -> colour band + log grouping
+     icon    key into ICONS (SECTION 2)
+     cost    Sunlight cost to buy (kingdom cards only)
+     supply  copies in the Market (kingdom cards only)
+     sun     flat Sunlight when played (number) ... OR
+     sunFn   (playArea, self) => Sunlight  for cards that read the table
+     isSun   true if it counts as a "Sunlight card" (for bee/butterfly)
+     draw    cards to draw when played
+     vp      flat Victory Points (scored from your whole deck) ... OR
+     vpFn    (player) => Victory Points  for scaling scorers (Fox)
+     vpOnly  true = never "played"; just sits in your deck to be scored
+     trash   true = removed from the game after being played (one-time)
+     text    rules text (one sentence, child-readable)
+     flav    flavour text
+   ============================================================ */
+  const CARDS = {
+    /* --- Starter cards (10 per player, not in the Market) --- */
+    wildflower:{ id:"wildflower", name:"Wildflower Patch", cat:"starter", icon:"flower",
+      sun:1, isSun:true,
+      text:"Play for +1 Sunlight.",
+      flav:"The humble base of every meadow." },
+    meadow:{ id:"meadow", name:"Meadow Path", cat:"starter", icon:"path",
+      sun:2, isSun:true,
+      text:"Play for +2 Sunlight.",
+      flav:"A well-trodden trail through the grasses." },
+
+    /* --- Resource engines --- */
+    hedgehog:{ id:"hedgehog", name:"Foraging Hedgehog", cat:"engine", icon:"hedgehog",
+      cost:3, supply:10, sun:2, isSun:true,
+      text:"Play for +2 Sunlight.",
+      flav:"Snuffling through the leaf litter at dusk for a slug or two." },
+    bramble:{ id:"bramble", name:"Bramble Hedgerow", cat:"engine", icon:"bramble",
+      cost:6, supply:10, sun:3, isSun:true,
+      text:"Play for +3 Sunlight.",
+      flav:"A living wall of blackthorn where badgers shoulder through." },
+
+    /* --- Ecosystem chain: bees boost wildflowers --- */
+    bee:{ id:"bee", name:"Busy Bee", cat:"chain", icon:"bee",
+      cost:3, supply:10, isSun:true,
+      sunFn:(pa)=> 1 + pa.filter(c=>c.id==="wildflower").length,
+      text:"+1 Sunlight, and +1 more for every Wildflower Patch you have in play.",
+      flav:"She pays for her nectar by carrying summer from flower to flower." },
+
+    /* --- Multiplier: a fine warm day lifts everything --- */
+    butterfly:{ id:"butterfly", name:"Drifting Butterflies", cat:"mult", icon:"butterfly",
+      cost:5, supply:8,
+      sunFn:(pa)=> pa.filter(c=>c.isSun).length,  // +1 per other Sunlight card in play
+      text:"Each other Sunlight card you play this turn gives +1 extra Sunlight.",
+      flav:"When the meadow shimmers with wings, everything thrives at once." },
+
+    /* --- Draw accelerators --- */
+    robin:{ id:"robin", name:"Robin's Companion", cat:"draw", icon:"robin",
+      cost:3, supply:10, sun:1, isSun:true, draw:1,
+      text:"+1 Sunlight, then draw 1 card.",
+      flav:"The friendly robin follows your spade from row to row." },
+    swallow:{ id:"swallow", name:"Returning Swallows", cat:"draw", icon:"swallow",
+      cost:4, supply:8, draw:2,
+      text:"Draw 2 cards.",
+      flav:"Back on the first warm wind, stitching the sky over the barn." },
+
+    /* --- Habitat / animal victory cards (no in-game effect) --- */
+    woodland:{ id:"woodland", name:"Woodland Edge", cat:"vp", icon:"tree",
+      cost:4, supply:10, vp:2, vpOnly:true,
+      text:"Worth 2 Victory Points.",
+      flav:"Where trees give way to meadow, bluebells pool in the shade." },
+    fox:{ id:"fox", name:"Fox's Den", cat:"vp", icon:"fox",
+      cost:5, supply:8, vpOnly:true,
+      vpFn:(pl)=> distinctKingdomTypes(pl),  // 1 VP per different Kingdom type owned
+      text:"Worth 1 Victory Point for each different kind of Kingdom Card you own.",
+      flav:"The vixen settles only where the whole hedgerow is alive." },
+    owl:{ id:"owl", name:"Wise Owl", cat:"vp", icon:"owl",
+      cost:6, supply:8, vp:5, vpOnly:true,
+      text:"Worth 5 Victory Points.",
+      flav:"From the hollow oak the old owl watches a habitat come of age." },
+
+    /* --- Seasonal event: powerful one-time burst --- */
+    harvest:{ id:"harvest", name:"Harvest Moon", cat:"event", icon:"moon",
+      cost:6, supply:8, isSun:true, trash:true,
+      sunFn:(pa,self)=> pa.filter(c=>c.uid!==self.uid).length, // +1 per other card played
+      text:"+1 Sunlight for each card you have already played this turn, then it leaves the game.",
+      flav:"Once a year the great amber moon hangs low over the stubble." }
+  };
+
+  // Cards that appear in the shared Market (order = display order).
+  const KINGDOM_IDS = ["hedgehog","bramble","bee","butterfly","robin",
+                       "swallow","woodland","fox","owl","harvest"];
+
+  // Human-friendly category names for the log / tooltips.
+  const CAT_NAME = { engine:"engine", chain:"ecosystem", mult:"multiplier",
+    draw:"draw", vp:"habitat", event:"seasonal", starter:"meadow" };
+
+/* ============================================================
+   SECTION 2 — SVG ICONS  (simple, warm, hand-drawn style)
+   Each returns an inline <svg>. Colours come from the palette.
+   ============================================================ */
+  const ICONS = {
+    flower:`<svg viewBox="0 0 24 24"><g><circle cx="12" cy="12" r="3" fill="#e7c34a"/>
+      ${[0,72,144,216,288].map(a=>`<ellipse cx="12" cy="6.5" rx="2.4" ry="3.6" fill="#8e6fb0" transform="rotate(${a} 12 12)"/>`).join("")}
+      <circle cx="12" cy="12" r="2" fill="#d98f3c"/></g></svg>`,
+    path:`<svg viewBox="0 0 24 24"><rect width="24" height="24" fill="none"/>
+      <path d="M4 22 Q10 14 9 2 L15 2 Q14 14 20 22 Z" fill="#cdb07e"/>
+      <path d="M8 6 h8 M8.5 11 h7 M9 16 h6" stroke="#7a5c3e" stroke-width="1" stroke-linecap="round"/>
+      <path d="M3 22 q9-4 18 0" stroke="#7f9b6a" stroke-width="2" fill="none"/></svg>`,
+    hedgehog:`<svg viewBox="0 0 24 24"><path d="M3 17 Q4 7 13 7 Q21 7 21 14 Q21 18 15 18 L5 18 Z" fill="#7a5c3e"/>
+      ${[5,8,11,14,17].map(x=>`<path d="M${x} 16 L${x-1.5} 8" stroke="#5b4329" stroke-width="1.4" stroke-linecap="round"/>`).join("")}
+      <circle cx="20" cy="13" r="3" fill="#b79a78"/><circle cx="21" cy="12.5" r=".7" fill="#3c3326"/>
+      <circle cx="22.4" cy="13.4" r=".6" fill="#3c3326"/></svg>`,
+    bramble:`<svg viewBox="0 0 24 24"><path d="M3 21 Q7 9 12 13 Q17 17 21 5" stroke="#5f7c4c" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <circle cx="7" cy="13" r="2" fill="#5b3a63"/><circle cx="13" cy="14" r="2" fill="#3c2647"/>
+      <circle cx="18" cy="8" r="2" fill="#5b3a63"/><path d="M5 17 l1.5-2 M11 11 l1.5-2 M16 12 l1.5-2" stroke="#7f9b6a" stroke-width="1.2" stroke-linecap="round"/></svg>`,
+    bee:`<svg viewBox="0 0 24 24"><ellipse cx="12" cy="13" rx="6" ry="5" fill="#e7c34a"/>
+      <path d="M9 9 q3 8 6 0 M8 13 h8" stroke="#3c3326" stroke-width="1.4"/>
+      <ellipse cx="7" cy="8" rx="3.5" ry="2" fill="#cfe6f2" opacity=".85" transform="rotate(-25 7 8)"/>
+      <ellipse cx="17" cy="8" rx="3.5" ry="2" fill="#cfe6f2" opacity=".85" transform="rotate(25 17 8)"/>
+      <circle cx="12" cy="7" r="1" fill="#3c3326"/></svg>`,
+    butterfly:`<svg viewBox="0 0 24 24"><rect x="11.3" y="6" width="1.4" height="12" rx=".7" fill="#5b4329"/>
+      <path d="M12 12 C5 4 2 10 5 14 C7 17 11 14 12 12 Z" fill="#8e6fb0"/>
+      <path d="M12 12 C19 4 22 10 19 14 C17 17 13 14 12 12 Z" fill="#e7c34a"/>
+      <path d="M12 12 C7 14 5 19 8 20 C10 20.5 11.5 15 12 12 Z" fill="#9b78c0"/>
+      <path d="M12 12 C17 14 19 19 16 20 C14 20.5 12.5 15 12 12 Z" fill="#d9b94a"/></svg>`,
+    robin:`<svg viewBox="0 0 24 24"><path d="M6 18 Q4 10 11 9 Q19 8 19 14 Q19 18 13 18 Z" fill="#8a6a48"/>
+      <circle cx="9" cy="14" r="3.2" fill="#d4622f"/><circle cx="7" cy="9" r="2.6" fill="#7a5c3e"/>
+      <circle cx="6.4" cy="8.6" r=".6" fill="#1d160d"/><path d="M3.5 9 l3 .6 l-3 .8 Z" fill="#e7c34a"/>
+      <path d="M16 16 l4 2 l-4 1 Z" fill="#5b4329"/></svg>`,
+    swallow:`<svg viewBox="0 0 24 24"><path d="M2 7 Q11 9 12 4 Q13 9 22 7 Q14 11 12 20 Q10 11 2 7 Z" fill="#3a4a66"/>
+      <path d="M12 6 Q12 12 9 19 M12 6 Q12 12 15 19" stroke="#a9d2e6" stroke-width="1" fill="none"/>
+      <circle cx="12" cy="6" r="1.4" fill="#d4622f"/></svg>`,
+    tree:`<svg viewBox="0 0 24 24"><rect x="11" y="13" width="2.4" height="8" fill="#7a5c3e"/>
+      <circle cx="9" cy="10" r="5" fill="#5f7c4c"/><circle cx="15" cy="9" r="5" fill="#7f9b6a"/>
+      <circle cx="12" cy="13" r="5" fill="#6f8f5f"/><circle cx="9" cy="9" r="1.2" fill="#8eb074"/></svg>`,
+    fox:`<svg viewBox="0 0 24 24"><path d="M4 6 L8 12 L6 14 Z" fill="#d4622f"/><path d="M20 6 L16 12 L18 14 Z" fill="#d4622f"/>
+      <path d="M6 11 Q12 6 18 11 Q19 17 12 19 Q5 17 6 11 Z" fill="#e07a3a"/>
+      <path d="M9 17 Q12 20 15 17 L12 19 Z" fill="#f6f0e2"/><path d="M9 15 L12 17 L15 15 Q12 13 9 15 Z" fill="#f6f0e2"/>
+      <circle cx="9.5" cy="13" r=".8" fill="#1d160d"/><circle cx="14.5" cy="13" r=".8" fill="#1d160d"/>
+      <circle cx="12" cy="16" r=".8" fill="#1d160d"/></svg>`,
+    owl:`<svg viewBox="0 0 24 24"><path d="M5 9 Q5 3 12 3 Q19 3 19 9 L19 15 Q19 21 12 21 Q5 21 5 15 Z" fill="#8a6a48"/>
+      <circle cx="9" cy="10" r="3" fill="#f6f0e2"/><circle cx="15" cy="10" r="3" fill="#f6f0e2"/>
+      <circle cx="9" cy="10" r="1.4" fill="#3c3326"/><circle cx="15" cy="10" r="1.4" fill="#3c3326"/>
+      <path d="M12 12 l-1.6 2 h3.2 Z" fill="#e7c34a"/>
+      <path d="M5 6 L9 4 M19 6 L15 4" stroke="#5b4329" stroke-width="1.4" stroke-linecap="round"/>
+      <path d="M8 17 q4 3 8 0" stroke="#6b5230" stroke-width="1" fill="none"/></svg>`,
+    moon:`<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="#e7c34a"/>
+      <circle cx="9.5" cy="10" r="9" fill="#f6f0e2"/>
+      <circle cx="15" cy="9" r="1.2" fill="#d9b94a"/><circle cx="17" cy="13" r="1.6" fill="#d9b94a"/>
+      <circle cx="14" cy="15" r="1" fill="#d9b94a"/></svg>`,
+    leaf:`<svg viewBox="0 0 24 24"><path d="M4 20 Q4 5 20 4 Q19 20 4 20 Z" fill="#8eb074"/>
+      <path d="M5 19 Q12 12 19 5" stroke="#5f7c4c" stroke-width="1.4" fill="none"/></svg>`,
+    sun:`<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="5" fill="#e7c34a"/>
+      ${[0,45,90,135,180,225,270,315].map(a=>`<rect x="11.2" y="1" width="1.6" height="4" rx=".8" fill="#d98f3c" transform="rotate(${a} 12 12)"/>`).join("")}</svg>`
+  };
+
+/* ============================================================
+   SECTION 3 — GAME STATE  (the single state object)
+   ============================================================ */
+  let state = null;   // assigned by newGame()
+  let uidSeq = 1;     // unique id for every physical card instance
+  let busy = false;   // true while the AI is taking its turn (locks input)
+
+  // Create one physical card instance from a template id.
+  function mk(id){ return Object.assign({uid:uidSeq++}, CARDS[id]); }
+
+  // Build a fresh game. Called at boot and by the "New Game" button —
+  // fully restarts without a page refresh.
+  function newGame(){
+    const starter = ()=>{ const d=[]; for(let i=0;i<7;i++)d.push(mk("wildflower"));
+      for(let i=0;i<3;i++)d.push(mk("meadow")); return shuffle(d); };
+    const player = (name,human)=>({ name, human,
+      deck:starter(), hand:[], discard:[], play:[] });
+
+    const market = {};
+    KINGDOM_IDS.forEach(id=> market[id]=CARDS[id].supply);
+
+    state = {
+      round:1,
+      turn:"human",          // whose turn it is
+      sun:0,                 // current player's Sunlight this turn
+      bought:false,          // one purchase per turn
+      players:{ human:player("You",true), ai:player("Neighbour",false) },
+      market,
+      log:[],
+      over:false
+    };
+    draw("human",5); draw("ai",5);
+    logSys(`A new season dawns over the hedgerow. ${"☀"} Good foraging!`);
+  }
+
+/* ============================================================
+   SECTION 4 — GAME LOGIC  (pure rules; never touches the DOM)
+   ============================================================ */
+
+  // Fisher–Yates shuffle.
+  function shuffle(a){ for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1));
+    [a[i],a[j]]=[a[j],a[i]]; } return a; }
+
+  // Draw n cards for a player, reshuffling the discard pile when the deck runs dry.
+  function draw(who,n){
+    const p=state.players[who];
+    for(let i=0;i<n;i++){
+      if(p.deck.length===0){
+        if(p.discard.length===0) break;     // truly out of cards
+        p.deck=shuffle(p.discard); p.discard=[];
+      }
+      p.hand.push(p.deck.pop());
+    }
+  }
+
+  // Every physical card a player owns (used for scoring & counts).
+  function ownedCards(p){ return [...p.deck,...p.hand,...p.discard,...p.play]; }
+
+  // How many DIFFERENT Kingdom card types this player owns (for Fox's Den).
+  function distinctKingdomTypes(p){
+    const owned = new Set(ownedCards(p).map(c=>c.id));
+    return KINGDOM_IDS.filter(id=>owned.has(id)).length;
+  }
+
+  // Sunlight a single card contributes given the current play area.
+  function cardSun(c,playArea){
+    if(c.sunFn) return c.sunFn(playArea,c);
+    return c.sun||0;
+  }
+
+  // Total Sunlight currently on the table for `who`. Recomputed from the play
+  // area each time, so bees & butterflies are always correct regardless of the
+  // order cards were played.
+  function totalSun(who){
+    const pa=state.players[who].play;
+    return pa.reduce((s,c)=>s+cardSun(c,pa),0);
+  }
+
+  // Can this hand card be "played"? (Pure victory cards never are.)
+  function isPlayable(c){ return !c.vpOnly; }
+
+  // Play one card from hand into the play area, resolving its immediate effect
+  // (drawing), then refresh the player's Sunlight total.
+  function playCard(who,uid){
+    const p=state.players[who];
+    const i=p.hand.findIndex(c=>c.uid===uid);
+    if(i<0) return;
+    const c=p.hand[i];
+    if(!isPlayable(c)) return;
+    p.hand.splice(i,1); p.play.push(c);
+    if(c.draw) draw(who,c.draw);            // immediate one-time effect
+    state.sun = totalSun(who);
+    return c;
+  }
+
+  // Buy a Market card (the single purchase of the turn) into the discard pile.
+  // Returns the card id on success, null otherwise.
+  function buyCard(who,id){
+    if(state.bought) return null;
+    const cost=CARDS[id].cost;
+    if(state.market[id]<=0 || state.sun<cost) return null;
+    state.market[id]--;
+    state.players[who].discard.push(mk(id));
+    state.sun-=cost;
+    state.bought=true;
+    return id;
+  }
+
+  // How many Market piles are empty (one of the game-end triggers).
+  function emptyPiles(){ return KINGDOM_IDS.filter(id=>state.market[id]<=0).length; }
+
+  // Clean up at the end of a turn: discard the hand & play area (one-time event
+  // cards leave the game), draw a fresh hand of 5, reset Sunlight/buy.
+  function restAndDraw(who){
+    const p=state.players[who];
+    p.play.forEach(c=>{ if(!c.trash) p.discard.push(c); });   // trash = leaves game
+    p.hand.forEach(c=> p.discard.push(c));
+    p.play=[]; p.hand=[];
+    draw(who,5);
+    state.sun=0; state.bought=false;
+  }
+
+  // Base Victory Points in a player's deck (Fox scales, others are flat).
+  function scoreBase(p){
+    return ownedCards(p).reduce((s,c)=>{
+      if(c.vpFn) return s+c.vpFn(p);
+      return s+(c.vp||0);
+    },0);
+  }
+
+  // Final scores including the efficiency bonus (+3 to the leanest deck).
+  function finalScores(){
+    const h=state.players.human, a=state.players.ai;
+    const hc=ownedCards(h).length, ac=ownedCards(a).length;
+    let hs=scoreBase(h), as=scoreBase(a);
+    let hEff=false,aEff=false;
+    if(hc<=ac){ hs+=3; hEff=true; }
+    if(ac<=hc){ as+=3; aEff=true; }
+    return {human:hs, ai:as, humanCards:hc, aiCards:ac, hEff, aEff};
+  }
+
+  // Has the game reached an end condition? (Checked only after the AI's turn so
+  // both players always take the same number of turns.)
+  function gameEnded(){ return emptyPiles()>=3 || state.round>=12; }
+
+/* ============================================================
+   SECTION 5 — AI OPPONENT
+   Plays every turn legally: resolves all Sunlight & draws, then makes ONE
+   weighted buy. Strategy shifts from engine-building (rounds 1–7) to victory
+   points (round 8+). Weighted-random choice keeps it from feeling robotic.
+   ============================================================ */
+
+  // Choose the AI's single purchase this turn. Priority-based, not pure random:
+  // build a Sunlight engine (+ a little draw) early, then chase Victory Points
+  // from round 8. A ~20% "fun alternative" keeps it from feeling robotic, and
+  // the whole thing is tuned to be clearly beatable by a first-time human.
+  function aiChooseBuy(round){
+    const me=state.players.ai, sun=state.sun;
+    const afford = id => state.market[id]>0 && CARDS[id].cost<=sun;
+    const own = id => ownedCards(me).filter(c=>c.id===id).length;
+    const sunCards = ownedCards(me).filter(c=>c.isSun).length;
+
+    // The greed phase begins at round 8 OR once piles start running out.
+    const greedy = round>=8 || emptyPiles()>=1;
+    if(greedy){
+      // On ~30% of greed turns the neighbour "dawdles" — a casual player who
+      // doesn't always grab the points. It then picks among reasonable-but-
+      // suboptimal buys (keep building, a fox, a hedge) rather than spamming one
+      // weak card. This is the handicap that keeps the AI beatable.
+      if(Math.random()<0.20){
+        const lazy=["bramble","fox","woodland","hedgehog"].filter(afford);
+        if(lazy.length) return lazy[Math.floor(Math.random()*lazy.length)];
+      }
+      if(afford("owl")) return "owl";                                   // premium VP
+      if(afford("fox") && distinctKingdomTypes(me)>=4 && Math.random()<0.5) return "fox"; // biodiversity
+      if(afford("woodland")) return "woodland";                         // a steady 2 VP
+      if(afford("bramble")) return "bramble";                           // else grow toward an owl
+      if(afford("hedgehog")) return "hedgehog";
+      return null;
+    }
+
+    // Engine phase. Roughly one in three turns, take a playful off-pick so the
+    // neighbour doesn't always make the "correct" move and games don't mirror.
+    if(Math.random()<0.32){
+      const fun=["robin","bee","swallow","butterfly","hedgehog","woodland"].filter(afford);
+      if(fun.length) return fun[Math.floor(Math.random()*fun.length)];
+    }
+    if(afford("butterfly") && sunCards>=6 && own("butterfly")<1) return "butterfly"; // one, once fuelled
+    if(afford("bramble")) return "bramble";                            // strongest engine
+    if(own("robin")<2 && afford("robin")) return "robin";              // a couple of smoothing cantrips
+    if(afford("hedgehog")) return "hedgehog";
+    if(afford("bee")) return "bee";
+    if(afford("robin")) return "robin";
+    if(afford("woodland")) return "woodland";                          // cheap point if nothing better
+    return null;
+  }
+
+  // Run the AI's whole turn, with brief pauses so the human can follow the log.
+  async function aiTurn(){
+    const who="ai";
+    logAI(`The countryside stirs… the neighbour walks their patch.`);
+    render();
+    await pause(650);
+
+    // 1) FORAGE: play every playable card; keep going as draws add more.
+    let guard=0;
+    while(guard++<40){
+      const c=state.players.ai.hand.find(isPlayable);
+      if(!c) break;
+      playCard(who,c.uid);
+    }
+    render();
+    await pause(650);
+
+    // 2) SETTLE: one weighted buy.
+    const pick=aiChooseBuy(state.round);
+    if(pick && buyCard(who,pick)){
+      logAI(aiBuyLine(pick));
+    } else {
+      logAI(`The neighbour pauses, content to let the meadow rest a while.`);
+    }
+    render();
+    await pause(650);
+
+    // 3) REST.
+    restAndDraw(who);
+
+    // End-of-round bookkeeping & game-end check.
+    if(gameEnded()){ endGame(); return; }
+    state.round++;
+    state.turn="human";
+    busy=false;
+    logSys(`— Round ${state.round} —`);
+    render();
+  }
+
+  // Flavourful log line for an AI purchase.
+  function aiBuyLine(id){
+    const L={
+      owl:"the owl claims the ancient hedgerow",
+      fox:"a vixen settles into a snug new den",
+      woodland:"the woodland edge thickens with bramble and bluebell",
+      bramble:"the hedgerow grows wilder and deeper",
+      hedgehog:"a hedgehog takes up residence beneath the leaves",
+      bee:"a drowsy bee joins the meadow's hum",
+      butterfly:"butterflies drift in on the warm air",
+      robin:"a robin hops closer, ever curious",
+      swallow:"swallows wheel home to the eaves",
+      harvest:"the harvest moon rises, golden and full"
+    };
+    return `The countryside stirs… ${L[id]||"a new card is gathered"}.`;
+  }
+
+/* ============================================================
+   SECTION 6 — RENDERING  (reads state -> DOM; contains no rules)
+   ============================================================ */
+  const $=id=>document.getElementById(id);
+
+  // Build the inner HTML for one card. `mode` controls footer + interactivity.
+  function cardHTML(c,opts){
+    opts=opts||{};
+    const band=`b-${c.cat}`;
+    const sunNow = opts.playArea ? cardSun(c,opts.playArea) : null;
+    // cost / sunlight footer
+    let foot="";
+    if(opts.market){
+      const supply=state.market[c.id];
+      foot=`<div class="foot">
+        <span class="cost">${ICONS.sun}${c.cost}</span>
+        ${c.vp?`<span class="vpbadge">${c.vp} VP</span>`:c.vpFn?`<span class="vpbadge">★ VP</span>`:""}
+        <span class="supply ${supply<=2?'few':''}">${supply} left</span>
+      </div>`;
+    } else if(opts.hand){
+      const val = isPlayable(c) ? (c.sunFn?`+${cardSun(c,[...state.players.human.play,c])}☀?`:(c.sun?`+${c.sun}☀`:""))
+                                : `${c.vpFn?'★':c.vp} VP`;
+      foot=`<div class="foot">
+        ${isPlayable(c)?`<span class="cost">${ICONS.sun}play</span>`:`<span class="vpbadge">${c.vpFn?'★':c.vp} VP</span>`}
+        <span class="supply">${CAT_NAME[c.cat]}</span>
+      </div>`;
+    } else if(opts.play){
+      foot=`<div class="foot"><span class="cost">${ICONS.sun}+${sunNow}</span>
+        <span class="supply">${CAT_NAME[c.cat]}</span></div>`;
+    }
+    return `
+      <div class="band ${band}"><span class="ttl">${c.name}</span></div>
+      <div class="icon">${ICONS[c.icon]||""}</div>
+      <div class="body">
+        <div class="txt">${c.text}</div>
+        <div class="flav">${c.flav}</div>
+      </div>
+      ${foot}`;
+  }
+
+  // Render the Market.
+  function renderMarket(){
+    const el=$("market"); el.innerHTML="";
+    KINGDOM_IDS.forEach(id=>{
+      const c=CARDS[id];
+      const supply=state.market[id];
+      const affordable = !state.bought && state.turn==="human" && !busy
+                         && supply>0 && state.sun>=c.cost;
+      const div=document.createElement("div");
+      div.className="card "+(supply<=0?"cantbuy":affordable?"click afford":(state.turn==="human"&&!state.bought?"cantbuy":""));
+      div.innerHTML=cardHTML(c,{market:true});
+      if(affordable) div.onclick=()=>humanBuy(id);
+      el.appendChild(div);
+    });
+    $("marketSub").textContent = state.bought ? "already settled this turn"
+      : state.turn==="human" ? "click a card you can afford to buy it" : "";
+    $("marketHint").textContent = `${emptyPiles()} of 3 piles emptied · game ends at 3 empty piles or after round 12.`;
+  }
+
+  // Render the human hand (+ play area summary).
+  function renderHand(){
+    const el=$("hand"); el.innerHTML="";
+    const p=state.players.human;
+    if(p.hand.length===0) el.innerHTML=`<div class="empty">Your hand is empty — rest and draw a new one.</div>`;
+    p.hand.forEach(c=>{
+      const div=document.createElement("div");
+      const can = state.turn==="human" && !busy && isPlayable(c);
+      div.className="card "+(can?"click":"");
+      div.innerHTML=cardHTML(c,{hand:true});
+      if(can) div.onclick=()=>humanPlay(c.uid);
+      el.appendChild(div);
+    });
+    $("handSub").textContent = `${p.hand.length} in hand`;
+
+    // play area
+    const pa=$("playArea");
+    if(p.play.length){
+      pa.innerHTML=`<h2 style="font-size:13px;color:var(--ink-soft);margin:14px 0 8px">Foraged this turn</h2><div class="grid"></div>`;
+      const g=pa.querySelector(".grid");
+      p.play.forEach(c=>{ const d=document.createElement("div");
+        d.className="card played"; d.innerHTML=cardHTML(c,{play:true,playArea:p.play}); g.appendChild(d); });
+    } else pa.innerHTML="";
+  }
+
+  // Render top status bar + player score panels.
+  function renderStatus(){
+    const h=state.players.human, a=state.players.ai;
+    $("statgrid").innerHTML=`
+      <div class="stat sun"><span class="who">Sunlight</span><b>${state.turn==="human"?state.sun:0} ☀</b></div>
+      <div class="stat"><span class="who">Round</span><b>${state.round}/12</b></div>
+      <div class="stat"><span class="who">Turn</span><b>${state.turn==="human"?"You":"Them"}</b></div>
+      <div class="stat"><span class="who">Buy</span><b>${state.bought?"done":"1"}</b></div>`;
+
+    const panel=(p,cls)=>{
+      const sc=scoreBase(p);
+      return `<div class="pcard ${cls} ${state.turn===(p.human?'human':'ai')?'active':''}">
+        <div class="vp">${sc}</div>
+        <div class="pmeta">
+          <div class="pname">${p.human?"🌱 You":"🦉 The Neighbour"}</div>
+          <span class="pill">deck ${p.deck.length}</span>
+          <span class="pill">discard ${p.discard.length}</span>
+          <span class="pill">cards ${ownedCards(p).length}</span>
+        </div></div>`;
+    };
+    $("players").innerHTML=panel(state.players.human,"")+panel(state.players.ai,"ai");
+  }
+
+  // Render the action log (newest at top via flex-reverse).
+  function renderLog(){
+    $("log").innerHTML = state.log.map(e=>
+      `<div class="e ${e.k}"><span class="t">R${e.r} · ${e.k==="ai"?"neighbour":e.k==="you"?"you":"season"}</span><br>${e.m}</div>`
+    ).join("");
+  }
+
+  // Enable/disable the action buttons for the current state.
+  function renderButtons(){
+    const myTurn = state.turn==="human" && !busy && !state.over;
+    $("btnPlayAll").disabled = !myTurn || !state.players.human.hand.some(isPlayable);
+    $("btnEnd").disabled = !myTurn;
+  }
+
+  // Full re-render from state.
+  function render(){
+    if(!state) return;
+    renderStatus(); renderMarket(); renderHand(); renderLog(); renderButtons();
+  }
+
+  // --- logging helpers (logic calls these; they only push to state) ---
+  function logYou(m){ state.log.push({k:"you",m,r:state.round}); }
+  function logAI(m){ state.log.push({k:"ai",m,r:state.round}); }
+  function logSys(m){ state.log.push({k:"sys",m,r:state.round}); }
+
+  const pause=ms=>new Promise(r=>setTimeout(r,ms));
+
+/* ============================================================
+   SECTION 7 — WIRE-UP  (player actions + buttons + boot)
+   ============================================================ */
+
+  // Human plays a card from hand.
+  function humanPlay(uid){
+    if(state.turn!=="human"||busy) return;
+    const c=playCard("human",uid);
+    if(c) logYou(`You play <b>${c.name}</b>.`);
+    render();
+  }
+
+  // Human plays every Sunlight / draw card at once (convenience).
+  function humanPlayAll(){
+    if(state.turn!=="human"||busy) return;
+    let played=0,guard=0;
+    while(guard++<40){
+      const c=state.players.human.hand.find(isPlayable);
+      if(!c) break; playCard("human",c.uid); played++;
+    }
+    if(played) logYou(`You forage your hand for <b>${state.sun} ☀ Sunlight</b>.`);
+    render();
+  }
+
+  // Human buys a Market card.
+  function humanBuy(id){
+    if(state.turn!=="human"||busy) return;
+    const bought=buyCard("human",id);
+    if(bought) logYou(`You settle a <b>${CARDS[id].name}</b> into your habitat.`);
+    render();
+  }
+
+  // Human ends the turn -> rest, then hand control to the AI.
+  async function humanEndTurn(){
+    if(state.turn!=="human"||busy) return;
+    busy=true;
+    restAndDraw("human");
+    state.turn="ai";
+    render();
+    await pause(450);
+    await aiTurn();   // AI plays, then either ends game or returns control
+  }
+
+  // Show the end-of-game results overlay.
+  function endGame(){
+    state.over=true; busy=false;
+    const s=finalScores();
+    const win = s.human>s.ai ? "you" : s.ai>s.human ? "ai" : "tie";
+    const headline = win==="you" ? "Your hedgerow flourishes brightest!"
+      : win==="ai" ? "The neighbour's habitat wins the season."
+      : "Both hedgerows flourish alike — a shared harvest!";
+    logSys(headline);
+    render();
+    $("modal").innerHTML=`
+      <h2>${win==="you"?"🌻 Victory":win==="ai"?"🦉 So Close":"🌿 A Tie"}</h2>
+      <div class="res">${headline}</div>
+      <table>
+        <tr><th></th><th>Victory Points</th><th>Cards</th></tr>
+        <tr><td>🌱 You</td><td class="num">${s.human}${s.hEff?" <small>(+3 lean)</small>":""}</td><td class="num">${s.humanCards}</td></tr>
+        <tr><td>🦉 Neighbour</td><td class="num">${s.ai}${s.aEff?" <small>(+3 lean)</small>":""}</td><td class="num">${s.aiCards}</td></tr>
+      </table>
+      <button class="act" onclick="bootNewGame()">↻ Play another season</button>`;
+    $("overlay").classList.remove("hidden");
+  }
+
+  // Start (or restart) a game without reloading the page.
+  function bootNewGame(){
+    $("overlay").classList.add("hidden");
+    busy=false;
+    newGame();
+    logSys(`— Round 1 —`);
+    render();
+  }
+  window.bootNewGame=bootNewGame;  // referenced by inline onclick
+
+  // Boot.
+  window.addEventListener("DOMContentLoaded",()=>{
+    $("hleaf").innerHTML=ICONS.leaf;
+    $("btnPlayAll").onclick=humanPlayAll;
+    $("btnEnd").onclick=humanEndTurn;
+    $("btnRestart").onclick=()=>{ if(confirm("Start a fresh season? Current game will be lost.")) bootNewGame(); };
+    bootNewGame();
+  });
+</script>
+</body>
+</html>

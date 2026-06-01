@@ -2,7 +2,9 @@
 
 *An English Countryside Deck-Builder for ages 8–12*
 
-**Status:** Phase 1 — Design (awaiting review before any code is written)
+**Status:** Approved · Phases 1–3 complete. Card values below reflect the
+final post-playtest tuning (see `docs/PLAYTEST.md`). Two values changed from the
+first draft during balancing: **Bramble Hedgerow 5→6**, **Wise Owl 7→6**.
 **Players:** 2 (human vs AI in the digital prototype)
 **Genre:** Mid-weight family deck-builder (simplified Dominion lineage)
 
@@ -110,7 +112,7 @@ tuned to the balance targets in Section 9.
   every twig in search of a slug or two."*
 
 **② Bramble Hedgerow** — *Resource engine (large)*
-- **Cost:** 5 ☀ · **Supply:** 10
+- **Cost:** 6 ☀ · **Supply:** 10
 - **Generates:** +3 Sunlight
 - **VP:** —
 - **Text:** *Play for +3 Sunlight.*
@@ -195,15 +197,17 @@ tuned to the balance targets in Section 9.
   deck can build toward a strong fox finish.
 
 **⑨ Wise Owl** — *Habitat apex (premium VP)*
-- **Cost:** 7 ☀ · **Supply:** 8
+- **Cost:** 6 ☀ · **Supply:** 8
 - **Generates:** — (no in-game effect)
 - **VP:** **5**
 - **Text:** *Worth 5 Victory Points. No effect when played.*
 - **Flavour:** *"From the hollow oak the old owl keeps watch over the whole
   hedgerow — the surest sign of a habitat come of age."*
 - **Design note:** The "Province" of Hedgerow — the primary win condition and
-  the most common trigger for emptying a pile to end the game. The action-log
-  line *"the owl claims the ancient hedgerow"* refers to buying this.
+  the most common trigger for emptying a pile. At cost 6 it sits level with
+  Bramble Hedgerow, so every turn in the back half poses a clean tension —
+  *grow the engine, or bank the points?* The action-log line *"the owl claims
+  the ancient hedgerow"* refers to buying this.
 
 ### 6.6 Seasonal Event
 
@@ -226,14 +230,14 @@ tuned to the balance targets in Section 9.
 | # | Card | Type | Cost | Sunlight | VP | Supply |
 |---|------|------|------|----------|----|--------|
 | ① | Foraging Hedgehog | Engine | 3 | +2 | — | 10 |
-| ② | Bramble Hedgerow | Engine | 5 | +3 | — | 10 |
+| ② | Bramble Hedgerow | Engine | 6 | +3 | — | 10 |
 | ③ | Busy Bee | Ecosystem chain | 3 | +1 (+1/wildflower) | — | 10 |
 | ④ | Drifting Butterflies | Multiplier | 5 | +1 each other ☀ card | — | 8 |
 | ⑤ | Robin's Companion | Draw (cantrip) | 3 | +1, draw 1 | — | 10 |
 | ⑥ | Returning Swallows | Draw (burst) | 4 | draw 2 | — | 8 |
 | ⑦ | Woodland Edge | Habitat VP | 4 | — | 2 | 10 |
 | ⑧ | Fox's Den | Animal VP (scaling) | 5 | — | =types owned | 8 |
-| ⑨ | Wise Owl | Habitat VP (apex) | 7 | — | 5 | 8 |
+| ⑨ | Wise Owl | Habitat VP (apex) | 6 | — | 5 | 8 |
 | ⑩ | Harvest Moon | Seasonal (one-time) | 6 | special | — | 8 |
 
 ---
@@ -279,12 +283,13 @@ a shared "the hedgerow flourishes for both of you" result.
 
 ## 9. Balance Targets & Tuning Rationale
 
-| Target | Goal | How the design hits it |
-|--------|------|------------------------|
-| Winning score | **25–35 VP** | ~4–5 Wise Owls (20–25) + a Woodland Edge or two + a Fox's Den (4–7) + efficiency (3). |
+| Target | Goal | Measured (8,000 simulated games — see PLAYTEST.md) |
+|--------|------|----------------------------------------------------|
+| Winning score | **25–35 VP** | Skilled winners avg **27** (range ~22–34); casual games avg ~24. Hit via 5–6 Owls + a Woodland/Fox + the efficiency bonus. |
 | Physical play time | **30–45 min** | 12-round cap + 3-pile end; one buy per turn keeps turns short. |
-| Digital play time | **15–20 min** | AI resolves instantly; animations kept brief. |
-| Engine "clicks" | **turns 6–8** | Cost-3 engines/cantrips buyable from turn 1; by turn ~6 a focused deck reshuffles with Hedgehogs + Bees + Robins and starts producing 8–12 ☀, enough to dip into Owls. |
+| Digital play time | **15–20 min** | AI resolves in ~2s of brief log beats; games are 12 rounds. |
+| Engine "clicks" | **turns 6–8** | Cost-3 engines/cantrips buyable from turn 1; by turn ~6 a focused deck reshuffles and produces 9–13 ☀, enough to bank Owls (cost 6) — the pivot point. |
+| AI win rate | **~45%** | **43%** vs a reasonable first-timer; beatable to ~8% by skilled early-pivot play; ~60% vs sloppy play. |
 
 **Pile-driven end:** With 8 copies of Wise Owl, a focused VP race empties that
 pile and contributes one of the three needed to end the game — keeping games
@@ -367,18 +372,18 @@ meadow filling in.
 
 ---
 
-## 12. Open Questions for Review
+## 12. Open Questions — Resolved at Review
 
-1. **Prototype tech:** single self-contained `hedgerow.html` (recommended,
-   truly no build step) **vs.** building inside the existing React + Vite
-   scaffold (matches repo, needs `npm run dev`). Which do you prefer?
-2. **Fox's Den scaling:** comfortable with variable VP (1 per card type), or
-   prefer a flat value for simplicity at this age range?
-3. **Harvest Moon self-removal:** keep the one-time "removes itself" mechanic,
-   or make it a repeatable (weaker) end-of-turn bonus instead?
-4. Any cards you'd like added/cut, or flavour you'd like dialled warmer?
+1. **Prototype tech:** ✅ Single self-contained `hedgerow.html` (vanilla JS +
+   inline SVG, no build step) — chosen at review.
+2. **Fox's Den scaling:** ✅ Kept as variable VP (1 per Kingdom type owned) —
+   it adds the only non-Owl scoring line and rewards a varied habitat.
+3. **Harvest Moon self-removal:** ✅ Kept the one-time "removes itself" burst.
+4. Cards/flavour: ✅ Roster kept as designed; two costs tuned in playtest
+   (Bramble 5→6, Owl 7→6).
 
 ---
 
-*End of Phase 1 document. Awaiting review/approval before writing any Phase 2
-code.*
+*Phases 1–3 delivered. Play it: open `hedgerow.html` in any browser.
+Playtest findings: `docs/PLAYTEST.md`. Balance harness: `tests/simulate.mjs`
+(`node tests/simulate.mjs`).*
