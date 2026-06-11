@@ -1,0 +1,571 @@
+[
+  {
+    "id": "his-0001",
+    "type": "fact",
+    "topic": "history",
+    "headline": "The Black Death made the survivors richer",
+    "body": "When the plague killed perhaps a third to half of Europe in the 1340s, the workers who lived through it suddenly held a scarce asset: their own labour. With far fewer hands to till fields, peasants could demand higher wages and better terms, and many simply walked off to find lords who paid more.",
+    "more": "Landowners panicked. England passed the Ordinance of Labourers (1349) trying to freeze wages at pre-plague levels, but the law was unenforceable against simple supply and demand. Real wages for English labourers roughly doubled over the following century.\n\nThis erosion of bargaining power is one reason serfdom withered in Western Europe. In Eastern Europe, where labour stayed scarce in a different way, lords clamped down harder instead, a divergence historians call the 'second serfdom.' The same catastrophe pushed two halves of a continent in opposite directions."
+  },
+  {
+    "id": "his-0002",
+    "type": "fact",
+    "topic": "history",
+    "headline": "The Byzantines never called themselves Byzantine",
+    "body": "The people of the empire centred on Constantinople called themselves Romaioi, Romans, and considered their state simply the Roman Empire, continuous and unbroken. The label 'Byzantine' was coined by a German scholar in 1557, long after the empire fell.",
+    "more": "To them there was no 'fall of Rome' in 476 that ended their world; that was a problem for the western provinces. The eastern Roman state kept running for nearly another thousand years.\n\nThe renaming was partly political. Western Europeans, who had their own claims to the Roman legacy through the Pope and the Holy Roman Empire, found it convenient not to acknowledge a rival living Rome in the east. Calling it 'Byzantine' quietly demoted it to something foreign and Greek."
+  },
+  {
+    "id": "his-0003",
+    "type": "fact",
+    "topic": "history",
+    "headline": "Roman sea-wall concrete gets stronger with age",
+    "body": "Modern concrete slowly crumbles in seawater. Roman marine concrete, by contrast, often grew tougher over two thousand years. The Romans mixed volcanic ash with lime, and seawater reacting with the mix grew rare interlocking crystals that reinforced the structure from within.",
+    "more": "Recent work suggests another trick: the Romans used 'hot mixing' with quicklime, leaving small white lime lumps scattered through the concrete. When a crack forms and water seeps in, these lumps dissolve and recrystallise, sealing the crack. The material self-heals.\n\nThe irony is that this was not really lost knowledge so much as a different goal. Modern reinforced concrete is engineered to cure fast and bear steel rebar; the Roman recipe cured slowly and would corrode steel. We optimised for speed and strength-in-decades, they got durability-in-millennia."
+  },
+  {
+    "id": "his-0004",
+    "type": "fact",
+    "topic": "history",
+    "headline": "A single guild dispute may have nudged rail gauge",
+    "body": "The standard railway gauge across much of the world is 4 feet 8.5 inches, an oddly specific number. One popular chain of reasoning traces it back through early British tramways to the wheel-ruts of horse-drawn wagons, and ultimately to road widths shaped by Roman vehicles.",
+    "more": "Treat the neat 'Roman chariots set the gauge' story with caution; it is a simplification that historians push back on, because road widths and cart axles varied widely. But the kernel is real and instructive: George Stephenson standardised on the gauge already used by the coal wagonways he knew, and those inherited dimensions from earlier carts.\n\nThe broader lesson is path dependence. Once thousands of miles of track and rolling stock exist at one width, switching is ruinously expensive, so an arbitrary early choice freezes into a global standard that long outlives its original reason."
+  },
+  {
+    "id": "his-0005",
+    "type": "fact",
+    "topic": "history",
+    "headline": "Caravans of salt once traded ounce-for-ounce with gold",
+    "body": "Across the medieval Sahara, blocks of salt mined at places like Taghaza were so valuable in West Africa that they could approach the value of gold by weight. The trans-Saharan trade essentially swapped two things each side had in surplus: northern salt for southern gold.",
+    "more": "Salt was not a luxury but a survival need in hot climates where people sweat heavily and food spoils without it. In the interior, far from the sea and without salt deposits, it was genuinely scarce.\n\nThis trade built empires. Mali and Songhai grew rich taxing the caravans crossing their territory, and the wealth that flowed through Timbuktu funded one of the great medieval centres of learning, with libraries of manuscripts that survive today."
+  },
+  {
+    "id": "his-0006",
+    "type": "fact",
+    "topic": "history",
+    "headline": "The Great Wall was as much a tax and trade tool as a barrier",
+    "body": "We picture the Great Wall as a defensive line, but stopping armies was only part of its job. A continuous wall let the Chinese state channel all movement through controlled gates, where officials could tax trade, monitor migration, and choke off the horses and supplies that steppe raiders depended on.",
+    "more": "A determined army could often breach or go around a wall. What the wall did reliably was raise the cost of small, constant raiding and force economic exchange into checkpoints the state controlled.\n\nIt also shaped the people on the other side. By restricting trade, the wall pressured steppe confederations to either negotiate as a bloc or unite for large-scale raids, arguably helping forge the very nomadic powers it was built to repel."
+  },
+  {
+    "id": "his-0007",
+    "type": "fact",
+    "topic": "history",
+    "headline": "Coffeehouses were called 'penny universities'",
+    "body": "In 17th and 18th century England, a penny bought a cup of coffee and a seat where you could read newspapers, argue politics, and overhear experts. For the price of the coffee you got the conversation, which is why they were nicknamed penny universities."
+  },
+  {
+    "id": "his-0008",
+    "type": "fact",
+    "topic": "history",
+    "headline": "Lloyd's of London started in a coffeehouse",
+    "body": "Edward Lloyd's coffeehouse, near the London docks, became the place where ship-owners and merchants gathered to swap shipping news and arrange insurance on voyages. That informal market grew into Lloyd's of London, still a giant of global insurance today.",
+    "more": "Coffeehouses specialised by trade. One crowd talked stocks and became the seed of the London Stock Exchange; another talked shipping and became Lloyd's. The institutions we think of as cold and corporate began as rooms full of gossip and caffeine.\n\nThe key ingredient was information density. Putting many informed people in one place, repeatedly, let strangers assess each other's reliability and pool knowledge about risk, which is exactly what an insurance or stock market needs."
+  },
+  {
+    "id": "his-0009",
+    "type": "fact",
+    "topic": "history",
+    "headline": "The printing press helped freeze Europe's languages",
+    "body": "Before print, spelling and even grammar drifted from town to town. Once printers mass-produced books, they had to pick standard forms to reach the widest market, and those choices hardened into the 'correct' versions of national languages.",
+    "more": "Printers were businessmen, not linguists. They standardised on whatever dialect sold most copies, often the speech of the capital or the court, and that dialect gained prestige simply because it was the one in print.\n\nThis is why many European spelling systems look frozen in an older state of the language: English spelling, for instance, locked in around the time of early printing and never fully caught up with later sound changes, which is part of why it is so irregular."
+  },
+  {
+    "id": "his-0010",
+    "type": "fact",
+    "topic": "history",
+    "headline": "Silver from one Bolivian mountain underwrote the Spanish empire",
+    "body": "The mountain of Potosi in present-day Bolivia held one of the richest silver deposits ever found. From the 1540s it poured out so much silver that it financed Spain's wars across Europe and flooded into Asia through trade with China."
+  },
+  {
+    "id": "his-0011",
+    "type": "fact",
+    "topic": "history",
+    "headline": "Spanish silver ended up propping up China's economy",
+    "body": "Ming China shifted its taxes to be payable in silver, but produced little of its own. So much New World silver flowed east through Manila to buy Chinese silk and porcelain that China effectively ran on Spanish-American silver, and a slump in that supply helped destabilise the dynasty.",
+    "more": "This is one of the earliest clearly global economic feedback loops. A mine in the Andes set the money supply for an empire on the other side of the planet.\n\nWhen silver flows faltered in the 17th century, partly from problems in the Spanish system and partly from China's own demand swings, prices and tax revenues convulsed. The troubles fed into the crises that brought down the Ming and ushered in the Qing in 1644. A monetary shock rippled across oceans before anyone had a word for the global economy."
+  },
+  {
+    "id": "his-0012",
+    "type": "fact",
+    "topic": "history",
+    "headline": "Medieval Iceland ran courts with no executive to enforce them",
+    "body": "The Icelandic Commonwealth (roughly 930 to 1262) had a sophisticated legal system and an assembly, the Althing, but no king, no police, and no executive branch to carry out verdicts. If you won a case, enforcing the judgment was largely up to you and your allies.",
+    "more": "Justice ran on a system of compensation and reputation. Wrongs were priced; you could transfer the right to collect a penalty to a more powerful person who had the muscle to actually collect it.\n\nThe system worked for centuries but had a fatal flaw: it relied on rough balance among chieftains. When wealth and power concentrated in a few families, feuds escalated beyond what the courts could contain, and Iceland eventually submitted to the Norwegian crown for order."
+  },
+  {
+    "id": "his-0013",
+    "type": "fact",
+    "topic": "history",
+    "headline": "The first known author in history was a woman",
+    "body": "Enheduanna, a high priestess in the Sumerian city of Ur around 2300 BCE, composed hymns that she signed with her own name. She is the earliest writer in human history whose name we know attached to their work, predating Homer by well over a millennium."
+  },
+  {
+    "id": "his-0014",
+    "type": "fact",
+    "topic": "history",
+    "headline": "Ancient libraries lent books with clay 'receipts'",
+    "body": "The cuneiform archives of Mesopotamia included administrative tablets recording who had borrowed which texts, an early library checkout system. Some scribal tablets even end with curses against anyone who would steal or deface them.",
+    "more": "Writing began not for poetry but for accounting. The earliest cuneiform tablets are records of grain, beer, and livestock, tallies for a temple economy. Literature came later, riding on a technology invented to track who owed what.\n\nThis order of events recurs in history: writing systems around the world, from Mesopotamia to Mesoamerica, often start as bookkeeping and state record tools before anyone uses them to tell a story."
+  },
+  {
+    "id": "his-0015",
+    "type": "fact",
+    "topic": "history",
+    "headline": "A volcano in Indonesia gave us the bicycle",
+    "body": "The 1815 eruption of Mount Tambora flung so much ash into the atmosphere that 1816 became the 'Year Without a Summer.' Crops failed, horses starved for lack of oats, and a German inventor responding to the horse shortage built an early pedal-less running machine, the ancestor of the bicycle.",
+    "more": "The eruption was the largest in recorded history. Its global cooling caused famine from Europe to Asia and snowfall in New England in June.\n\nThe knock-on effects were strange and far-reaching. The grim, stormy weather also kept a group of writers indoors by Lake Geneva that summer, where a ghost-story contest produced Mary Shelley's Frankenstein. A single volcano rerouted both transport technology and Gothic literature."
+  },
+  {
+    "id": "his-0016",
+    "type": "fact",
+    "topic": "history",
+    "headline": "Tea bricks were used as money for centuries",
+    "body": "Compressed bricks of tea served as currency across Central Asia, Tibet, and Mongolia well into the 20th century. They held value, were easy to transport, and unlike coins you could break off a piece and drink your money if times got hard."
+  },
+  {
+    "id": "his-0017",
+    "type": "fact",
+    "topic": "history",
+    "headline": "The Antikythera mechanism was a 2,000-year-old analog computer",
+    "body": "Recovered from a Greek shipwreck, this corroded lump of bronze turned out to contain dozens of precision gears. It modelled the motions of the sun, moon, and planets and predicted eclipses, an analog computer made over two thousand years ago.",
+    "more": "Nothing of comparable mechanical complexity is known from the following thousand years or more. The geared sophistication does not reappear in the surviving record until medieval astronomical clocks.\n\nThat gap is a sobering reminder of how much knowledge can be lost. The mechanism implies a whole tradition of skilled gear-making and astronomy that left almost no other trace, surviving by sheer chance because one device sank to the seabed and was buried."
+  },
+  {
+    "id": "his-0018",
+    "type": "fact",
+    "topic": "history",
+    "headline": "Pineapples were so prized you could rent one",
+    "body": "When pineapples first reached 18th-century Europe they were astonishingly expensive to grow in cold climates. A single fruit could cost a fortune, and people rented them as table centrepieces to display at parties, returning the same uneaten pineapple again and again until it rotted."
+  },
+  {
+    "id": "his-0019",
+    "type": "fact",
+    "topic": "history",
+    "headline": "London once smelled so bad Parliament nearly fled",
+    "body": "In the hot summer of 1858, the Thames, choked with raw sewage, produced a stench so overwhelming that it became known as the Great Stink. Parliament, sitting right beside the river, was driven to act and finally funded a modern sewer system for London.",
+    "more": "The breakthrough was partly accidental politics. Decades of warnings about disease had failed to move lawmakers, but when the smell physically reached the seats of power, a sewer bill passed in about eighteen days.\n\nThe engineer Joseph Bazalgette designed the sewers with pipes far larger than the calculated need, reportedly reasoning that you only get one chance to build them. That margin let the system serve a city many times larger than Victorian London, and much of it is still in use."
+  },
+  {
+    "id": "his-0020",
+    "type": "fact",
+    "topic": "history",
+    "headline": "The stirrup may have helped invent feudalism",
+    "body": "One influential theory argues that the stirrup, arriving in Europe in the early Middle Ages, let a rider brace against impact and fight effectively from horseback with a couched lance. That made the armoured mounted knight dominant, and supporting such expensive warriors reshaped society around land grants.",
+    "more": "The idea, associated with historian Lynn White, is genuinely debated. Critics note that heavy cavalry existed before stirrups and that feudalism had many causes, social, economic, and political, not one gadget.\n\nStill, it is a useful case study in how a small technology can shift the balance of power. Whether or not the stirrup 'caused' feudalism, the broader point stands: who can fight effectively, and how expensive their equipment is, helps determine who rules."
+  },
+  {
+    "id": "his-0021",
+    "type": "fact",
+    "topic": "history",
+    "headline": "Genghis Khan ran a continent-wide postal relay system",
+    "body": "The Mongol Empire operated the Yam, a network of relay stations roughly a day's ride apart, stocked with fresh horses and supplies. A rider carrying an official passport could change mounts and cover astonishing distances quickly, knitting a vast empire together with fast communication.",
+    "more": "Speed of information was a strategic weapon. A khan could learn of a distant revolt and dispatch orders far faster than rivals who lacked such infrastructure, turning the empire's size from a weakness into a strength.\n\nThe Pax Mongolica that followed made overland trade safer across Eurasia for a time. This connectivity had a dark side too: it likely helped the Black Death travel along the same routes that carried silk and silver."
+  },
+  {
+    "id": "his-0022",
+    "type": "fact",
+    "topic": "history",
+    "headline": "Cahokia was bigger than London in 1250",
+    "body": "Near modern St. Louis stood Cahokia, a city of the Mississippian culture with huge earthen pyramids and, at its peak, perhaps 15,000 to 20,000 people, larger than contemporary London. It had been mostly abandoned before Europeans ever reached the region.",
+    "more": "Cahokia's central mound is one of the largest earthworks in the Americas, built from millions of basket-loads of earth carried by hand. The city had planned plazas, astronomical alignments, and wide regional trade.\n\nWhy it declined is unsettled, with climate shifts, resource strain, flooding, and political fracture all proposed. Its very existence corrects a common assumption that pre-Columbian North America held only small, scattered societies; this was urban civilisation, just one that fell before it was written down by outsiders."
+  },
+  {
+    "id": "his-0023",
+    "type": "fact",
+    "topic": "history",
+    "headline": "Whaling ships were America's first global oil industry",
+    "body": "In the early 1800s, whale oil lit lamps and lubricated the machines of the Industrial Revolution. American whalers ranged across every ocean, and the trade made ports like New Bedford among the wealthiest places per person in the world."
+  },
+  {
+    "id": "his-0024",
+    "type": "fact",
+    "topic": "history",
+    "headline": "Petroleum may have saved the whales, briefly",
+    "body": "As whale populations crashed and oil grew scarce, the discovery of how to refine kerosene from petroleum in the mid-1800s offered a cheaper lamp fuel. Demand for whale oil for lighting collapsed, easing pressure on whales just as a fossil fuel industry was born.",
+    "more": "The relief was partial and temporary. Whaling continued for other products, and 20th-century factory ships with explosive harpoons would kill whales in numbers the old sailing whalers never could.\n\nStill, the episode is a clean example of a recurring pattern: a resource crisis is often solved not by conservation but by a substitute technology that makes the old resource obsolete. The same logic links firewood to coal, and coal to oil."
+  },
+  {
+    "id": "his-0025",
+    "type": "fact",
+    "topic": "history",
+    "headline": "The Rosetta Stone is a boring tax decree",
+    "body": "The text that cracked Egyptian hieroglyphs is not a poem or a secret of the pharaohs. It is a bureaucratic decree from 196 BCE about temple privileges and tax exemptions, written in three scripts so that priests, officials, and rulers could all read it."
+  },
+  {
+    "id": "his-0026",
+    "type": "fact",
+    "topic": "history",
+    "headline": "Ancient Romans recycled their broken pottery into a mountain",
+    "body": "In Rome stands Monte Testaccio, a hill about 35 metres high made almost entirely of broken olive-oil amphorae. The clay jars used to ship oil could not be easily reused, so for centuries Romans methodically smashed and stacked them in one place.",
+    "more": "The hill is an archaeologist's treasure. Stamps on the shards record where the oil came from, who shipped it, and when, letting researchers reconstruct the scale and logistics of the Roman oil trade in remarkable detail.\n\nThe estimates are staggering: tens of millions of amphorae, implying a single city consuming oil on an industrial scale. It is a vivid reminder that ancient Rome was a consumer metropolis whose appetite required supply chains spanning the Mediterranean."
+  },
+  {
+    "id": "his-0027",
+    "type": "fact",
+    "topic": "history",
+    "headline": "Many 'medieval' people expected to live into their sixties",
+    "body": "Headlines about a medieval life expectancy of 30 mislead because that average is dragged down by very high infant and child mortality. A person who survived childhood had a fair chance of reaching their sixties; old age was common enough to be unremarkable.",
+    "more": "Averaging across deaths produces a number that almost nobody actually experienced as their lifespan. It is a statistical artefact of a high-mortality early-life period combined with a long surviving tail.\n\nThe same trap appears whenever people compare modern and historical 'life expectancy at birth' without adjusting for it. The biggest single driver of rising life expectancy in the modern era was not extending old age but saving babies and children who once died young."
+  },
+  {
+    "id": "his-0028",
+    "type": "fact",
+    "topic": "history",
+    "headline": "Easter Island's collapse story is being rewritten",
+    "body": "The famous tale, that Rapa Nui's people recklessly cut down every tree, overpopulated, and collapsed into ruin before Europeans arrived, is increasingly disputed. Newer evidence points to rats eating palm seeds and, above all, devastation from European contact, including disease and slave raids.",
+    "more": "The 'ecocide' narrative made a tidy parable about humans destroying their environment, which helped it spread widely. But several archaeologists now argue the population was more stable and resourceful than the story allows, with clever rock-mulch farming on poor soil.\n\nThe wider lesson is about how appealing morality tales can outrun the evidence. A story that flatters our anxieties, here, environmental self-destruction, can become 'common knowledge' even as researchers quietly find the real history was messier and more externally driven."
+  },
+  {
+    "id": "his-0029",
+    "type": "fact",
+    "topic": "history",
+    "headline": "The QWERTY keyboard's layout outlived its reason",
+    "body": "QWERTY was arranged in the 1870s for mechanical typewriters, partly to space out common letter pairs so the metal type-bars jammed less. The jamming problem vanished long ago, yet the layout persists because everyone learned it and switching costs are enormous.",
+    "more": "Whether QWERTY was truly designed to 'slow typists down' is a bit of a myth; the real aim was smoother mechanical operation. But the survival story is solid.\n\nQWERTY is the textbook example of lock-in. Once a critical mass of people trained on one standard, any superior alternative faces a chicken-and-egg problem: no one adopts it because no one else has, so the old standard wins on inertia alone, not merit."
+  },
+  {
+    "id": "his-0030",
+    "type": "fact",
+    "topic": "history",
+    "headline": "Napoleon's army may have been undone by its buttons, allegedly",
+    "body": "A colourful claim holds that the tin buttons on French uniforms crumbled in the Russian cold, because tin disintegrates into powder at low temperatures, leaving soldiers unable to fasten their coats. It is a great story, but historians treat it as almost certainly a myth.",
+    "more": "The 'tin pest' chemistry is real: pure tin does degrade in deep cold. But there is no good evidence French buttons actually failed this way, and the army's catastrophe in 1812 had overwhelming causes, hunger, disease, exhaustion, and the cold itself, that need no button theory.\n\nThe tale endures because it offers a satisfying tiny-cause-huge-effect twist. It is worth knowing precisely as a caution: an elegant mechanism can be perfectly true as chemistry and still be false as history."
+  },
+  {
+    "id": "his-0031",
+    "type": "concept",
+    "topic": "history",
+    "headline": "Path dependence: why arbitrary early choices stick",
+    "body": "Path dependence is the idea that decisions made for reasons that no longer apply can lock in and persist, because the cost of changing grows as more people and systems build on top of the original choice. History is full of standards that are not optimal, merely first.",
+    "more": "The mechanism is increasing returns to adoption. The more people use a standard, the more valuable it is to use the same one, and the more painful it is for any single actor to defect. The choice becomes self-reinforcing regardless of whether it was good.\n\nA concrete example: railway gauge. Britain's coal wagonways used a particular width, early railways copied it because the equipment and expertise already existed, and once thousands of miles of track were laid, that width became a near-global standard, not because it was ideal but because changing it would mean re-laying everything at once."
+  },
+  {
+    "id": "his-0032",
+    "type": "concept",
+    "topic": "history",
+    "headline": "The challenge-and-response theory of civilisations",
+    "body": "Historian Arnold Toynbee argued that civilisations arise not from easy conditions but from facing a difficulty hard enough to demand creativity yet not so crushing it destroys the society. A 'creative minority' answers the challenge, and the society grows; when that minority loses its creativity, decline follows.",
+    "more": "Toynbee's grand theory is out of fashion as a literal law of history; critics find it too neat and hard to test, since you can always relabel events as challenges or failed responses after the fact.\n\nBut as a lens it is provocative. Consider the Dutch, whose constant battle against the sea drove world-leading skill in drainage, dykes, and water management, expertise that fed their commercial and engineering power. The danger of the theory is circular reasoning; its value is the habit of asking what pressure a society was responding to, rather than treating success or failure as inevitable."
+  },
+  {
+    "id": "his-0033",
+    "type": "concept",
+    "topic": "history",
+    "headline": "The Malthusian trap and how Europe escaped it",
+    "body": "For most of history, when a population grew richer it grew larger, and more mouths pushed living standards back down to subsistence. This is the Malthusian trap: gains in productivity turn into more people rather than better-off people, so long-run living standards barely move.",
+    "more": "The trap held for millennia. After the Black Death, for instance, wages rose precisely because population had crashed, exactly as the grim logic predicts.\n\nThe escape came with the Industrial Revolution, when productivity began rising faster than population could catch up, breaking the link for the first time. Why this happened where and when it did is one of the biggest debates in economic history, but the concept is essential: it explains why almost everyone in the past was poor, and why sustained growth in living standards is a genuinely recent and unusual phenomenon."
+  },
+  {
+    "id": "his-0034",
+    "type": "concept",
+    "topic": "history",
+    "headline": "The resource curse: why riches can impoverish",
+    "body": "The resource curse names a counterintuitive pattern: countries with abundant valuable resources, like oil or precious metals, often grow more slowly and govern worse than resource-poor neighbours. Easy riches can corrode the institutions that build lasting prosperity.",
+    "more": "Several mechanisms feed it. A ruler who can fund the state by selling oil does not need to tax citizens, and so does not need their consent, weakening pressure for accountable government. Sudden wealth can also distort the wider economy and fuel conflict over who controls the resource.\n\nHistory rhymes here. The torrent of silver from Potosi made the Spanish crown spectacularly rich yet arguably retarded Spain's long-term development, as it funded wars and imports rather than home industry, while resource-poor rivals like the Dutch and English built durable commercial economies."
+  },
+  {
+    "id": "his-0035",
+    "type": "concept",
+    "topic": "history",
+    "headline": "Survivorship bias in the historical record",
+    "body": "The past we can study is the part that survived, and survival is not random. Stone temples outlast wooden homes, the writings of the literate elite outlast the thoughts of the illiterate majority, and victors' accounts outlast the defeated's. What remains is a skewed sample.",
+    "more": "This warps our intuitions constantly. We imagine ancient cities as marble because marble survived, when many were mostly mudbrick and timber. We know far more about kings than peasants because kings were written about. The 'huh, really?' moment is realising that absence of evidence is often just the silence of things that rotted.\n\nA classic illustration comes from the Second World War: analysts examining returning bombers wanted to armour the spots most often hit by flak. The statistician Abraham Wald argued the opposite, that armour belonged where the survivors were not hit, because planes struck there had not come back to be counted. The data was a sample of survivors."
+  },
+  {
+    "id": "his-0036",
+    "type": "concept",
+    "topic": "history",
+    "headline": "Carrying capacity and the logic of collapse",
+    "body": "Carrying capacity is the population a given environment and technology can support. Societies often grow up to that ceiling, then become fragile: with no slack, a single bad harvest, drought, or shock can tip a tightly-stretched population into famine and political breakdown.",
+    "more": "The key idea is that collapse rarely needs an exotic cause. A society running at the edge of its food supply has no buffer, so an ordinary fluctuation that a richer society would shrug off becomes a catastrophe.\n\nMany proposed cases of ancient collapse, from Bronze Age city networks to certain Maya cities, involve drought hitting populations that had grown large during good times. The lesson is about resilience: it is not the size of the shock that determines the outcome so much as how much margin the system had to absorb it."
+  },
+  {
+    "id": "his-0037",
+    "type": "concept",
+    "topic": "history",
+    "headline": "Cliometrics: running history through the numbers",
+    "body": "Cliometrics applies economics and statistics to history, testing stories about the past against quantitative evidence. Instead of asking what a famous battle felt like, it asks how much railroads actually added to economic growth, and sometimes the numbers overturn the textbook narrative.",
+    "more": "A famous and controversial example: the economist Robert Fogel calculated that American railroads, long credited as indispensable to growth, added a surprisingly modest amount to the economy, because canals and roads could have carried much of the freight. The result is debated, but it shook the assumption that any celebrated technology was as decisive as legend held.\n\nThe value of the approach is discipline. It forces vague claims, 'this invention transformed everything,' into testable form. Its danger is that not everything important is measurable, and a narrow focus on what can be counted can miss what mattered most."
+  },
+  {
+    "id": "his-0038",
+    "type": "concept",
+    "topic": "history",
+    "headline": "Why 'great man' history misleads",
+    "body": "The great man theory explains history through the deeds of outstanding individuals: leaders, geniuses, conquerors. It is intuitive and makes for good stories, but it tends to ignore the structural conditions, economic, technological, demographic, that determine whether any individual's actions can succeed.",
+    "more": "The counter-view holds that individuals act within tight constraints. A would-be conqueror still needs the agricultural surplus to feed an army, the metallurgy to arm it, and the diseases or immunities his population happens to carry. Change those conditions and the 'great man' achieves nothing.\n\nThe sharpest version asks how 'inevitable' a figure was: if a particular general had never been born, would someone else have filled the same role the conditions created? Often the honest answer is partly yes, which is why serious historians treat individuals as one factor among many, not the engine of history."
+  },
+  {
+    "id": "his-0039",
+    "type": "concept",
+    "topic": "history",
+    "headline": "Comparative advantage and the deep logic of trade",
+    "body": "Comparative advantage explains why trade benefits both sides even when one is better at making everything. What matters is not who is best in absolute terms but who gives up the least by specialising. Each side gains by focusing on what it sacrifices least to produce, then trading.",
+    "more": "This counterintuitive insight, formalised by David Ricardo in the 1800s, is one of the most important ideas in economics, and it quietly explains much of history's trade. A region 'should' export not necessarily what it makes well, but what it makes well relative to its other options.\n\nThe trans-Saharan salt-for-gold trade fits: the north had relatively cheap salt and dear gold, the south the reverse, so exchanging them left both richer even though neither side was simply 'better' at producing wealth. Trade routes form along these gradients of relative cost, not absolute superiority."
+  },
+  {
+    "id": "his-0040",
+    "type": "quiz",
+    "topic": "history",
+    "headline": "Quiz: What happened to wages after the Black Death?",
+    "body": "After the plague of the 1340s killed a large share of Europe's population, what happened to the wages of surviving workers in Western Europe?",
+    "options": [
+      "They collapsed because the economy was ruined",
+      "They rose sharply because labour became scarce",
+      "They were unchanged because lords fixed them by law",
+      "Wages did not exist yet in this period"
+    ],
+    "answerIndex": 1,
+    "explanation": "With far fewer workers, surviving labourers could demand higher pay, and attempts to legally freeze wages largely failed against supply and demand.",
+    "recapOf": "his-0001"
+  },
+  {
+    "id": "his-0041",
+    "type": "quiz",
+    "topic": "history",
+    "headline": "Quiz: What did the Byzantines call themselves?",
+    "body": "The empire centred on Constantinople is known to us as 'Byzantine.' What did its own people call themselves and their state?",
+    "options": [
+      "Greeks and the Hellenic Kingdom",
+      "Byzantines and the Byzantine Empire",
+      "Romans and the Roman Empire",
+      "Ottomans and the Sultanate"
+    ],
+    "answerIndex": 2,
+    "explanation": "They called themselves Romaioi, Romans, and saw their state as the continuous Roman Empire; 'Byzantine' was coined by a scholar in 1557.",
+    "recapOf": "his-0002"
+  },
+  {
+    "id": "his-0042",
+    "type": "quiz",
+    "topic": "history",
+    "headline": "Quiz: Why does Roman marine concrete last so long?",
+    "body": "Roman concrete in seawater often grew stronger over centuries while modern concrete crumbles. What largely explains this?",
+    "options": [
+      "It was reinforced with hidden iron bars",
+      "Volcanic ash reacting with seawater grew reinforcing crystals",
+      "It was mixed with animal blood for strength",
+      "The Romans cured it for fifty years before use"
+    ],
+    "answerIndex": 1,
+    "explanation": "Volcanic ash and lime reacting with seawater formed interlocking crystals, and lime lumps let cracks self-heal over time.",
+    "recapOf": "his-0003"
+  },
+  {
+    "id": "his-0043",
+    "type": "quiz",
+    "topic": "history",
+    "headline": "Quiz: Why did London finally build a sewer system?",
+    "body": "London had ignored warnings about its filthy river for decades. What finally pushed Parliament to fund a modern sewer system in 1858?",
+    "options": [
+      "A cholera vaccine became available",
+      "The river caught fire near Westminster",
+      "An overpowering stench reached Parliament itself",
+      "Queen Victoria ordered it after falling ill"
+    ],
+    "answerIndex": 2,
+    "explanation": "The Great Stink of 1858 made the riverside Parliament building nearly unbearable, and a sewer bill passed within weeks.",
+    "recapOf": "his-0019"
+  },
+  {
+    "id": "his-0044",
+    "type": "quiz",
+    "topic": "history",
+    "headline": "Quiz: Why is 'medieval life expectancy of 30' misleading?",
+    "body": "You often hear that medieval life expectancy was around 30. Why does this badly mislead about how long people actually lived?",
+    "options": [
+      "The records were simply made up",
+      "High infant and child mortality drags the average down",
+      "People aged faster due to harsh diets",
+      "They counted years differently back then"
+    ],
+    "answerIndex": 1,
+    "explanation": "Very high death rates among infants and children pull the average down; those who survived childhood often reached their sixties.",
+    "recapOf": "his-0027"
+  },
+  {
+    "id": "his-0045",
+    "type": "quiz",
+    "topic": "history",
+    "headline": "Quiz: What was salt traded for across the Sahara?",
+    "body": "In the medieval trans-Saharan trade, blocks of salt from the desert were so valuable that they were exchanged in the south for which commodity?",
+    "options": [
+      "Iron",
+      "Gold",
+      "Silk",
+      "Spices"
+    ],
+    "answerIndex": 1,
+    "explanation": "Salt was scarce in the interior and gold was abundant in West Africa, so the two were traded, sometimes approaching parity by weight.",
+    "recapOf": "his-0005"
+  },
+  {
+    "id": "his-0046",
+    "type": "quiz",
+    "topic": "history",
+    "headline": "Quiz: Why does the QWERTY layout survive?",
+    "body": "The QWERTY keyboard was designed for 1870s mechanical typewriters. Why does it persist even though its original purpose is obsolete?",
+    "options": [
+      "It is scientifically the fastest possible layout",
+      "Switching costs and mass familiarity lock it in",
+      "Patents still forbid alternative layouts",
+      "Keyboards physically cannot be rearranged"
+    ],
+    "answerIndex": 1,
+    "explanation": "Because everyone already learned QWERTY, the cost of switching is enormous, a textbook case of path-dependent lock-in.",
+    "recapOf": "his-0029"
+  },
+  {
+    "id": "his-0047",
+    "type": "quiz",
+    "topic": "history",
+    "headline": "Quiz: What is the resource curse?",
+    "body": "The 'resource curse' describes a counterintuitive pattern. What is it?",
+    "options": [
+      "Resources always run out faster than expected",
+      "Resource-rich countries often grow slower and govern worse",
+      "Mining inevitably causes natural disasters",
+      "Valuable resources are usually cursed by folklore"
+    ],
+    "answerIndex": 1,
+    "explanation": "Easy resource wealth can weaken accountable institutions and distort economies, so resource-rich states often underperform poorer neighbours.",
+    "recapOf": "his-0034"
+  },
+  {
+    "id": "his-0048",
+    "type": "quiz",
+    "topic": "history",
+    "headline": "Quiz: What is the Malthusian trap?",
+    "body": "Why did living standards for ordinary people barely rise for most of human history, according to the Malthusian trap?",
+    "options": [
+      "Rulers confiscated all surplus wealth",
+      "Productivity gains turned into more people, not richer people",
+      "There was no money to store wealth",
+      "Constant war destroyed every advance"
+    ],
+    "answerIndex": 1,
+    "explanation": "When societies grew richer they grew larger, and the extra mouths pushed living standards back toward subsistence.",
+    "recapOf": "his-0033"
+  },
+  {
+    "id": "his-0049",
+    "type": "quiz",
+    "topic": "history",
+    "headline": "Quiz: What does survivorship bias do to the historical record?",
+    "body": "Why must historians be wary of survivorship bias when studying the past?",
+    "options": [
+      "Historians tend to survive longer than other scholars",
+      "What survives is a skewed sample, favouring durable and elite things",
+      "Old documents survive only if they are true",
+      "Survivors of disasters always exaggerate"
+    ],
+    "answerIndex": 1,
+    "explanation": "Stone outlasts wood and elite writings outlast common voices, so the surviving evidence over-represents the durable and the powerful.",
+    "recapOf": "his-0035"
+  },
+  {
+    "id": "his-0050",
+    "type": "quiz",
+    "topic": "history",
+    "headline": "Quiz: How big was Cahokia around 1250?",
+    "body": "Cahokia, the Mississippian city near modern St. Louis, was at its height comparable in size to which contemporary city?",
+    "options": [
+      "A small village of a few hundred",
+      "London of the same era",
+      "Ancient Rome at its imperial peak",
+      "Modern New York"
+    ],
+    "answerIndex": 1,
+    "explanation": "With perhaps 15,000 to 20,000 people, Cahokia rivalled or exceeded contemporary London, a true pre-Columbian city.",
+    "recapOf": "his-0022"
+  },
+  {
+    "id": "his-0051",
+    "type": "rabbithole",
+    "topic": "history",
+    "headline": "The war that started over a wooden bucket →",
+    "body": "In 1325 two Italian city-states went to war, and the legend says it began when soldiers from one stole a humble wooden bucket from the other's town well. The truth is messier, but the bucket really did become the war's enduring symbol.",
+    "threadId": "bucket-war",
+    "threadOrder": 0
+  },
+  {
+    "id": "his-0052",
+    "type": "fact",
+    "topic": "history",
+    "headline": "Bologna and Modena were already bitter rivals",
+    "body": "The two cities sat on opposite sides of the long struggle between supporters of the Pope and supporters of the Holy Roman Emperor that split medieval Italy. Modena and Bologna had been raiding each other's territory for years; the conflict of 1325 was the latest round, not a sudden quarrel over crockery.",
+    "threadId": "bucket-war",
+    "threadOrder": 1
+  },
+  {
+    "id": "his-0053",
+    "type": "fact",
+    "topic": "history",
+    "headline": "The Battle of Zappolino was the real fight",
+    "body": "In November 1325 the armies clashed at Zappolino. Modena, though outnumbered, routed the larger Bolognese force, which fled back behind its walls. Thousands are said to have taken part, and the defeat was a genuine humiliation for powerful Bologna.",
+    "threadId": "bucket-war",
+    "threadOrder": 2
+  },
+  {
+    "id": "his-0054",
+    "type": "fact",
+    "topic": "history",
+    "headline": "The bucket was a trophy, taken after the victory",
+    "body": "Triumphant Modenese soldiers reportedly carried off an oak bucket from a well just outside Bologna's gates as a trophy of their victory. The bucket did not start the war; it became the souvenir that immortalised it, the way a captured flag would.",
+    "threadId": "bucket-war",
+    "threadOrder": 3
+  },
+  {
+    "id": "his-0055",
+    "type": "fact",
+    "topic": "history",
+    "headline": "Modena still displays the bucket today",
+    "body": "A wooden bucket said to be the trophy is still kept on display in Modena. The episode inspired a famous 17th-century mock-heroic poem, La Secchia Rapita, 'The Stolen Bucket,' which cemented the comic legend and is why the petty-sounding cause is remembered at all.",
+    "more": "The poem deliberately treated a real war in the grand, solemn style of epic, milking the contrast between heroic language and a stolen bucket for satire. That literary joke is largely why the war is famous, a reminder that what survives in popular memory is often the story that was most fun to tell.\n\nThe deeper history, a generations-long structural conflict between papal and imperial factions, is duller and so faded, while the bucket endured. It is a small case study in how memorable framing, not importance, decides what history a culture keeps."
+  },
+  {
+    "id": "his-0056",
+    "type": "rabbithole",
+    "topic": "history",
+    "headline": "The speculative mania over a flower →",
+    "body": "In the 1630s the Dutch Republic, the richest and most sophisticated economy of its day, was gripped by a frenzy over tulip bulbs. At the peak, rare bulbs reputedly changed hands for the price of a fine house, before the market crashed. But how wild was it really?",
+    "threadId": "tulip-mania",
+    "threadOrder": 0
+  },
+  {
+    "id": "his-0057",
+    "type": "fact",
+    "topic": "history",
+    "headline": "The prized tulips were 'broken' by a virus",
+    "body": "The most coveted tulips had dramatic flame-like streaks of colour. These striking patterns were actually caused by a mosaic virus infecting the bulb, which also weakened the plant. The very feature that made them precious was a sign of disease, and could not be reliably bred.",
+    "threadId": "tulip-mania",
+    "threadOrder": 1
+  },
+  {
+    "id": "his-0058",
+    "type": "fact",
+    "topic": "history",
+    "headline": "People traded contracts for bulbs still in the ground",
+    "body": "Because tulips bloom and can be lifted only at certain times, much of the trading happened in winter as promissory contracts: paper claims on bulbs that were dormant underground. This turned the market into something like futures trading, where buyers and sellers swapped pieces of paper without any flower changing hands.",
+    "threadId": "tulip-mania",
+    "threadOrder": 2
+  },
+  {
+    "id": "his-0059",
+    "type": "fact",
+    "topic": "history",
+    "headline": "The famous crash was real but the legend is inflated",
+    "body": "Prices did spike and then collapse abruptly in early 1637, ruining some speculators. But modern historians argue the popular image, of a whole nation ruined and bodies in the canals, was exaggerated by later moralising writers who wanted a cautionary tale about greed.",
+    "threadId": "tulip-mania",
+    "threadOrder": 3
+  },
+  {
+    "id": "his-0060",
+    "type": "fact",
+    "topic": "history",
+    "headline": "Tulip mania became a parable bigger than the event",
+    "body": "Much of what 'everyone knows' about tulip mania traces to a sensational 1841 book by Charles Mackay, written two centuries later. The episode endures less as accurate economic history than as a convenient symbol invoked in every modern bubble.",
+    "more": "The careful research suggests the trade was concentrated among a relatively small circle of merchants and craftsmen, and that the broader Dutch economy sailed on largely unharmed. The vivid stories of mass ruin are hard to verify and likely embellished.\n\nThat does not make the concept worthless. Real speculative bubbles do happen, where prices detach from any underlying value and crash. The lesson is to separate the genuine phenomenon from the inflated legend, and to notice how each new bubble reaches for the same 400-year-old flower as its shorthand."
+  }
+]
