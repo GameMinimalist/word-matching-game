@@ -1,0 +1,74 @@
+[
+  {
+    "id": "psy-t001",
+    "type": "puzzle",
+    "topic": "psychology",
+    "headline": "A restaurant menu lists a $115 lobster platter that almost nobody buys. The owner refuses to remove it. Why might keeping it actually boost profits?",
+    "body": "It barely sells. What's the point of an item that doesn't move?",
+    "answer": "The expensive dish acts as an anchor. Next to it, the $60 steak suddenly looks reasonable, so more people trade up to mid-priced mains. The anchoring effect shifts the whole reference point for what counts as 'normal' to spend."
+  },
+  {
+    "id": "psy-t002",
+    "type": "puzzle",
+    "topic": "psychology",
+    "headline": "Two identical surgeries are described to patients. One is called '90% survival', the other '10% mortality'. Which one do more patients choose, even though the odds are the same?",
+    "answer": "Far more choose the '90% survival' framing. Identical facts feel safer when stated as a gain rather than a loss. This is the framing effect: how a choice is worded, not just its content, drives the decision."
+  },
+  {
+    "id": "psy-t003",
+    "type": "puzzle",
+    "topic": "psychology",
+    "headline": "A gym offers a $1,200 yearly membership. People who pay upfront go LESS often than people billed $100 monthly. Why would paying more rarely make you show up more?",
+    "body": "Same total cost over the year. Different visit rates.",
+    "answer": "The monthly bill repeatedly reminds people of the cost, so each charge stings and pushes them to 'use it'. A one-time annual fee is a sunk cost that fades from memory. The recurring pain of payment keeps the gym top of mind."
+  },
+  {
+    "id": "psy-t004",
+    "type": "puzzle",
+    "topic": "psychology",
+    "headline": "A study asks people to estimate a quantity right after they spin a wheel that lands on a random number. People who saw a high number guess much higher. The wheel is obviously random. Why does it still sway them?",
+    "answer": "This is anchoring again, but on a purely irrelevant number. Even when people KNOW the value is random, their estimate drifts toward it because the mind adjusts away from whatever starting point it was just handed, and stops too soon."
+  },
+  {
+    "id": "psy-t005",
+    "type": "puzzle",
+    "topic": "psychology",
+    "headline": "A person hears that '1,000 people die yearly' from a disease versus that it kills '0.001% of the population'. The first figure feels far scarier. The percentages describe the same risk. What's going on?",
+    "answer": "Concrete, countable victims feel more real than an abstract rate. This is denominator neglect plus the identifiable-victim pull: vivid, specific numbers trigger more emotion than equivalent ratios. People react to how a risk is told, not its true size."
+  },
+  {
+    "id": "psy-t006",
+    "type": "puzzle",
+    "topic": "psychology",
+    "headline": "An online store lets you 'try it free for 30 days, cancel anytime'. Far fewer people cancel than say they intend to. The product isn't special. Why do they keep paying?",
+    "answer": "Default and status-quo bias. Once you own something or are enrolled, inaction keeps it, and cancelling takes effort and feels like a loss. Companies exploit that the easiest path, doing nothing, quietly favors them."
+  },
+  {
+    "id": "psy-t007",
+    "type": "puzzle",
+    "topic": "psychology",
+    "headline": "Researchers ask: 'Is the population of Turkey more or less than 35 million? Now, what's your best guess?' A second group is asked the same with '100 million'. The two groups give wildly different averages. Spot the flaw in their reasoning.",
+    "answer": "The number in the first question contaminates the answer, even though it was just an arbitrary prompt. The groups anchor on 35 vs 100 million and adjust insufficiently. Their 'independent' guesses were quietly steered by the question's wording."
+  },
+  {
+    "id": "psy-t008",
+    "type": "puzzle",
+    "topic": "psychology",
+    "headline": "A coffee shop loyalty card needs 10 stamps for a free drink. Shop A hands you a blank 10-stamp card. Shop B hands you a 12-stamp card with 2 already stamped 'for free'. Same 10 purchases needed. Which card gets finished more often?",
+    "answer": "Shop B's pre-stamped card wins. Starting at 2 of 12 feels like you've already made progress and don't want to abandon it. This is the endowed-progress effect: people are more motivated to finish a task they perceive as already begun."
+  },
+  {
+    "id": "psy-t009",
+    "type": "puzzle",
+    "topic": "psychology",
+    "headline": "A negotiator wants $5,000 for a used car. Should they open by asking $5,000, or by asking $7,500 and letting the buyer talk them down? Which ending price tends to be higher?",
+    "answer": "Opening high at $7,500 usually lands a higher final price. The first number sets the anchor the whole negotiation orbits around, and the buyer adjusts down from it but rarely far enough. He who names the number first often shapes the outcome."
+  },
+  {
+    "id": "psy-t010",
+    "type": "puzzle",
+    "topic": "psychology",
+    "headline": "After a big airplane crash makes headlines, more people choose to drive long distances instead of fly, even though flying is statistically far safer. What mental shortcut is misleading them?",
+    "answer": "The availability heuristic. A dramatic, easily-recalled crash makes plane danger feel common, while everyday car deaths are unmemorable. People judge risk by how easily examples come to mind, not by actual frequencies, and the switch to driving raised their real danger."
+  }
+]

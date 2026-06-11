@@ -39,32 +39,34 @@ the leverage is entirely in the prompt and the self-review pass.
 ```jsonc
 {
   "id": "sci-0042",                 // unique, zero-padded, topic prefix
-  "type": "fact | concept | quiz | puzzle | rabbithole",
+  "type": "fact | concept | puzzle | rabbithole",
   "topic": "science",               // one of: science, history, psychology, money, logic, philosophy
-  "headline": "string",             // punchy title (or the question, for quiz/puzzle)
+  "headline": "string",             // punchy title (or the question, for a puzzle)
   "body": "string",                 // main content; use \n\n between paragraphs
   "more": "string (optional)",      // fact: ~50% have it; concept: always. 2-3 extra paragraphs
-  "options": ["..."],               // quiz only: 3-4 strings
-  "answerIndex": 1,                 // quiz only: 0-based index of the correct option
-  "explanation": "string",          // quiz only: one-sentence why
   "answer": "string",               // puzzle only: solution + brief reasoning (revealed on demand)
-  "recapOf": "sci-0040",            // quiz only & optional: id of a fact/concept this quiz recaps
   "threadId": "string",             // rabbithole teaser + its children share this
   "threadOrder": 0                  // teaser = 0, children = 1..n
 }
 ```
 
-Topic id prefixes: `sci-`, `his-`, `psy-`, `mon-`, `log-`, `phi-`.
+Topic id prefixes: `sci-`, `his-`, `psy-`, `mon-`, `log-`, `phi-`. (Brain-teaser
+batches use a `-t` suffix in the file name and ids, e.g. `cards-science-teasers.json`
+with ids `sci-t001…`, to keep them from colliding with the base numbering.)
+
+> **Note:** multiple-choice `quiz` cards were removed from the app in favour of
+> brain teasers / riddles (the `puzzle` type, with an inline "Show answer").
+> The engine still tolerates a `quiz` card if you ever add one, but new batches
+> should use `puzzle`.
 
 ## Target mix (per ~50-card topic batch)
 
 | type         | share | notes                                                                 |
 | ------------ | ----- | --------------------------------------------------------------------- |
-| `fact`       | ~40%  | headline + body; ~half include `more`                                 |
-| `concept`    | ~15%  | a named mental model + vivid concrete example; **always** has `more`  |
-| `quiz`       | ~20%  | 3-4 options; 3-4 per batch are recap quizzes via `recapOf`            |
-| `puzzle`     | ~15%  | solvable in the head in <2 min; concentrated in the **logic** topic   |
-| `rabbithole` | ~10%  | 1 teaser (headline ends " →") + 3-5 child cards sharing a `threadId`  |
+| `fact`       | ~48%  | headline + body; ~half include `more`                                 |
+| `concept`    | ~18%  | a named mental model + vivid concrete example; **always** has `more`  |
+| `puzzle`     | ~30%  | brain teasers / riddles, solvable in the head in <2 min; each has a topical flavour and an unambiguous `answer` |
+| `rabbithole` | ~3%   | 1 teaser (headline ends " →") + 3-5 child cards sharing a `threadId`  |
 
 ---
 
@@ -96,7 +98,8 @@ life/work, 3) Perspective-changing, 4) Fun. Every fact/concept must pass:
 - Length: MIX punchy 1-2 sentence cards with short-paragraph story cards.
 
 RULES:
-- Recap quizzes set "recapOf" to the id of a fact/concept card IN THIS BATCH.
+- Puzzles are brain teasers / riddles with a topical flavour, an unambiguous
+  re-solved "answer", and no images (text only).
 - Each rabbit-hole = 1 teaser (type "rabbithole", headline ending " →",
   threadOrder 0) + 3-4 child cards (type "fact") sharing the same threadId with
   threadOrder 1..n, telling a connected mini-story.

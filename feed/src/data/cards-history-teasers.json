@@ -1,0 +1,79 @@
+[
+  {
+    "id": "his-t001",
+    "type": "puzzle",
+    "topic": "history",
+    "headline": "Builders of ancient Egypt's pyramids had no precise spirit levels, yet the base of the Great Pyramid is almost perfectly flat across 13 acres. How did they level such a huge area?",
+    "answer": "They flooded it with water. By cutting a grid of shallow channels, filling them with water (which always finds one level), and marking the waterline on the rock, masons could trim every point to the same height before draining."
+  },
+  {
+    "id": "his-t002",
+    "type": "puzzle",
+    "topic": "history",
+    "headline": "A medieval castle under siege wants to know how much food is left and ration accordingly, but the granary is a huge irregular pile of grain that can't be weighed. How could a steward estimate it quickly?",
+    "answer": "By measuring volume, not weight. Knowing the dimensions of the storeroom and how high the grain reaches gives the volume, and a known volume of grain (like a standard bushel) has a known weight, so the total is a simple multiplication."
+  },
+  {
+    "id": "his-t003",
+    "type": "puzzle",
+    "topic": "history",
+    "headline": "Eratosthenes measured the circumference of the whole Earth around 240 BC without leaving Egypt and without any way to travel around it. What did he actually measure on the ground?",
+    "answer": "He measured shadows. At noon on the solstice the sun was directly overhead at Syene (no shadow in a well) but cast a 7-degree shadow at Alexandria. Since 7 degrees is about 1/50 of a circle, the known distance between the two cities times 50 gives the Earth's circumference."
+  },
+  {
+    "id": "his-t004",
+    "type": "puzzle",
+    "topic": "history",
+    "headline": "Before refrigeration, a wealthy Persian household could serve chilled drinks and even ice in the middle of a scorching desert summer. Where did the ice come from?",
+    "answer": "From winter, stored in a yakhchal. These tall conical mud-brick structures collected ice made on cold winter nights (or hauled from mountains), then insulated it with thick walls and evaporative cooling so it lasted through summer."
+  },
+  {
+    "id": "his-t005",
+    "type": "puzzle",
+    "topic": "history",
+    "headline": "Roman roads ran arrow-straight for miles across hills and forests where the surveyor often couldn't see from one end to the other. How did they keep a road perfectly straight over the horizon?",
+    "answer": "By sighting a chain of intermediate points. Using a groma (a cross of plumb lines) and a relay of poles or signal fires lined up two at a time, surveyors extended a straight line section by section without ever needing to see the final destination."
+  },
+  {
+    "id": "his-t006",
+    "type": "puzzle",
+    "topic": "history",
+    "headline": "Ships sailed safely for centuries knowing their latitude, but captains could be hopelessly lost on longitude (east-west position). Latitude was easy to find from the stars, so why was longitude so much harder?",
+    "answer": "Longitude is really a measure of time. Every 15 degrees east or west equals one hour of difference from a reference clock, so to find it you must know the exact time back home while at sea, which required an accurate, sea-proof clock that didn't exist until the marine chronometer."
+  },
+  {
+    "id": "his-t007",
+    "type": "puzzle",
+    "topic": "history",
+    "headline": "Inca messengers delivered detailed records and tallies across a 2,000-mile empire that had no written alphabet at all. What did they carry to convey the numbers?",
+    "answer": "Knotted strings called quipu. Numbers were encoded by the type and position of knots on hanging cords, a base-10 system that recorded census figures, tributes, and accounts without any writing."
+  },
+  {
+    "id": "his-t008",
+    "type": "puzzle",
+    "topic": "history",
+    "headline": "A Roman aqueduct had to drop only a hand's width over each mile to keep water flowing gently downhill for tens of miles. With no laser levels, how did engineers maintain such a tiny, precise slope across the whole landscape?",
+    "answer": "With a chorobates and water level. The chorobates was a long leveling bench with a water channel and plumb lines; by leapfrogging it along the route, surveyors could hold a consistent gentle gradient over enormous distances."
+  },
+  {
+    "id": "his-t009",
+    "type": "puzzle",
+    "topic": "history",
+    "headline": "In 1453 the Ottomans needed their large warships on the wrong side of a chain that blocked the harbour of Constantinople. They got the ships into the harbour anyway, without breaking the chain or fighting through it. How?",
+    "answer": "They moved the ships over land. The Ottomans laid greased wooden rollers over a hill and hauled their galleys overland on this slipway, bypassing the boom chain to launch them into the harbour from behind."
+  },
+  {
+    "id": "his-t010",
+    "type": "puzzle",
+    "topic": "history",
+    "headline": "George Washington's army wanted the British in Boston to believe his forces were far larger and better supplied than they really were, despite a desperate shortage of gunpowder. What cheap trick helped sell the illusion?",
+    "answer": "Empty powder barrels and spread-out campfires. The Continentals stacked barrels labeled as gunpowder (many were filled with sand) and lit far more campfires than they had men, making scouts overestimate their strength and stores."
+  },
+  {
+    "id": "his-t011",
+    "type": "puzzle",
+    "topic": "history",
+    "headline": "Gothic cathedral builders raised stone walls hundreds of feet high with enormous windows, yet the thin walls should have collapsed outward under the roof's weight. What clever external feature kept them standing?",
+    "answer": "The flying buttress. These arched stone braces on the outside of the building transfer the outward thrust of the vaulted roof down to the ground, letting the walls stay thin and be filled with glass instead of solid stone."
+  }
+]

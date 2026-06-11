@@ -13,15 +13,17 @@ analytics — all content is bundled at build time and all state lives in
 ## Features
 
 - **Frictionless feed** — opens directly to a card. Swipe up = next, swipe down
-  = previous. Wheel and arrow keys work for desktop testing; thin edge tap-zones
-  too.
+  = previous. Navigation only fires once the card's text is scrolled to its
+  edge, so reading a long card never trips an accidental swipe. Wheel and arrow
+  keys work for desktop testing; thin edge tap-zones too.
+- **Topic focus** — a pill in the top bar jumps the feed to a single topic (or
+  back to "All") without opening settings.
 - **Smart shuffle** — weighted-random across topics, steered toward a varied
   type mix, never repeats a card until its topic pool is exhausted, never shows
-  >2 of the same topic/type in a row, and only surfaces a recap quiz after
-  you've seen its source card.
+  >2 of the same topic/type in a row.
 - **Card types** — facts (with optional "Tell me more"), named mental models,
-  multiple-choice quizzes, head-solvable puzzles ("Reveal answer"), and
-  rabbit-holes that expand into a short linked thread, then resume the shuffle.
+  brain teasers & riddles with an inline "Show answer", and rabbit-holes that
+  expand into a short linked thread, then resume the shuffle.
 - **👍 / 👎 on every card** — persisted locally; 👎 mildly down-weights that
   topic. Exportable as JSON (future training data for a dynamic v2).
 - **Daily soft cap** (default 60) with a friendly "that's your stack for today"

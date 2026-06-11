@@ -2,10 +2,12 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import cards from '../data/cards.json'
 import { createFeedEngine } from '../engine/feedEngine.js'
 import {
+  ALL_TOPICS,
   bumpDaily,
   getDaily,
   getSettings,
   resetSeen,
+  saveSettings,
   setDailyOverride
 } from '../engine/storage.js'
 
@@ -94,11 +96,29 @@ export function useFeed() {
     setSeenToday(getDaily().count)
   }, [])
 
+  // Quick topic focus from the home screen. `null` = all topics. Immediately
+  // serves a fresh card from the new focus so the change is visible at once.
+  const setFocus = useCallback(
+    (topic) => {
+      saveSettings({ enabledTopics: topic ? [topic] : [...ALL_TOPICS] })
+      onSettingsChange()
+      serveNew()
+    },
+    [onSettingsChange, serveNew]
+  )
+
   const current = index >= 0 ? history[index] : null
   const canGoBack = index > 0
 
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const settings = useMemo(() => getSettings(), [settingsVersion])
+
+  const focus =
+    settings.enabledTopics.length === ALL_TOPICS.length
+      ? 'all'
+      : settings.enabledTopics.length === 1
+        ? settings.enabledTopics[0]
+        : 'custom'
 
   return {
     current,
@@ -111,6 +131,8 @@ export function useFeed() {
     seenToday,
     settings,
     onSettingsChange,
+    focus,
+    setFocus,
     totalCards: cards.length
   }
 }

@@ -1,5 +1,82 @@
 [
   {
+    "id": "his-t001",
+    "type": "puzzle",
+    "topic": "history",
+    "headline": "Builders of ancient Egypt's pyramids had no precise spirit levels, yet the base of the Great Pyramid is almost perfectly flat across 13 acres. How did they level such a huge area?",
+    "answer": "They flooded it with water. By cutting a grid of shallow channels, filling them with water (which always finds one level), and marking the waterline on the rock, masons could trim every point to the same height before draining."
+  },
+  {
+    "id": "his-t002",
+    "type": "puzzle",
+    "topic": "history",
+    "headline": "A medieval castle under siege wants to know how much food is left and ration accordingly, but the granary is a huge irregular pile of grain that can't be weighed. How could a steward estimate it quickly?",
+    "answer": "By measuring volume, not weight. Knowing the dimensions of the storeroom and how high the grain reaches gives the volume, and a known volume of grain (like a standard bushel) has a known weight, so the total is a simple multiplication."
+  },
+  {
+    "id": "his-t003",
+    "type": "puzzle",
+    "topic": "history",
+    "headline": "Eratosthenes measured the circumference of the whole Earth around 240 BC without leaving Egypt and without any way to travel around it. What did he actually measure on the ground?",
+    "answer": "He measured shadows. At noon on the solstice the sun was directly overhead at Syene (no shadow in a well) but cast a 7-degree shadow at Alexandria. Since 7 degrees is about 1/50 of a circle, the known distance between the two cities times 50 gives the Earth's circumference."
+  },
+  {
+    "id": "his-t004",
+    "type": "puzzle",
+    "topic": "history",
+    "headline": "Before refrigeration, a wealthy Persian household could serve chilled drinks and even ice in the middle of a scorching desert summer. Where did the ice come from?",
+    "answer": "From winter, stored in a yakhchal. These tall conical mud-brick structures collected ice made on cold winter nights (or hauled from mountains), then insulated it with thick walls and evaporative cooling so it lasted through summer."
+  },
+  {
+    "id": "his-t005",
+    "type": "puzzle",
+    "topic": "history",
+    "headline": "Roman roads ran arrow-straight for miles across hills and forests where the surveyor often couldn't see from one end to the other. How did they keep a road perfectly straight over the horizon?",
+    "answer": "By sighting a chain of intermediate points. Using a groma (a cross of plumb lines) and a relay of poles or signal fires lined up two at a time, surveyors extended a straight line section by section without ever needing to see the final destination."
+  },
+  {
+    "id": "his-t006",
+    "type": "puzzle",
+    "topic": "history",
+    "headline": "Ships sailed safely for centuries knowing their latitude, but captains could be hopelessly lost on longitude (east-west position). Latitude was easy to find from the stars, so why was longitude so much harder?",
+    "answer": "Longitude is really a measure of time. Every 15 degrees east or west equals one hour of difference from a reference clock, so to find it you must know the exact time back home while at sea, which required an accurate, sea-proof clock that didn't exist until the marine chronometer."
+  },
+  {
+    "id": "his-t007",
+    "type": "puzzle",
+    "topic": "history",
+    "headline": "Inca messengers delivered detailed records and tallies across a 2,000-mile empire that had no written alphabet at all. What did they carry to convey the numbers?",
+    "answer": "Knotted strings called quipu. Numbers were encoded by the type and position of knots on hanging cords, a base-10 system that recorded census figures, tributes, and accounts without any writing."
+  },
+  {
+    "id": "his-t008",
+    "type": "puzzle",
+    "topic": "history",
+    "headline": "A Roman aqueduct had to drop only a hand's width over each mile to keep water flowing gently downhill for tens of miles. With no laser levels, how did engineers maintain such a tiny, precise slope across the whole landscape?",
+    "answer": "With a chorobates and water level. The chorobates was a long leveling bench with a water channel and plumb lines; by leapfrogging it along the route, surveyors could hold a consistent gentle gradient over enormous distances."
+  },
+  {
+    "id": "his-t009",
+    "type": "puzzle",
+    "topic": "history",
+    "headline": "In 1453 the Ottomans needed their large warships on the wrong side of a chain that blocked the harbour of Constantinople. They got the ships into the harbour anyway, without breaking the chain or fighting through it. How?",
+    "answer": "They moved the ships over land. The Ottomans laid greased wooden rollers over a hill and hauled their galleys overland on this slipway, bypassing the boom chain to launch them into the harbour from behind."
+  },
+  {
+    "id": "his-t010",
+    "type": "puzzle",
+    "topic": "history",
+    "headline": "George Washington's army wanted the British in Boston to believe his forces were far larger and better supplied than they really were, despite a desperate shortage of gunpowder. What cheap trick helped sell the illusion?",
+    "answer": "Empty powder barrels and spread-out campfires. The Continentals stacked barrels labeled as gunpowder (many were filled with sand) and lit far more campfires than they had men, making scouts overestimate their strength and stores."
+  },
+  {
+    "id": "his-t011",
+    "type": "puzzle",
+    "topic": "history",
+    "headline": "Gothic cathedral builders raised stone walls hundreds of feet high with enormous windows, yet the thin walls should have collapsed outward under the roof's weight. What clever external feature kept them standing?",
+    "answer": "The flying buttress. These arched stone braces on the outside of the building transfer the outward thrust of the vaulted roof down to the ground, letting the walls stay thin and be filled with glass instead of solid stone."
+  },
+  {
     "id": "his-0001",
     "type": "fact",
     "topic": "history",
@@ -305,182 +382,6 @@
     "more": "This counterintuitive insight, formalised by David Ricardo in the 1800s, is one of the most important ideas in economics, and it quietly explains much of history's trade. A region 'should' export not necessarily what it makes well, but what it makes well relative to its other options.\n\nThe trans-Saharan salt-for-gold trade fits: the north had relatively cheap salt and dear gold, the south the reverse, so exchanging them left both richer even though neither side was simply 'better' at producing wealth. Trade routes form along these gradients of relative cost, not absolute superiority."
   },
   {
-    "id": "his-0040",
-    "type": "quiz",
-    "topic": "history",
-    "headline": "Quiz: What happened to wages after the Black Death?",
-    "body": "After the plague of the 1340s killed a large share of Europe's population, what happened to the wages of surviving workers in Western Europe?",
-    "options": [
-      "They collapsed because the economy was ruined",
-      "They rose sharply because labour became scarce",
-      "They were unchanged because lords fixed them by law",
-      "Wages did not exist yet in this period"
-    ],
-    "answerIndex": 1,
-    "explanation": "With far fewer workers, surviving labourers could demand higher pay, and attempts to legally freeze wages largely failed against supply and demand.",
-    "recapOf": "his-0001"
-  },
-  {
-    "id": "his-0041",
-    "type": "quiz",
-    "topic": "history",
-    "headline": "Quiz: What did the Byzantines call themselves?",
-    "body": "The empire centred on Constantinople is known to us as 'Byzantine.' What did its own people call themselves and their state?",
-    "options": [
-      "Greeks and the Hellenic Kingdom",
-      "Byzantines and the Byzantine Empire",
-      "Romans and the Roman Empire",
-      "Ottomans and the Sultanate"
-    ],
-    "answerIndex": 2,
-    "explanation": "They called themselves Romaioi, Romans, and saw their state as the continuous Roman Empire; 'Byzantine' was coined by a scholar in 1557.",
-    "recapOf": "his-0002"
-  },
-  {
-    "id": "his-0042",
-    "type": "quiz",
-    "topic": "history",
-    "headline": "Quiz: Why does Roman marine concrete last so long?",
-    "body": "Roman concrete in seawater often grew stronger over centuries while modern concrete crumbles. What largely explains this?",
-    "options": [
-      "It was reinforced with hidden iron bars",
-      "Volcanic ash reacting with seawater grew reinforcing crystals",
-      "It was mixed with animal blood for strength",
-      "The Romans cured it for fifty years before use"
-    ],
-    "answerIndex": 1,
-    "explanation": "Volcanic ash and lime reacting with seawater formed interlocking crystals, and lime lumps let cracks self-heal over time.",
-    "recapOf": "his-0003"
-  },
-  {
-    "id": "his-0043",
-    "type": "quiz",
-    "topic": "history",
-    "headline": "Quiz: Why did London finally build a sewer system?",
-    "body": "London had ignored warnings about its filthy river for decades. What finally pushed Parliament to fund a modern sewer system in 1858?",
-    "options": [
-      "A cholera vaccine became available",
-      "The river caught fire near Westminster",
-      "An overpowering stench reached Parliament itself",
-      "Queen Victoria ordered it after falling ill"
-    ],
-    "answerIndex": 2,
-    "explanation": "The Great Stink of 1858 made the riverside Parliament building nearly unbearable, and a sewer bill passed within weeks.",
-    "recapOf": "his-0019"
-  },
-  {
-    "id": "his-0044",
-    "type": "quiz",
-    "topic": "history",
-    "headline": "Quiz: Why is 'medieval life expectancy of 30' misleading?",
-    "body": "You often hear that medieval life expectancy was around 30. Why does this badly mislead about how long people actually lived?",
-    "options": [
-      "The records were simply made up",
-      "High infant and child mortality drags the average down",
-      "People aged faster due to harsh diets",
-      "They counted years differently back then"
-    ],
-    "answerIndex": 1,
-    "explanation": "Very high death rates among infants and children pull the average down; those who survived childhood often reached their sixties.",
-    "recapOf": "his-0027"
-  },
-  {
-    "id": "his-0045",
-    "type": "quiz",
-    "topic": "history",
-    "headline": "Quiz: What was salt traded for across the Sahara?",
-    "body": "In the medieval trans-Saharan trade, blocks of salt from the desert were so valuable that they were exchanged in the south for which commodity?",
-    "options": [
-      "Iron",
-      "Gold",
-      "Silk",
-      "Spices"
-    ],
-    "answerIndex": 1,
-    "explanation": "Salt was scarce in the interior and gold was abundant in West Africa, so the two were traded, sometimes approaching parity by weight.",
-    "recapOf": "his-0005"
-  },
-  {
-    "id": "his-0046",
-    "type": "quiz",
-    "topic": "history",
-    "headline": "Quiz: Why does the QWERTY layout survive?",
-    "body": "The QWERTY keyboard was designed for 1870s mechanical typewriters. Why does it persist even though its original purpose is obsolete?",
-    "options": [
-      "It is scientifically the fastest possible layout",
-      "Switching costs and mass familiarity lock it in",
-      "Patents still forbid alternative layouts",
-      "Keyboards physically cannot be rearranged"
-    ],
-    "answerIndex": 1,
-    "explanation": "Because everyone already learned QWERTY, the cost of switching is enormous, a textbook case of path-dependent lock-in.",
-    "recapOf": "his-0029"
-  },
-  {
-    "id": "his-0047",
-    "type": "quiz",
-    "topic": "history",
-    "headline": "Quiz: What is the resource curse?",
-    "body": "The 'resource curse' describes a counterintuitive pattern. What is it?",
-    "options": [
-      "Resources always run out faster than expected",
-      "Resource-rich countries often grow slower and govern worse",
-      "Mining inevitably causes natural disasters",
-      "Valuable resources are usually cursed by folklore"
-    ],
-    "answerIndex": 1,
-    "explanation": "Easy resource wealth can weaken accountable institutions and distort economies, so resource-rich states often underperform poorer neighbours.",
-    "recapOf": "his-0034"
-  },
-  {
-    "id": "his-0048",
-    "type": "quiz",
-    "topic": "history",
-    "headline": "Quiz: What is the Malthusian trap?",
-    "body": "Why did living standards for ordinary people barely rise for most of human history, according to the Malthusian trap?",
-    "options": [
-      "Rulers confiscated all surplus wealth",
-      "Productivity gains turned into more people, not richer people",
-      "There was no money to store wealth",
-      "Constant war destroyed every advance"
-    ],
-    "answerIndex": 1,
-    "explanation": "When societies grew richer they grew larger, and the extra mouths pushed living standards back toward subsistence.",
-    "recapOf": "his-0033"
-  },
-  {
-    "id": "his-0049",
-    "type": "quiz",
-    "topic": "history",
-    "headline": "Quiz: What does survivorship bias do to the historical record?",
-    "body": "Why must historians be wary of survivorship bias when studying the past?",
-    "options": [
-      "Historians tend to survive longer than other scholars",
-      "What survives is a skewed sample, favouring durable and elite things",
-      "Old documents survive only if they are true",
-      "Survivors of disasters always exaggerate"
-    ],
-    "answerIndex": 1,
-    "explanation": "Stone outlasts wood and elite writings outlast common voices, so the surviving evidence over-represents the durable and the powerful.",
-    "recapOf": "his-0035"
-  },
-  {
-    "id": "his-0050",
-    "type": "quiz",
-    "topic": "history",
-    "headline": "Quiz: How big was Cahokia around 1250?",
-    "body": "Cahokia, the Mississippian city near modern St. Louis, was at its height comparable in size to which contemporary city?",
-    "options": [
-      "A small village of a few hundred",
-      "London of the same era",
-      "Ancient Rome at its imperial peak",
-      "Modern New York"
-    ],
-    "answerIndex": 1,
-    "explanation": "With perhaps 15,000 to 20,000 people, Cahokia rivalled or exceeded contemporary London, a true pre-Columbian city.",
-    "recapOf": "his-0022"
-  },
-  {
     "id": "his-0051",
     "type": "rabbithole",
     "topic": "history",
@@ -567,6 +468,70 @@
     "headline": "Tulip mania became a parable bigger than the event",
     "body": "Much of what 'everyone knows' about tulip mania traces to a sensational 1841 book by Charles Mackay, written two centuries later. The episode endures less as accurate economic history than as a convenient symbol invoked in every modern bubble.",
     "more": "The careful research suggests the trade was concentrated among a relatively small circle of merchants and craftsmen, and that the broader Dutch economy sailed on largely unharmed. The vivid stories of mass ruin are hard to verify and likely embellished.\n\nThat does not make the concept worthless. Real speculative bubbles do happen, where prices detach from any underlying value and crash. The lesson is to separate the genuine phenomenon from the inflated legend, and to notice how each new bubble reaches for the same 400-year-old flower as its shorthand."
+  },
+  {
+    "id": "log-t001",
+    "type": "puzzle",
+    "topic": "logic",
+    "headline": "A woman shoots her husband, then holds him underwater for five minutes. Soon after, they enjoy a lovely dinner together. How is this possible?",
+    "body": "No one was harmed.",
+    "answer": "She is a photographer. She 'shot' his photo, developed it in a water bath, then they had dinner. The verbs describe darkroom photography, not violence."
+  },
+  {
+    "id": "log-t002",
+    "type": "puzzle",
+    "topic": "logic",
+    "headline": "You have an 8-litre jug full of water, plus an empty 5-litre jug and an empty 3-litre jug. Using only these, how do you split the water into two equal amounts of 4 litres?",
+    "body": "Jugs have no markings; you can only fill, empty, and pour between them.",
+    "answer": "Pour 8 into 5 (8:3:0). Pour 5 into 3 (8:2:3). Empty 3 back into 8 (8 jug now 6, 5 jug 2, 3 jug 0 -> 6:2:0). Pour the 2 from the 5-jug into the 3-jug (6:0:2). Fill the 5-jug from the 8-jug (1:5:2). Pour from 5-jug to top off the 3-jug, which needs 1 (0:4:3). Empty the 3-jug into the 8-jug: now 4 and 4."
+  },
+  {
+    "id": "log-t003",
+    "type": "puzzle",
+    "topic": "logic",
+    "headline": "Three switches downstairs each may control a single light bulb upstairs. You may flip switches as much as you like, but you can climb the stairs only once. How do you determine which switch controls the bulb?",
+    "body": "Only one of the three switches is wired to the bulb.",
+    "answer": "Turn switch 1 on for several minutes, then off. Turn switch 2 on and leave the room. Upstairs: if the bulb is lit, it's switch 2; if it's off but warm, it's switch 1; if off and cold, it's switch 3. The heat of the bulb gives away switch 1."
+  },
+  {
+    "id": "log-t004",
+    "type": "puzzle",
+    "topic": "logic",
+    "headline": "In a room of 4 people, what is the probability that at least two of them were born on the same day of the week?",
+    "body": "Assume each day of the week is equally likely.",
+    "answer": "About 65% (precisely 223/343). Compute the chance all four differ: (7/7)(6/7)(5/7)(4/7) = 120/343 ≈ 35%. So at least one shared day is 1 - 120/343 = 223/343 ≈ 65%."
+  },
+  {
+    "id": "log-t005",
+    "type": "puzzle",
+    "topic": "logic",
+    "headline": "What comes next in this sequence: 1, 11, 21, 1211, 111221, ?",
+    "body": "It is not arithmetic; try reading each term aloud.",
+    "answer": "312211. It's the 'look-and-say' sequence: each term describes the previous one. 111221 is read as 'three 1s, two 2s, one 1' = 312211."
+  },
+  {
+    "id": "log-t006",
+    "type": "puzzle",
+    "topic": "logic",
+    "headline": "A bat and a ball cost $1.10 in total. The bat costs $1.00 more than the ball. How much does the ball cost?",
+    "body": "The intuitive answer is wrong.",
+    "answer": "5 cents. If the ball is x, the bat is x + 1.00, so x + (x + 1.00) = 1.10, giving 2x = 0.10 and x = 0.05. The bat is $1.05 and the ball is $0.05."
+  },
+  {
+    "id": "log-t007",
+    "type": "puzzle",
+    "topic": "logic",
+    "headline": "You have nine identical-looking balls; eight weigh the same and one is slightly heavier. Using a balance scale only twice, how do you find the heavy ball?",
+    "body": "The scale only tells you which side is heavier or that they balance.",
+    "answer": "Split into three groups of three. Weigh group A vs B. If they balance, the heavy ball is in C; otherwise it's in the heavier side. Take that group of three, weigh one ball vs another: if one is heavier it's that one, if they balance it's the third. Two weighings suffice."
+  },
+  {
+    "id": "log-t008",
+    "type": "puzzle",
+    "topic": "logic",
+    "headline": "A man lives on the 10th floor. Every morning he takes the lift down to the ground floor. Coming home, he rides to the 7th floor and walks the rest, except on rainy days when he rides all the way to the 10th. Why?",
+    "body": "Nothing is wrong with the lift.",
+    "answer": "He is short and can only reach the button for the 7th floor. On rainy days he carries an umbrella (or shares the lift with someone) and uses it to press the 10th-floor button."
   },
   {
     "id": "log-0001",
@@ -937,132 +902,6 @@
     "more": "The conjunction fallacy is the mistaken belief that two events together (A and B) can be more probable than one of them alone (A). Mathematically impossible: adding a condition can only narrow the set of outcomes, so P(A and B) is always less than or equal to P(A).\n\nThe classic example is 'Linda': described as a bright, outspoken philosophy graduate concerned with social justice. Asked whether Linda is more likely to be (a) a bank teller, or (b) a bank teller who is active in the feminist movement, most people pick (b). But every feminist bank teller is also a bank teller, so (a) must be at least as likely.\n\nThe error arises because the detailed story feels representative and vivid, and our minds substitute 'how well does this fit?' for 'how probable is this?'. Plausibility is not probability."
   },
   {
-    "id": "log-0047",
-    "type": "quiz",
-    "topic": "logic",
-    "headline": "In the Monty Hall problem, what's your chance of winning the car if you always switch?",
-    "body": "Three doors, one car, host reveals a goat from the other two.",
-    "options": [
-      "1/2",
-      "1/3",
-      "2/3",
-      "3/4"
-    ],
-    "answerIndex": 2,
-    "explanation": "Your first pick wins 1/3 of the time, so the other door (after the host reveals a goat) wins the remaining 2/3. Switching is the winning strategy.",
-    "recapOf": "log-0041"
-  },
-  {
-    "id": "log-0048",
-    "type": "quiz",
-    "topic": "logic",
-    "headline": "A disease affects 1 in 1,000. A test has no false negatives and a 5% false-positive rate. You test positive. Roughly your chance of having it?",
-    "body": "Think base rates.",
-    "options": [
-      "About 95%",
-      "About 50%",
-      "About 2%",
-      "About 80%"
-    ],
-    "answerIndex": 2,
-    "explanation": "Per 1,000 people: 1 true positive plus ~50 false positives. So 1/51, roughly 2% — the base rate dominates despite the 'accurate' test.",
-    "recapOf": "log-0042"
-  },
-  {
-    "id": "log-0049",
-    "type": "quiz",
-    "topic": "logic",
-    "headline": "What is the minimum number of people needed to guarantee two share a birth month?",
-    "body": "Guarantee, not just likely.",
-    "options": [
-      "12",
-      "13",
-      "24",
-      "31"
-    ],
-    "answerIndex": 1,
-    "explanation": "By the pigeonhole principle, with 12 months, 12 people could all differ; the 13th forces a repeat.",
-    "recapOf": "log-0043"
-  },
-  {
-    "id": "log-0050",
-    "type": "quiz",
-    "topic": "logic",
-    "headline": "You pay $1 to roll a die and win the number shown in dollars. What's your expected profit per roll?",
-    "body": "Faces 1-6, fair die.",
-    "options": [
-      "$3.50",
-      "$2.50",
-      "$0.50",
-      "$1.00"
-    ],
-    "answerIndex": 1,
-    "explanation": "Average roll is (1+2+3+4+5+6)/6 = 3.5, minus the $1 cost = $2.50 expected profit.",
-    "recapOf": "log-0044"
-  },
-  {
-    "id": "log-0051",
-    "type": "quiz",
-    "topic": "logic",
-    "headline": "Which statement about Linda can NEVER be less probable than the others?",
-    "body": "Linda is a feminist activist by description.",
-    "options": [
-      "Linda is a feminist bank teller",
-      "Linda is a bank teller",
-      "Linda is a feminist bank teller and a marathon runner",
-      "They're all equal"
-    ],
-    "answerIndex": 1,
-    "explanation": "Adding conditions can only shrink probability. 'Bank teller' is the broadest set, so it's at least as likely as any version with extra conditions.",
-    "recapOf": "log-0046"
-  },
-  {
-    "id": "log-0052",
-    "type": "quiz",
-    "topic": "logic",
-    "headline": "You flip two fair coins. Given at least one is heads, probability both are heads?",
-    "body": "",
-    "options": [
-      "1/2",
-      "1/3",
-      "1/4",
-      "2/3"
-    ],
-    "answerIndex": 1,
-    "explanation": "Equally likely cases HH, HT, TH (TT excluded by 'at least one head'). Only HH has both heads: 1/3."
-  },
-  {
-    "id": "log-0053",
-    "type": "quiz",
-    "topic": "logic",
-    "headline": "On knights/knaves island, A says 'I am a knave.' Who could A be?",
-    "body": "Knights always tell truth, knaves always lie.",
-    "options": [
-      "A knight",
-      "A knave",
-      "Either",
-      "No one can say this"
-    ],
-    "answerIndex": 3,
-    "explanation": "A knight wouldn't lie about being a knave; a knave wouldn't tell the truth by admitting it. The statement is impossible for any inhabitant."
-  },
-  {
-    "id": "log-0054",
-    "type": "quiz",
-    "topic": "logic",
-    "headline": "A subgroup trend reverses when data is pooled. What is this called?",
-    "body": "",
-    "options": [
-      "The gambler's fallacy",
-      "Simpson's paradox",
-      "The base-rate fallacy",
-      "Survivorship bias"
-    ],
-    "answerIndex": 1,
-    "explanation": "Simpson's paradox: an effect present in each subgroup vanishes or flips when the groups are combined, due to a confounding variable.",
-    "recapOf": "log-0045"
-  },
-  {
     "id": "log-0055",
     "type": "rabbithole",
     "topic": "logic",
@@ -1097,6 +936,94 @@
     "body": "In 1931 Kurt Gödel encoded the sentence 'This statement cannot be proved' inside arithmetic itself. If the system is consistent, the statement is true but unprovable — showing that any sufficiently powerful, consistent formal system must contain true statements it cannot prove. Self-reference, once a parlour trick, became a permanent limit on mathematics.",
     "threadId": "self-reference",
     "threadOrder": 3
+  },
+  {
+    "id": "mon-t001",
+    "type": "puzzle",
+    "topic": "money",
+    "headline": "A shirt is 50% off, then the cashier takes another 50% off the reduced price. Did you get it for free?",
+    "body": "The two discounts feel like 100% off.",
+    "answer": "No, you pay 25% of the original. 50% off leaves half the price; 50% off of that half leaves a quarter. Percentage discounts stack multiplicatively (0.5 x 0.5 = 0.25), not additively."
+  },
+  {
+    "id": "mon-t002",
+    "type": "puzzle",
+    "topic": "money",
+    "headline": "An investment drops 50% one year, then gains 50% the next. Are you back to even?",
+    "body": "Down 50, up 50 sounds like a wash.",
+    "answer": "No, you are down 25%. $100 falls to $50, then a 50% gain adds only $25, leaving $75. You need a +100% gain to recover a -50% loss, because the gain works on a smaller base."
+  },
+  {
+    "id": "mon-t003",
+    "type": "puzzle",
+    "topic": "money",
+    "headline": "Your money earns 100% interest a year. Would you rather it compound once yearly or be split into smaller, more frequent compounding?",
+    "body": "Same 100% rate, just sliced differently.",
+    "answer": "More frequent is better. Yearly doubles your money (x2); compounding the 100% continuously grows it by a factor of e, about 2.718. Splitting the same rate into more periods lets earlier interest earn its own interest sooner."
+  },
+  {
+    "id": "mon-t004",
+    "type": "puzzle",
+    "topic": "money",
+    "headline": "At 7% annual interest, roughly how many years until your savings double?",
+    "body": "No calculator allowed.",
+    "answer": "About 10 years. The Rule of 72 says doubling time is roughly 72 divided by the rate, so 72/7 is about 10.3. It is a handy mental shortcut for any compound growth rate."
+  },
+  {
+    "id": "mon-t005",
+    "type": "puzzle",
+    "topic": "money",
+    "headline": "You bought a stock for $1,000. It is now worth $400 and you must decide whether to sell. Does the $1,000 you paid matter?",
+    "body": "It feels wrong to sell at a loss.",
+    "answer": "No, the $1,000 is a sunk cost and irrelevant. The only rational question is whether $400 is better invested here or elsewhere going forward. People irrationally hold losers to avoid 'locking in' a loss that already happened."
+  },
+  {
+    "id": "mon-t006",
+    "type": "puzzle",
+    "topic": "money",
+    "headline": "A lottery offers a 1-in-100 chance to win $50, for a $1 ticket. Is buying rational?",
+    "body": "A whole $50 prize for just a dollar.",
+    "answer": "No. The expected value is 1/100 x $50 = $0.50, but the ticket costs $1, so on average you lose 50 cents per play. A bet is only fair when the expected payout meets or beats its price."
+  },
+  {
+    "id": "mon-t007",
+    "type": "puzzle",
+    "topic": "money",
+    "headline": "Two gas stations sit across the street. Whenever one cuts its price, the other matches within minutes. Why do they bother competing at all?",
+    "body": "They could just both keep prices high.",
+    "answer": "Because undercutting steals all the customers for an instant, each is tempted to cut first. Knowing the rival will match, prices get driven down toward cost. This is a price-war Nash equilibrium: mutual restraint is unstable when defecting pays."
+  },
+  {
+    "id": "mon-t008",
+    "type": "puzzle",
+    "topic": "money",
+    "headline": "A vendor sells items at $7 each, or '3 for $20.' When is the bundle actually worth taking?",
+    "body": "Bundles are usually pitched as the obvious deal.",
+    "answer": "Only if you genuinely want three. Three singles cost $21, so the bundle saves just $1 — a real but tiny discount. The trap: that '3 for $20' sign nudges someone who only needed one or two into buying three, spending $20 to 'save' on items they didn't want. A discount you have to over-buy to unlock isn't a saving."
+  },
+  {
+    "id": "mon-t009",
+    "type": "puzzle",
+    "topic": "money",
+    "headline": "100 people each privately put $1 in a pot. The total is tripled and split equally among all. What is the rational individual move?",
+    "body": "Cooperation triples everyone's money.",
+    "answer": "Rationally, contribute nothing. Your own $1 returns only $0.03 to you (the tripled pot is split 100 ways), so contributing is a personal loss even though group payoff is maximized if all chip in. This is the public-goods free-rider problem."
+  },
+  {
+    "id": "mon-t010",
+    "type": "puzzle",
+    "topic": "money",
+    "headline": "Would you rather get a guaranteed $50, or flip a coin for $110 or nothing?",
+    "body": "Which choice is 'worth' more?",
+    "answer": "The coin flip is worth more on paper: 0.5 x $110 = $55, beating the sure $50. Yet most people take the certain $50 because losing aversion makes the risk of zero feel worse than the extra $5 of expected value is worth."
+  },
+  {
+    "id": "mon-t011",
+    "type": "puzzle",
+    "topic": "money",
+    "headline": "A bond pays you $100 a year forever. If interest rates are 5%, what is it worth today?",
+    "body": "Infinite payments, finite price?",
+    "answer": "$2,000. A perpetuity's value is the annual payment divided by the interest rate, so $100 / 0.05 = $2,000. Distant future dollars are discounted so heavily that an infinite stream still sums to a finite price."
   },
   {
     "id": "mon-0001",
@@ -1442,180 +1369,69 @@
     "more": "Elinor Ostrom won the 2009 Nobel in economics for documenting hundreds of real communities, Swiss alpine herders, Japanese forest villagers, Spanish irrigation networks, that managed shared resources sustainably for centuries without privatising them or being ruled by a distant authority. They did it with their own homegrown rules, monitoring, and graduated penalties for cheats.\n\nThe lesson rewrites a famous bit of conventional wisdom. The 'tragedy' is a risk, not a law of nature. What prevents it is neither pure markets nor pure government but a third thing: trusted local institutions where the people who use a resource also make and enforce the rules for it. It's a hopeful and underappreciated finding about how humans actually cooperate."
   },
   {
-    "id": "mon-0042",
-    "type": "quiz",
-    "topic": "money",
-    "headline": "The Soviet nail factory paradox",
-    "body": "A factory is told to maximise the number of nails it produces. What does it most likely make?",
-    "options": [
-      "A balanced mix of useful nail sizes",
-      "A vast number of tiny, useless nails",
-      "A few enormous, useless nails",
-      "Exactly the nails customers need"
-    ],
-    "answerIndex": 1,
-    "explanation": "Judged on count, the factory makes millions of tiny nails nobody can use. (Judged on weight, it makes a few giant ones.) Either way the metric is hit and the goal is missed, a perfect illustration of Goodhart's Law: once a measure becomes a target, people optimise the measure, not the goal.",
-    "recapOf": "mon-0002"
+    "id": "phi-t001",
+    "type": "puzzle",
+    "topic": "philosophy",
+    "headline": "You're shown two sealed envelopes. One holds twice as much money as the other. You pick one and find $100. Should you switch to the other envelope?",
+    "body": "The 'tempting' reasoning: the other holds either $50 or $200, each seemingly equally likely, so its average value is $125 > $100. So always switch. But by symmetry that can't be right.",
+    "answer": "The Two Envelopes paradox. The fallacy is treating $50 and $200 as equally likely for an arbitrary fixed amount. To make 'each is 50/50' true for every possible amount you'd need a uniform prior over all amounts up to infinity, which isn't a valid probability distribution. With any real (proper) prior over the pair, the expected gain from switching is exactly zero once you account for how likely each total was to begin with. Switching gives no advantage; the symmetry was correct all along."
   },
   {
-    "id": "mon-0043",
-    "type": "quiz",
-    "topic": "money",
-    "headline": "Which planes should you armour?",
-    "body": "Returning WWII bombers show bullet holes mostly on the wings and tail, rarely on the engines. To improve survival, where should you add armour?",
-    "options": [
-      "The wings and tail, where the holes are",
-      "The engines, where the holes aren't",
-      "Spread armour evenly everywhere",
-      "Add no armour; it adds weight"
-    ],
-    "answerIndex": 1,
-    "explanation": "Armour the engines. You only see planes that came back; ones hit in the engines didn't return to be studied. The unscarred areas mark the fatal hits. This is survivorship bias, and Abraham Wald's reasoning saved many aircrew.",
-    "recapOf": "mon-0005"
+    "id": "phi-t002",
+    "type": "puzzle",
+    "topic": "philosophy",
+    "headline": "A teleporter scans your body atom by atom, destroys the original here, and builds an exact copy on Mars from new atoms. The copy has all your memories and wakes thinking it's you. Did you survive, or did you die and a duplicate now lives your life?",
+    "answer": "The classic problem of personal identity (Parfit's teletransportation). There's no agreed answer because it forces a choice about what 'you' are. On a physical-continuity view you died: the original was destroyed. On a psychological-continuity view you survived: memories, personality, and intentions carried over intact. Now run the twist: suppose the machine malfunctions and the original is NOT destroyed, so two of you exist. Both can't be 'you' on the identity view, yet nothing about the Mars copy changed. Parfit's conclusion: 'Is it really me?' is the wrong question. What matters is psychological continuity and connectedness, not a deep further fact of identity. Genuinely unresolved which intuition is correct."
   },
   {
-    "id": "mon-0044",
-    "type": "quiz",
-    "topic": "money",
-    "headline": "The lawyer and the typist",
-    "body": "A lawyer can type faster than any assistant she could hire, and her legal work is far more valuable than typing. Should she do her own typing?",
-    "options": [
-      "Yes, since she's faster, she's the best person for it",
-      "No, her time is better spent on legal work",
-      "Yes, to save money on an assistant",
-      "It makes no economic difference either way"
-    ],
-    "answerIndex": 1,
-    "explanation": "She should hire the slower typist. Every hour she types costs her an hour of much more valuable legal work. The assistant has the comparative advantage in typing, despite the lawyer's absolute advantage, because the assistant gives up far less to do it. Relative opportunity cost, not raw skill, decides who should do what.",
-    "recapOf": "mon-0007"
+    "id": "phi-t003",
+    "type": "puzzle",
+    "topic": "philosophy",
+    "headline": "A perfectly rational donkey stands exactly midway between two identical, equally appealing bales of hay. Having no reason to prefer either, it cannot choose. Does it starve?",
+    "body": "Buridan's Ass: a challenge to the idea that a rational agent always acts on the greater reason.",
+    "answer": "Buridan's Ass. The puzzle is a reductio against strict rational determinism: if action always requires a deciding reason, perfect symmetry should produce paralysis. The standard resolution is that rationality does not require a reason to prefer A over B in order to act; it only requires not choosing the worse option. Faced with a tie, picking arbitrarily (or by a coin flip, or by random noise in the brain) is itself rational. Real agents break symmetry through tiny perturbations, and treating 'pick one of the equally-good options' as permissible dissolves the deadlock. The donkey eats."
   },
   {
-    "id": "mon-0045",
-    "type": "quiz",
-    "topic": "money",
-    "headline": "You win the oil-lease auction. Now worry.",
-    "body": "Several firms bid for drilling rights of unknown value, each using its own estimate. You win. What's the most rational immediate concern?",
-    "options": [
-      "That you bid too little and barely won",
-      "That you probably overestimated the value and overpaid",
-      "That the other firms colluded against you",
-      "Nothing; winning means you valued it correctly"
-    ],
-    "answerIndex": 1,
-    "explanation": "This is the winner's curse. In a common-value auction, the winner is usually the bidder who most overestimated the prize, so winning is itself a signal you overpaid. The rational defence is to shade your bid below your own estimate, conditioning on the bad news that winning implies.",
-    "recapOf": "mon-0011"
+    "id": "phi-t004",
+    "type": "puzzle",
+    "topic": "philosophy",
+    "headline": "It's rational to believe each individual lottery ticket will lose, since each has a tiny chance of winning. But you also believe SOME ticket will win. So you believe every ticket loses and that not every ticket loses. Where's the error?",
+    "answer": "The Lottery paradox (Kyburg). It exposes a conflict between two natural principles: (1) it's rational to accept any proposition that is highly probable, and (2) rational beliefs should be closed under conjunction (if you accept each, you accept their 'and'). Holding both lets you derive a contradiction. The standard response is to give up one principle. Many philosophers reject the simple threshold rule for belief and say you shouldn't flatly 'believe' a ticket loses, only assign it high probability; others reject conjunction-closure for high-probability beliefs. There's no consensus fix, which is why it's a touchstone for theories of rational acceptance."
   },
   {
-    "id": "mon-0046",
-    "type": "quiz",
-    "topic": "money",
-    "headline": "The non-refundable concert ticket",
-    "body": "You paid 40 dollars for a concert tonight. Now you feel unwell and would honestly rather stay home. The money is non-refundable. What should you do?",
-    "options": [
-      "Go, so the 40 dollars isn't wasted",
-      "Stay home, since the 40 dollars is gone either way",
-      "Go, because you already committed",
-      "It depends on whether the ticket could be resold tonight"
-    ],
-    "answerIndex": 1,
-    "explanation": "Stay home if that's what you'd genuinely prefer. The 40 dollars is a sunk cost: unrecoverable, and identical whether you go or not. Only the forward-looking choice matters. Going purely to 'not waste' money already spent is the sunk-cost fallacy. (If the ticket were resellable, that changes the math, but the original payment still shouldn't.)",
-    "recapOf": "mon-0004"
+    "id": "phi-t005",
+    "type": "puzzle",
+    "topic": "philosophy",
+    "headline": "'Everything I say is a lie.' Spoken by someone, is that statement true or false?",
+    "answer": "A self-reference trap, kin to the Liar but escapable. If it's a strict universal claim about all the speaker's statements and it includes itself, suppose it's true: then it's a lie, so false, contradiction. Suppose it's false: then NOT everything they say is a lie, which is consistent as long as at least one of their statements is true. So the clean resolution: the sentence is simply false. Its being false only requires that some other thing the speaker says is true, which is easily satisfied. Unlike the pure Liar ('This sentence is false'), this one isn't genuinely paradoxical; it just can't be true."
   },
   {
-    "id": "mon-0047",
-    "type": "quiz",
-    "topic": "money",
-    "headline": "Where does most money come from?",
-    "body": "In a modern economy, who creates the bulk of the money in circulation?",
-    "options": [
-      "The central bank, by printing physical cash",
-      "The government, through taxation",
-      "Commercial banks, by making loans",
-      "Mints, by producing coins and notes"
-    ],
-    "answerIndex": 2,
-    "explanation": "Most money is created by ordinary commercial banks when they make loans, typing new deposits into existence rather than relending savers' cash. The Bank of England said so plainly in 2014. Physical notes and coins are a small fraction of the money supply.",
-    "recapOf": "mon-0001"
+    "id": "phi-t006",
+    "type": "puzzle",
+    "topic": "philosophy",
+    "headline": "A ship has every plank gradually replaced until none of the originals remain. Meanwhile, someone collects the discarded planks and reassembles them into a ship. Which one is the original Ship of Theseus?",
+    "answer": "The Ship of Theseus, plus Hobbes's reassembly twist. Each ship has a strong claim: the repaired one wins on spatiotemporal continuity (it was the working ship the whole time); the rebuilt one wins on material composition (same original parts). The standard analysis is that there is no fact of the matter independent of which identity criterion we adopt; 'the same ship' is partly a convention about how we track objects through change. Many philosophers conclude that identity over time for composite objects is not a deep metaphysical given but depends on the persistence conditions we assign to the kind 'ship.' The puzzle shows our everyday notion of 'same object' is underdetermined."
   },
   {
-    "id": "mon-0048",
-    "type": "quiz",
-    "topic": "money",
-    "headline": "The used car you can't inspect",
-    "body": "Buyers can't tell good used cars from hidden lemons, so they offer only an average price. Over time, what happens to the cars on the market?",
-    "options": [
-      "Quality rises as sellers compete",
-      "Good cars leave and quality falls toward lemons",
-      "Prices and quality both climb",
-      "Nothing changes; the market stays balanced"
-    ],
-    "answerIndex": 1,
-    "explanation": "Owners of good cars refuse the mediocre average price and exit, while owners of lemons happily sell. The average quality drops, the price drops further, and the market can unravel. This is Akerlof's lemons problem, caused by asymmetric information. Warranties, certifications and reputations exist to close that information gap.",
-    "recapOf": "mon-0010"
+    "id": "phi-t007",
+    "type": "puzzle",
+    "topic": "philosophy",
+    "headline": "A barber in a village shaves all and only those men who do not shave themselves. Does the barber shave himself?",
+    "answer": "The Barber paradox (Russell's popularization of his set-theory paradox). If the barber shaves himself, then by the rule he must not (he only shaves non-self-shavers); if he doesn't, then by the rule he must. Both options contradict. The resolution is that no such barber can exist: the description is self-contradictory, like 'the largest prime number.' This is the deflationary version of Russell's Paradox about the set of all sets that don't contain themselves. The lesson: not every grammatically sensible definition picks out something real, and naive 'set of all things satisfying property P' assumptions had to be restricted to avoid the genuine version in mathematics."
   },
   {
-    "id": "mon-0049",
-    "type": "quiz",
-    "topic": "money",
-    "headline": "Why does a haircut keep getting more expensive?",
-    "body": "Over decades, services like haircuts, live music and teaching rise in price faster than manufactured goods like TVs. What best explains it?",
-    "options": [
-      "Service workers are simply greedier over time",
-      "These jobs can't easily get more productive, yet must match economy-wide wage growth",
-      "Demand for services keeps falling",
-      "Governments tax services more heavily"
-    ],
-    "answerIndex": 1,
-    "explanation": "This is Baumol's cost disease. A barber or string quartet can't produce much more per hour than decades ago, but to keep workers from leaving for sectors where productivity (and pay) is soaring, their wages must rise too. So labour-intensive services get relatively more expensive, a side effect of overall economic progress.",
-    "recapOf": "mon-0012"
+    "id": "phi-t008",
+    "type": "puzzle",
+    "topic": "philosophy",
+    "headline": "A runaway trolley will kill five people on the track ahead. You can pull a lever to divert it onto a side track, where it will kill one person instead. Should you pull the lever? Now: instead of a lever, the only way to stop it is to push a large stranger off a footbridge into its path, killing him to save the five. Should you push?",
+    "answer": "The Trolley Problem (Foot; Thomson's Footbridge variant). Most people say pull the lever (5 saved, 1 lost) but refuse to push the stranger, even though the body count is identical. The puzzle's force is explaining why intuitions diverge. Candidate analyses: the Doctrine of Double Effect (in the lever case the death is a foreseen side effect; in the push case it's a USED means to the end); the distinction between redirecting an existing threat versus introducing a new one; and 'using a person merely as a means' (Kantian). Empirically the divergence is robust across cultures. It remains debated whether the gap tracks a real moral principle or a cognitive bias, but it's the standard stress test for consequentialist vs. deontological ethics."
   },
   {
-    "id": "mon-0050",
-    "type": "quiz",
-    "topic": "money",
-    "headline": "The bounty that backfired",
-    "body": "Colonial officials offered a cash bounty for every dead cobra to reduce the snake population. What was the likely result?",
-    "options": [
-      "The cobra population fell sharply as planned",
-      "People bred cobras to claim bounties, worsening the problem",
-      "The bounty was too small to change anything",
-      "Cobras migrated away from the city"
-    ],
-    "answerIndex": 1,
-    "explanation": "People began breeding cobras to kill for the reward. When the scheme ended, the now-worthless snakes were released, leaving more cobras than before, the Cobra Effect. Rewarding a proxy (dead cobras) instead of the real goal (fewer cobras) invites people to manufacture the proxy. Always anticipate the supply response to an incentive.",
-    "recapOf": "mon-0035"
-  },
-  {
-    "id": "mon-0051",
-    "type": "quiz",
-    "topic": "money",
-    "headline": "Whose house sits on the market longer?",
-    "body": "Research compared homes that real-estate agents sold for clients versus homes the agents owned themselves. What did it find?",
-    "options": [
-      "Agents sold their own homes faster and for less",
-      "Agents kept their own homes on the market longer and sold them for more",
-      "No measurable difference between the two",
-      "Agents sold client homes for higher prices"
-    ],
-    "answerIndex": 1,
-    "explanation": "Agents left their own homes on the market longer and got higher prices, exactly what the principal-agent problem predicts. On a client's sale, the agent does most of the extra work to chase a higher price but pockets only a sliver of the gain via commission, so they're biased toward a fast, easy sale instead.",
-    "recapOf": "mon-0008"
-  },
-  {
-    "id": "mon-0052",
-    "type": "quiz",
-    "topic": "money",
-    "headline": "Why can an index fund beat the stock-pickers?",
-    "body": "An index fund analyses no companies at all, yet outperforms most active managers over time. Why does this work?",
-    "options": [
-      "It secretly times the market better",
-      "It free-rides on prices set by active traders while keeping fees tiny",
-      "Companies in indexes are chosen for quality",
-      "Index funds take on far more risk for higher returns"
-    ],
-    "answerIndex": 1,
-    "explanation": "Active investors do the costly work of researching companies and setting roughly fair prices. The index fund accepts those prices, owns the whole market cheaply, and avoids the fees and trading costs that drag down active funds. It free-rides on others' price discovery, a strategy that only works because enough active traders still bother to do that work.",
-    "recapOf": "mon-0014"
+    "id": "phi-t009",
+    "type": "puzzle",
+    "topic": "philosophy",
+    "headline": "A reliable predictor offers two boxes. Box A is clear and holds $1,000. Box B is opaque. You may take both boxes, or only Box B. Yesterday the predictor, who is almost never wrong, put $1,000,000 in Box B if it predicted you'd take only B, and left it empty if it predicted you'd take both. What do you do?",
+    "answer": "Newcomb's Problem. Two rational principles collide. Expected-value reasoning says take only Box B: the predictor's accuracy means one-boxers almost always walk away with $1,000,000 and two-boxers with $1,000. Dominance reasoning says take both: the money is ALREADY in the boxes and your choice now can't change the past, so whatever B contains, both boxes beats just B by $1,000. This split maps onto evidential decision theory (one-box) versus causal decision theory (two-box). There's no consensus resolution; it's a live problem precisely because each principle seems compelling and they give opposite verdicts. Your answer reveals which theory of rational choice you hold."
   },
   {
     "id": "phi-0001",
@@ -1850,146 +1666,6 @@
     "more": "The rational rule is brutally simple: ignore what's already invested; ask only 'from here forward, is continuing the best use of my remaining time and money?' What you've sunk is irrelevant to that question, because you can't get it back by either choice. Yet we feel that quitting would 'waste' the investment, when in fact continuing wastes even more.\n\nThe trap is wired deep, we hate admitting a loss, and stopping feels like confirming we were wrong. Governments do it with doomed mega-projects ('we've spent too much to stop now', which is exactly backwards). The practical antidote: imagine you were just handed the current situation fresh, with no history. Would you start this project today? If not, the only thing keeping you in is the sunk cost, and that's not a reason, it's a feeling wearing a reason's clothes. Note the honest caveat: reputation and commitment can be real future costs, those count. The fallacy is counting the past itself."
   },
   {
-    "id": "phi-0030",
-    "type": "quiz",
-    "topic": "philosophy",
-    "headline": "Quiz: What does Chesterton's Fence actually advise?",
-    "body": "You inherit a system with a confusing rule that seems pointless. According to Chesterton's Fence, what should you do?",
-    "options": [
-      "Remove it immediately, since anything without obvious purpose is waste",
-      "Keep it forever, because old rules are wiser than new ones",
-      "Understand why it was put there before deciding whether to remove it",
-      "Ask a vote of the majority and follow whatever they prefer"
-    ],
-    "answerIndex": 2,
-    "explanation": "Chesterton's Fence is a sequencing rule, not a conservative one. It says: figure out why the fence exists before tearing it down. Once you genuinely understand the reason, you may well remove it, the principle isn't 'never change things,' it's 'don't remove what you don't yet understand.'",
-    "recapOf": "phi-0002"
-  },
-  {
-    "id": "phi-0031",
-    "type": "quiz",
-    "topic": "philosophy",
-    "headline": "Quiz: The is-ought gap implies which of these?",
-    "body": "Two analysts agree completely on all the data about a policy but still disagree on whether to adopt it. The is-ought gap suggests the most likely explanation is:",
-    "options": [
-      "One of them is misreading the data and needs to recheck the numbers",
-      "They weight different underlying values, which no amount of data resolves",
-      "Values don't exist, so the disagreement is meaningless",
-      "More data will eventually force them to agree"
-    ],
-    "answerIndex": 1,
-    "explanation": "Hume's point is that facts alone never entail an 'ought.' If two people share all the facts and still disagree on what to do, the disagreement lives in their values, not the data, which is exactly why throwing more evidence at a values dispute rarely settles it.",
-    "recapOf": "phi-0020"
-  },
-  {
-    "id": "phi-0032",
-    "type": "quiz",
-    "topic": "philosophy",
-    "headline": "Quiz: Which claim is unfalsifiable?",
-    "body": "By Popper's criterion, which of these statements is NOT scientific because nothing could ever count against it?",
-    "options": [
-      "Objects fall toward Earth at about 9.8 meters per second squared",
-      "This drug lowers blood pressure more than a placebo",
-      "Everything that happens was meant to happen, for reasons we may not see",
-      "The universe is expanding and galaxies are moving apart"
-    ],
-    "answerIndex": 2,
-    "explanation": "'Everything was meant to happen' is compatible with literally any observation, no event could ever disconfirm it, so it makes no real prediction. The other three each specify what we'd expect to see and could be proven wrong by contrary measurements. Falsifiability is what gives a claim empirical teeth.",
-    "recapOf": "phi-0021"
-  },
-  {
-    "id": "phi-0033",
-    "type": "quiz",
-    "topic": "philosophy",
-    "headline": "Quiz: What does the Dunning-Kruger effect actually claim?",
-    "body": "Which statement most accurately describes the Dunning-Kruger effect as the research actually found it?",
-    "options": [
-      "Stupid people believe they are geniuses, while smart people know they're smart",
-      "Low performers tend to overestimate their ability because they lack the knowledge to see their own gaps",
-      "Confidence and competence are perfectly inversely related",
-      "Experts are always less confident than beginners in every field"
-    ],
-    "answerIndex": 1,
-    "explanation": "The real finding is about self-assessment: the same knowledge needed to perform well is needed to judge your own performance, so low performers can't see their own gaps. It's modest, debated, and partly a statistical artifact, and it implies YOU are likely miscalibrated in your weakest domains, not that 'other people are idiots.'",
-    "recapOf": "phi-0023"
-  },
-  {
-    "id": "phi-0034",
-    "type": "quiz",
-    "topic": "philosophy",
-    "headline": "Quiz: Spot the survivorship bias",
-    "body": "Which conclusion is most distorted by survivorship bias?",
-    "options": [
-      "A controlled trial randomly assigns patients and tracks every one of them",
-      "'Most billionaires wake at 5am, so waking at 5am helps you get rich'",
-      "A census attempts to count every household in a country",
-      "An engineer tests components to failure and records all results"
-    ],
-    "answerIndex": 1,
-    "explanation": "Studying only billionaires ignores the enormous number of early risers who never got rich, the failures don't make the sample. Without the people who did the same thing and failed, you can't tell if the habit caused success or is just noise. The other options deliberately include the full population, success and failure alike.",
-    "recapOf": "phi-0026"
-  },
-  {
-    "id": "phi-0035",
-    "type": "quiz",
-    "topic": "philosophy",
-    "headline": "Quiz: The Experience Machine is an argument against what?",
-    "body": "Nozick's Experience Machine, the device that gives you perfect pleasurable experiences while you float in a tank, is primarily an argument against which view?",
-    "options": [
-      "Determinism, the idea that all events are caused",
-      "Hedonism, the idea that pleasure is the only thing that matters",
-      "Dualism, the idea that mind and body are separate",
-      "Relativism, the idea that truth is relative"
-    ],
-    "answerIndex": 1,
-    "explanation": "If pleasurable experience were all we valued, plugging in would be obvious. Most people refuse, which suggests we value actually doing things and actually connecting with reality, not just the feeling of it. That's a direct strike against hedonism's claim that pleasure is the sole good."
-  },
-  {
-    "id": "phi-0036",
-    "type": "quiz",
-    "topic": "philosophy",
-    "headline": "Quiz: The map is not the territory, applied",
-    "body": "A school ties teacher bonuses to standardized test scores. Scores rise sharply, but independent assessments show students aren't actually learning more. Which principle best explains this?",
-    "options": [
-      "Occam's Razor, the simplest explanation is correct",
-      "The genetic fallacy, judging a claim by its source",
-      "Goodhart's Law, when a measure becomes a target it stops being a good measure",
-      "The halo effect, one good trait colors all judgments"
-    ],
-    "answerIndex": 2,
-    "explanation": "The test score was a map of learning. Once it became the target, people optimized the map, teaching to the test, and abandoned the territory, actual learning. This is Goodhart's Law, the practical edge of 'the map is not the territory.' Good metrics decay the moment they become the thing you're rewarded for hitting."
-  },
-  {
-    "id": "phi-0037",
-    "type": "quiz",
-    "topic": "philosophy",
-    "headline": "Quiz: Which is the sunk cost fallacy?",
-    "body": "Which reasoning is an example of the sunk cost fallacy?",
-    "options": [
-      "'This project will cost more to finish than it will ever return, so let's stop'",
-      "'We've already spent two years on this, so we have to see it through even though it's clearly failing'",
-      "'Quitting now would damage relationships we'll need later, and that future cost is large'",
-      "'Starting fresh, would we choose this path today? No, so let's change course'"
-    ],
-    "answerIndex": 1,
-    "explanation": "Only option 2 treats already-spent resources as a reason to continue, which is the fallacy, that money and time are gone either way. Option 3 isn't the fallacy because reputation is a real FUTURE cost. Options 1 and 4 are exactly the correct, forward-looking way to decide."
-  },
-  {
-    "id": "phi-0038",
-    "type": "quiz",
-    "topic": "philosophy",
-    "headline": "Quiz: What is steelmanning?",
-    "body": "Before disagreeing with a colleague, you restate their proposal in its strongest possible form, even adding a point they missed, then respond to that. What are you doing, and why is it smart?",
-    "options": [
-      "Straw-manning, because exaggerating their view makes it easier to dismiss",
-      "Steelmanning, because defeating the strongest version is the only result worth anything",
-      "The genetic fallacy, because you're focusing on who said it",
-      "Begging the question, because you assume your conclusion"
-    ],
-    "answerIndex": 1,
-    "explanation": "Steelmanning means engaging the strongest version of an opposing view. It's epistemic self-interest: if you can only beat a weak caricature you've proven nothing, and if you can't beat the strong version, you've usefully learned you might be wrong. As a bonus, people update more readily when they feel understood first."
-  },
-  {
     "id": "phi-0039",
     "type": "puzzle",
     "topic": "philosophy",
@@ -2061,6 +1737,78 @@
     "more": "The practical force is twofold. First, almost all suffering is time-travel, dread of a future that hasn't come or regret over a past you can't touch. Returning attention to the only moment you can actually act in is where Stoicism and modern mindfulness shake hands. Second, it reframes mortality: if all you ever hold is the present, then a long life doesn't grant you 'more' of life to lose, only more present moments lived. It's a strangely steadying thought from a man who knew he could die of plague or assassination any day, and chose to spend his actual moments doing his duty rather than fearing their end.",
     "threadId": "marcus",
     "threadOrder": 4
+  },
+  {
+    "id": "psy-t001",
+    "type": "puzzle",
+    "topic": "psychology",
+    "headline": "A restaurant menu lists a $115 lobster platter that almost nobody buys. The owner refuses to remove it. Why might keeping it actually boost profits?",
+    "body": "It barely sells. What's the point of an item that doesn't move?",
+    "answer": "The expensive dish acts as an anchor. Next to it, the $60 steak suddenly looks reasonable, so more people trade up to mid-priced mains. The anchoring effect shifts the whole reference point for what counts as 'normal' to spend."
+  },
+  {
+    "id": "psy-t002",
+    "type": "puzzle",
+    "topic": "psychology",
+    "headline": "Two identical surgeries are described to patients. One is called '90% survival', the other '10% mortality'. Which one do more patients choose, even though the odds are the same?",
+    "answer": "Far more choose the '90% survival' framing. Identical facts feel safer when stated as a gain rather than a loss. This is the framing effect: how a choice is worded, not just its content, drives the decision."
+  },
+  {
+    "id": "psy-t003",
+    "type": "puzzle",
+    "topic": "psychology",
+    "headline": "A gym offers a $1,200 yearly membership. People who pay upfront go LESS often than people billed $100 monthly. Why would paying more rarely make you show up more?",
+    "body": "Same total cost over the year. Different visit rates.",
+    "answer": "The monthly bill repeatedly reminds people of the cost, so each charge stings and pushes them to 'use it'. A one-time annual fee is a sunk cost that fades from memory. The recurring pain of payment keeps the gym top of mind."
+  },
+  {
+    "id": "psy-t004",
+    "type": "puzzle",
+    "topic": "psychology",
+    "headline": "A study asks people to estimate a quantity right after they spin a wheel that lands on a random number. People who saw a high number guess much higher. The wheel is obviously random. Why does it still sway them?",
+    "answer": "This is anchoring again, but on a purely irrelevant number. Even when people KNOW the value is random, their estimate drifts toward it because the mind adjusts away from whatever starting point it was just handed, and stops too soon."
+  },
+  {
+    "id": "psy-t005",
+    "type": "puzzle",
+    "topic": "psychology",
+    "headline": "A person hears that '1,000 people die yearly' from a disease versus that it kills '0.001% of the population'. The first figure feels far scarier. The percentages describe the same risk. What's going on?",
+    "answer": "Concrete, countable victims feel more real than an abstract rate. This is denominator neglect plus the identifiable-victim pull: vivid, specific numbers trigger more emotion than equivalent ratios. People react to how a risk is told, not its true size."
+  },
+  {
+    "id": "psy-t006",
+    "type": "puzzle",
+    "topic": "psychology",
+    "headline": "An online store lets you 'try it free for 30 days, cancel anytime'. Far fewer people cancel than say they intend to. The product isn't special. Why do they keep paying?",
+    "answer": "Default and status-quo bias. Once you own something or are enrolled, inaction keeps it, and cancelling takes effort and feels like a loss. Companies exploit that the easiest path, doing nothing, quietly favors them."
+  },
+  {
+    "id": "psy-t007",
+    "type": "puzzle",
+    "topic": "psychology",
+    "headline": "Researchers ask: 'Is the population of Turkey more or less than 35 million? Now, what's your best guess?' A second group is asked the same with '100 million'. The two groups give wildly different averages. Spot the flaw in their reasoning.",
+    "answer": "The number in the first question contaminates the answer, even though it was just an arbitrary prompt. The groups anchor on 35 vs 100 million and adjust insufficiently. Their 'independent' guesses were quietly steered by the question's wording."
+  },
+  {
+    "id": "psy-t008",
+    "type": "puzzle",
+    "topic": "psychology",
+    "headline": "A coffee shop loyalty card needs 10 stamps for a free drink. Shop A hands you a blank 10-stamp card. Shop B hands you a 12-stamp card with 2 already stamped 'for free'. Same 10 purchases needed. Which card gets finished more often?",
+    "answer": "Shop B's pre-stamped card wins. Starting at 2 of 12 feels like you've already made progress and don't want to abandon it. This is the endowed-progress effect: people are more motivated to finish a task they perceive as already begun."
+  },
+  {
+    "id": "psy-t009",
+    "type": "puzzle",
+    "topic": "psychology",
+    "headline": "A negotiator wants $5,000 for a used car. Should they open by asking $5,000, or by asking $7,500 and letting the buyer talk them down? Which ending price tends to be higher?",
+    "answer": "Opening high at $7,500 usually lands a higher final price. The first number sets the anchor the whole negotiation orbits around, and the buyer adjusts down from it but rarely far enough. He who names the number first often shapes the outcome."
+  },
+  {
+    "id": "psy-t010",
+    "type": "puzzle",
+    "topic": "psychology",
+    "headline": "After a big airplane crash makes headlines, more people choose to drive long distances instead of fly, even though flying is statistically far safer. What mental shortcut is misleading them?",
+    "answer": "The availability heuristic. A dramatic, easily-recalled crash makes plane danger feel common, while everyday car deaths are unmemorable. People judge risk by how easily examples come to mind, not by actual frequencies, and the switch to driving raised their real danger."
   },
   {
     "id": "psy-0001",
@@ -2501,183 +2249,82 @@
     "threadOrder": 3
   },
   {
-    "id": "psy-0045",
-    "type": "quiz",
-    "topic": "psychology",
-    "headline": "Quiz: the warm coffee study",
-    "body": "In the famous study, people who briefly held a warm drink rated a stranger as having what kind of personality, compared with those who held an iced drink?",
-    "options": [
-      "More competent",
-      "Warmer / friendlier",
-      "More intelligent",
-      "More attractive"
-    ],
-    "answerIndex": 1,
-    "explanation": "They rated the stranger as interpersonally 'warmer', as if physical warmth bled into social judgement. Worth remembering: this social-priming result is intriguing but contested, with replication concerns, so hold it loosely.",
-    "recapOf": "psy-0005",
-    "threadId": "",
-    "threadOrder": 0
+    "id": "sci-t001",
+    "type": "puzzle",
+    "topic": "science",
+    "headline": "You spin a hard-boiled egg and a raw egg on a table, then briefly stop each with a finger and let go. One stays still; the other starts spinning again. Which is which?",
+    "answer": "The raw egg starts spinning again. Its liquid inside keeps rotating from inertia even after you stopped the shell, so it nudges the shell back into motion. The hard-boiled egg is solid throughout, so once stopped it stays stopped."
   },
   {
-    "id": "psy-0046",
-    "type": "quiz",
-    "topic": "psychology",
-    "headline": "Quiz: trusting a hunch",
-    "body": "According to Kahneman and Klein, expert intuition can be trusted when which condition holds?",
-    "options": [
-      "The expert feels very confident",
-      "The expert has decades of experience",
-      "The environment is regular and gives quick, clear feedback",
-      "The expert is highly intelligent"
-    ],
-    "answerIndex": 2,
-    "explanation": "Skilled intuition needs a 'valid' environment: regular enough to be learnable plus prompt, clear feedback. That's why a chess master's gut is reliable but a stock-picker's isn't, no matter how confident or experienced.",
-    "recapOf": "psy-0009",
-    "threadId": "",
-    "threadOrder": 0
+    "id": "sci-t002",
+    "type": "puzzle",
+    "topic": "science",
+    "headline": "Roughly how many times does a typical human heart beat in an average lifetime? Estimate to the nearest power of ten.",
+    "body": "Use about 70 beats per minute and a lifespan near 75 years.",
+    "answer": "About 3 billion beats. 70/min times 60 times 24 times 365 is roughly 37 million per year; times 75 years gives about 2.8 billion, so ~3 x 10^9."
   },
   {
-    "id": "psy-0047",
-    "type": "quiz",
-    "topic": "psychology",
-    "headline": "Quiz: stuck in your head",
-    "body": "Waiters remember unpaid orders but forget them once the bill is settled. What is this tendency for unfinished tasks to stay mentally active called?",
-    "options": [
-      "The Zeigarnik effect",
-      "The Pratfall effect",
-      "The Hawthorne effect",
-      "The Dunning-Kruger effect"
-    ],
-    "answerIndex": 0,
-    "explanation": "It's the Zeigarnik effect: interrupted or incomplete tasks linger in memory as a kind of mental tension until they're closed, or until you make a concrete plan to close them.",
-    "recapOf": "psy-0008",
-    "threadId": "",
-    "threadOrder": 0
+    "id": "sci-t003",
+    "type": "puzzle",
+    "topic": "science",
+    "headline": "You're in a small rowboat in a pool, holding a heavy iron anchor. You throw the anchor overboard and it sinks. Does the pool's water level rise, fall, or stay the same?",
+    "answer": "It falls. In the boat, the anchor displaced its own weight of water (a lot, since iron is dense). On the bottom it only displaces its own volume, which is much less. Less displacement means a lower water level."
   },
   {
-    "id": "psy-0048",
-    "type": "quiz",
-    "topic": "psychology",
-    "headline": "Quiz: the better way to study",
-    "body": "Learning science strongly favours one of these. Which produces the best long-term memory?",
-    "options": [
-      "Rereading notes until they feel fluent",
-      "Highlighting key passages in color",
-      "Spacing study over days and testing yourself",
-      "Cramming everything the night before"
-    ],
-    "answerIndex": 2,
-    "explanation": "Spaced practice plus self-testing (retrieval practice) wins decisively for long-term retention. It feels harder and less fluent than rereading or cramming, which is exactly why people wrongly prefer the weaker methods.",
-    "recapOf": "psy-0031",
-    "threadId": "",
-    "threadOrder": 0
+    "id": "sci-t004",
+    "type": "puzzle",
+    "topic": "science",
+    "headline": "Two identical glasses: one full of water, one half full. You put both in the freezer. Which freezes solid first, and why isn't it just about the amount?",
+    "answer": "The half-full glass freezes solid first. Less mass means less total heat to remove, and a larger surface-area-to-volume ratio lets it lose heat faster. So smaller amount plus better exposure both favor the half-full glass."
   },
   {
-    "id": "psy-0049",
-    "type": "quiz",
-    "topic": "psychology",
-    "headline": "Quiz: help in a crowd",
-    "body": "You collapse on a busy street and need an ambulance. What's the most effective way to get help, given the bystander effect?",
-    "options": [
-      "Shout loudly that you need help",
-      "Wait calmly for someone responsible to notice",
-      "Point at one specific person and assign them the task",
-      "Try to attract as large a crowd as possible"
-    ],
-    "answerIndex": 2,
-    "explanation": "Diffusion of responsibility means a crowd can leave everyone assuming someone else will act. Naming one person ('You in the blue coat, call an ambulance now') collapses that diffusion and reliably gets action.",
-    "recapOf": "psy-0029",
-    "threadId": "",
-    "threadOrder": 0
+    "id": "sci-t005",
+    "type": "puzzle",
+    "topic": "science",
+    "headline": "A cup of hot coffee will sit on your desk for a while before you drink it. To keep it hottest, should you add the cold milk immediately or right before drinking?",
+    "answer": "Add it immediately. A hotter object loses heat faster (Newton's law of cooling). Adding milk now drops the temperature, so it then cools more slowly over the wait, ending up warmer than if you'd kept it scalding the whole time."
   },
   {
-    "id": "psy-0050",
-    "type": "quiz",
-    "topic": "psychology",
-    "headline": "Quiz: random anchors",
-    "body": "People who first saw a clearly random high number gave higher estimates to an unrelated question than those who saw a low number. What is this called?",
-    "options": [
-      "Framing",
-      "Anchoring",
-      "Priming",
-      "The halo effect"
-    ],
-    "answerIndex": 1,
-    "explanation": "Anchoring: an arbitrary number we know is meaningless still drags our estimate toward it. It's strong even when you're warned, which is why generating your own number before seeing others' is a useful defence.",
-    "threadId": "",
-    "threadOrder": 0
+    "id": "sci-t006",
+    "type": "puzzle",
+    "topic": "science",
+    "headline": "A fly is buzzing around inside a sealed jar that sits on a scale. While the fly is hovering in midair (not touching anything), does the scale read more, less, or the same as when the fly is resting on the bottom?",
+    "answer": "The same. To hover, the fly pushes air down with a force equal to its weight; that downward push transmits through the air to the jar floor. The sealed system's total weight is unchanged whether the fly sits or flies."
   },
   {
-    "id": "psy-0051",
-    "type": "quiz",
-    "topic": "psychology",
-    "headline": "Quiz: the planes that came back",
-    "body": "WWII analysts wanted to armor the bullet-riddled areas of returning bombers. Why was reinforcing the undamaged areas actually smarter?",
-    "options": [
-      "Undamaged areas were lighter to armor",
-      "Planes hit in the undamaged areas didn't survive to return",
-      "Bullet holes weaken existing armor",
-      "It was cheaper to armor clean sections"
-    ],
-    "answerIndex": 1,
-    "explanation": "Survivorship bias. The returning planes showed where a plane could be hit and still fly home. The fatal hits were in the spots the survivors lacked damage, because planes struck there never came back to be studied.",
-    "recapOf": "psy-0024",
-    "threadId": "",
-    "threadOrder": 0
+    "id": "sci-t007",
+    "type": "puzzle",
+    "topic": "science",
+    "headline": "Stand a domino on end. Each domino can knock over one about 1.5 times bigger. Starting from a domino 5mm tall, roughly how many do you need so the last one is as tall as a 30-story building (about 100m)?",
+    "answer": "About 25 dominoes. Each step multiplies height by 1.5, and going from 0.005m to 100m is a factor of 20000. Solving 1.5^n = 20000 gives n = ln(20000)/ln(1.5) which is about 24.4, so roughly 25 dominoes take you from millimeters to a skyscraper."
   },
   {
-    "id": "psy-0052",
-    "type": "quiz",
-    "topic": "psychology",
-    "headline": "Quiz: the tappers and listeners",
-    "body": "People tapping a famous song's rhythm guessed listeners would identify it about half the time. What was the real success rate, and what does the gap illustrate?",
-    "options": [
-      "About 50%, confirming shared intuition",
-      "About 3%, illustrating the curse of knowledge",
-      "About 25%, illustrating the spotlight effect",
-      "About 80%, illustrating mere exposure"
-    ],
-    "answerIndex": 1,
-    "explanation": "Listeners got it about 3% of the time. The tappers heard the full melody in their heads and couldn't imagine the listeners' experience of bare taps, the curse of knowledge that makes experts poor explainers.",
-    "recapOf": "psy-0014",
-    "threadId": "",
-    "threadOrder": 0
+    "id": "sci-t008",
+    "type": "puzzle",
+    "topic": "science",
+    "headline": "Two cars approach each other on a straight road, each at 50 km/h, starting 100 km apart. A bird flies back and forth between them at 80 km/h until they meet. How far does the bird travel?",
+    "answer": "80 km. Don't sum the infinite zigzags. The cars close 100 km at a combined 100 km/h, so they meet in 1 hour. The bird flies for that 1 hour at 80 km/h, covering 80 km."
   },
   {
-    "id": "psy-0053",
-    "type": "quiz",
-    "topic": "psychology",
-    "headline": "Quiz: California dreaming",
-    "body": "People assume Californians are happier than Midwesterners because of the weather, but measured happiness is similar. Which bias explains the mistaken intuition?",
-    "options": [
-      "The focusing illusion",
-      "Loss aversion",
-      "The bystander effect",
-      "Hyperbolic discounting"
-    ],
-    "answerIndex": 0,
-    "explanation": "The focusing illusion: whatever you're attending to (here, climate) gets inflated in importance. As Kahneman put it, nothing is as important as it seems while you're thinking about it. Daily life swamps the weather.",
-    "recapOf": "psy-0030",
-    "threadId": "",
-    "threadOrder": 0
+    "id": "sci-t009",
+    "type": "puzzle",
+    "topic": "science",
+    "headline": "You blow up a balloon and let it go; it flies around the room. Now you do the same on the International Space Station in zero gravity. Does the balloon still zoom off?",
+    "answer": "Yes. The balloon flies because escaping air pushes it the other way (Newton's third law / conservation of momentum), not because of gravity. In space it still zooms, even better, with no air resistance or weight to slow it."
   },
   {
-    "id": "psy-0054",
-    "type": "quiz",
-    "topic": "psychology",
-    "headline": "Quiz: a dollar to lie",
-    "body": "In Festinger's study, who ended up believing a boring task was actually interesting after telling someone else it was fun?",
-    "options": [
-      "Those paid $20 to say it",
-      "Those paid $1 to say it",
-      "Those who weren't paid at all",
-      "Both paid groups equally"
-    ],
-    "answerIndex": 1,
-    "explanation": "Those paid just $1 believed it more. With $20, the money justified the lie; with $1, there was no external excuse, so they reduced the dissonance by changing their actual belief. We bend beliefs to fit our actions.",
-    "recapOf": "psy-0023",
-    "threadId": "",
-    "threadOrder": 0
+    "id": "sci-t010",
+    "type": "puzzle",
+    "topic": "science",
+    "headline": "Why does a heavy steel ship float, while a small steel nail dropped in the same water sinks? Same metal, denser than water.",
+    "answer": "Shape, not material, decides it. The hull encloses a large volume of air, so the ship's average density (steel plus air) is less than water. The solid nail displaces only its own small volume, weighs more than that water, and sinks."
+  },
+  {
+    "id": "sci-t011",
+    "type": "puzzle",
+    "topic": "science",
+    "headline": "Why can a tiny flea, only a few millimeters long, jump over 100 times its own body length, while a human can barely jump their own height?",
+    "answer": "It's a scaling effect, not raw strength. Jump height depends mainly on launch speed, which doesn't shrink much with size, so small and large animals reach similar absolute heights (tens of centimeters). That fixed height is a huge multiple of a flea's body but only a fraction of a human's."
   },
   {
     "id": "sci-0001",
@@ -2938,182 +2585,6 @@
     "headline": "Feedback loops: small differences that snowball or self-correct",
     "body": "Point a microphone at its own speaker and a faint hum erupts into a screech in seconds - the sound feeds back, gets amplified, feeds back louder, and runs away. That's a positive feedback loop: output amplifies itself. A thermostat is the opposite - too hot, it turns the heat off; too cold, it turns it on - a negative loop that pulls the system back to a target. Almost every system you care about is governed by which kind of loop dominates.",
     "more": "Positive loops create explosions and tipping points: viral spread, bank runs, melting ice exposing dark water that absorbs more heat and melts more ice. They're behind both miracles of growth and catastrophic collapses, because they don't know how to stop themselves.\n\nNegative loops create stability: your body temperature, predator and prey populations, the price-finding of a market. The most robust systems balance the two - enough positive feedback to grow and adapt, enough negative feedback to keep from flying apart. Spotting which loop you're in tells you whether to expect runaway change or stubborn equilibrium."
-  },
-  {
-    "id": "sci-0034",
-    "type": "quiz",
-    "topic": "science",
-    "headline": "Why does metal feel colder than wood?",
-    "body": "Two objects sit in the same room at the same temperature: a metal spoon and a wooden ruler. The metal feels much colder to the touch. Why?",
-    "options": [
-      "The metal is actually a few degrees colder",
-      "Metal conducts heat away from your hand faster",
-      "Wood gives off a small amount of warmth",
-      "Your skin reacts chemically to metal"
-    ],
-    "answerIndex": 1,
-    "explanation": "Your skin senses heat flow, not temperature, and metal drains heat from your hand quickly while wood doesn't.",
-    "recapOf": "sci-0001"
-  },
-  {
-    "id": "sci-0035",
-    "type": "quiz",
-    "topic": "science",
-    "headline": "Where should you armour the bombers?",
-    "body": "Returning warplanes show bullet holes concentrated on the wings and fuselage, with almost none on the engines. To improve survival, where should you add armour?",
-    "options": [
-      "The wings, where most holes appear",
-      "Everywhere equally, to be safe",
-      "The engines, where holes are absent",
-      "The fuselage, since it's largest"
-    ],
-    "answerIndex": 2,
-    "explanation": "Planes hit in the engines didn't return to be counted; the missing holes mark the fatal spots - classic survivorship bias.",
-    "recapOf": "sci-0025"
-  },
-  {
-    "id": "sci-0036",
-    "type": "quiz",
-    "topic": "science",
-    "headline": "How long is sunlight trapped inside the Sun?",
-    "body": "Light reaches Earth from the Sun's surface in about 8 minutes. But how long does that energy take to travel from where it's made, in the core, to the surface?",
-    "options": [
-      "About 8 minutes as well",
-      "A few hours",
-      "Several weeks",
-      "Tens of thousands of years or more"
-    ],
-    "answerIndex": 3,
-    "explanation": "Inside the dense Sun, photons random-walk - absorbed and re-emitted endlessly - taking a vast time to escape.",
-    "recapOf": "sci-0015"
-  },
-  {
-    "id": "sci-0037",
-    "type": "quiz",
-    "topic": "science",
-    "headline": "What direction does heat actually flow?",
-    "body": "You open a freezer and feel a wave of cold. In terms of energy, what is physically happening?",
-    "options": [
-      "Cold flows from the freezer into your hand",
-      "Heat flows out of your hand into the colder air",
-      "Both cold and heat exchange equally",
-      "Nothing flows; you only sense the temperature"
-    ],
-    "answerIndex": 1,
-    "explanation": "Cold isn't a substance; heat always flows from hotter to colder, so your warmth drains into the freezer air.",
-    "recapOf": "sci-0017"
-  },
-  {
-    "id": "sci-0038",
-    "type": "quiz",
-    "topic": "science",
-    "headline": "Why does a fresh blanket keep you warm?",
-    "body": "A blanket has no heater and no power source. Why does covering yourself with one make you warmer?",
-    "options": [
-      "It generates a small amount of heat by friction",
-      "It reflects cold away from your body",
-      "It slows the escape of the heat your body already produces",
-      "It chemically warms when it touches skin"
-    ],
-    "answerIndex": 2,
-    "explanation": "A blanket is an insulator: it traps your own body heat instead of adding any.",
-    "recapOf": "sci-0017"
-  },
-  {
-    "id": "sci-0039",
-    "type": "quiz",
-    "topic": "science",
-    "headline": "Why is the noon sky blue?",
-    "body": "Sunlight is roughly white, yet the daytime sky overhead looks blue. What's the main reason?",
-    "options": [
-      "The oceans reflect blue onto the sky",
-      "Air molecules scatter blue light much more than red",
-      "The atmosphere is naturally tinted blue",
-      "Sunlight is actually blue before it enters the atmosphere"
-    ],
-    "answerIndex": 1,
-    "explanation": "Rayleigh scattering bends short-wavelength blue light across the whole sky far more than longer red wavelengths.",
-    "recapOf": "sci-0006"
-  },
-  {
-    "id": "sci-0040",
-    "type": "quiz",
-    "topic": "science",
-    "headline": "Why does a pilot's great landing tend to be followed by a worse one?",
-    "body": "Flight instructors notice that after an exceptionally good landing, the next is usually more mediocre. What best explains this?",
-    "options": [
-      "Praise makes pilots complacent",
-      "Pilots can't repeat good technique reliably",
-      "Regression to the mean - extreme results are part luck and don't repeat",
-      "The weather changes between landings"
-    ],
-    "answerIndex": 2,
-    "explanation": "Outstanding performances are partly chance, and chance doesn't recur, so the next attempt naturally drifts back toward average.",
-    "recapOf": "sci-0029"
-  },
-  {
-    "id": "sci-0041",
-    "type": "quiz",
-    "topic": "science",
-    "headline": "How many times can you fold a sheet of paper in half?",
-    "body": "Starting with an ordinary sheet of paper, roughly how many times can you fold it in half before it becomes practically impossible?",
-    "options": [
-      "About 7 times",
-      "About 20 times",
-      "As many as you like with enough force",
-      "Exactly 42 times"
-    ],
-    "answerIndex": 0,
-    "explanation": "Each fold doubles the thickness and halves the width, so the layers grow exponentially and you run out of paper fast.",
-    "recapOf": "sci-0004"
-  },
-  {
-    "id": "sci-0042",
-    "type": "quiz",
-    "topic": "science",
-    "headline": "Why do marching soldiers break step on a bridge?",
-    "body": "Soldiers are traditionally ordered to stop marching in unison when crossing a bridge. What danger does this avoid?",
-    "options": [
-      "Their combined weight in one spot",
-      "Distracting the bridge guards",
-      "Their rhythmic stepping matching the bridge's natural frequency",
-      "Wearing out the bridge surface faster"
-    ],
-    "answerIndex": 2,
-    "explanation": "Synchronised steps can resonate with the structure's natural sway, building up dangerous oscillations.",
-    "recapOf": "sci-0031"
-  },
-  {
-    "id": "sci-0043",
-    "type": "quiz",
-    "topic": "science",
-    "headline": "What colour is the Sun, really?",
-    "body": "Setting aside how it looks from the ground, what colour does the Sun actually emit overall?",
-    "options": [
-      "Yellow",
-      "White",
-      "Orange",
-      "Pale green"
-    ],
-    "answerIndex": 1,
-    "explanation": "The Sun emits across all visible wavelengths fairly evenly, which our eyes blend to white; the atmosphere adds the yellow tint.",
-    "recapOf": "sci-0016"
-  },
-  {
-    "id": "sci-0044",
-    "type": "quiz",
-    "topic": "science",
-    "headline": "How likely is a 5,000-year-old carbon-14 atom to decay next minute?",
-    "body": "Compare a carbon-14 atom that has existed for 5,000 years with a freshly formed one. Which is more likely to decay in the next minute?",
-    "options": [
-      "The 5,000-year-old one, it's overdue",
-      "The fresh one, it's more energetic",
-      "They are exactly equally likely",
-      "Neither can decay until its half-life passes"
-    ],
-    "answerIndex": 2,
-    "explanation": "Radioactive decay is memoryless: an atom's age has no effect on its chance of decaying in any given moment.",
-    "recapOf": "sci-0028"
   },
   {
     "id": "sci-0045",

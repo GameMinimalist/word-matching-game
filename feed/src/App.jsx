@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Feed from './components/Feed.jsx'
 import Settings from './components/Settings.jsx'
+import FocusBar from './components/FocusBar.jsx'
 import { useFeed } from './hooks/useFeed.js'
 
 export default function App() {
@@ -13,6 +14,7 @@ export default function App() {
         <span className="stat" aria-live="polite">
           {feed.seenToday} today
         </span>
+        <FocusBar focus={feed.focus} onFocus={feed.setFocus} />
         <button
           className="icon-btn gear"
           aria-label="Settings"

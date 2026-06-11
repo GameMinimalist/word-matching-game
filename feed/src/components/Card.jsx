@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import LikeBar from './LikeBar.jsx'
 import { topicAccent, topicLabel } from '../topics.js'
 
@@ -10,11 +10,41 @@ import { topicAccent, topicLabel } from '../topics.js'
 export default function Card({ card, onOpenThread, onKeepGoing }) {
   if (card.type === 'cap') return <CapCard onKeepGoing={onKeepGoing} />
   if (card.type === 'empty') return <EmptyCard />
+  return <ContentCard card={card} onOpenThread={onOpenThread} />
+}
 
+function ContentCard({ card, onOpenThread }) {
   const accent = topicAccent(card.topic)
+  const bodyRef = useRef(null)
+  const innerRef = useRef(null)
+  const [moreBelow, setMoreBelow] = useState(false)
+
+  // Show the "scroll for more" cue whenever the text overflows and isn't yet
+  // scrolled to the bottom. Re-checks on scroll, on content growth (a "Tell me
+  // more" / "Reveal" expansion), and on resize.
+  useEffect(() => {
+    const el = bodyRef.current
+    if (!el) return
+    const check = () => {
+      setMoreBelow(el.scrollHeight - el.scrollTop - el.clientHeight > 12)
+    }
+    check()
+    el.addEventListener('scroll', check, { passive: true })
+    window.addEventListener('resize', check)
+    let ro
+    if (innerRef.current && 'ResizeObserver' in window) {
+      ro = new ResizeObserver(check)
+      ro.observe(innerRef.current)
+    }
+    return () => {
+      el.removeEventListener('scroll', check)
+      window.removeEventListener('resize', check)
+      ro?.disconnect()
+    }
+  }, [card.id])
 
   return (
-    <article className="card" style={{ '--accent': accent }}>
+    <article className={`card ${moreBelow ? 'has-more' : ''}`} style={{ '--accent': accent }}>
       <header className="card-head">
         <span className="topic-tag" style={{ color: accent }}>
           <span className="topic-dot" style={{ background: accent }} />
@@ -22,14 +52,22 @@ export default function Card({ card, onOpenThread, onKeepGoing }) {
         </span>
       </header>
 
-      <div className="card-body">
-        {card.type === 'fact' && <FactBody card={card} />}
-        {card.type === 'concept' && <ConceptBody card={card} />}
-        {card.type === 'quiz' && <QuizBody card={card} />}
-        {card.type === 'puzzle' && <PuzzleBody card={card} />}
-        {card.type === 'rabbithole' && (
-          <RabbitholeBody card={card} onOpenThread={onOpenThread} />
-        )}
+      <div className="card-body" ref={bodyRef}>
+        <div className="card-body-inner" ref={innerRef}>
+          {card.type === 'fact' && <FactBody card={card} />}
+          {card.type === 'concept' && <ConceptBody card={card} />}
+          {card.type === 'puzzle' && <PuzzleBody card={card} />}
+          {card.type === 'rabbithole' && (
+            <RabbitholeBody card={card} onOpenThread={onOpenThread} />
+          )}
+        </div>
+      </div>
+
+      <div className="scroll-fade" aria-hidden="true" />
+      <div className="scroll-cue" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="22" height="22">
+          <path fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" d="M6 9l6 6 6-6" />
+        </svg>
       </div>
 
       <footer className="card-foot">
@@ -73,63 +111,19 @@ function ConceptBody({ card }) {
   )
 }
 
-// --- quiz ----------------------------------------------------------------
-function QuizBody({ card }) {
-  const [picked, setPicked] = useState(null)
-  const answered = picked !== null
-  return (
-    <>
-      {card.recapOf && <span className="kicker">Quick recap</span>}
-      <h1 className="headline quiz-q">{card.headline}</h1>
-      <ul className="options">
-        {card.options.map((opt, i) => {
-          const correct = i === card.answerIndex
-          const state = !answered
-            ? ''
-            : correct
-              ? 'correct'
-              : i === picked
-                ? 'wrong'
-                : 'dim'
-          return (
-            <li key={i}>
-              <button
-                type="button"
-                className={`option ${state}`}
-                disabled={answered}
-                onClick={() => setPicked(i)}
-              >
-                <span className="option-text">{opt}</span>
-                {answered && correct && <span className="mark">✓</span>}
-                {answered && !correct && i === picked && <span className="mark">✕</span>}
-              </button>
-            </li>
-          )
-        })}
-      </ul>
-      {answered && (
-        <p className="explanation reveal">
-          {picked === card.answerIndex ? 'Right — ' : 'Not quite — '}
-          {card.explanation}
-        </p>
-      )}
-    </>
-  )
-}
-
 // --- puzzle --------------------------------------------------------------
 function PuzzleBody({ card }) {
   const [show, setShow] = useState(false)
   return (
     <>
-      <span className="kicker">Puzzle</span>
+      <span className="kicker">Brain teaser</span>
       <h1 className="headline">{card.headline}</h1>
       {card.body && card.body !== card.headline && (
         <Prose text={card.body} className="body" />
       )}
       {!show ? (
         <button type="button" className="ghost-btn" onClick={() => setShow(true)}>
-          Reveal answer
+          Show answer
         </button>
       ) : (
         <div className="answer reveal">

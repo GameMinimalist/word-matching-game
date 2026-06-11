@@ -1,0 +1,67 @@
+[
+  {
+    "id": "phi-t001",
+    "type": "puzzle",
+    "topic": "philosophy",
+    "headline": "You're shown two sealed envelopes. One holds twice as much money as the other. You pick one and find $100. Should you switch to the other envelope?",
+    "body": "The 'tempting' reasoning: the other holds either $50 or $200, each seemingly equally likely, so its average value is $125 > $100. So always switch. But by symmetry that can't be right.",
+    "answer": "The Two Envelopes paradox. The fallacy is treating $50 and $200 as equally likely for an arbitrary fixed amount. To make 'each is 50/50' true for every possible amount you'd need a uniform prior over all amounts up to infinity, which isn't a valid probability distribution. With any real (proper) prior over the pair, the expected gain from switching is exactly zero once you account for how likely each total was to begin with. Switching gives no advantage; the symmetry was correct all along."
+  },
+  {
+    "id": "phi-t002",
+    "type": "puzzle",
+    "topic": "philosophy",
+    "headline": "A teleporter scans your body atom by atom, destroys the original here, and builds an exact copy on Mars from new atoms. The copy has all your memories and wakes thinking it's you. Did you survive, or did you die and a duplicate now lives your life?",
+    "answer": "The classic problem of personal identity (Parfit's teletransportation). There's no agreed answer because it forces a choice about what 'you' are. On a physical-continuity view you died: the original was destroyed. On a psychological-continuity view you survived: memories, personality, and intentions carried over intact. Now run the twist: suppose the machine malfunctions and the original is NOT destroyed, so two of you exist. Both can't be 'you' on the identity view, yet nothing about the Mars copy changed. Parfit's conclusion: 'Is it really me?' is the wrong question. What matters is psychological continuity and connectedness, not a deep further fact of identity. Genuinely unresolved which intuition is correct."
+  },
+  {
+    "id": "phi-t003",
+    "type": "puzzle",
+    "topic": "philosophy",
+    "headline": "A perfectly rational donkey stands exactly midway between two identical, equally appealing bales of hay. Having no reason to prefer either, it cannot choose. Does it starve?",
+    "body": "Buridan's Ass: a challenge to the idea that a rational agent always acts on the greater reason.",
+    "answer": "Buridan's Ass. The puzzle is a reductio against strict rational determinism: if action always requires a deciding reason, perfect symmetry should produce paralysis. The standard resolution is that rationality does not require a reason to prefer A over B in order to act; it only requires not choosing the worse option. Faced with a tie, picking arbitrarily (or by a coin flip, or by random noise in the brain) is itself rational. Real agents break symmetry through tiny perturbations, and treating 'pick one of the equally-good options' as permissible dissolves the deadlock. The donkey eats."
+  },
+  {
+    "id": "phi-t004",
+    "type": "puzzle",
+    "topic": "philosophy",
+    "headline": "It's rational to believe each individual lottery ticket will lose, since each has a tiny chance of winning. But you also believe SOME ticket will win. So you believe every ticket loses and that not every ticket loses. Where's the error?",
+    "answer": "The Lottery paradox (Kyburg). It exposes a conflict between two natural principles: (1) it's rational to accept any proposition that is highly probable, and (2) rational beliefs should be closed under conjunction (if you accept each, you accept their 'and'). Holding both lets you derive a contradiction. The standard response is to give up one principle. Many philosophers reject the simple threshold rule for belief and say you shouldn't flatly 'believe' a ticket loses, only assign it high probability; others reject conjunction-closure for high-probability beliefs. There's no consensus fix, which is why it's a touchstone for theories of rational acceptance."
+  },
+  {
+    "id": "phi-t005",
+    "type": "puzzle",
+    "topic": "philosophy",
+    "headline": "'Everything I say is a lie.' Spoken by someone, is that statement true or false?",
+    "answer": "A self-reference trap, kin to the Liar but escapable. If it's a strict universal claim about all the speaker's statements and it includes itself, suppose it's true: then it's a lie, so false, contradiction. Suppose it's false: then NOT everything they say is a lie, which is consistent as long as at least one of their statements is true. So the clean resolution: the sentence is simply false. Its being false only requires that some other thing the speaker says is true, which is easily satisfied. Unlike the pure Liar ('This sentence is false'), this one isn't genuinely paradoxical; it just can't be true."
+  },
+  {
+    "id": "phi-t006",
+    "type": "puzzle",
+    "topic": "philosophy",
+    "headline": "A ship has every plank gradually replaced until none of the originals remain. Meanwhile, someone collects the discarded planks and reassembles them into a ship. Which one is the original Ship of Theseus?",
+    "answer": "The Ship of Theseus, plus Hobbes's reassembly twist. Each ship has a strong claim: the repaired one wins on spatiotemporal continuity (it was the working ship the whole time); the rebuilt one wins on material composition (same original parts). The standard analysis is that there is no fact of the matter independent of which identity criterion we adopt; 'the same ship' is partly a convention about how we track objects through change. Many philosophers conclude that identity over time for composite objects is not a deep metaphysical given but depends on the persistence conditions we assign to the kind 'ship.' The puzzle shows our everyday notion of 'same object' is underdetermined."
+  },
+  {
+    "id": "phi-t007",
+    "type": "puzzle",
+    "topic": "philosophy",
+    "headline": "A barber in a village shaves all and only those men who do not shave themselves. Does the barber shave himself?",
+    "answer": "The Barber paradox (Russell's popularization of his set-theory paradox). If the barber shaves himself, then by the rule he must not (he only shaves non-self-shavers); if he doesn't, then by the rule he must. Both options contradict. The resolution is that no such barber can exist: the description is self-contradictory, like 'the largest prime number.' This is the deflationary version of Russell's Paradox about the set of all sets that don't contain themselves. The lesson: not every grammatically sensible definition picks out something real, and naive 'set of all things satisfying property P' assumptions had to be restricted to avoid the genuine version in mathematics."
+  },
+  {
+    "id": "phi-t008",
+    "type": "puzzle",
+    "topic": "philosophy",
+    "headline": "A runaway trolley will kill five people on the track ahead. You can pull a lever to divert it onto a side track, where it will kill one person instead. Should you pull the lever? Now: instead of a lever, the only way to stop it is to push a large stranger off a footbridge into its path, killing him to save the five. Should you push?",
+    "answer": "The Trolley Problem (Foot; Thomson's Footbridge variant). Most people say pull the lever (5 saved, 1 lost) but refuse to push the stranger, even though the body count is identical. The puzzle's force is explaining why intuitions diverge. Candidate analyses: the Doctrine of Double Effect (in the lever case the death is a foreseen side effect; in the push case it's a USED means to the end); the distinction between redirecting an existing threat versus introducing a new one; and 'using a person merely as a means' (Kantian). Empirically the divergence is robust across cultures. It remains debated whether the gap tracks a real moral principle or a cognitive bias, but it's the standard stress test for consequentialist vs. deontological ethics."
+  },
+  {
+    "id": "phi-t009",
+    "type": "puzzle",
+    "topic": "philosophy",
+    "headline": "A reliable predictor offers two boxes. Box A is clear and holds $1,000. Box B is opaque. You may take both boxes, or only Box B. Yesterday the predictor, who is almost never wrong, put $1,000,000 in Box B if it predicted you'd take only B, and left it empty if it predicted you'd take both. What do you do?",
+    "answer": "Newcomb's Problem. Two rational principles collide. Expected-value reasoning says take only Box B: the predictor's accuracy means one-boxers almost always walk away with $1,000,000 and two-boxers with $1,000. Dominance reasoning says take both: the money is ALREADY in the boxes and your choice now can't change the past, so whatever B contains, both boxes beats just B by $1,000. This split maps onto evidential decision theory (one-box) versus causal decision theory (two-box). There's no consensus resolution; it's a live problem precisely because each principle seems compelling and they give opposite verdicts. Your answer reveals which theory of rational choice you hold."
+  }
+]

@@ -1,0 +1,80 @@
+[
+  {
+    "id": "sci-t001",
+    "type": "puzzle",
+    "topic": "science",
+    "headline": "You spin a hard-boiled egg and a raw egg on a table, then briefly stop each with a finger and let go. One stays still; the other starts spinning again. Which is which?",
+    "answer": "The raw egg starts spinning again. Its liquid inside keeps rotating from inertia even after you stopped the shell, so it nudges the shell back into motion. The hard-boiled egg is solid throughout, so once stopped it stays stopped."
+  },
+  {
+    "id": "sci-t002",
+    "type": "puzzle",
+    "topic": "science",
+    "headline": "Roughly how many times does a typical human heart beat in an average lifetime? Estimate to the nearest power of ten.",
+    "body": "Use about 70 beats per minute and a lifespan near 75 years.",
+    "answer": "About 3 billion beats. 70/min times 60 times 24 times 365 is roughly 37 million per year; times 75 years gives about 2.8 billion, so ~3 x 10^9."
+  },
+  {
+    "id": "sci-t003",
+    "type": "puzzle",
+    "topic": "science",
+    "headline": "You're in a small rowboat in a pool, holding a heavy iron anchor. You throw the anchor overboard and it sinks. Does the pool's water level rise, fall, or stay the same?",
+    "answer": "It falls. In the boat, the anchor displaced its own weight of water (a lot, since iron is dense). On the bottom it only displaces its own volume, which is much less. Less displacement means a lower water level."
+  },
+  {
+    "id": "sci-t004",
+    "type": "puzzle",
+    "topic": "science",
+    "headline": "Two identical glasses: one full of water, one half full. You put both in the freezer. Which freezes solid first, and why isn't it just about the amount?",
+    "answer": "The half-full glass freezes solid first. Less mass means less total heat to remove, and a larger surface-area-to-volume ratio lets it lose heat faster. So smaller amount plus better exposure both favor the half-full glass."
+  },
+  {
+    "id": "sci-t005",
+    "type": "puzzle",
+    "topic": "science",
+    "headline": "A cup of hot coffee will sit on your desk for a while before you drink it. To keep it hottest, should you add the cold milk immediately or right before drinking?",
+    "answer": "Add it immediately. A hotter object loses heat faster (Newton's law of cooling). Adding milk now drops the temperature, so it then cools more slowly over the wait, ending up warmer than if you'd kept it scalding the whole time."
+  },
+  {
+    "id": "sci-t006",
+    "type": "puzzle",
+    "topic": "science",
+    "headline": "A fly is buzzing around inside a sealed jar that sits on a scale. While the fly is hovering in midair (not touching anything), does the scale read more, less, or the same as when the fly is resting on the bottom?",
+    "answer": "The same. To hover, the fly pushes air down with a force equal to its weight; that downward push transmits through the air to the jar floor. The sealed system's total weight is unchanged whether the fly sits or flies."
+  },
+  {
+    "id": "sci-t007",
+    "type": "puzzle",
+    "topic": "science",
+    "headline": "Stand a domino on end. Each domino can knock over one about 1.5 times bigger. Starting from a domino 5mm tall, roughly how many do you need so the last one is as tall as a 30-story building (about 100m)?",
+    "answer": "About 25 dominoes. Each step multiplies height by 1.5, and going from 0.005m to 100m is a factor of 20000. Solving 1.5^n = 20000 gives n = ln(20000)/ln(1.5) which is about 24.4, so roughly 25 dominoes take you from millimeters to a skyscraper."
+  },
+  {
+    "id": "sci-t008",
+    "type": "puzzle",
+    "topic": "science",
+    "headline": "Two cars approach each other on a straight road, each at 50 km/h, starting 100 km apart. A bird flies back and forth between them at 80 km/h until they meet. How far does the bird travel?",
+    "answer": "80 km. Don't sum the infinite zigzags. The cars close 100 km at a combined 100 km/h, so they meet in 1 hour. The bird flies for that 1 hour at 80 km/h, covering 80 km."
+  },
+  {
+    "id": "sci-t009",
+    "type": "puzzle",
+    "topic": "science",
+    "headline": "You blow up a balloon and let it go; it flies around the room. Now you do the same on the International Space Station in zero gravity. Does the balloon still zoom off?",
+    "answer": "Yes. The balloon flies because escaping air pushes it the other way (Newton's third law / conservation of momentum), not because of gravity. In space it still zooms, even better, with no air resistance or weight to slow it."
+  },
+  {
+    "id": "sci-t010",
+    "type": "puzzle",
+    "topic": "science",
+    "headline": "Why does a heavy steel ship float, while a small steel nail dropped in the same water sinks? Same metal, denser than water.",
+    "answer": "Shape, not material, decides it. The hull encloses a large volume of air, so the ship's average density (steel plus air) is less than water. The solid nail displaces only its own small volume, weighs more than that water, and sinks."
+  },
+  {
+    "id": "sci-t011",
+    "type": "puzzle",
+    "topic": "science",
+    "headline": "Why can a tiny flea, only a few millimeters long, jump over 100 times its own body length, while a human can barely jump their own height?",
+    "answer": "It's a scaling effect, not raw strength. Jump height depends mainly on launch speed, which doesn't shrink much with size, so small and large animals reach similar absolute heights (tens of centimeters). That fixed height is a huge multiple of a flea's body but only a fraction of a human's."
+  }
+]
