@@ -2,11 +2,12 @@
  * The shuffle engine. Given the full card library plus the user's persisted
  * state (seen ids, likes, enabled topics), it serves an endless, varied feed:
  *
- *  - weighted-random across topics; 👎 mildly down-weights a topic
- *  - steers the type mix toward fact 40 / quiz 20 / concept 15 / puzzle 15 / rabbithole 10
+ *  - weighted-random across topics (a 👍 gives a gentle nudge)
+ *  - steers the type mix toward fact 40 / puzzle 32 / concept 18 / rabbithole 10
  *  - never repeats a card until that topic's pool is exhausted, then recycles
- *  - a recap quiz only appears after its source card has been seen
- *  - never shows >2 cards of the same topic or type in a row
+ *  - 👎-suppressed cards are filtered out entirely ("never show again")
+ *  - never shows >2 cards of the same topic or type in a row, and never two
+ *    typographically-styled cards back to back
  *  - rabbit-hole children are held out of the shuffle and injected as a
  *    mini-thread when the user taps the teaser, after which the shuffle resumes
  *
@@ -16,6 +17,7 @@
  */
 import {
   getSeenSet,
+  getSuppressedSet,
   getLikes,
   getSettings,
   markSeen
@@ -23,13 +25,13 @@ import {
 
 const TYPE_TARGETS = {
   fact: 0.4,
-  quiz: 0.2,
-  concept: 0.15,
-  puzzle: 0.15,
+  concept: 0.18,
+  puzzle: 0.32,
   rabbithole: 0.1
 }
 
 const isThreadChild = (c) => Boolean(c.threadId) && (c.threadOrder ?? 0) > 0
+const isStyled = (c) => Boolean(c.style) && c.style !== 'default'
 
 function weightedPick(items, weightOf) {
   const total = items.reduce((s, it) => s + Math.max(0, weightOf(it)), 0)
@@ -65,29 +67,25 @@ export function createFeedEngine(cards) {
   let recent = [] // last shown {topic, type}, newest last
   const queue = [] // forced next card ids (rabbit-hole threads)
 
+  // 👎 now suppresses individual cards (handled in candidatesFor), so it no
+  // longer starves a whole topic. A 👍 gives only a gentle nudge.
   function topicWeights(enabledTopics) {
     const likes = getLikes()
     const w = {}
     for (const t of enabledTopics) w[t] = 1
+    // gentle 👍 boost only
     for (const [cardId, like] of Object.entries(likes)) {
       const card = byId.get(cardId)
       if (!card || !(card.topic in w)) continue
-      if (like.value === -1) w[card.topic] *= 0.7 // mild down-weight per 👎
-      else if (like.value === 1) w[card.topic] *= 1.08
+      if (like.value === 1) w[card.topic] *= 1.05
     }
-    for (const t of enabledTopics) w[t] = Math.min(3, Math.max(0.15, w[t]))
+    for (const t of enabledTopics) w[t] = Math.min(2, Math.max(0.5, w[t]))
     return w
   }
 
-  // Is a card allowed to be served right now (ignoring seen)?
-  function recapReady(card, seen) {
-    if (card.type === 'quiz' && card.recapOf) return seen.has(card.recapOf)
-    return true
-  }
-
-  function candidatesFor(topic, seen) {
+  function candidatesFor(topic, seen, suppressed) {
     const pool = poolByTopic.get(topic) || []
-    const ready = pool.filter((c) => recapReady(c, seen))
+    const ready = pool.filter((c) => !suppressed.has(c.id))
     const unseen = ready.filter((c) => !seen.has(c.id))
     // unseen until exhausted; once a topic is exhausted, recycle the ready set
     return unseen.length ? unseen : ready
@@ -101,7 +99,7 @@ export function createFeedEngine(cards) {
   }
 
   function remember(card) {
-    recent.push({ topic: card.topic, type: card.type })
+    recent.push({ topic: card.topic, type: card.type, styled: isStyled(card) })
     if (recent.length > 4) recent.shift()
   }
 
@@ -117,13 +115,14 @@ export function createFeedEngine(cards) {
     }
 
     const seen = getSeenSet()
+    const suppressed = getSuppressedSet()
     const settings = getSettings()
     const enabled = settings.enabledTopics.length
       ? settings.enabledTopics
       : [...poolByTopic.keys()]
 
     // topics that actually have something to show
-    let topics = enabled.filter((t) => candidatesFor(t, seen).length > 0)
+    let topics = enabled.filter((t) => candidatesFor(t, seen, suppressed).length > 0)
     if (!topics.length) return null
 
     // avoid a 3rd consecutive card of the same topic
@@ -136,7 +135,13 @@ export function createFeedEngine(cards) {
     const weights = topicWeights(enabled)
     const topic = weightedPick(topics, (t) => weights[t] ?? 1)
 
-    let candidates = candidatesFor(topic, seen)
+    let candidates = candidatesFor(topic, seen, suppressed)
+
+    // never two typographically-styled cards in a row (visual seasoning)
+    if (recent.length && recent[recent.length - 1].styled) {
+      const plain = candidates.filter((c) => !isStyled(c))
+      if (plain.length) candidates = plain
+    }
 
     // avoid a 3rd consecutive card of the same type (when alternatives exist)
     if (lastTwoShare('type')) {

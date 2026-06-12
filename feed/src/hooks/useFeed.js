@@ -5,14 +5,26 @@ import {
   ALL_TOPICS,
   bumpDaily,
   getDaily,
+  getSeenSet,
   getSettings,
+  getSuppressedSet,
+  getWarn,
   resetSeen,
   saveSettings,
-  setDailyOverride
+  setDailyOverride,
+  setWarnedAt
 } from '../engine/storage.js'
 
 const CAP_CARD = { id: 'sys-cap', type: 'cap', topic: 'system' }
 const EMPTY_CARD = { id: 'sys-empty', type: 'empty', topic: 'system' }
+const WARN_CARD = { id: 'sys-lowlib', type: 'warn', topic: 'system' }
+
+// Count library cards the user could still be served: not seen, not suppressed.
+function countUnseen() {
+  const seen = getSeenSet()
+  const suppressed = getSuppressedSet()
+  return cards.filter((c) => !seen.has(c.id) && !suppressed.has(c.id)).length
+}
 
 /**
  * Drives the feed: holds the engine, the running history of shown cards, the
@@ -39,6 +51,17 @@ export function useFeed() {
     const settings = getSettings()
     if (!daily.override && daily.count >= settings.dailyCap) {
       pushCard(CAP_CARD)
+      return
+    }
+    // One-time, friendly low-library nudge. Armed per library size, so a
+    // recharge (which grows cards.json) re-arms it automatically.
+    const warn = getWarn()
+    if (
+      warn.warnedAtLibrarySize !== cards.length &&
+      countUnseen() < 2 * settings.dailyCap
+    ) {
+      setWarnedAt(cards.length)
+      pushCard(WARN_CARD)
       return
     }
     const card = engine.current.next()
@@ -120,6 +143,10 @@ export function useFeed() {
         ? settings.enabledTopics[0]
         : 'custom'
 
+  // recomputed as the user advances (seenToday) or changes settings
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  const unseenCount = useMemo(() => countUnseen(), [seenToday, settingsVersion])
+
   return {
     current,
     advance,
@@ -133,6 +160,7 @@ export function useFeed() {
     onSettingsChange,
     focus,
     setFocus,
+    unseenCount,
     totalCards: cards.length
   }
 }

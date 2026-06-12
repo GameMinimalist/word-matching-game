@@ -32,35 +32,11 @@
     "answer": "About 65% (precisely 223/343). Compute the chance all four differ: (7/7)(6/7)(5/7)(4/7) = 120/343 ≈ 35%. So at least one shared day is 1 - 120/343 = 223/343 ≈ 65%."
   },
   {
-    "id": "log-t005",
-    "type": "puzzle",
-    "topic": "logic",
-    "headline": "What comes next in this sequence: 1, 11, 21, 1211, 111221, ?",
-    "body": "It is not arithmetic; try reading each term aloud.",
-    "answer": "312211. It's the 'look-and-say' sequence: each term describes the previous one. 111221 is read as 'three 1s, two 2s, one 1' = 312211."
-  },
-  {
-    "id": "log-t006",
-    "type": "puzzle",
-    "topic": "logic",
-    "headline": "A bat and a ball cost $1.10 in total. The bat costs $1.00 more than the ball. How much does the ball cost?",
-    "body": "The intuitive answer is wrong.",
-    "answer": "5 cents. If the ball is x, the bat is x + 1.00, so x + (x + 1.00) = 1.10, giving 2x = 0.10 and x = 0.05. The bat is $1.05 and the ball is $0.05."
-  },
-  {
     "id": "log-t007",
     "type": "puzzle",
     "topic": "logic",
     "headline": "You have nine identical-looking balls; eight weigh the same and one is slightly heavier. Using a balance scale only twice, how do you find the heavy ball?",
     "body": "The scale only tells you which side is heavier or that they balance.",
     "answer": "Split into three groups of three. Weigh group A vs B. If they balance, the heavy ball is in C; otherwise it's in the heavier side. Take that group of three, weigh one ball vs another: if one is heavier it's that one, if they balance it's the third. Two weighings suffice."
-  },
-  {
-    "id": "log-t008",
-    "type": "puzzle",
-    "topic": "logic",
-    "headline": "A man lives on the 10th floor. Every morning he takes the lift down to the ground floor. Coming home, he rides to the 7th floor and walks the rest, except on rainy days when he rides all the way to the 10th. Why?",
-    "body": "Nothing is wrong with the lift.",
-    "answer": "He is short and can only reach the button for the 7th floor. On rainy days he carries an umbrella (or shares the lift with someone) and uses it to press the 10th-floor button."
   }
 ]

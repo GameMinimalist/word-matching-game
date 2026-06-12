@@ -1,5 +1,43 @@
 [
   {
+    "id": "mon-x01",
+    "type": "concept",
+    "topic": "money",
+    "style": "default",
+    "headline": "Supply and demand: the price is just where the two lines cross",
+    "svg": "<svg viewBox=\"0 0 220 150\" role=\"img\" aria-label=\"A downward demand line and an upward supply line crossing at the equilibrium price\"><line x1=\"34\" y1=\"14\" x2=\"34\" y2=\"126\" stroke=\"#4b5563\" stroke-width=\"1.5\"/><line x1=\"34\" y1=\"126\" x2=\"206\" y2=\"126\" stroke=\"#4b5563\" stroke-width=\"1.5\"/><line x1=\"46\" y1=\"26\" x2=\"196\" y2=\"118\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\"/><line x1=\"46\" y1=\"118\" x2=\"196\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.5\"/><circle cx=\"121\" cy=\"72\" r=\"3.6\" fill=\"currentColor\"/><text x=\"150\" y=\"114\" fill=\"#9ca3af\" font-size=\"10\" font-family=\"sans-serif\">Demand</text><text x=\"150\" y=\"36\" fill=\"#9ca3af\" font-size=\"10\" font-family=\"sans-serif\">Supply</text><text x=\"6\" y=\"18\" fill=\"#9ca3af\" font-size=\"9\" font-family=\"sans-serif\">Price</text><text x=\"144\" y=\"142\" fill=\"#9ca3af\" font-size=\"9\" font-family=\"sans-serif\">Quantity</text></svg>",
+    "body": "Demand slopes down (cheaper → people want more); supply slopes up (pricier → sellers offer more). The market price isn't set by either side alone — it's the single point where the quantity people want to buy equals the quantity sellers want to sell.",
+    "more": "The useful part is what happens when something shifts a whole line. A frost that wipes out a coffee crop slides the supply line left: at every price there's less coffee, so the crossing point moves up and to the left — higher price, less sold. A viral health study that makes everyone want avocados slides demand right: higher price, more sold.\n\nThis is why \"the price went up\" never tells you the cause on its own. Price rising with volume rising means demand grew; price rising with volume falling means supply shrank. The two diagnoses call for opposite responses."
+  },
+  {
+    "id": "mon-x02",
+    "type": "fact",
+    "topic": "money",
+    "style": "bignumber",
+    "kicker": "By the numbers",
+    "headline": "≈ 31×",
+    "body": "A US dollar from 1913 — the year the Federal Reserve was founded and the modern price index begins — buys roughly what 31 dollars do today. Put the other way round, the dollar has shed about 97% of its purchasing power in a century.",
+    "more": "This isn't the result of dramatic crashes; it's the quiet compounding of low inflation. Average a bit over 3% a year and prices roughly double every two decades — five doublings in a century is a 32-fold rise.\n\nIt's also why \"keeping it safe\" under the mattress is not actually safe: cash held still loses purchasing power every single year. The number is an argument for owning assets that at least keep pace with prices, not against money itself."
+  },
+  {
+    "id": "psy-x01",
+    "type": "fact",
+    "topic": "psychology",
+    "style": "pullquote",
+    "headline": "People will forget what you said, and forget what you did, but people will never forget how you made them feel.",
+    "attribution": "Maya Angelou",
+    "body": "It lands because memory is selective in exactly this way: we encode the emotional gist of an interaction far more durably than its content. A month later the facts of a meeting blur, but the feeling of being respected — or dismissed — stays sharp, and quietly drives how we treat that person next time."
+  },
+  {
+    "id": "phi-x01",
+    "type": "fact",
+    "topic": "philosophy",
+    "style": "pullquote",
+    "headline": "The unexamined life is not worth living.",
+    "attribution": "Socrates, at his trial (Plato, Apology 38a)",
+    "body": "Socrates said it facing a death sentence, having been offered exile if he'd just stop questioning everything. He refused: a life lived on unexamined autopilot — inherited opinions never tested, choices never questioned — wasn't, to him, a fully human life at all. The line is a challenge, not a comfort: it asks whether your beliefs are actually yours, or just the ones you happened to absorb."
+  },
+  {
     "id": "his-t001",
     "type": "puzzle",
     "topic": "history",
@@ -502,36 +540,12 @@
     "answer": "About 65% (precisely 223/343). Compute the chance all four differ: (7/7)(6/7)(5/7)(4/7) = 120/343 ≈ 35%. So at least one shared day is 1 - 120/343 = 223/343 ≈ 65%."
   },
   {
-    "id": "log-t005",
-    "type": "puzzle",
-    "topic": "logic",
-    "headline": "What comes next in this sequence: 1, 11, 21, 1211, 111221, ?",
-    "body": "It is not arithmetic; try reading each term aloud.",
-    "answer": "312211. It's the 'look-and-say' sequence: each term describes the previous one. 111221 is read as 'three 1s, two 2s, one 1' = 312211."
-  },
-  {
-    "id": "log-t006",
-    "type": "puzzle",
-    "topic": "logic",
-    "headline": "A bat and a ball cost $1.10 in total. The bat costs $1.00 more than the ball. How much does the ball cost?",
-    "body": "The intuitive answer is wrong.",
-    "answer": "5 cents. If the ball is x, the bat is x + 1.00, so x + (x + 1.00) = 1.10, giving 2x = 0.10 and x = 0.05. The bat is $1.05 and the ball is $0.05."
-  },
-  {
     "id": "log-t007",
     "type": "puzzle",
     "topic": "logic",
     "headline": "You have nine identical-looking balls; eight weigh the same and one is slightly heavier. Using a balance scale only twice, how do you find the heavy ball?",
     "body": "The scale only tells you which side is heavier or that they balance.",
     "answer": "Split into three groups of three. Weigh group A vs B. If they balance, the heavy ball is in C; otherwise it's in the heavier side. Take that group of three, weigh one ball vs another: if one is heavier it's that one, if they balance it's the third. Two weighings suffice."
-  },
-  {
-    "id": "log-t008",
-    "type": "puzzle",
-    "topic": "logic",
-    "headline": "A man lives on the 10th floor. Every morning he takes the lift down to the ground floor. Coming home, he rides to the 7th floor and walks the rest, except on rainy days when he rides all the way to the 10th. Why?",
-    "body": "Nothing is wrong with the lift.",
-    "answer": "He is short and can only reach the button for the 7th floor. On rainy days he carries an umbrella (or shares the lift with someone) and uses it to press the 10th-floor button."
   },
   {
     "id": "log-0001",

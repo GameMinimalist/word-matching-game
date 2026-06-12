@@ -1,19 +1,27 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import LikeBar from './LikeBar.jsx'
+import BookmarkButton from './BookmarkButton.jsx'
+import { sanitizeSvg } from '../engine/sanitizeSvg.js'
 import { topicAccent, topicLabel } from '../topics.js'
 
 /**
  * One full-viewport card. Dispatches on card.type for the body; all expansion
- * ("Tell me more", "Reveal answer", quiz answering) happens inline — nothing
- * ever navigates away.
+ * ("Tell me more", "Show answer") happens inline — nothing ever navigates away.
  */
-export default function Card({ card, onOpenThread, onKeepGoing }) {
+export default function Card({ card, onOpenThread, onKeepGoing, onBookmarkChange }) {
   if (card.type === 'cap') return <CapCard onKeepGoing={onKeepGoing} />
   if (card.type === 'empty') return <EmptyCard />
-  return <ContentCard card={card} onOpenThread={onOpenThread} />
+  if (card.type === 'warn') return <WarnCard />
+  return (
+    <ContentCard
+      card={card}
+      onOpenThread={onOpenThread}
+      onBookmarkChange={onBookmarkChange}
+    />
+  )
 }
 
-function ContentCard({ card, onOpenThread }) {
+function ContentCard({ card, onOpenThread, onBookmarkChange }) {
   const accent = topicAccent(card.topic)
   const bodyRef = useRef(null)
   const innerRef = useRef(null)
@@ -54,12 +62,7 @@ function ContentCard({ card, onOpenThread }) {
 
       <div className="card-body" ref={bodyRef}>
         <div className="card-body-inner" ref={innerRef}>
-          {card.type === 'fact' && <FactBody card={card} />}
-          {card.type === 'concept' && <ConceptBody card={card} />}
-          {card.type === 'puzzle' && <PuzzleBody card={card} />}
-          {card.type === 'rabbithole' && (
-            <RabbitholeBody card={card} onOpenThread={onOpenThread} />
-          )}
+          <CardBody card={card} onOpenThread={onOpenThread} />
         </div>
       </div>
 
@@ -71,10 +74,23 @@ function ContentCard({ card, onOpenThread }) {
       </div>
 
       <footer className="card-foot">
+        <BookmarkButton cardId={card.id} onChange={onBookmarkChange} />
         <LikeBar cardId={card.id} />
       </footer>
     </article>
   )
+}
+
+// Pick the body renderer: typographic variants take precedence over type.
+function CardBody({ card, onOpenThread }) {
+  if (card.style === 'bignumber') return <BigNumberBody card={card} />
+  if (card.style === 'pullquote') return <PullQuoteBody card={card} />
+  if (card.type === 'fact') return <FactBody card={card} />
+  if (card.type === 'concept') return <ConceptBody card={card} />
+  if (card.type === 'puzzle') return <PuzzleBody card={card} />
+  if (card.type === 'rabbithole')
+    return <RabbitholeBody card={card} onOpenThread={onOpenThread} />
+  return null
 }
 
 // --- fact / concept ------------------------------------------------------
@@ -83,6 +99,7 @@ function FactBody({ card }) {
   return (
     <>
       <h1 className="headline">{card.headline}</h1>
+      <Diagram card={card} />
       <Prose text={card.body} className="body" />
       {card.more && !open && (
         <button type="button" className="ghost-btn" onClick={() => setOpen(true)}>
@@ -100,6 +117,7 @@ function ConceptBody({ card }) {
     <>
       <span className="kicker">Mental model</span>
       <h1 className="headline">{card.headline}</h1>
+      <Diagram card={card} />
       <Prose text={card.body} className="body" />
       {card.more && !open && (
         <button type="button" className="ghost-btn" onClick={() => setOpen(true)}>
@@ -118,6 +136,7 @@ function PuzzleBody({ card }) {
     <>
       <span className="kicker">Brain teaser</span>
       <h1 className="headline">{card.headline}</h1>
+      <Diagram card={card} />
       {card.body && card.body !== card.headline && (
         <Prose text={card.body} className="body" />
       )}
@@ -132,6 +151,61 @@ function PuzzleBody({ card }) {
         </div>
       )}
     </>
+  )
+}
+
+// --- typographic variants (Phase 2) --------------------------------------
+function BigNumberBody({ card }) {
+  const [open, setOpen] = useState(false)
+  return (
+    <>
+      <span className="kicker">{card.kicker || 'By the numbers'}</span>
+      <div className="bignumber">{card.headline}</div>
+      <Diagram card={card} />
+      <Prose text={card.body} className="body" />
+      {card.more && !open && (
+        <button type="button" className="ghost-btn" onClick={() => setOpen(true)}>
+          Tell me more
+        </button>
+      )}
+      {card.more && open && <Prose text={card.more} className="more reveal" />}
+    </>
+  )
+}
+
+function PullQuoteBody({ card }) {
+  const [open, setOpen] = useState(false)
+  return (
+    <>
+      <blockquote className="pullquote">
+        <span className="pullquote-mark" aria-hidden="true">
+          “
+        </span>
+        <span className="pullquote-text">{card.headline}</span>
+      </blockquote>
+      {card.attribution && <p className="pullquote-by">— {card.attribution}</p>}
+      {card.body && <Prose text={card.body} className="body" />}
+      {card.more && !open && (
+        <button type="button" className="ghost-btn" onClick={() => setOpen(true)}>
+          Tell me more
+        </button>
+      )}
+      {card.more && open && <Prose text={card.more} className="more reveal" />}
+    </>
+  )
+}
+
+// --- inline SVG diagram (Phase 2) ----------------------------------------
+function Diagram({ card }) {
+  const html = useMemo(() => (card.svg ? sanitizeSvg(card.svg) : null), [card.svg])
+  if (!html) return null
+  // Sanitised at build time and again here; topic accent exposed as currentColor.
+  return (
+    <div
+      className="card-diagram"
+      style={{ color: topicAccent(card.topic) }}
+      dangerouslySetInnerHTML={{ __html: html }}
+    />
   )
 }
 
@@ -182,6 +256,26 @@ function EmptyCard() {
         <p className="body">
           You’ve been through every card in the enabled topics. Turn more topics
           on in settings, or reset your history to ride again.
+        </p>
+      </div>
+    </article>
+  )
+}
+
+function WarnCard() {
+  return (
+    <article className="card system">
+      <div className="card-body center">
+        <div className="big-emoji">🪫</div>
+        <h1 className="headline">You’re running low</h1>
+        <p className="body">
+          You’ve nearly worked through the whole library. Time to recharge it
+          with a fresh batch of cards.
+        </p>
+        <p className="body hint-sub">
+          See <code>scripts/generate-cards.md</code> for the recharge ritual —
+          generate a new batch, drop it in, and this nudge resets itself. Swipe
+          on to keep going.
         </p>
       </div>
     </article>

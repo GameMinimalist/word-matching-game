@@ -1,14 +1,20 @@
 import { useState } from 'react'
 import {
   ALL_TOPICS,
-  exportLikes,
+  exportData,
   getSettings,
   saveSettings
 } from '../engine/storage.js'
 import { topicAccent, topicLabel } from '../topics.js'
 
 /** Minimal settings sheet behind the gear: topics, daily cap, export, reset. */
-export default function Settings({ onClose, onChange, onResetHistory, seenToday }) {
+export default function Settings({
+  onClose,
+  onChange,
+  onResetHistory,
+  seenToday,
+  unseenCount
+}) {
   const [settings, setSettings] = useState(() => getSettings())
   const [didReset, setDidReset] = useState(false)
 
@@ -27,13 +33,13 @@ export default function Settings({ onClose, onChange, onResetHistory, seenToday 
     update({ enabledTopics })
   }
 
-  function exportData() {
-    const data = JSON.stringify(exportLikes(), null, 2)
+  function download() {
+    const data = JSON.stringify(exportData(), null, 2)
     const blob = new Blob([data], { type: 'application/json' })
     const url = URL.createObjectURL(blob)
     const a = document.createElement('a')
     a.href = url
-    a.download = `feed-likes-${new Date().toISOString().slice(0, 10)}.json`
+    a.download = `feed-data-${new Date().toISOString().slice(0, 10)}.json`
     document.body.appendChild(a)
     a.click()
     a.remove()
@@ -96,14 +102,17 @@ export default function Settings({ onClose, onChange, onResetHistory, seenToday 
             />
             <span className="cap-value">{settings.dailyCap}</span>
           </div>
-          <p className="sheet-note">{seenToday} seen today</p>
+          <p className="sheet-note">
+            {seenToday} seen today
+            {typeof unseenCount === 'number' && ` · ${unseenCount} cards unseen`}
+          </p>
         </section>
 
         <section className="sheet-section">
           <h3>Data</h3>
           <div className="btn-col">
-            <button type="button" className="ghost-btn wide" onClick={exportData}>
-              Export likes (JSON)
+            <button type="button" className="ghost-btn wide" onClick={download}>
+              Export my data (JSON)
             </button>
             <button type="button" className="ghost-btn wide danger" onClick={resetHistory}>
               {didReset ? 'History reset ✓' : 'Reset seen history'}

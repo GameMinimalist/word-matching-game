@@ -23,9 +23,15 @@ analytics — all content is bundled at build time and all state lives in
   >2 of the same topic/type in a row.
 - **Card types** — facts (with optional "Tell me more"), named mental models,
   brain teasers & riddles with an inline "Show answer", and rabbit-holes that
-  expand into a short linked thread, then resume the shuffle.
-- **👍 / 👎 on every card** — persisted locally; 👎 mildly down-weights that
-  topic. Exportable as JSON (future training data for a dynamic v2).
+  expand into a short linked thread, then resume the shuffle. Cards can also
+  carry an inline SVG diagram or a big-number / pull-quote treatment.
+- **👍 / 👎 / 🔖 on every card** — all persisted locally. 👎 means "never show
+  this card again"; 👍 gives a topic a gentle nudge; 🔖 saves a card to the
+  **Saved** view (bookmark icon in the top bar) for later reading.
+- **Low-library nudge** — when you've nearly exhausted the library, a one-time
+  card points you to the recharge ritual; it re-arms when you add cards.
+- **Export** — everything (likes, 👎/suppressed, bookmarks) downloads as one
+  JSON file: future training data for a dynamic v2.
 - **Daily soft cap** (default 60) with a friendly "that's your stack for today"
   card and a *keep going anyway* escape hatch.
 - **Minimal settings** behind a gear: toggle topics, set the cap, export likes,
@@ -104,14 +110,19 @@ feed/
 
 ### Data stored on the device (`feed:` keys in `localStorage`)
 
-| key             | shape                                              |
-| --------------- | -------------------------------------------------- |
-| `feed:seen`     | `string[]` of card ids you've been served          |
-| `feed:likes`    | `{ [cardId]: { value: 1 \| -1, timestamp } }`       |
-| `feed:settings` | `{ enabledTopics: string[], dailyCap: number }`     |
-| `feed:daily`    | `{ date, count, override }` (resets at local midnight) |
+| key               | shape                                              |
+| ----------------- | -------------------------------------------------- |
+| `feed:seen`       | `string[]` of card ids you've been served          |
+| `feed:likes`      | `{ [cardId]: { value: 1 \| -1, timestamp } }`       |
+| `feed:suppressed` | `{ [cardId]: timestamp }` — 👎 "never show again"   |
+| `feed:bookmarks`  | `[{ cardId, timestamp }]` — saved for later         |
+| `feed:warn`       | `{ warnedAtLibrarySize }` — low-library arming      |
+| `feed:settings`   | `{ enabledTopics: string[], dailyCap: number }`     |
+| `feed:daily`      | `{ date, count, override }` (resets at local midnight) |
 
-Nothing leaves the device. "Export likes" downloads `feed:likes` as a JSON file.
+Nothing leaves the device. "Export my data" downloads likes, 👎/suppressed and
+bookmarks as one JSON file. See [`CHANGELOG.md`](CHANGELOG.md) for the v1.1
+changes and the (automatic) localStorage migration.
 
 ## Out of scope for v1
 

@@ -509,11 +509,31 @@ button {
   flex: 0 0 auto;
   padding-top: 14px;
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: space-between;
 }
 .likebar {
   display: flex;
   gap: 8px;
+}
+.bookmark-btn {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--text-faint);
+  transition: color 0.15s, border-color 0.15s, transform 0.12s, background 0.15s;
+}
+.bookmark-btn:active {
+  transform: scale(0.88);
+}
+.bookmark-btn.is-saved {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 14%, transparent);
 }
 .like-btn {
   display: grid;
@@ -658,4 +678,177 @@ button {
   font-size: 12.5px;
   color: var(--text-faint);
   margin-top: 16px;
+}
+
+/* ---------- top-bar right cluster ---------- */
+.topbar-right {
+  justify-self: end;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  pointer-events: auto;
+}
+
+/* ---------- card diagram (inline SVG) ---------- */
+.card-diagram {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 2px 0;
+}
+.card-diagram svg {
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  max-height: 38vh;
+  overflow: visible;
+}
+
+/* ---------- big-number variant ---------- */
+.bignumber {
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: clamp(56px, 19vw, 92px);
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: var(--accent);
+  margin: 2px 0 4px;
+}
+
+/* ---------- pull-quote variant ---------- */
+.pullquote {
+  position: relative;
+  margin: 6px 0 2px;
+  padding-left: 4px;
+}
+.pullquote-mark {
+  position: absolute;
+  left: -4px;
+  top: -18px;
+  font-family: var(--serif);
+  font-size: 64px;
+  line-height: 1;
+  color: var(--accent);
+  opacity: 0.5;
+}
+.pullquote-text {
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 500;
+  font-size: clamp(23px, 6.2vw, 30px);
+  line-height: 1.35;
+}
+.pullquote-by {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-dim);
+  margin-top: 4px;
+}
+
+/* ---------- Saved overlay ---------- */
+.saved-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 45;
+  background: var(--bg);
+  display: flex;
+  flex-direction: column;
+  animation: fade 0.18s ease;
+}
+.saved-overlay.reader {
+  background: var(--bg);
+}
+.saved-head {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: calc(env(safe-area-inset-top, 0px) + 16px) 18px 12px;
+}
+.saved-head h2 {
+  font-family: var(--serif);
+  font-size: 24px;
+  font-weight: 600;
+}
+.saved-head.floating {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  pointer-events: none;
+}
+.saved-head.floating .icon-btn,
+.saved-head.floating .saved-counter {
+  pointer-events: auto;
+}
+.saved-counter {
+  font-size: 13px;
+  color: var(--text-faint);
+  font-variant-numeric: tabular-nums;
+}
+.saved-empty {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 16px;
+  padding: 0 40px;
+  color: var(--text-dim);
+}
+.saved-list {
+  list-style: none;
+  margin: 0;
+  padding: 4px 12px calc(env(safe-area-inset-bottom, 0px) + 24px);
+  overflow-y: auto;
+  flex: 1;
+}
+.saved-row {
+  display: flex;
+  align-items: stretch;
+  gap: 4px;
+  border-bottom: 1px solid var(--line);
+}
+.saved-row-main {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background: transparent;
+  border: none;
+  color: var(--text);
+  text-align: left;
+  padding: 16px 6px;
+}
+.saved-row-main .topic-dot {
+  margin-top: 7px;
+  flex: none;
+}
+.saved-row-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.saved-row-headline {
+  font-size: 16.5px;
+  line-height: 1.4;
+}
+.saved-row-topic {
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.saved-row-remove {
+  flex: none;
+  width: 44px;
+  background: transparent;
+  border: none;
+  color: var(--text-faint);
+  font-size: 15px;
+}
+.saved-row-remove:hover {
+  color: var(--text);
 }

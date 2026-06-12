@@ -12,7 +12,16 @@ const EDGE_SLACK = 4 // px tolerance for "at the top/bottom of the scroll"
  * the card — so reading never trips an accidental card change. Wheel + arrow
  * keys follow the same rule; thin edge tap-zones give desktop a mouse option.
  */
-export default function Feed({ card, onNext, onPrev, canGoBack, onOpenThread, onKeepGoing }) {
+export default function Feed({
+  card,
+  onNext,
+  onPrev,
+  canGoBack,
+  onOpenThread,
+  onKeepGoing,
+  onBookmarkChange,
+  active = true
+}) {
   const start = useRef(null)
   const locked = useRef(false)
 
@@ -41,6 +50,7 @@ export default function Feed({ card, onNext, onPrev, canGoBack, onOpenThread, on
   }
 
   useEffect(() => {
+    if (!active) return
     const onKey = (e) => {
       if (e.key === 'ArrowDown' || e.key === ' ' || e.key === 'PageDown') {
         e.preventDefault()
@@ -53,7 +63,7 @@ export default function Feed({ card, onNext, onPrev, canGoBack, onOpenThread, on
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [canGoBack])
+  }, [canGoBack, active])
 
   const onTouchStart = (e) => {
     const t = e.touches[0]
@@ -87,7 +97,12 @@ export default function Feed({ card, onNext, onPrev, canGoBack, onOpenThread, on
     >
       <div className="card-stage" key={card?.id}>
         {card && (
-          <Card card={card} onOpenThread={onOpenThread} onKeepGoing={onKeepGoing} />
+          <Card
+            card={card}
+            onOpenThread={onOpenThread}
+            onKeepGoing={onKeepGoing}
+            onBookmarkChange={onBookmarkChange}
+          />
         )}
       </div>
 

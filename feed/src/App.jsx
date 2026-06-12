@@ -2,11 +2,13 @@ import { useState } from 'react'
 import Feed from './components/Feed.jsx'
 import Settings from './components/Settings.jsx'
 import FocusBar from './components/FocusBar.jsx'
+import SavedView from './components/SavedView.jsx'
 import { useFeed } from './hooks/useFeed.js'
 
 export default function App() {
   const feed = useFeed()
   const [showSettings, setShowSettings] = useState(false)
+  const [showSaved, setShowSaved] = useState(false)
 
   return (
     <div className="app">
@@ -15,13 +17,22 @@ export default function App() {
           {feed.seenToday} today
         </span>
         <FocusBar focus={feed.focus} onFocus={feed.setFocus} />
-        <button
-          className="icon-btn gear"
-          aria-label="Settings"
-          onClick={() => setShowSettings(true)}
-        >
-          <GearIcon />
-        </button>
+        <div className="topbar-right">
+          <button
+            className="icon-btn"
+            aria-label="Saved cards"
+            onClick={() => setShowSaved(true)}
+          >
+            <BookmarkIcon />
+          </button>
+          <button
+            className="icon-btn gear"
+            aria-label="Settings"
+            onClick={() => setShowSettings(true)}
+          >
+            <GearIcon />
+          </button>
+        </div>
       </header>
 
       <Feed
@@ -31,17 +42,35 @@ export default function App() {
         onPrev={feed.back}
         onOpenThread={feed.openThread}
         onKeepGoing={feed.keepGoing}
+        active={!showSettings && !showSaved}
       />
+
+      {showSaved && <SavedView onClose={() => setShowSaved(false)} />}
 
       {showSettings && (
         <Settings
           seenToday={feed.seenToday}
+          unseenCount={feed.unseenCount}
           onClose={() => setShowSettings(false)}
           onChange={feed.onSettingsChange}
           onResetHistory={feed.resetHistory}
         />
       )}
     </div>
+  )
+}
+
+function BookmarkIcon() {
+  return (
+    <svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true">
+      <path
+        d="M6 4.5A1.5 1.5 0 0 1 7.5 3h9A1.5 1.5 0 0 1 18 4.5V21l-6-3.6L6 21V4.5Z"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.7"
+        strokeLinejoin="round"
+      />
+    </svg>
   )
 }
 

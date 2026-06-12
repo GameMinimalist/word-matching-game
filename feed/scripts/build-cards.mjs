@@ -10,9 +10,27 @@
 import { readdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 import { dirname, join } from 'node:path'
+import { validateSvg } from '../src/engine/sanitizeSvg.js'
 
 const DATA = join(dirname(fileURLToPath(import.meta.url)), '..', 'src', 'data')
 const TYPES = new Set(['fact', 'concept', 'quiz', 'puzzle', 'rabbithole'])
+const STYLES = new Set(['default', 'bignumber', 'pullquote'])
+
+// normalise a headline for near-duplicate detection
+const normHeadline = (h) =>
+  String(h)
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, ' ')
+    .trim()
+const tokens = (h) => new Set(normHeadline(h).split(' ').filter(Boolean))
+function jaccard(a, b) {
+  const A = tokens(a)
+  const B = tokens(b)
+  if (!A.size || !B.size) return 0
+  let inter = 0
+  for (const t of A) if (B.has(t)) inter++
+  return inter / (A.size + B.size - inter)
+}
 
 const batchFiles = readdirSync(DATA)
   .filter((f) => /^cards-.*\.json$/.test(f))
@@ -48,10 +66,36 @@ for (const c of all) {
       errors.push(`${c.id}: quiz answerIndex out of range`)
   }
   if (c.type === 'puzzle' && !c.answer) errors.push(`${c.id}: puzzle missing answer`)
+  if (c.style && !STYLES.has(c.style)) errors.push(`${c.id}: bad style "${c.style}"`)
+  if (c.style === 'pullquote' && !c.attribution)
+    errors.push(`${c.id}: pullquote needs an "attribution"`)
+  if (c.svg != null) {
+    const v = validateSvg(c.svg)
+    if (!v.ok) errors.push(`${c.id}: ${v.reason}`)
+  }
 }
 // referential checks (after all ids known)
 for (const c of all) {
   if (c.recapOf && !ids.has(c.recapOf)) errors.push(`${c.id}: recapOf -> missing ${c.recapOf}`)
+}
+
+// near-duplicate headline detection
+const warnings = []
+const normMap = new Map()
+for (const c of all) {
+  const n = normHeadline(c.headline)
+  if (normMap.has(n)) errors.push(`${c.id}: identical headline to ${normMap.get(n)}`)
+  else normMap.set(n, c.id)
+}
+for (let i = 0; i < all.length; i++) {
+  for (let j = i + 1; j < all.length; j++) {
+    const sim = jaccard(all[i].headline, all[j].headline)
+    if (sim >= 0.72 && normHeadline(all[i].headline) !== normHeadline(all[j].headline)) {
+      warnings.push(
+        `near-duplicate (${(sim * 100) | 0}%): ${all[i].id} ~ ${all[j].id}`
+      )
+    }
+  }
 }
 // every rabbithole teaser should have children sharing its threadId
 const byThread = new Map()
@@ -66,6 +110,11 @@ for (const c of all) {
     const kids = (byThread.get(c.threadId) || []).filter((k) => k !== c)
     if (kids.length === 0) errors.push(`${c.id}: rabbithole has no child cards (threadId ${c.threadId})`)
   }
+}
+
+if (warnings.length) {
+  console.warn('\nWarnings (review for near-duplicates):')
+  for (const w of warnings) console.warn('  ! ' + w)
 }
 
 if (errors.length) {
