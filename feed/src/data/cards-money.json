@@ -1,0 +1,345 @@
+[
+  {
+    "id": "mon-0001",
+    "type": "fact",
+    "topic": "money",
+    "headline": "Most money has never existed as cash",
+    "body": "When a bank gives you a loan, it doesn't lend out someone else's deposit. It types a new number into your account. The vast majority of money in modern economies is created this way, as commercial bank credit, not printed by the central bank.",
+    "more": "The Bank of England spelled this out bluntly in a 2014 paper, partly because the textbook story (banks just relend savers' deposits) is wrong and misleads people about how the economy works. Loans create deposits, not the other way around.\n\nThis is why a banking panic is so dangerous: if everyone tries to convert their 'money' to cash at once, the cash simply isn't there, because it was never there. The numbers were always mostly promises."
+  },
+  {
+    "id": "mon-0002",
+    "type": "concept",
+    "topic": "money",
+    "headline": "Goodhart's Law: when a measure becomes a target, it stops measuring",
+    "body": "Any metric you use to control behaviour gets gamed until it no longer reflects what you cared about. The number improves; the underlying thing it was a proxy for does not.",
+    "more": "The classic example: Soviet nail factories judged by the weight of nails produced made a few gigantic useless nails; judged by the number, they made millions of tiny useless ones. Modern versions are everywhere. Pay surgeons by survival rate and they turn away the sickest patients. Rank schools by test scores and they teach to the test. Reward call-centre staff for short calls and they hang up on hard problems.\n\nThe deeper lesson is about incentive design: the moment a proxy carries real stakes, people optimise the proxy, not your goal. Good systems either keep the true goal hard to game, rotate metrics, or pair every target with a guardrail metric that catches the obvious cheat."
+  },
+  {
+    "id": "mon-0003",
+    "type": "concept",
+    "topic": "money",
+    "headline": "Opportunity cost: the price of anything is what you gave up for it",
+    "body": "The real cost of a choice isn't the money you spend; it's the best alternative you forgo. An afternoon spent on a side project 'costs' the freelance work you could have billed instead, even if no cash changed hands.",
+    "more": "Most people only count visible, out-of-pocket costs and ignore the invisible ones, which is why a 'free' two-hour meeting is rarely free, and why holding cash 'costs' nothing on paper while quietly losing to inflation and forgone returns.\n\nThe practical move is to evaluate decisions against your next-best option, not against zero. A business that owns its building rent-free is still paying opportunity cost: it could rent the space out. Treating that as free leads to keeping assets that should be sold. Once you see opportunity cost, 'we already own it, so it's free' stops being a valid argument."
+  },
+  {
+    "id": "mon-0004",
+    "type": "concept",
+    "topic": "money",
+    "headline": "Sunk costs: the ticket you already bought shouldn't decide tonight",
+    "body": "Money already spent and unrecoverable should play no part in your next decision. Yet a concert ticket you paid for, on a night you now feel ill, pressures you to go anyway 'so it isn't wasted'. It's already wasted either way.",
+    "more": "The only question that matters is forward-looking: given where you are now, what choice makes you best off from here? The 40 dollars are gone whether you stay home or drag yourself out. Staying home if you'd genuinely rather is the correct call.\n\nOrganisations fall for this at scale, called the sunk-cost fallacy or 'escalation of commitment': they pour another 50 million into a doomed project because they've already spent 200 million. The 200 million is the reason to be honest about the future, not to throw good money after bad. The brutal, useful habit is to ask 'would I start this today, knowing what I know?' If no, the past spending is irrelevant."
+  },
+  {
+    "id": "mon-0005",
+    "type": "concept",
+    "topic": "money",
+    "headline": "Survivorship bias: you only see the ships that came back",
+    "body": "When you study only the successes, you draw exactly the wrong lessons, because the failures that would contradict you are invisible. The dropout billionaires are visible; the millions of dropouts who failed are not.",
+    "more": "In WWII, analysts examined bombers returning from missions and wanted to armour the spots most riddled with bullet holes. Statistician Abraham Wald pointed out the opposite: armour the places with no holes. Planes hit there never came back to be examined. The visible damage marked the survivable hits.\n\nThe same trap warps business advice. 'Successful founders trusted their gut and ignored the doubters' ignores the graveyard of founders who did the same and went bankrupt. Mutual fund track records look great partly because losing funds get quietly closed and dropped from the averages. Whenever someone shows you a pattern among winners, ask what the losers looked like, and whether you can even see them."
+  },
+  {
+    "id": "mon-0006",
+    "type": "fact",
+    "topic": "money",
+    "headline": "Selling shovels beat mining gold",
+    "body": "Few people got rich digging in the California Gold Rush. The reliable fortunes were made selling to the diggers: Levi Strauss sold trousers, Samuel Brannan sold shovels and pans, and Wells Fargo sold banking and shipping.",
+    "more": "Brannan reportedly bought up every pickaxe, pan and shovel he could find, then ran through San Francisco shouting about gold to drive demand for the goods he now monopolised. He became one of California's first millionaires without panning for a thing.\n\nThe pattern recurs in every boom: in the dot-com era, Cisco sold the networking gear; in the modern AI rush, chipmakers and cloud providers sell the 'shovels'. Selling the picks is lower-variance than mining because you get paid whether or not any individual customer strikes it rich, and there are far more diggers than veins of gold."
+  },
+  {
+    "id": "mon-0007",
+    "type": "concept",
+    "topic": "money",
+    "headline": "Comparative advantage: trade pays even if you're worse at everything",
+    "body": "Two parties gain from trade if their relative costs differ, even when one is more efficient at producing everything. What matters is not who is better, but who gives up less to make each good.",
+    "more": "Suppose a brilliant lawyer also types twice as fast as any assistant. Should she do her own typing? No. Every hour she types, she gives up an hour of far more valuable legal work. The assistant, who gives up far less by typing, has the comparative advantage in typing even though the lawyer has the absolute advantage. Both end up richer when each specialises in what they sacrifice least to do.\n\nThis is the counterintuitive core of why trade between rich and poor countries can benefit both, and why 'they can make everything cheaper than us, so we'll lose' is a confused argument. Absolute skill is irrelevant; relative opportunity cost is everything. It's one of the few results in economics that is genuinely surprising and almost always misunderstood."
+  },
+  {
+    "id": "mon-0008",
+    "type": "concept",
+    "topic": "money",
+    "headline": "The principal-agent problem: your agent's interests aren't yours",
+    "body": "Whenever you hire someone to act for you, the agent, their incentives rarely line up perfectly with yours, the principal. A real-estate agent selling your house wants a quick sale far more than the last few thousand dollars you'd fight for.",
+    "more": "The agent bears almost all the effort of squeezing out a higher price but keeps only a sliver of the gain through commission. Economists Steven Levitt and Chad Syverson found agents leave their own homes on the market longer and sell them for more than comparable client homes, exactly what the misaligned incentive predicts.\n\nThe problem is structural, not about bad people. CEOs paid in short-term stock may chase quarterly results over the company's decade; fund managers may take big risks because they share the upside but not the downside. The fixes all try to re-tie the agent's payoff to the principal's outcome: deductibles, performance pay with clawbacks, skin in the game. None work perfectly, which is why this problem underlies a huge fraction of business and political dysfunction."
+  },
+  {
+    "id": "mon-0009",
+    "type": "concept",
+    "topic": "money",
+    "headline": "Moral hazard: insurance changes the behaviour it insures",
+    "body": "When you're protected from the consequences of a risk, you take more of it. Drivers with full collision coverage park a little more carelessly; banks that expect a bailout make bolder bets.",
+    "more": "The subtle point is that this isn't fraud, it's a rational response to a changed payoff. If someone else absorbs the downside, the cost-benefit of risky behaviour genuinely shifts in favour of risk. Studies have found that mandatory antilock brakes didn't cut crashes as much as expected, partly because drivers compensated by driving faster, a phenomenon called risk compensation.\n\nMoral hazard is the reason insurers use deductibles and co-pays: making you bear part of the loss keeps your incentives partly intact. It's also central to the 2008 financial crisis, where institutions deemed 'too big to fail' had every reason to gamble, knowing the public would catch them if they fell. Any time you shield someone from a risk, expect them to lean into it."
+  },
+  {
+    "id": "mon-0010",
+    "type": "concept",
+    "topic": "money",
+    "headline": "The lemons problem: when buyers can't tell quality, good goods vanish",
+    "body": "If buyers can't distinguish good products from bad ones, they'll only pay an average price. Sellers of good products won't accept that price and leave the market, dragging the average down, until only 'lemons' remain.",
+    "more": "George Akerlof won a Nobel for this 1970 insight about asymmetric information, using the used-car market. A great used car and a hidden disaster look identical to the buyer, so the buyer offers a middling price. The owner of the great car says no thanks and keeps it; the owner of the dud happily sells. Quality unravels.\n\nThis explains why a one-week-old car loses value the instant it's resold (the very act of selling is a bad signal), why warranties and certified-pre-owned schemes exist (to credibly signal quality), and why health insurance markets can collapse when only the sick sign up. The cure is anything that closes the information gap: signals, guarantees, reputations, third-party inspections. Markets need trust, and the lemons problem shows what happens when trust is missing."
+  },
+  {
+    "id": "mon-0011",
+    "type": "concept",
+    "topic": "money",
+    "headline": "The winner's curse: win the auction, overpay the prize",
+    "body": "In an auction where the item has a common but uncertain value, the winner is usually the bidder who most overestimated it. Winning is itself bad news: it means everyone else thought it was worth less.",
+    "more": "Picture oil companies bidding for drilling rights. Nobody knows the true amount of oil. Each firm makes its own noisy estimate and bids accordingly. The firm that bids highest is almost by definition the one with the most optimistic error, so the act of winning signals you probably paid too much. Oil geologists documented exactly this on 1970s Gulf of Mexico leases.\n\nThe rational defence is counterintuitive: shade your bid below your own estimate, because you should condition on the sobering fact that if you win, you were the most optimistic in the room. The curse shows up in corporate takeovers (acquirers routinely overpay), competitive hiring, and online ad auctions. The intuition 'I'll bid what I think it's worth' is precisely the mistake."
+  },
+  {
+    "id": "mon-0012",
+    "type": "concept",
+    "topic": "money",
+    "headline": "Baumol's cost disease: why a haircut keeps getting pricier",
+    "body": "Some jobs can't get more productive. A string quartet needs four players for the same minutes Beethoven required. As productivity soars in manufacturing, wages rise economy-wide, so musicians, teachers and nurses must be paid more too, or they'd leave for the productive sectors.",
+    "more": "William Baumol's insight, sometimes called the cost disease, explains a deep pattern: over decades, the prices of labour-intensive services (live performance, education, healthcare, elder care) rise faster than the prices of manufactured goods. A television gets cheaper every year; a college degree and a doctor's visit get relentlessly more expensive. This isn't simple greed or waste.\n\nThe mechanism is wage competition. If a car factory doubles output per worker, it can pay more. To keep teachers from quitting to work in the factory, schools must roughly match those raises, but a teacher hasn't doubled output, so the cost per student rises. Counterintuitively, the 'disease' is a symptom of overall economic success, and it predicts that as economies get richer, an ever-larger share of spending goes to exactly these human-touch services."
+  },
+  {
+    "id": "mon-0013",
+    "type": "concept",
+    "topic": "money",
+    "headline": "Network effects: the product that gets better as more people use it",
+    "body": "For some goods, each new user makes the product more valuable to every existing user. One fax machine is useless; a million is essential. The value grows with the size of the network, not just the quality of the thing.",
+    "more": "This creates powerful winner-take-most dynamics and brutal chicken-and-egg startup problems. A dating app with ten users can't attract the eleventh; a marketplace with no sellers can't attract buyers, and vice versa. Companies burn enormous money subsidising one side (free rides, seller incentives) just to bootstrap past the cold-start threshold.\n\nOnce a network tips, it's hard to dislodge even by a better product, because switching means abandoning everyone you're connected to. That's why we stay on platforms we dislike, and why incumbents with network effects can be lazy yet dominant. But the moat can crack fast: networks can also collapse in reverse, as each departure makes staying less valuable for those who remain, which is how once-dominant social networks emptied out almost overnight."
+  },
+  {
+    "id": "mon-0014",
+    "type": "fact",
+    "topic": "money",
+    "headline": "Index funds free-ride on everyone else's research",
+    "body": "An index fund buys every stock in a market without analysing a single company. It sounds like reckless ignorance, yet it reliably beats most expert stock-pickers. The trick: it lets active traders do the expensive work of setting prices, then quietly piggybacks on the result.",
+    "more": "Prices in a liquid market already reflect the combined research of thousands of analysts fighting to find mispricings. The index fund accepts those prices as roughly fair and simply owns the whole haystack at rock-bottom cost. By skipping research salaries and minimising trading, it keeps fees tiny, and in investing, fees are one of the few things you can predict with certainty.\n\nThere's a genuine paradox here, named after economists Grossman and Stiglitz: if everyone indexed, no one would research companies and prices would stop being accurate. Indexing only works because enough active investors keep doing the costly price discovery. Indexers are free-riders on that effort, and so far there are nowhere near enough of them to break the system."
+  },
+  {
+    "id": "mon-0015",
+    "type": "fact",
+    "topic": "money",
+    "headline": "Compound interest is powerful, but Einstein never called it the eighth wonder",
+    "body": "The famous 'compound interest is the eighth wonder of the world' quote attributed to Einstein is apocryphal; there's no evidence he ever said it. The maths, however, is real and routinely underestimated by human intuition.",
+    "more": "People expect growth to be linear and are repeatedly blindsided by exponentials. A useful shortcut is the Rule of 72: divide 72 by the annual percentage return to get the rough number of years for money to double. At 8 percent, money doubles in about 9 years; at 2 percent, it takes 36.\n\nThe same exponential math runs in reverse and is far less celebrated: credit-card debt at 20 percent compounds against you, doubling what you owe in under four years if unpaid. Compounding is neither magic nor a wonder of the world; it's just a multiplication that our linear-thinking brains consistently fail to feel until it's large."
+  },
+  {
+    "id": "mon-0016",
+    "type": "fact",
+    "topic": "money",
+    "headline": "Tulip mania was real, but the wild story is largely a myth",
+    "body": "The tale of 17th-century Dutch buying houses for a single bulb and the economy crashing is mostly exaggeration. Recent historians, notably Anne Goldgar, found little evidence of widespread ruin or economic collapse.",
+    "more": "Prices for rare tulip bulbs did spike and fall sharply over the winter of 1636-37, but the trade was concentrated among a relatively small circle of merchants and connoisseurs, often using futures-style contracts that were frequently not honoured rather than cash. Few people were bankrupted, and the broader Dutch economy sailed on untroubled.\n\nMuch of the lurid legend comes from moralising pamphlets written at the time and a popular 1841 book by Charles Mackay that prized a good story over accuracy. Tulip mania survives as the go-to bubble metaphor precisely because the myth is more useful than the muddier truth. The real lesson is about how financial folklore gets manufactured and repeated."
+  },
+  {
+    "id": "mon-0017",
+    "type": "fact",
+    "topic": "money",
+    "headline": "Diamonds are common; the scarcity was engineered",
+    "body": "Diamonds are not especially rare. Their preciousness and the very idea that an engagement ring should cost two months' salary were largely manufactured by one company's marketing in the 20th century.",
+    "more": "By controlling most of the world's supply, the De Beers cartel deliberately limited how many diamonds reached the market, propping up prices. Then in 1947 its ad agency coined 'A Diamond Is Forever', a campaign that did two clever things: it tied diamonds to eternal love, and it discouraged people from ever reselling, which kept a flood of second-hand stones off the market.\n\nThe 'two months' salary' rule of thumb was also an advertising invention, with no basis in tradition. The whole episode is a case study in how a commodity's price can be sustained almost entirely by supply control and emotional branding rather than genuine scarcity, a fragility now showing as lab-grown diamonds, chemically identical, undercut the natural ones."
+  },
+  {
+    "id": "mon-0018",
+    "type": "fact",
+    "topic": "money",
+    "headline": "A central bank can lose money on purpose",
+    "body": "Central banks aren't profit-seeking businesses, and several have deliberately run themselves into negative equity. A central bank can technically operate with 'negative net worth' indefinitely because it can always create the currency it owes in.",
+    "more": "This breaks the intuition that an insolvent institution must fail. A normal company that owes more than it owns is bankrupt. A central bank's liabilities are its own banknotes and reserves, which it issues, so it cannot be forced into default in its own currency the way a household or firm can.\n\nThe real constraint isn't solvency but inflation and credibility. If a central bank prints to cover its losses recklessly, it can debase the currency and lose public trust, which is the thing that actually matters. So the limit is political and economic, not accounting. It's a useful reminder that 'running out of money' means something completely different for the issuer of money than for the rest of us."
+  },
+  {
+    "id": "mon-0019",
+    "type": "fact",
+    "topic": "money",
+    "headline": "Giffen goods: when a price rise makes you buy more",
+    "body": "Economics says demand falls as price rises, but a rare exception exists. For a Giffen good, a staple so dominant in a poor household's budget that a price rise makes them too poor to afford anything else, demand can actually increase.",
+    "more": "Imagine a family that survives mostly on rice plus the occasional bit of meat. If rice gets more expensive, the family becomes poorer overall, can no longer afford the meat, and must fill the calorie gap with even more cheap rice. The price went up and they bought more of it.\n\nFor over a century these were textbook curiosities with no solid real-world proof. Then in the 2000s, economists Robert Jensen and Nolan Miller ran field experiments in poor regions of China and found genuine Giffen behaviour for rice and wheat among the very poor. It's a striking demonstration that the most basic 'law' of demand has an edge case, hiding precisely where people are too poor to have alternatives."
+  },
+  {
+    "id": "mon-0020",
+    "type": "fact",
+    "topic": "money",
+    "headline": "Hyperinflation can make burning cash cheaper than firewood",
+    "body": "In Germany's 1923 hyperinflation, prices doubled every few days. People famously found it cheaper to burn banknotes for warmth than to buy firewood, and wallpapered rooms with worthless marks.",
+    "more": "Workers were paid twice a day and rushed to spend the money before lunchtime, because by evening it bought half as much. Restaurants stopped printing prices on menus; the figure changed during the meal. A wheelbarrow of cash could be stolen by tipping out the money and taking the barrow.\n\nThe deeper mechanism is a vicious feedback loop: once people expect money to lose value, they spend it instantly, which speeds up its circulation and drives prices up further, fuelling the very expectation. This is why central bankers treat inflation expectations as something to defend almost above all else. The currency stabilised only when a new mark was introduced, credibly backed and limited in supply, restoring the one thing money truly runs on, which is belief."
+  },
+  {
+    "id": "mon-0021",
+    "type": "fact",
+    "topic": "money",
+    "headline": "The man who tried to corner the silver market",
+    "body": "In 1979-80 the Hunt brothers, Texas oil heirs, quietly bought up so much silver that they controlled a large share of the world's supply, driving the price from about 6 dollars to nearly 50 an ounce.",
+    "more": "Cornering a market means owning enough of a commodity that you can dictate its price, forcing anyone who needs it to buy from you. The Hunts borrowed heavily to keep buying, and as silver soared, ordinary people melted down family heirlooms to sell.\n\nThe scheme unravelled when exchanges changed the rules, restricting how much silver could be bought on borrowed money. The price collapsed in a single day later called Silver Thursday, the Hunts faced enormous margin calls they couldn't meet, and one of America's richest families was driven toward bankruptcy. The episode shows both the temptation and the fatal flaw of cornering: you need ever more borrowed money to hold the corner, and the moment the rules or sentiment shift, leverage that built the position destroys it."
+  },
+  {
+    "id": "mon-0022",
+    "type": "fact",
+    "topic": "money",
+    "headline": "Vending machines invented one of the first anti-fraud sensors",
+    "body": "Coin-operated machines had to solve a hard problem early: telling a real coin from a slug. The mechanisms inside became surprisingly sophisticated, checking a coin's size, weight, and even its magnetic and electrical properties.",
+    "more": "A modern coin acceptor rolls the coin past sensors that measure its diameter and run it through a magnetic field; the way a genuine coin's alloy interacts with that field produces a signature that's hard to fake with a washer or a foreign coin of the same size. Reject the coin and it drops into the return cup.\n\nThis is a tiny, everyday example of the same arms race that runs through all of commerce: every payment system, from coins to credit cards to crypto, is a contest between people trying to authenticate value cheaply and people trying to counterfeit it. The vending machine just had to win that contest with no human in the loop, decades before 'fraud detection' became a software industry."
+  },
+  {
+    "id": "mon-0023",
+    "type": "fact",
+    "topic": "money",
+    "headline": "Ketchup, mustard and the razor-and-blades trap",
+    "body": "Selling the razor cheap and the blades dear is a classic business model: lock customers into a cheap base product, then profit from the expensive consumables they're forced to keep buying. Printers and ink are the modern poster child.",
+    "more": "The trick only works if you can stop customers buying cheaper third-party refills, which is why companies fight hard with chips, patents and warranties to keep rivals out of the 'blades' market. When that lock-in fails, the whole model collapses, because you sold the base product at a loss expecting to recoup it later.\n\nThere's a twist worth knowing: Gillette, the company the strategy is named after, may not actually have priced its early razors cheaply at all. The neat origin story is partly retrofitted. But the underlying logic is sound and everywhere, from coffee pods to game consoles sold below cost to make money on the games. Whenever a base product seems suspiciously cheap, ask where the recurring revenue is hiding."
+  },
+  {
+    "id": "mon-0024",
+    "type": "fact",
+    "topic": "money",
+    "headline": "The bank that failed because of a rogue spreadsheet... and worse",
+    "body": "Barings, a 230-year-old British bank that had financed the Napoleonic Wars and the Louisiana Purchase, was destroyed in 1995 by the unsupervised trades of a single 28-year-old, who hid his losses in an account numbered 88888.",
+    "more": "The story is a full thread on its own; the short version is that one man controlled both the trading and the settlement of his own deals, the textbook recipe for disaster. With no one checking his work, small losses could be buried and then doubled down on in a desperate attempt to win them back, until the hole swallowed the entire bank.",
+    "threadId": "barings",
+    "threadOrder": 0
+  },
+  {
+    "id": "mon-0025",
+    "type": "rabbithole",
+    "topic": "money",
+    "headline": "How a single trader broke a 230-year-old bank →",
+    "body": "Nick Leeson was Barings' star trader in Singapore, seemingly generating huge profits. He was also, quietly, the man who checked his own trades. That combination is how one person erased a bank older than most countries' constitutions.",
+    "threadId": "barings-deep",
+    "threadOrder": 0
+  },
+  {
+    "id": "mon-0026",
+    "type": "fact",
+    "topic": "money",
+    "headline": "The account numbered 88888",
+    "body": "Leeson opened a secret 'error account' numbered 88888 and used it to hide trading losses from London. Eight is a lucky number in Chinese culture; the account became the opposite, a black hole that grew as he bet bigger to recover.",
+    "threadId": "barings-deep",
+    "threadOrder": 1
+  },
+  {
+    "id": "mon-0027",
+    "type": "fact",
+    "topic": "money",
+    "headline": "Both the trader and the referee",
+    "body": "The fatal flaw was structural. Leeson ran the trading desk and the back office that settled and verified those trades. With no separation of duties, he could fake the paperwork that should have caught him, the single control that might have saved the bank.",
+    "more": "This is why every serious financial institution now enforces 'segregation of duties': the person who makes a deal must never be the person who confirms and records it. The principle long predates Barings, but Barings is why it's drilled into every compliance course. One person wearing both hats can hide almost anything, for a while.",
+    "threadId": "barings-deep",
+    "threadOrder": 2
+  },
+  {
+    "id": "mon-0028",
+    "type": "fact",
+    "topic": "money",
+    "headline": "An earthquake finished it",
+    "body": "Leeson had made an enormous bet that Japan's stock market would stay calm. On 17 January 1995 the Kobe earthquake struck, markets lurched, and his hidden position spiralled. By late February the losses topped 800 million pounds, more than the bank's entire capital.",
+    "more": "Barings was sold to the Dutch bank ING for the symbolic sum of one pound, its 233-year history ended. Leeson fled, was arrested, and served years in a Singapore prison. He later wrote a memoir and, in a final irony of the lecture circuit, now gives talks on risk management.\n\nThe lasting lesson isn't about one greedy man; it's about systems. The losses didn't come from a brilliant fraud but from ordinary controls that simply weren't there. A junior employee with no oversight, doubling down to escape losses, is a pattern that has recurred at far bigger banks since. The names change; the missing referee does not.",
+    "threadId": "barings-deep",
+    "threadOrder": 3
+  },
+  {
+    "id": "mon-0029",
+    "type": "rabbithole",
+    "topic": "money",
+    "headline": "The strangest corporate collapse: a company worth more empty →",
+    "body": "Some companies have been worth more dead than alive, their breakup value exceeding their stock price. But stranger still are firms that collapsed not from losses but from accounting fictions, where the profits themselves were never real.",
+    "threadId": "enron",
+    "threadOrder": 0
+  },
+  {
+    "id": "mon-0030",
+    "type": "fact",
+    "topic": "money",
+    "headline": "Booking tomorrow's profit today",
+    "body": "Enron pioneered 'mark-to-market' accounting for long-term energy deals: the moment it signed a 20-year contract, it booked the entire projected profit immediately, based on its own forecasts. If reality fell short, the gap had to be hidden somewhere.",
+    "more": "Once you can record profit you merely predict, every incentive bends toward optimistic forecasts. Sign a bigger, longer deal, claim a bigger profit now, hit your targets, collect your bonus. The trouble is that the cash hasn't arrived and may never. The reported earnings become a story about the future dressed as a fact about the present.",
+    "threadId": "enron",
+    "threadOrder": 1
+  },
+  {
+    "id": "mon-0031",
+    "type": "fact",
+    "topic": "money",
+    "headline": "Hiding the debt in companies that didn't quite exist",
+    "body": "To bury the resulting losses and debts, Enron shuffled them into hundreds of 'special purpose entities', shell companies that were technically separate but secretly backed by Enron's own stock. The debt vanished from the books while remaining very much real.",
+    "more": "The scheme worked only as long as Enron's share price stayed high, because the shells were propped up by that stock. It was a financial perpetual-motion machine that depended on never stopping. When the share price began to fall, the hidden structures unravelled all at once, and the losses they concealed came flooding back onto the balance sheet they were designed to protect.",
+    "threadId": "enron",
+    "threadOrder": 2
+  },
+  {
+    "id": "mon-0032",
+    "type": "fact",
+    "topic": "money",
+    "headline": "The fall took the auditor down too",
+    "body": "Enron collapsed into bankruptcy in 2001, wiping out thousands of employees' pensions, which had been heavily invested in its own stock. The scandal also destroyed Arthur Andersen, one of the world's five largest accounting firms, which had signed off on the books.",
+    "more": "Andersen was convicted (later overturned on a technicality, but too late) of obstructing justice for shredding Enron documents, and effectively ceased to exist, taking tens of thousands of innocent jobs with it. The episode directly produced the Sarbanes-Oxley Act, which forced executives to personally certify their financial statements.\n\nThe enduring lesson is about the chain of trust. Investors trusted the auditor; the auditor was paid by the company it audited, a principal-agent conflict baked into the system. When the watchdog depends on the goodwill of the thing it watches, the watching gets soft. Enron didn't just expose one rotten company; it exposed how many guardrails quietly depend on everyone choosing not to look too hard.",
+    "threadId": "enron",
+    "threadOrder": 3
+  },
+  {
+    "id": "mon-0033",
+    "type": "fact",
+    "topic": "money",
+    "headline": "Inflation can be good for some borrowers",
+    "body": "Unexpected inflation quietly transfers wealth from lenders to borrowers. If you owe a fixed-rate sum and money loses value, you repay your debt in cheaper future dollars, while your lender gets back less than they thought they lent.",
+    "more": "This is why a homeowner with a fixed-rate mortgage can secretly benefit from a burst of inflation: their wages and home price tend to rise with the price level, but their monthly payment stays frozen in old money. Savers holding cash and bonds, by contrast, lose.\n\nGovernments are among the biggest fixed-rate borrowers, which is one reason economists watch carefully for the temptation to 'inflate away' national debt. The flip side is that lenders aren't naive: once they expect inflation, they demand higher interest rates to compensate, so only the surprise portion of inflation actually does the wealth-transfer. Anticipated inflation just gets priced in."
+  },
+  {
+    "id": "mon-0034",
+    "type": "fact",
+    "topic": "money",
+    "headline": "Why airlines overbook on purpose",
+    "body": "Airlines routinely sell more seats than the plane has. It looks reckless, but it's a calculated bet: a predictable fraction of passengers never show up, so selling those empty seats twice fills planes that would otherwise fly with costly gaps.",
+    "more": "The math is a straightforward expected-value calculation. The airline knows roughly what percentage of a given route's passengers no-show, and overbooks by close to that amount. On the rare flight where everyone turns up, it pays volunteers to take a later flight, a cost it has already budgeted for and which is usually far smaller than the revenue gained across thousands of flights.\n\nThe practice became infamous when overbooking met poor execution and passengers were forcibly removed, but the underlying logic is sound risk pooling. It's the same statistical reasoning a casino or insurer uses: you can't predict any single person's behaviour, but across enough people the aggregate is remarkably stable and therefore profitable to bet on."
+  },
+  {
+    "id": "mon-0035",
+    "type": "fact",
+    "topic": "money",
+    "headline": "The Cobra Effect: a bounty that bred more cobras",
+    "body": "Under British rule in Delhi, officials worried about cobras offered a bounty for dead snakes. Enterprising locals responded rationally, by breeding cobras to kill for the reward. When the scheme was scrapped, the now-worthless snakes were released, leaving more cobras than before.",
+    "more": "Whether every detail is documented or partly legend, the pattern is real and well-attested elsewhere: a French bounty on rat tails in colonial Hanoi led people to farm rats, and to cut tails off live rats so they could keep breeding.\n\nThe Cobra Effect is the vivid cousin of Goodhart's Law: reward a proxy ('dead cobras') instead of the goal ('fewer cobras'), and people will manufacture the proxy. The deeper design lesson is to anticipate the supply response. Any incentive doesn't just change how people behave with the existing world; it changes what world they choose to create. Pay for a thing and you'll get more of that thing, including in ways you never intended."
+  },
+  {
+    "id": "mon-0036",
+    "type": "fact",
+    "topic": "money",
+    "headline": "Most day traders lose money, consistently",
+    "body": "Study after study finds that the large majority of active individual day traders lose money over time, and only a tiny fraction beat a simple index fund after costs. The losers don't vanish quietly; new ones keep arriving, sure they'll be the exception.",
+    "more": "A landmark study of the entire Taiwanese market over several years found that fewer than 1 percent of day traders were reliably profitable after fees, and the typical trader lost money. Frequent trading is a near-perfect machine for converting your capital into brokerage and spread costs.\n\nWhy does the belief persist? Survivorship bias and selective memory. The handful who win post their gains loudly; the many who lose go quiet and quit. Trading platforms and finance media amplify the winners because excitement drives engagement. The boring truth, that most people are best served by cheap diversified funds they rarely touch, makes for terrible content and excellent results."
+  },
+  {
+    "id": "mon-0037",
+    "type": "fact",
+    "topic": "money",
+    "headline": "The 'Big Mac Index' was a joke that became a real tool",
+    "body": "The Economist invented the Big Mac Index in 1986 as a lighthearted way to gauge whether currencies were over- or undervalued, by comparing the local price of a Big Mac around the world. The joke proved useful enough that economists now cite it seriously.",
+    "more": "The idea rests on 'purchasing power parity': the same basket of goods should, in theory, cost the same everywhere once you convert currencies. A Big Mac is a clever stand-in basket because it's nearly identical worldwide and bundles local labour, rent, meat, and bread into one price. If a burger is far cheaper in one country, its currency may be undervalued against the dollar.\n\nIt's imperfect (local wages, taxes and beef prices all distort it), but it captures a real principle in a way anyone can grasp. The lasting point is methodological: a transparent, dead-simple proxy that everyone understands can sometimes beat a sophisticated model that few can check. Burgernomics earned its place by being honest about its own crudeness."
+  },
+  {
+    "id": "mon-0038",
+    "type": "fact",
+    "topic": "money",
+    "headline": "Prediction markets often beat the experts",
+    "body": "When you let people bet real money on uncertain outcomes, the resulting market prices frequently forecast events, elections, product launches, project deadlines, more accurately than panels of experts or internal forecasts.",
+    "more": "The mechanism is that betting forces honesty. In a meeting, people hedge, defer to the boss, or echo the room. In a market, a confident wrong opinion costs you money, so participants weigh their true beliefs and stake accordingly. The price aggregates thousands of these incentivised guesses into a single number.\n\nCompanies like Google and HP ran internal prediction markets where employees anonymously bet on whether projects would ship on time, and found them sharper than official timelines, partly because they surfaced the quiet pessimism managers don't like to hear. The limits are real (thin markets, manipulation, taboo questions), but the core insight is powerful: skin in the game is a remarkably effective truth serum."
+  },
+  {
+    "id": "mon-0039",
+    "type": "fact",
+    "topic": "money",
+    "headline": "Why your loyalty card is worth more than the discount it gives",
+    "body": "Supermarket loyalty cards hand you small discounts, but the real prize flows the other way: detailed data on exactly what you buy, when, and how price changes shift your behaviour. The discount is the price the store pays for that information.",
+    "more": "With your purchase history, retailers can predict life events, a shift in buying suggests a new baby or a move, and target offers accordingly. One famous case had a retailer's models inferring a teenager's pregnancy from her shopping before her family knew. Aggregated across millions of shoppers, this data lets stores fine-tune prices, placement and promotions with surgical precision.\n\nThe deeper point is a recurring one in the modern economy: when a service is cheap or free, you are often paying with data rather than money, and data, unlike cash, can be copied, combined and sold endlessly. The 'discount' is real, but it's the bait in a transaction where the more valuable asset is you."
+  },
+  {
+    "id": "mon-0040",
+    "type": "fact",
+    "topic": "money",
+    "headline": "Veblen goods: raise the price and sell more",
+    "body": "For most things, a higher price means fewer buyers. But some luxury goods are Veblen goods, where a high price is the point. Make the watch or handbag more expensive and demand can rise, because the cost is what signals status.",
+    "more": "Named after economist Thorstein Veblen, who coined 'conspicuous consumption', these goods work as signals precisely because they're expensive. A handbag that anyone could afford couldn't communicate wealth, so cutting the price would destroy the very thing customers are buying. This is why luxury brands guard against discounting and sometimes destroy unsold stock rather than mark it down.\n\nIt overturns the basic demand curve in a specific, social way: the buyer's true product isn't the leather or the mechanism, it's the visible signal of being able to waste money. That makes such markets strange. A rival can't compete by being cheaper; cheaper is worse. The only way to win is to be even more exclusive, which is a very different game from ordinary commerce."
+  },
+  {
+    "id": "mon-0041",
+    "type": "fact",
+    "topic": "money",
+    "headline": "The tragedy of the commons isn't inevitable",
+    "body": "When many people share a resource no one owns, a pasture, a fishery, the atmosphere, each is tempted to take a bit more, and collectively they ruin it. But the famous conclusion that this is unavoidable without top-down control turned out to be too pessimistic.",
+    "more": "Elinor Ostrom won the 2009 Nobel in economics for documenting hundreds of real communities, Swiss alpine herders, Japanese forest villagers, Spanish irrigation networks, that managed shared resources sustainably for centuries without privatising them or being ruled by a distant authority. They did it with their own homegrown rules, monitoring, and graduated penalties for cheats.\n\nThe lesson rewrites a famous bit of conventional wisdom. The 'tragedy' is a risk, not a law of nature. What prevents it is neither pure markets nor pure government but a third thing: trusted local institutions where the people who use a resource also make and enforce the rules for it. It's a hopeful and underappreciated finding about how humans actually cooperate."
+  }
+]

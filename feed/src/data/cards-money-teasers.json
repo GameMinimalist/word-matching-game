@@ -1,0 +1,90 @@
+[
+  {
+    "id": "mon-t001",
+    "type": "puzzle",
+    "topic": "money",
+    "headline": "A shirt is 50% off, then the cashier takes another 50% off the reduced price. Did you get it for free?",
+    "body": "The two discounts feel like 100% off.",
+    "answer": "No, you pay 25% of the original. 50% off leaves half the price; 50% off of that half leaves a quarter. Percentage discounts stack multiplicatively (0.5 x 0.5 = 0.25), not additively."
+  },
+  {
+    "id": "mon-t002",
+    "type": "puzzle",
+    "topic": "money",
+    "headline": "An investment drops 50% one year, then gains 50% the next. Are you back to even?",
+    "body": "Down 50, up 50 sounds like a wash.",
+    "answer": "No, you are down 25%. $100 falls to $50, then a 50% gain adds only $25, leaving $75. You need a +100% gain to recover a -50% loss, because the gain works on a smaller base."
+  },
+  {
+    "id": "mon-t003",
+    "type": "puzzle",
+    "topic": "money",
+    "headline": "Your money earns 100% interest a year. Would you rather it compound once yearly or be split into smaller, more frequent compounding?",
+    "body": "Same 100% rate, just sliced differently.",
+    "answer": "More frequent is better. Yearly doubles your money (x2); compounding the 100% continuously grows it by a factor of e, about 2.718. Splitting the same rate into more periods lets earlier interest earn its own interest sooner."
+  },
+  {
+    "id": "mon-t004",
+    "type": "puzzle",
+    "topic": "money",
+    "headline": "At 7% annual interest, roughly how many years until your savings double?",
+    "body": "No calculator allowed.",
+    "answer": "About 10 years. The Rule of 72 says doubling time is roughly 72 divided by the rate, so 72/7 is about 10.3. It is a handy mental shortcut for any compound growth rate."
+  },
+  {
+    "id": "mon-t005",
+    "type": "puzzle",
+    "topic": "money",
+    "headline": "You bought a stock for $1,000. It is now worth $400 and you must decide whether to sell. Does the $1,000 you paid matter?",
+    "body": "It feels wrong to sell at a loss.",
+    "answer": "No, the $1,000 is a sunk cost and irrelevant. The only rational question is whether $400 is better invested here or elsewhere going forward. People irrationally hold losers to avoid 'locking in' a loss that already happened."
+  },
+  {
+    "id": "mon-t006",
+    "type": "puzzle",
+    "topic": "money",
+    "headline": "A lottery offers a 1-in-100 chance to win $50, for a $1 ticket. Is buying rational?",
+    "body": "A whole $50 prize for just a dollar.",
+    "answer": "No. The expected value is 1/100 x $50 = $0.50, but the ticket costs $1, so on average you lose 50 cents per play. A bet is only fair when the expected payout meets or beats its price."
+  },
+  {
+    "id": "mon-t007",
+    "type": "puzzle",
+    "topic": "money",
+    "headline": "Two gas stations sit across the street. Whenever one cuts its price, the other matches within minutes. Why do they bother competing at all?",
+    "body": "They could just both keep prices high.",
+    "answer": "Because undercutting steals all the customers for an instant, each is tempted to cut first. Knowing the rival will match, prices get driven down toward cost. This is a price-war Nash equilibrium: mutual restraint is unstable when defecting pays."
+  },
+  {
+    "id": "mon-t008",
+    "type": "puzzle",
+    "topic": "money",
+    "headline": "A vendor sells items at $7 each, or '3 for $20.' When is the bundle actually worth taking?",
+    "body": "Bundles are usually pitched as the obvious deal.",
+    "answer": "Only if you genuinely want three. Three singles cost $21, so the bundle saves just $1 — a real but tiny discount. The trap: that '3 for $20' sign nudges someone who only needed one or two into buying three, spending $20 to 'save' on items they didn't want. A discount you have to over-buy to unlock isn't a saving."
+  },
+  {
+    "id": "mon-t009",
+    "type": "puzzle",
+    "topic": "money",
+    "headline": "100 people each privately put $1 in a pot. The total is tripled and split equally among all. What is the rational individual move?",
+    "body": "Cooperation triples everyone's money.",
+    "answer": "Rationally, contribute nothing. Your own $1 returns only $0.03 to you (the tripled pot is split 100 ways), so contributing is a personal loss even though group payoff is maximized if all chip in. This is the public-goods free-rider problem."
+  },
+  {
+    "id": "mon-t010",
+    "type": "puzzle",
+    "topic": "money",
+    "headline": "Would you rather get a guaranteed $50, or flip a coin for $110 or nothing?",
+    "body": "Which choice is 'worth' more?",
+    "answer": "The coin flip is worth more on paper: 0.5 x $110 = $55, beating the sure $50. Yet most people take the certain $50 because losing aversion makes the risk of zero feel worse than the extra $5 of expected value is worth."
+  },
+  {
+    "id": "mon-t011",
+    "type": "puzzle",
+    "topic": "money",
+    "headline": "A bond pays you $100 a year forever. If interest rates are 5%, what is it worth today?",
+    "body": "Infinite payments, finite price?",
+    "answer": "$2,000. A perpetuity's value is the annual payment divided by the interest rate, so $100 / 0.05 = $2,000. Distant future dollars are discounted so heavily that an infinite stream still sums to a finite price."
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "log-t001",
+    "type": "puzzle",
+    "topic": "logic",
+    "headline": "A woman shoots her husband, then holds him underwater for five minutes. Soon after, they enjoy a lovely dinner together. How is this possible?",
+    "body": "No one was harmed.",
+    "answer": "She is a photographer. She 'shot' his photo, developed it in a water bath, then they had dinner. The verbs describe darkroom photography, not violence."
+  },
+  {
+    "id": "log-t002",
+    "type": "puzzle",
+    "topic": "logic",
+    "headline": "You have an 8-litre jug full of water, plus an empty 5-litre jug and an empty 3-litre jug. Using only these, how do you split the water into two equal amounts of 4 litres?",
+    "body": "Jugs have no markings; you can only fill, empty, and pour between them.",
+    "answer": "Pour 8 into 5 (8:3:0). Pour 5 into 3 (8:2:3). Empty 3 back into 8 (8 jug now 6, 5 jug 2, 3 jug 0 -> 6:2:0). Pour the 2 from the 5-jug into the 3-jug (6:0:2). Fill the 5-jug from the 8-jug (1:5:2). Pour from 5-jug to top off the 3-jug, which needs 1 (0:4:3). Empty the 3-jug into the 8-jug: now 4 and 4."
+  },
+  {
+    "id": "log-t003",
+    "type": "puzzle",
+    "topic": "logic",
+    "headline": "Three switches downstairs each may control a single light bulb upstairs. You may flip switches as much as you like, but you can climb the stairs only once. How do you determine which switch controls the bulb?",
+    "body": "Only one of the three switches is wired to the bulb.",
+    "answer": "Turn switch 1 on for several minutes, then off. Turn switch 2 on and leave the room. Upstairs: if the bulb is lit, it's switch 2; if it's off but warm, it's switch 1; if off and cold, it's switch 3. The heat of the bulb gives away switch 1."
+  },
+  {
+    "id": "log-t004",
+    "type": "puzzle",
+    "topic": "logic",
+    "headline": "In a room of 4 people, what is the probability that at least two of them were born on the same day of the week?",
+    "body": "Assume each day of the week is equally likely.",
+    "answer": "About 65% (precisely 223/343). Compute the chance all four differ: (7/7)(6/7)(5/7)(4/7) = 120/343 ≈ 35%. So at least one shared day is 1 - 120/343 = 223/343 ≈ 65%."
+  },
+  {
+    "id": "log-t007",
+    "type": "puzzle",
+    "topic": "logic",
+    "headline": "You have nine identical-looking balls; eight weigh the same and one is slightly heavier. Using a balance scale only twice, how do you find the heavy ball?",
+    "body": "The scale only tells you which side is heavier or that they balance.",
+    "answer": "Split into three groups of three. Weigh group A vs B. If they balance, the heavy ball is in C; otherwise it's in the heavier side. Take that group of three, weigh one ball vs another: if one is heavier it's that one, if they balance it's the third. Two weighings suffice."
+  }
+]

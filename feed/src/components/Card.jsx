@@ -1,0 +1,295 @@
+import { useEffect, useMemo, useRef, useState } from 'react'
+import LikeBar from './LikeBar.jsx'
+import BookmarkButton from './BookmarkButton.jsx'
+import { sanitizeSvg } from '../engine/sanitizeSvg.js'
+import { topicAccent, topicLabel } from '../topics.js'
+
+/**
+ * One full-viewport card. Dispatches on card.type for the body; all expansion
+ * ("Tell me more", "Show answer") happens inline — nothing ever navigates away.
+ */
+export default function Card({ card, onOpenThread, onKeepGoing, onBookmarkChange }) {
+  if (card.type === 'cap') return <CapCard onKeepGoing={onKeepGoing} />
+  if (card.type === 'empty') return <EmptyCard />
+  if (card.type === 'warn') return <WarnCard />
+  return (
+    <ContentCard
+      card={card}
+      onOpenThread={onOpenThread}
+      onBookmarkChange={onBookmarkChange}
+    />
+  )
+}
+
+function ContentCard({ card, onOpenThread, onBookmarkChange }) {
+  const accent = topicAccent(card.topic)
+  const bodyRef = useRef(null)
+  const innerRef = useRef(null)
+  const [moreBelow, setMoreBelow] = useState(false)
+
+  // Show the "scroll for more" cue whenever the text overflows and isn't yet
+  // scrolled to the bottom. Re-checks on scroll, on content growth (a "Tell me
+  // more" / "Reveal" expansion), and on resize.
+  useEffect(() => {
+    const el = bodyRef.current
+    if (!el) return
+    const check = () => {
+      setMoreBelow(el.scrollHeight - el.scrollTop - el.clientHeight > 12)
+    }
+    check()
+    el.addEventListener('scroll', check, { passive: true })
+    window.addEventListener('resize', check)
+    let ro
+    if (innerRef.current && 'ResizeObserver' in window) {
+      ro = new ResizeObserver(check)
+      ro.observe(innerRef.current)
+    }
+    return () => {
+      el.removeEventListener('scroll', check)
+      window.removeEventListener('resize', check)
+      ro?.disconnect()
+    }
+  }, [card.id])
+
+  return (
+    <article className={`card ${moreBelow ? 'has-more' : ''}`} style={{ '--accent': accent }}>
+      <header className="card-head">
+        <span className="topic-tag" style={{ color: accent }}>
+          <span className="topic-dot" style={{ background: accent }} />
+          {topicLabel(card.topic)}
+        </span>
+      </header>
+
+      <div className="card-body" ref={bodyRef}>
+        <div className="card-body-inner" ref={innerRef}>
+          <CardBody card={card} onOpenThread={onOpenThread} />
+        </div>
+      </div>
+
+      <div className="scroll-fade" aria-hidden="true" />
+      <div className="scroll-cue" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="22" height="22">
+          <path fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" d="M6 9l6 6 6-6" />
+        </svg>
+      </div>
+
+      <footer className="card-foot">
+        <BookmarkButton cardId={card.id} onChange={onBookmarkChange} />
+        <LikeBar cardId={card.id} />
+      </footer>
+    </article>
+  )
+}
+
+// Pick the body renderer: typographic variants take precedence over type.
+function CardBody({ card, onOpenThread }) {
+  if (card.style === 'bignumber') return <BigNumberBody card={card} />
+  if (card.style === 'pullquote') return <PullQuoteBody card={card} />
+  if (card.type === 'fact') return <FactBody card={card} />
+  if (card.type === 'concept') return <ConceptBody card={card} />
+  if (card.type === 'puzzle') return <PuzzleBody card={card} />
+  if (card.type === 'rabbithole')
+    return <RabbitholeBody card={card} onOpenThread={onOpenThread} />
+  return null
+}
+
+// --- fact / concept ------------------------------------------------------
+function FactBody({ card }) {
+  const [open, setOpen] = useState(false)
+  return (
+    <>
+      <h1 className="headline">{card.headline}</h1>
+      <Diagram card={card} />
+      <Prose text={card.body} className="body" />
+      {card.more && !open && (
+        <button type="button" className="ghost-btn" onClick={() => setOpen(true)}>
+          Tell me more
+        </button>
+      )}
+      {card.more && open && <Prose text={card.more} className="more reveal" />}
+    </>
+  )
+}
+
+function ConceptBody({ card }) {
+  const [open, setOpen] = useState(false)
+  return (
+    <>
+      <span className="kicker">Mental model</span>
+      <h1 className="headline">{card.headline}</h1>
+      <Diagram card={card} />
+      <Prose text={card.body} className="body" />
+      {card.more && !open && (
+        <button type="button" className="ghost-btn" onClick={() => setOpen(true)}>
+          Tell me more
+        </button>
+      )}
+      {card.more && open && <Prose text={card.more} className="more reveal" />}
+    </>
+  )
+}
+
+// --- puzzle --------------------------------------------------------------
+function PuzzleBody({ card }) {
+  const [show, setShow] = useState(false)
+  return (
+    <>
+      <span className="kicker">Brain teaser</span>
+      <h1 className="headline">{card.headline}</h1>
+      <Diagram card={card} />
+      {card.body && card.body !== card.headline && (
+        <Prose text={card.body} className="body" />
+      )}
+      {!show ? (
+        <button type="button" className="ghost-btn" onClick={() => setShow(true)}>
+          Show answer
+        </button>
+      ) : (
+        <div className="answer reveal">
+          <span className="answer-label">Answer</span>
+          <Prose text={card.answer} className="body" />
+        </div>
+      )}
+    </>
+  )
+}
+
+// --- typographic variants (Phase 2) --------------------------------------
+function BigNumberBody({ card }) {
+  const [open, setOpen] = useState(false)
+  return (
+    <>
+      <span className="kicker">{card.kicker || 'By the numbers'}</span>
+      <div className="bignumber">{card.headline}</div>
+      <Diagram card={card} />
+      <Prose text={card.body} className="body" />
+      {card.more && !open && (
+        <button type="button" className="ghost-btn" onClick={() => setOpen(true)}>
+          Tell me more
+        </button>
+      )}
+      {card.more && open && <Prose text={card.more} className="more reveal" />}
+    </>
+  )
+}
+
+function PullQuoteBody({ card }) {
+  const [open, setOpen] = useState(false)
+  return (
+    <>
+      <blockquote className="pullquote">
+        <span className="pullquote-mark" aria-hidden="true">
+          “
+        </span>
+        <span className="pullquote-text">{card.headline}</span>
+      </blockquote>
+      {card.attribution && <p className="pullquote-by">— {card.attribution}</p>}
+      {card.body && <Prose text={card.body} className="body" />}
+      {card.more && !open && (
+        <button type="button" className="ghost-btn" onClick={() => setOpen(true)}>
+          Tell me more
+        </button>
+      )}
+      {card.more && open && <Prose text={card.more} className="more reveal" />}
+    </>
+  )
+}
+
+// --- inline SVG diagram (Phase 2) ----------------------------------------
+function Diagram({ card }) {
+  const html = useMemo(() => (card.svg ? sanitizeSvg(card.svg) : null), [card.svg])
+  if (!html) return null
+  // Sanitised at build time and again here; topic accent exposed as currentColor.
+  return (
+    <div
+      className="card-diagram"
+      style={{ color: topicAccent(card.topic) }}
+      dangerouslySetInnerHTML={{ __html: html }}
+    />
+  )
+}
+
+// --- rabbithole ----------------------------------------------------------
+function RabbitholeBody({ card, onOpenThread }) {
+  return (
+    <div className="rabbithole">
+      <span className="kicker">Rabbit hole</span>
+      <h1 className="headline">{card.headline}</h1>
+      {card.body && <Prose text={card.body} className="body" />}
+      <button
+        type="button"
+        className="solid-btn"
+        onClick={() => onOpenThread(card.threadId)}
+      >
+        Go down the rabbit hole →
+      </button>
+      <p className="hint-sub">A short thread, then back to the shuffle.</p>
+    </div>
+  )
+}
+
+// --- system cards --------------------------------------------------------
+function CapCard({ onKeepGoing }) {
+  return (
+    <article className="card system">
+      <div className="card-body center">
+        <div className="big-emoji">👋</div>
+        <h1 className="headline">That’s your stack for today</h1>
+        <p className="body">
+          You hit your daily cap. Knowledge keeps better in small doses — come
+          back tomorrow with a fresh mind.
+        </p>
+        <button type="button" className="ghost-btn" onClick={onKeepGoing}>
+          Keep going anyway
+        </button>
+      </div>
+    </article>
+  )
+}
+
+function EmptyCard() {
+  return (
+    <article className="card system">
+      <div className="card-body center">
+        <div className="big-emoji">🌱</div>
+        <h1 className="headline">You’ve seen it all</h1>
+        <p className="body">
+          You’ve been through every card in the enabled topics. Turn more topics
+          on in settings, or reset your history to ride again.
+        </p>
+      </div>
+    </article>
+  )
+}
+
+function WarnCard() {
+  return (
+    <article className="card system">
+      <div className="card-body center">
+        <div className="big-emoji">🪫</div>
+        <h1 className="headline">You’re running low</h1>
+        <p className="body">
+          You’ve nearly worked through the whole library. Time to recharge it
+          with a fresh batch of cards.
+        </p>
+        <p className="body hint-sub">
+          See <code>scripts/generate-cards.md</code> for the recharge ritual —
+          generate a new batch, drop it in, and this nudge resets itself. Swipe
+          on to keep going.
+        </p>
+      </div>
+    </article>
+  )
+}
+
+// --- shared --------------------------------------------------------------
+function Prose({ text, className }) {
+  const paras = String(text).split(/\n\n+/)
+  return (
+    <div className={className}>
+      {paras.map((p, i) => (
+        <p key={i}>{p}</p>
+      ))}
+    </div>
+  )
+}

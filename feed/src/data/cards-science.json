@@ -1,0 +1,343 @@
+[
+  {
+    "id": "sci-0001",
+    "type": "fact",
+    "topic": "science",
+    "headline": "Metal feels colder than wood at the same temperature",
+    "body": "Put your hand on a metal table leg and a wooden one in the same room and the metal feels icy, even though a thermometer reads them identical. Temperature isn't what your skin measures - heat flow is. Metal conducts heat away from your warm hand fast, so your nerves sense the rapid drain and report 'cold'. Wood is a poor conductor, so it lets your hand stay warm.",
+    "more": "This is also why a tile floor feels freezing to bare feet while a rug at the same temperature feels fine, and why grabbing a metal railing on a winter morning is shocking. Your body has no thermometer; it only has heat-flux sensors.\n\nThe same logic runs in reverse with hot objects. A metal pan handle at 60C can scald instantly while air in a 90C sauna feels merely warm, because air conducts heat into your skin extremely slowly. The number on the thermometer is the same direction of difference, but the felt experience is dominated by conductivity."
+  },
+  {
+    "id": "sci-0002",
+    "type": "fact",
+    "topic": "science",
+    "headline": "Hot water can freeze faster than cold water",
+    "body": "Under the right conditions, a container of hot water placed in a freezer can turn to ice before an identical container of cold water - the Mpemba effect. It sounds impossible, and physicists still argue about the exact mechanism. Candidate causes include faster evaporation reducing the volume, dissolved gases escaping, and convection currents. It is real and reproducible, but stubbornly resists a single clean explanation."
+  },
+  {
+    "id": "sci-0003",
+    "type": "fact",
+    "topic": "science",
+    "headline": "Helium makes your voice squeaky by changing speed, not pitch",
+    "body": "Breathe helium and your voice goes Donald Duck, but the actual frequency your vocal cords vibrate at barely changes. Sound travels almost three times faster in helium than in air. Your vocal tract is a resonant chamber, and faster sound shifts which frequencies it amplifies upward. So your cords sing the same notes, but the tube around them boosts the high overtones, making you sound tinny and cartoonish.",
+    "more": "The proof: breathe sulfur hexafluoride, a heavy gas, and your voice drops to a demonic rumble for the opposite reason - sound moves slowly through it, lowering the resonant frequencies.\n\nThis distinction between a source frequency and a resonant filter is the foundation of how all vowels work. Your mouth and throat shape the same vocal-cord buzz into 'ah', 'ee', or 'oo' purely by changing which resonances get amplified."
+  },
+  {
+    "id": "sci-0004",
+    "type": "fact",
+    "topic": "science",
+    "headline": "You can't fold paper in half more than about seven times",
+    "body": "Not because of some mystical limit, but because thickness grows exponentially. Each fold doubles the layers: after 7 folds you have 128 layers, after 10 you'd have over 1,000. A sheet folded 42 times would be thick enough to reach the Moon. The paper also shrinks in width by half each time, so you quickly run out of material to wrap around the growing bulge. The record, set with a very long roll of toilet paper, is 12 folds.",
+    "more": "High-schooler Britney Gallivan worked out the actual math in 2002, deriving a formula for the minimum paper length needed for a given number of folds. The limit comes from the loss of length consumed by the rounded edge of each fold, which compounds.\n\nExponential growth is wildly unintuitive in general. Fold a paper 100 times and its thickness would vastly exceed the diameter of the observable universe - all from a process that feels like it's barely doing anything for the first few folds."
+  },
+  {
+    "id": "sci-0005",
+    "type": "fact",
+    "topic": "science",
+    "headline": "We still don't fully understand how general anaesthesia works",
+    "body": "Every day, surgeons render millions of people fully unconscious and unable to form memories, then bring them back. Yet the precise mechanism by which anaesthetics switch off consciousness is genuinely not settled science. We know which receptors many drugs touch, but how that produces the blank, dreamless absence of awareness - and how the brain reassembles itself afterward - remains one of the open questions in neuroscience.",
+    "more": "Strikingly, chemically unrelated substances - from the gas xenon to the liquid propofol - all produce the same unconscious state, which suggests they may converge on some common property of how neurons stay synchronized. One leading idea is that anaesthetics disrupt the brain's ability to integrate information across regions.\n\nThis is humbling. We have a routine, reliable medical technology used billions of times that works through a door whose mechanism we can't fully see."
+  },
+  {
+    "id": "sci-0006",
+    "type": "fact",
+    "topic": "science",
+    "headline": "The sky is blue and sunsets are red for the same reason",
+    "body": "Air molecules scatter short-wavelength blue light far more strongly than long-wavelength red light. At noon, sunlight punches through a thin slice of atmosphere, and the scattered blue spills across the whole sky - so it looks blue. At sunset, light skims through a much thicker slab of air at a low angle. By then the blue has been scattered away entirely before reaching you, leaving the surviving reds and oranges to come through straight. Same scattering, opposite result.",
+    "more": "This is Rayleigh scattering, and the strength of the effect scales with the inverse fourth power of wavelength - so blue scatters roughly ten times more than red. That steep dependence is why the contrast is so dramatic.\n\nIt also explains why the sky isn't violet, even though violet scatters even more than blue: the Sun emits less violet, and our eyes are less sensitive to it. The mix our brain perceives lands on blue."
+  },
+  {
+    "id": "sci-0007",
+    "type": "fact",
+    "topic": "science",
+    "headline": "There are more possible chess games than atoms in the observable universe",
+    "body": "The number of distinct chess games is estimated around 10^120, the Shannon number. The observable universe holds roughly 10^80 atoms. So chess, a game on 64 squares, contains vastly more possibilities than there are atoms in everything we can see. This is why chess can never be 'solved' by brute force the way checkers was - you could never store or search that many positions even with every atom as a computer."
+  },
+  {
+    "id": "sci-0008",
+    "type": "fact",
+    "topic": "science",
+    "headline": "Glass is not a slow-flowing liquid - and old window panes prove nothing",
+    "body": "A persistent myth claims medieval window glass is thicker at the bottom because glass slowly flows over centuries. It's false. Glass is an amorphous solid; at room temperature it would take vastly longer than the age of the universe to visibly sag. Old panes are uneven at the bottom because of how they were made - spun or drawn by hand into uneven sheets - and glaziers simply installed the thicker edge down for stability.",
+    "more": "The 'glass flows' idea is one of those tidy-sounding explanations that spread precisely because it feels like a clever insight. The actual physics of amorphous solids is more interesting: glass is a frozen-in-place jumble of molecules that never crystallized, structurally more like a liquid than a crystal but with the rigidity of a solid.\n\nReal flow in glass does happen, but only at high temperatures, which is exactly why glassblowing works."
+  },
+  {
+    "id": "sci-0009",
+    "type": "fact",
+    "topic": "science",
+    "headline": "Your stomach lining is completely replaced every few days",
+    "body": "Your stomach holds acid strong enough to dissolve metal, and the only reason it doesn't digest itself is a thick mucus layer plus a furious rate of self-renewal. The cells lining the stomach are shed and rebuilt every three to five days. You are, in a real sense, repeatedly growing a fresh inner stomach to stay ahead of your own corrosive contents."
+  },
+  {
+    "id": "sci-0010",
+    "type": "fact",
+    "topic": "science",
+    "headline": "A teaspoon of neutron star would weigh billions of tonnes",
+    "body": "When a massive star collapses, its core gets crushed so hard that electrons and protons merge into neutrons packed at the density of an atomic nucleus. The result is a city-sized star with more mass than the Sun. A single sugar-cube-sized scoop of this material would weigh around a billion tonnes on Earth - roughly the mass of a mountain compressed into something you could hold, if it didn't instantly destroy everything around it."
+  },
+  {
+    "id": "sci-0011",
+    "type": "fact",
+    "topic": "science",
+    "headline": "Hot water makes a better cold ice rink - and bridges freeze before roads",
+    "body": "Bridges ice over before the road on either side of them, which is why you see those warning signs. A road sitting on the ground is insulated and warmed from below by the earth's heat. A bridge is exposed to cold air on all sides - top and bottom - so it loses heat faster and drops below freezing sooner. The same patch of cold, wet weather hits both, but the bridge has no warm ground to lean on.",
+    "more": "This is a pure heat-transfer story. The ground acts as a giant thermal reservoir, slow to change temperature because of its enormous mass. A bridge deck is a thin slab with cold air stealing heat from every surface.\n\nIt's a genuinely useful thing to know while driving: the danger isn't random, it's predictable from the structure beneath your wheels."
+  },
+  {
+    "id": "sci-0012",
+    "type": "fact",
+    "topic": "science",
+    "headline": "Bone is stronger than steel by weight",
+    "body": "Ounce for ounce, human bone can withstand more stress than steel. A cubic inch of bone can in principle bear loads in the thousands of kilograms. The trick is that bone is a composite - stiff mineral crystals for hardness woven through flexible collagen for toughness - and it's hollow and reinforced where it counts, like an engineered beam. Pure strength isn't the goal in nature; strength-to-weight is, because you have to carry it around."
+  },
+  {
+    "id": "sci-0012b",
+    "type": "fact",
+    "topic": "science",
+    "headline": "The water you drank today contains molecules dinosaurs drank",
+    "body": "Earth's water has been cycling for billions of years, and there are an astronomical number of molecules in a glass of it. The statistics are stark: the number of water molecules in a single glass is far larger than the number of glasses of water in all the oceans. So when you drink, it is overwhelmingly likely some of those exact molecules passed through a dinosaur, a Roman emperor, and an ancient ocean. The water is borrowed, not made.",
+    "more": "This follows from the same kind of mixing math that says you breathe a molecule of Caesar's last breath with every lungful of air. The key is the gulf between molecular scale and human scale - Avogadro's number, about 6 x 10^23 molecules in a small amount of substance, dwarfs almost any count of macroscopic objects.\n\nIt's a quiet reminder that matter is relentlessly recycled. Nothing is consumed in the sense of vanishing; it's just rearranged and passed along."
+  },
+  {
+    "id": "sci-0013",
+    "type": "fact",
+    "topic": "science",
+    "headline": "Your blood vessels would wrap around the Earth twice",
+    "body": "Laid end to end, the arteries, veins, and capillaries of one adult would stretch roughly 60,000 to 100,000 kilometres - enough to circle the planet two or more times. Almost all of that length is capillaries so fine that red blood cells must pass through single file. The body's design priority is surface area: getting oxygen close to every cell, which demands an enormous, branching, microscopic network."
+  },
+  {
+    "id": "sci-0014",
+    "type": "fact",
+    "topic": "science",
+    "headline": "Diamonds are not forever - they're slowly turning into graphite",
+    "body": "At room temperature and pressure, graphite, not diamond, is the stable form of carbon. Every diamond in existence is technically in the process of converting to graphite. The catch is that the conversion is so mind-bogglingly slow it would take far longer than the age of the universe to notice. Diamonds are 'metastable' - trapped in a high-energy state by a huge activation barrier, like a boulder perched in a dip near the top of a hill."
+  },
+  {
+    "id": "sci-0015",
+    "type": "fact",
+    "topic": "science",
+    "headline": "It takes eight minutes for sunlight to reach you, but a million years to escape the Sun",
+    "body": "Light from the Sun's surface reaches Earth in about eight minutes. But that energy was created in the core, and getting from the core to the surface takes somewhere between tens of thousands and a million-plus years. Inside the dense Sun, a photon can travel only a tiny distance before being absorbed and re-emitted in a random direction. This 'random walk' means light staggers outward incredibly slowly. The sunlight warming your face was born before recorded history."
+  },
+  {
+    "id": "sci-0016",
+    "type": "fact",
+    "topic": "science",
+    "headline": "The Sun is white, not yellow",
+    "body": "The Sun emits across all visible wavelengths fairly evenly, peaking near green, which our brains blend into white. We picture it yellow because Earth's atmosphere scatters away some of the blue (the same effect that paints the sky), tinting the disc slightly. From space, astronauts see a pure white Sun. The 'yellow star' label is an artefact of looking through air, not a property of the star itself."
+  },
+  {
+    "id": "sci-0017",
+    "type": "fact",
+    "topic": "science",
+    "headline": "Cold doesn't exist - only the absence of heat",
+    "body": "There's no such thing as a 'cold' substance that radiates coldness. Cold is purely the absence of heat energy. When you open the freezer and feel a chill, no cold is flowing into you - heat is flowing out of you into the colder air. This isn't pedantry; it changes how you think about insulation, thermos flasks, and why blankets work. A blanket doesn't add heat; it just slows the heat you already make from leaving.",
+    "more": "The same framing fixes a common confusion about how a vacuum flask keeps coffee hot AND ice cold with the same design. It isn't doing two different jobs - it's doing one job, blocking heat transfer in either direction. Heat always flows from hot to cold; the flask just makes that flow slow.\n\nPhysicists capture this with the idea that heat is a form of energy in transit. 'Coldness' has no separate existence any more than 'darkness' is a thing that shines."
+  },
+  {
+    "id": "sci-0018",
+    "type": "fact",
+    "topic": "science",
+    "headline": "Bananas, brains, and you are all slightly radioactive",
+    "body": "Your body contains potassium, and a fixed fraction of all potassium is the radioactive isotope potassium-40. So you are mildly, harmlessly radioactive, emitting a few thousand decays per second, and sleeping next to another person gives you a measurable extra dose. This is a baseline of life on Earth - everything alive that uses potassium ticks faintly with radiation, and always has."
+  },
+  {
+    "id": "sci-0019",
+    "type": "fact",
+    "topic": "science",
+    "headline": "Wet objects look darker because light gets trapped",
+    "body": "Wet sand, wet cloth, and wet pavement all look darker than when dry. Water forms a thin film over the surface, and light that would otherwise bounce straight back to your eyes instead reflects internally at the water surface and gets sent back down to the material again. More bounces mean more chances to be absorbed, so less light returns to you. The object isn't changing colour - the water is just stealing the light's exit route.",
+    "more": "This 'total internal reflection' trap is the same physics that makes fibre-optic cables work, where light bounces along inside a glass thread without escaping.\n\nThe effect is why a single drop of water can make a stain suddenly visible on dark fabric, and why beaches near the waterline look so much richer in colour than the dry dunes behind them."
+  },
+  {
+    "id": "sci-0020",
+    "type": "fact",
+    "topic": "science",
+    "headline": "You see almost nothing in sharp focus - your brain fakes the rest",
+    "body": "Only a tiny region of your retina, the fovea, sees in high detail - an area covering about the size of your thumbnail at arm's length. Everything else is blurry and colour-poor. Your eyes dart around several times a second, and your brain stitches the sharp glimpses into a seamless, detailed-feeling world that doesn't actually exist on your retina. The vivid wide-screen reality you experience is largely a construction.",
+    "more": "Your brain also edits out the motion blur during those rapid eye darts (saccades), suppressing vision so you don't see a smear - which is why you can never catch your own eyes moving in a mirror.\n\nAnd you have a literal blind spot where the optic nerve exits each eye, with no light receptors at all. Your brain paints over it with a best guess of the surroundings, so you never notice the hole."
+  },
+  {
+    "id": "sci-0021",
+    "type": "fact",
+    "topic": "science",
+    "headline": "Trees pull water dozens of metres up with no pump",
+    "body": "A tall tree lifts water from its roots to leaves a hundred metres up without any pump or moving part. The engine is evaporation. As water vapour escapes the leaves, it tugs on the water column below through the chain of hydrogen bonds linking water molecules together. The entire thread of water is under tension, literally being pulled up like a rope, and water's stubborn cohesion keeps the rope from snapping.",
+    "more": "This means the water inside a tree trunk is under negative pressure - it's being stretched. If you nick the right tissue, air can rush in and break the column, an embolism that can kill the branch above it.\n\nThe fact that water can sustain this much tension without its molecules pulling apart is remarkable, and it sets the maximum height a tree can grow: eventually the pull needed exceeds what the water column can bear."
+  },
+  {
+    "id": "sci-0022",
+    "type": "fact",
+    "topic": "science",
+    "headline": "The opposite sides of a die always add up to seven",
+    "body": "Pick up any standard six-sided die and the numbers on opposite faces always sum to seven: 1 opposite 6, 2 opposite 5, 3 opposite 4. This isn't a coincidence or decoration - it's a deliberate convention dating back thousands of years that balances the die's pip arrangement and makes it harder to weight or read fraudulently. It's a tiny piece of standardisation hiding in plain sight in nearly every dice game on Earth."
+  },
+  {
+    "id": "sci-0023",
+    "type": "fact",
+    "topic": "science",
+    "headline": "A day on Venus is longer than its year",
+    "body": "Venus rotates so slowly that a single Venusian day - one full spin - takes longer than the time it takes to orbit the Sun. So a 'day' on Venus outlasts its 'year'. Stranger still, Venus spins backwards compared to almost every other planet, so on its surface the Sun would rise in the west and set in the east, if you could ever see it through the crushing clouds."
+  },
+  {
+    "id": "sci-0024",
+    "type": "fact",
+    "topic": "science",
+    "headline": "Most of your body's atoms are replaced over time, but not all",
+    "body": "The cliche says you're a completely new person every seven years. The truth is more interesting and more specific. Many tissues turn over fast - gut lining in days, skin in weeks, red blood cells in months. But some cells are remarkably permanent: the neurons in your cerebral cortex and the lens of your eye are largely the same ones you were born with, and the enamel on your teeth is never replaced at all.",
+    "more": "Scientists worked some of this out using carbon-14 left over from 1950s nuclear weapons tests, which created a global spike in the isotope. By measuring how much of that bomb-era carbon is locked into a person's cells, researchers could date when those cells were formed - a clever forensic clock written into our tissues.\n\nThe upshot: 'you' are a mix of the brand new and the lifelong. The core of your brain has been with you the whole way."
+  },
+  {
+    "id": "sci-0025",
+    "type": "concept",
+    "topic": "science",
+    "headline": "Survivorship bias: counting only the planes that came back",
+    "body": "In WWII, analysts wanted to armour bombers where returning planes showed the most bullet holes - the wings and tail. Statistician Abraham Wald flipped it: armour the spots with NO holes, like the engines. Why? The planes shot in the engines never made it back to be counted. The data was made entirely of survivors. Survivorship bias is mistaking the survivors for the whole population, and it quietly distorts judgments everywhere.",
+    "more": "It shows up constantly. 'Old buildings were built better' - no, the flimsy old buildings collapsed and were torn down; only the sturdy ones survived to impress you. 'Successful founders dropped out of college' - the thousands who dropped out and failed don't write memoirs.\n\nThe fix is to always ask: what's missing from this sample because it didn't survive to be measured? The most important data is often the data you can't see, precisely because of the thing you're studying."
+  },
+  {
+    "id": "sci-0026",
+    "type": "concept",
+    "topic": "science",
+    "headline": "Entropy: why your room messes up but never tidies itself",
+    "body": "Leave a room alone and it gets messier; it never spontaneously tidies. Stir milk into coffee and it blends; it never un-blends. That arrow of time is entropy: there are vastly more disordered arrangements of things than ordered ones, so a system left to chance drifts toward disorder simply because disorder is overwhelmingly more probable. Order isn't impossible - it just requires you to pump in energy and effort to fight the odds.",
+    "more": "Crucially, entropy isn't a force pushing toward mess. There's nothing actively disordering your room. It's pure statistics: only a handful of configurations count as 'tidy', while astronomically many count as 'messy', so random shuffling almost always lands you in the messy pile.\n\nThis is why perpetual-motion machines can't exist and why every engine wastes some energy as heat. The second law of thermodynamics, that total entropy always increases, is among the most ironclad rules in all of science - it even defines which direction time flows."
+  },
+  {
+    "id": "sci-0027",
+    "type": "concept",
+    "topic": "science",
+    "headline": "Emergence: the whole does things the parts can't",
+    "body": "A single ant is nearly mindless, following a few chemical rules. Yet a colony builds bridges from its own bodies, farms fungus, and wages war with no leader directing it. Wetness isn't a property of one water molecule; it emerges from trillions. Emergence is when simple components following simple rules produce complex behaviour that none of the parts possess. The behaviour is real, but you'll never find it by examining a single piece.",
+    "more": "Your consciousness is the headline example: no single neuron is aware, yet 86 billion of them firing together produce the felt experience of being you. Traffic jams emerge from individual drivers; market crashes emerge from individual trades; a flock's swooping shape emerges from each bird watching its neighbours.\n\nThe lesson for thinking: reductionism (break it into parts) is powerful but incomplete. Some questions can only be answered at the level of the system, never the component. 'More is different.'"
+  },
+  {
+    "id": "sci-0028",
+    "type": "concept",
+    "topic": "science",
+    "headline": "Half-life: why decay has no expiry date",
+    "body": "A radioactive atom has no memory and no age. A carbon-14 atom that's existed for 5,000 years is exactly as likely to decay in the next minute as a brand-new one. We can't predict when any single atom will go, only that half of a large pile will decay in one 'half-life'. After two half-lives, a quarter remains; then an eighth. It never reaches zero, just keeps halving - which is why dangerous isotopes linger so long.",
+    "more": "This memorylessness feels deeply strange. We're used to things wearing out and aging toward failure. But individual atoms don't accumulate damage or get 'closer' to decaying. The process is purely probabilistic, governed by quantum mechanics.\n\nThe halving pattern is what makes radiocarbon dating possible. Living things absorb carbon-14; when they die, intake stops and the clock starts. Measure how much is left, count the half-lives, and you can read off the age of a bone or a scroll thousands of years later."
+  },
+  {
+    "id": "sci-0029",
+    "type": "concept",
+    "topic": "science",
+    "headline": "Signal vs noise: regression to the mean",
+    "body": "A pilot who flies a brilliant landing gets praise; his next landing is usually worse. A pilot who flies a terrible one gets chewed out; his next is usually better. Instructors conclude praise hurts and criticism helps - exactly backwards. The real cause is regression to the mean: extreme performances are partly luck, and luck doesn't repeat, so a stand-out result is naturally followed by a more average one, no matter what you did in between.",
+    "more": "This single statistical fact fools us constantly. The 'sophomore slump', the curse of appearing on a magazine cover, the patient who improves after seeing a quack (they sought help when feeling worst, then naturally recovered) - all can be regression to the mean masquerading as cause and effect.\n\nThe defense is to compare against a control group, not against a previous extreme. Whenever you select something for being unusually high or low, expect its next measurement to drift back toward ordinary, and don't credit your intervention for what randomness was going to do anyway."
+  },
+  {
+    "id": "sci-0030",
+    "type": "concept",
+    "topic": "science",
+    "headline": "Activation energy: the spark before the burn",
+    "body": "A log can sit next to oxygen for a century without bursting into flame, even though burning releases energy. It needs a match first - a shove over an initial energy hump before the self-sustaining reaction can begin. That hump is activation energy. It's why fuels are safe to store, why we refrigerate food (cold slows reactions by starving them of the energy to clear the barrier), and why a tiny spark can unleash a huge release.",
+    "more": "Catalysts are the great cheat code here. They don't add energy; they lower the barrier, opening an easier path over the hump. Your body runs on enzymes that are catalysts so effective they speed up reactions millions of times, letting life happen at gentle body temperature instead of needing a furnace.\n\nThe mental model generalizes far beyond chemistry. Many good outcomes are favorable in the end but blocked by an upfront cost - starting an exercise habit, launching a project, having a hard conversation. The energy isn't the problem; getting over the hump to begin is."
+  },
+  {
+    "id": "sci-0031",
+    "type": "concept",
+    "topic": "science",
+    "headline": "Resonance: why a tiny push at the right rhythm topples bridges",
+    "body": "Push a child on a swing with small, perfectly timed nudges and they go higher and higher. Push at the wrong rhythm and nothing builds. Every object has natural frequencies it 'wants' to vibrate at, and tiny forces delivered exactly in sync add up enormously. This is resonance. It's how a soprano can shatter a wine glass with her voice alone, matching the glass's natural frequency until it vibrates itself apart.",
+    "more": "Resonance built and destroys. It's how your radio tunes in one station out of thousands - the circuit resonates only at the chosen frequency. It's how an MRI machine flips atoms in your body. But marching soldiers break step crossing bridges for a reason: a famous 1831 bridge collapse and the wobbling of London's Millennium Bridge in 2000 both involved rhythmic forces feeding a structure's natural sway.\n\nThe deep idea is that timing can matter more than strength. A small force applied in rhythm beats a large force applied carelessly, because the energy accumulates instead of cancelling out."
+  },
+  {
+    "id": "sci-0032",
+    "type": "concept",
+    "topic": "science",
+    "headline": "The map is not the territory: every model leaves something out",
+    "body": "A subway map shows lines as neat colored geometry with evenly spaced stops. The real tracks curve, the distances vary wildly, and the geography is distorted. Yet the map is more useful than a photo precisely because it throws information away. Every model - a weather forecast, an economic theory, a mental shortcut - is a deliberately simplified map. It's powerful when its simplifications match your purpose and dangerous when you forget they're there.",
+    "more": "Statistician George Box put it as 'all models are wrong, but some are useful.' The Newtonian physics that lands spacecraft is technically 'wrong' - Einstein showed it breaks down at high speeds - yet it's right enough for the job. The skill isn't finding the one true model; it's knowing each map's blind spots.\n\nThe danger comes when we mistake the map for reality. A financial model that assumes markets are rational, a personality test that sorts people into four boxes - these can be useful tools and disastrous if treated as the territory itself. Always ask what a model is ignoring to achieve its tidiness."
+  },
+  {
+    "id": "sci-0033",
+    "type": "concept",
+    "topic": "science",
+    "headline": "Feedback loops: small differences that snowball or self-correct",
+    "body": "Point a microphone at its own speaker and a faint hum erupts into a screech in seconds - the sound feeds back, gets amplified, feeds back louder, and runs away. That's a positive feedback loop: output amplifies itself. A thermostat is the opposite - too hot, it turns the heat off; too cold, it turns it on - a negative loop that pulls the system back to a target. Almost every system you care about is governed by which kind of loop dominates.",
+    "more": "Positive loops create explosions and tipping points: viral spread, bank runs, melting ice exposing dark water that absorbs more heat and melts more ice. They're behind both miracles of growth and catastrophic collapses, because they don't know how to stop themselves.\n\nNegative loops create stability: your body temperature, predator and prey populations, the price-finding of a market. The most robust systems balance the two - enough positive feedback to grow and adapt, enough negative feedback to keep from flying apart. Spotting which loop you're in tells you whether to expect runaway change or stubborn equilibrium."
+  },
+  {
+    "id": "sci-0045",
+    "type": "rabbithole",
+    "topic": "science",
+    "headline": "Why is glass transparent but sand is not? →",
+    "body": "Glass is made by melting sand, yet sand is opaque and grey while glass lets light pour straight through. The journey from beach to window pane is a story about what 'transparent' really means - and it's not about the material being 'clear' at all.",
+    "threadId": "glass-transparency",
+    "threadOrder": 0
+  },
+  {
+    "id": "sci-0046",
+    "type": "fact",
+    "topic": "science",
+    "headline": "Transparency is about whether light has anything to grab onto",
+    "body": "A material is transparent when visible light passes through without being absorbed or scattered. Light gets absorbed only if the material has electrons that can soak up that exact energy. Glass's electrons need more energy than visible light carries - they can only absorb ultraviolet - so visible light sails through untouched. The glass is transparent not because it's 'clear' but because its electrons literally can't catch visible photons.",
+    "threadId": "glass-transparency",
+    "threadOrder": 1
+  },
+  {
+    "id": "sci-0047",
+    "type": "fact",
+    "topic": "science",
+    "headline": "So why is sand opaque if it's the same stuff?",
+    "body": "Sand is mostly the same silica as glass, and a single grain is actually fairly transparent. The opacity comes from the boundaries. Sand is a pile of countless tiny grains with air gaps and rough surfaces between them. Light entering hits surface after surface, bouncing and scattering in every direction instead of passing straight through. Melt those grains into one continuous solid with no internal boundaries, and the scattering vanishes - it becomes glass.",
+    "threadId": "glass-transparency",
+    "threadOrder": 2
+  },
+  {
+    "id": "sci-0048",
+    "type": "fact",
+    "topic": "science",
+    "headline": "This is also why crushed glass and snow are white",
+    "body": "Take a clear pane and smash it to powder and it turns white and opaque - same material, now full of boundaries that scatter light. Snow is white for the identical reason: it's a heap of clear ice crystals, and light scatters off all their surfaces. Clouds, foam, and crushed ice are all white by the same trick. 'White' often just means 'transparent stuff broken into many pieces that scatter all colours equally'.",
+    "threadId": "glass-transparency",
+    "threadOrder": 3
+  },
+  {
+    "id": "sci-0049",
+    "type": "rabbithole",
+    "topic": "science",
+    "headline": "The metal in your blood was forged inside an exploding star →",
+    "body": "The iron carrying oxygen in your red blood cells, the calcium in your bones, the oxygen you're breathing - none of it could have been made on Earth or even by an ordinary star. Tracing where your atoms came from leads to some of the most violent events in the universe.",
+    "threadId": "stardust-origins",
+    "threadOrder": 0
+  },
+  {
+    "id": "sci-0050",
+    "type": "fact",
+    "topic": "science",
+    "headline": "The early universe made only the three lightest elements",
+    "body": "Minutes after the Big Bang, the universe was hot enough to fuse hydrogen into helium and a trace of lithium - and then it cooled too fast to make anything heavier. So for the first stretch of cosmic history, the entire universe was essentially just hydrogen and helium. Every atom heavier than that - carbon, oxygen, iron, gold - did not yet exist anywhere. It all had to be built later, inside stars.",
+    "threadId": "stardust-origins",
+    "threadOrder": 1
+  },
+  {
+    "id": "sci-0051",
+    "type": "fact",
+    "topic": "science",
+    "headline": "Stars fuse light atoms into heavier ones - but stall at iron",
+    "body": "A star is a fusion furnace, slamming light nuclei together to make heavier ones and releasing energy. Over its life it builds carbon, oxygen, and on up the periodic table. But the chain hits a wall at iron. Fusing iron consumes energy instead of releasing it, so the furnace can't go further. To make anything heavier than iron, you need a far more extreme event than a star quietly burning.",
+    "threadId": "stardust-origins",
+    "threadOrder": 2
+  },
+  {
+    "id": "sci-0052",
+    "type": "fact",
+    "topic": "science",
+    "headline": "Gold and silver are debris from cosmic catastrophes",
+    "body": "Elements heavier than iron - gold, silver, uranium - are forged in the most violent events known: supernova explosions and the collisions of neutron stars. When a massive star dies or two dead stellar cores smash together, the blast creates and then flings these heavy atoms across space. That debris seeds new clouds of gas, which collapse into new stars and planets. The gold in a wedding ring is shrapnel from a stellar catastrophe billions of years ago.",
+    "threadId": "stardust-origins",
+    "threadOrder": 3
+  },
+  {
+    "id": "sci-0053",
+    "type": "fact",
+    "topic": "science",
+    "headline": "You are literally made of this stardust",
+    "body": "Pull it together: the hydrogen in your water is from the Big Bang, but the carbon in your cells, the oxygen in your lungs, the calcium in your bones, and the iron in your blood were all manufactured inside stars and scattered by their deaths. Our solar system condensed from a cloud enriched by generations of dead stars. 'We are made of star-stuff' isn't poetry - it's a literal accounting of where your atoms were assembled.",
+    "threadId": "stardust-origins",
+    "threadOrder": 4
+  }
+]

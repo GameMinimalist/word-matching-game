@@ -1,0 +1,406 @@
+[
+  {
+    "id": "log-0001",
+    "type": "puzzle",
+    "topic": "logic",
+    "headline": "A bat and a ball cost $1.10 together. The bat costs $1.00 more than the ball. How much is the ball?",
+    "body": "The intuitive answer is 10 cents. It's wrong. Work it out.",
+    "answer": "5 cents. If the ball is 5c, the bat is $1.05 ($1.00 more), and together that's $1.10. If the ball were 10c, the bat would be $1.10 and the total $1.20."
+  },
+  {
+    "id": "log-0002",
+    "type": "puzzle",
+    "topic": "logic",
+    "headline": "If it takes 5 machines 5 minutes to make 5 widgets, how long for 100 machines to make 100 widgets?",
+    "body": "Resist the urge to say 100.",
+    "answer": "5 minutes. Each machine makes 1 widget in 5 minutes, so 100 machines make 100 widgets in the same 5 minutes."
+  },
+  {
+    "id": "log-0003",
+    "type": "puzzle",
+    "topic": "logic",
+    "headline": "A lily pad patch doubles in size every day and covers the whole lake on day 48. On which day was it half-covered?",
+    "body": "",
+    "answer": "Day 47. Since it doubles daily, the day before full coverage it must be exactly half. Doubling makes the last step deceptively large."
+  },
+  {
+    "id": "log-0004",
+    "type": "puzzle",
+    "topic": "logic",
+    "headline": "You have a 3-litre jug and a 5-litre jug. Measure out exactly 4 litres.",
+    "body": "No markings on either jug. Unlimited water.",
+    "answer": "Fill the 5, pour into the 3 (2 left in the 5). Empty the 3, pour the 2 into it. Refill the 5, top up the 3 (which needs 1 more), leaving exactly 4 in the 5-litre jug."
+  },
+  {
+    "id": "log-0005",
+    "type": "puzzle",
+    "topic": "logic",
+    "headline": "Two ropes each burn in exactly 60 minutes, but unevenly. Measure 45 minutes.",
+    "body": "You can only light ends; burn rate is non-uniform along each rope.",
+    "answer": "Light rope A at both ends and rope B at one end. A burns out in 30 min; at that instant light B's other end. B's remaining 30-min worth now burns from both ends, taking 15 more min. Total 45 min."
+  },
+  {
+    "id": "log-0006",
+    "type": "puzzle",
+    "topic": "logic",
+    "headline": "A man looks at a portrait. 'Brothers and sisters I have none, but this man's father is my father's son.' Who is in the portrait?",
+    "body": "",
+    "answer": "His son. 'My father's son' is the speaker himself (he has no siblings), so 'this man's father is me' — the portrait is the speaker's son."
+  },
+  {
+    "id": "log-0007",
+    "type": "puzzle",
+    "topic": "logic",
+    "headline": "You're in a race and you overtake the person in 2nd place. What position are you now in?",
+    "body": "",
+    "answer": "2nd. You took the overtaken runner's spot — you didn't pass the leader. Many instinctively say 1st."
+  },
+  {
+    "id": "log-0008",
+    "type": "puzzle",
+    "topic": "logic",
+    "headline": "A farmer must cross a river with a wolf, a goat and a cabbage. The boat holds him plus one item. How?",
+    "body": "Left alone, wolf eats goat, goat eats cabbage. Find the crossing order.",
+    "answer": "Take goat over. Return empty. Take wolf over, bring goat back. Take cabbage over, return empty. Take goat over. The goat is never left with wolf or cabbage."
+  },
+  {
+    "id": "log-0009",
+    "type": "puzzle",
+    "topic": "logic",
+    "headline": "Three switches downstairs control one bulb upstairs. With one trip up, identify which switch.",
+    "body": "You can flip switches freely first, but may climb the stairs only once.",
+    "answer": "Turn switch 1 on for a few minutes, then off. Turn switch 2 on and go up. Lit = switch 2; off but warm = switch 1; off and cold = switch 3."
+  },
+  {
+    "id": "log-0010",
+    "type": "puzzle",
+    "topic": "logic",
+    "headline": "On an island, knights always tell the truth and knaves always lie. You meet A, who says 'I am a knave.' What is A?",
+    "body": "",
+    "answer": "Impossible — no one can say it. A knight wouldn't falsely call himself a knave; a knave wouldn't truthfully admit it. So no real inhabitant can make this statement."
+  },
+  {
+    "id": "log-0011",
+    "type": "puzzle",
+    "topic": "logic",
+    "headline": "You meet two islanders. A says 'We are both knaves.' What are A and B?",
+    "body": "Knights always tell truth, knaves always lie.",
+    "answer": "A is a knave, B is a knight. If A were a knight the statement would be true, but then A would be a knave — contradiction. So A lies; 'both knaves' is false, so B must be a knight."
+  },
+  {
+    "id": "log-0012",
+    "type": "puzzle",
+    "topic": "logic",
+    "headline": "At a fork, one road leads to safety, one to doom. A knight guards one, a knave the other. You get one question. What do you ask?",
+    "body": "You don't know which guard is which. Each guard knows both roads.",
+    "answer": "Ask either guard: 'Which road would the OTHER guard say is safe?' Then take the opposite road. The truth-teller reports the liar's lie, the liar lies about the truth — either way you get the wrong road named, so pick the other."
+  },
+  {
+    "id": "log-0013",
+    "type": "puzzle",
+    "topic": "logic",
+    "headline": "You have 12 identical-looking coins; one is fake (heavier OR lighter). Find it in 3 weighings on a balance.",
+    "body": "A balance scale tells you left-heavy, right-heavy, or equal. You don't know if the fake is heavy or light.",
+    "answer": "Weigh 4 vs 4. If balanced, the fake is in the other 4 and you have 2 weighings for 4 coins of unknown bias — solvable. If unbalanced, rotate and swap subsets across the next two weighings; the pattern of which side tips isolates the coin and its bias. Three weighings distinguish 12 coins because each weighing has 3 outcomes (3^3 = 27 > 24 cases)."
+  },
+  {
+    "id": "log-0014",
+    "type": "puzzle",
+    "topic": "logic",
+    "headline": "You have a 100-storey building and 2 identical eggs. Find the highest safe drop floor with the fewest worst-case drops.",
+    "body": "An egg breaks above some unknown floor and survives at or below it. Minimise the worst-case number of drops.",
+    "answer": "14. Drop the first egg from floors 14, 27, 39, ... (steps shrinking by 1). If it breaks, walk the second egg up the small gap. The worst case is 14 drops because 14+13+...+1 = 105 ≥ 100."
+  },
+  {
+    "id": "log-0015",
+    "type": "puzzle",
+    "topic": "logic",
+    "headline": "100 prisoners, each randomly given a hat (red or blue) they can't see. Lined up, each sees all hats ahead. They must guess their own. How many guaranteed correct?",
+    "body": "They strategise beforehand. Guessing happens back to front; everyone hears prior guesses. Find the strategy.",
+    "answer": "99 guaranteed. The rearmost person says 'red' if he sees an odd number of red hats ahead, else 'blue' — this encodes parity. Everyone else then deduces their own hat from the parity and the hats/guesses they can track. Only the first guesser risks being wrong."
+  },
+  {
+    "id": "log-0016",
+    "type": "puzzle",
+    "topic": "logic",
+    "headline": "A snail climbs a 10 m well: up 3 m each day, slips 2 m each night. How many days to escape?",
+    "body": "",
+    "answer": "8 days. It gains 1 m net per day but on the final day it climbs out before slipping. After 7 days it's at 7 m; on day 8 it climbs 3 m to 10 m and escapes."
+  },
+  {
+    "id": "log-0017",
+    "type": "puzzle",
+    "topic": "logic",
+    "headline": "A clock's hands overlap how many times in 12 hours?",
+    "body": "Hour and minute hands exactly coincide.",
+    "answer": "11 times. The minute hand laps the hour hand 11 times every 12 hours (not 12, because around 11:00 the next overlap is exactly at 12:00, shared with the start of the next cycle)."
+  },
+  {
+    "id": "log-0018",
+    "type": "puzzle",
+    "topic": "logic",
+    "headline": "You roll two fair dice. Given that at least one shows a 6, what's the probability both show 6?",
+    "body": "Not 1/6.",
+    "answer": "1/11. Of the 36 outcomes, 11 contain at least one 6, and only one of those (6,6) has both sixes. So 1/11, not the intuitive 1/6."
+  },
+  {
+    "id": "log-0019",
+    "type": "puzzle",
+    "topic": "logic",
+    "headline": "A family has two children, and at least one is a boy. What's the probability both are boys?",
+    "body": "Assume boy/girl equally likely and independent.",
+    "answer": "1/3. Equally likely cases are BB, BG, GB, GG. 'At least one boy' rules out GG, leaving three cases, only one of which (BB) is two boys."
+  },
+  {
+    "id": "log-0020",
+    "type": "puzzle",
+    "topic": "logic",
+    "headline": "3 people pay $30 for a room ($10 each). The clerk refunds $5; the bellboy pockets $2 and returns $1 to each. Each paid $9, total $27, plus the $2 = $29. Where's the missing dollar?",
+    "body": "",
+    "answer": "There is no missing dollar — the sum is bogus. The $27 the guests paid already includes the bellboy's $2. Correctly: $25 (room) + $2 (bellboy) + $3 (refund) = $30. You should never add the $2 to the $27."
+  },
+  {
+    "id": "log-0021",
+    "type": "puzzle",
+    "topic": "logic",
+    "headline": "What comes next: 1, 11, 21, 1211, 111221, ... ?",
+    "body": "",
+    "answer": "312211. It's the look-and-say sequence: read the previous term aloud. 111221 is 'three 1s, two 2s, one 1' = 312211."
+  },
+  {
+    "id": "log-0022",
+    "type": "puzzle",
+    "topic": "logic",
+    "headline": "What is the next number: 2, 3, 5, 7, 11, 13, ... ?",
+    "body": "",
+    "answer": "17. These are the prime numbers; the next prime after 13 is 17 (15 and 16 are composite)."
+  },
+  {
+    "id": "log-0023",
+    "type": "puzzle",
+    "topic": "logic",
+    "headline": "Next in sequence: O, T, T, F, F, S, S, E, ... ?",
+    "body": "",
+    "answer": "N. They are the first letters of One, Two, Three, Four, Five, Six, Seven, Eight — next is Nine."
+  },
+  {
+    "id": "log-0024",
+    "type": "puzzle",
+    "topic": "logic",
+    "headline": "A train leaves at 60 mph; a bird flies between it and a station 60 miles away at 90 mph, bouncing back and forth until the train arrives. How far does the bird fly?",
+    "body": "",
+    "answer": "90 miles. The train takes 1 hour to cover 60 miles, so the bird simply flies for 1 hour at 90 mph = 90 miles. No need to sum the back-and-forth legs."
+  },
+  {
+    "id": "log-0025",
+    "type": "puzzle",
+    "topic": "logic",
+    "headline": "Burning question: how do you cut a round cake into 8 equal pieces with just 3 straight cuts?",
+    "body": "",
+    "answer": "Two perpendicular cuts through the centre make 4 quarters; the third cut is horizontal, slicing the cake through its middle into top and bottom halves, yielding 8 equal pieces."
+  },
+  {
+    "id": "log-0026",
+    "type": "puzzle",
+    "topic": "logic",
+    "headline": "A woman has 7 daughters, and each daughter has one brother. How many children total?",
+    "body": "",
+    "answer": "8. The single brother is shared by all 7 daughters — there's only one boy, so 7 + 1 = 8 children."
+  },
+  {
+    "id": "log-0027",
+    "type": "puzzle",
+    "topic": "logic",
+    "headline": "A man pushes his car to a hotel and instantly knows he's bankrupt. What's going on?",
+    "body": "Lateral thinking.",
+    "answer": "He's playing Monopoly. He landed on a property (hotel) he can't afford and moved his car token there."
+  },
+  {
+    "id": "log-0028",
+    "type": "puzzle",
+    "topic": "logic",
+    "headline": "A man lives on the 10th floor. He takes the lift down every morning, but coming home only rides to the 7th floor and walks the rest — except on rainy days. Why?",
+    "body": "Lateral thinking.",
+    "answer": "He's short and can only reach the 7th-floor button. On rainy days he has an umbrella to press the 10th-floor button (or others share the lift and press it for him)."
+  },
+  {
+    "id": "log-0029",
+    "type": "puzzle",
+    "topic": "logic",
+    "headline": "Antarctica aside: a bear walks 1 km south, 1 km east, 1 km north and ends where it started. What colour is the bear?",
+    "body": "",
+    "answer": "White (a polar bear). The classic solution is the North Pole, where any such triangle returns you to the start — and only polar bears live there."
+  },
+  {
+    "id": "log-0030",
+    "type": "puzzle",
+    "topic": "logic",
+    "headline": "Five pirates split 100 gold coins by seniority. The eldest proposes a split; if at least half approve it passes, else he's thrown overboard and the next proposes. What does the eldest propose?",
+    "body": "Pirates are perfectly logical, greedy, and prefer killing if outcomes tie. 'At least half' includes the proposer's own vote.",
+    "answer": "98 for himself, 0 to the 2nd, 1 to the 3rd, 0 to the 4th, 1 to the 5th. Working backwards, the eldest buys the cheapest two votes (pirates 3 and 5, who'd get nothing in later rounds) with 1 coin each, securing 3 of 5 votes."
+  },
+  {
+    "id": "log-0031",
+    "type": "puzzle",
+    "topic": "logic",
+    "headline": "100 islanders all have blue eyes but never discuss eye colour; if you ever deduce yours, you must leave at dawn. A visitor says 'I see someone with blue eyes.' What happens?",
+    "body": "Everyone is a perfect logician, sees all others' eyes, and there are no mirrors. The statement seems to add nothing — yet it does.",
+    "answer": "All 100 leave on the 100th dawn. The announcement creates common knowledge. By induction: if there were 1 blue-eyed person they'd leave night 1; with N, each waits N-1 nights seeing no one leave, then on night N everyone deduces their own blue eyes simultaneously."
+  },
+  {
+    "id": "log-0032",
+    "type": "puzzle",
+    "topic": "logic",
+    "headline": "You have two coins totalling 30 cents, and one of them is not a nickel. What are they?",
+    "body": "",
+    "answer": "A quarter and a nickel. 'One of them is not a nickel' is true — the quarter isn't. The other one is the nickel."
+  },
+  {
+    "id": "log-0033",
+    "type": "puzzle",
+    "topic": "logic",
+    "headline": "In a 23-person room, is it more likely than not that two share a birthday?",
+    "body": "Ignore leap years; 365 equally likely birthdays.",
+    "answer": "Yes — about 50.7%. With 23 people there are 253 possible pairs, and the chance that NO pair matches drops just below 1/2, so a shared birthday becomes more likely than not."
+  },
+  {
+    "id": "log-0034",
+    "type": "puzzle",
+    "topic": "logic",
+    "headline": "A 3x3 magic square uses 1-9 once each so every row, column and diagonal sums to the same number. What is that sum?",
+    "body": "",
+    "answer": "15. The total 1+...+9 = 45, split across 3 rows, so each row sums to 45/3 = 15."
+  },
+  {
+    "id": "log-0035",
+    "type": "puzzle",
+    "topic": "logic",
+    "headline": "You have an 8x8 chessboard with two opposite corners removed (62 squares). Can you tile it with 31 dominoes, each covering two adjacent squares?",
+    "body": "",
+    "answer": "No. Opposite corners are the same colour, so removing them leaves 32 of one colour and 30 of the other. Every domino covers one of each colour, so a perfect tiling is impossible."
+  },
+  {
+    "id": "log-0036",
+    "type": "puzzle",
+    "topic": "logic",
+    "headline": "A monk climbs a mountain Saturday from 6am to 6pm. Sunday he descends the same path, same hours. Must there be a time of day he's at the same spot both days?",
+    "body": "",
+    "answer": "Yes. Imagine the ascent and descent happening on the same day: the two journeys must meet somewhere on the path. That meeting point is the same clock time on both real days."
+  },
+  {
+    "id": "log-0037",
+    "type": "puzzle",
+    "topic": "logic",
+    "headline": "Three boxes are labelled 'apples', 'oranges', and 'apples & oranges' — every label is wrong. By drawing one fruit from one box, can you relabel all correctly?",
+    "body": "",
+    "answer": "Yes. Draw from the box labelled 'apples & oranges'; since it's mislabelled it holds only one type. Say you draw an apple — it's the apples box. The box labelled 'oranges' can't be oranges (wrong) or apples (taken), so it's mixed, leaving the last as oranges."
+  },
+  {
+    "id": "log-0038",
+    "type": "puzzle",
+    "topic": "logic",
+    "headline": "Why are manhole covers round?",
+    "body": "Classic interview puzzle — give the geometric reason.",
+    "answer": "A round cover can't fall through its own hole, since a circle has constant width. A square cover could be turned diagonally and dropped through the diagonal of the opening."
+  },
+  {
+    "id": "log-0039",
+    "type": "puzzle",
+    "topic": "logic",
+    "headline": "You have 10 bags of coins; one bag is all fakes weighing 9g each instead of 10g. With a single weighing on a digital scale, find the fake bag.",
+    "body": "A digital scale gives an exact weight. You may take any number of coins from any bag.",
+    "answer": "Take 1 coin from bag 1, 2 from bag 2, ... 10 from bag 10 (55 coins). If all were genuine they'd weigh 550g. The shortfall in grams equals the fake bag's number — e.g. 3g light means bag 3 is fake."
+  },
+  {
+    "id": "log-0040",
+    "type": "puzzle",
+    "topic": "logic",
+    "headline": "Monty opens a goat door. You switch. A friend insists it's now 50/50. In one sentence, why is the friend wrong?",
+    "body": "Three doors, one car. You pick one; the host (who knows) opens a different goat door; you may switch.",
+    "answer": "Your first pick had a 1/3 chance of the car, so the other unopened door now carries the remaining 2/3 — the host's knowledgeable choice concentrates the odds there, making switching win 2/3 of the time."
+  },
+  {
+    "id": "log-0041",
+    "type": "concept",
+    "topic": "logic",
+    "headline": "The Monty Hall problem and why switching wins",
+    "body": "A 1/3 guess becomes a 2/3 winner when the host reveals what he knows.",
+    "more": "You pick one of three doors; behind one is a car. The host, who knows where the car is, opens one of the other two doors to reveal a goat, then offers you the chance to switch. Switching wins 2/3 of the time. The key is that the host's action is not random — he will always reveal a goat, so his choice carries information.\n\nThink of it as: your original door wins only if you guessed right initially, which is 1/3. The other door wins in all the cases where you guessed wrong initially — that's 2/3. The opened goat door simply funnels that 2/3 onto the single remaining door.\n\nA cleaner intuition: imagine 100 doors. You pick one (1% chance), and the host opens 98 goat doors, leaving your door and one other. Would you switch? Almost certainly — the remaining door now holds 99% of the probability."
+  },
+  {
+    "id": "log-0042",
+    "type": "concept",
+    "topic": "logic",
+    "headline": "Bayes' theorem and the base-rate trap",
+    "body": "A test that's '99% accurate' for a rare disease can still be wrong most of the time.",
+    "more": "Bayes' theorem tells you how to update a belief given evidence: the posterior probability depends not just on the test's accuracy but on how common the condition is to begin with (the base rate). People routinely ignore the base rate and dramatically overestimate the chance of a positive result being a true positive.\n\nConcrete example: a disease affects 1 in 1,000 people. A test catches every real case but has a 5% false-positive rate. Out of 1,000 people, 1 true case tests positive, but about 50 healthy people also test positive. So a positive result means only 1 in 51 — under 2% — chance of actually having the disease, despite the test being '95% accurate.'\n\nThe lesson: rare events stay rare even after fairly strong evidence. Always ask 'how common was this in the first place?' before trusting a positive signal."
+  },
+  {
+    "id": "log-0043",
+    "type": "concept",
+    "topic": "logic",
+    "headline": "The pigeonhole principle",
+    "body": "If you put more items than boxes, some box holds at least two items. Trivial to state, surprisingly powerful.",
+    "more": "Formally: if n items go into m containers and n > m, then at least one container holds two or more items. It sounds obvious, yet it proves striking facts with no calculation at all.\n\nConcrete example: in any group of 13 people, at least two share a birth month, because there are only 12 months. Stronger: in any city of more than a few hundred thousand people, at least two have exactly the same number of hairs on their heads, since the head has fewer than ~150,000 hairs but the population far exceeds that.\n\nThe principle underlies results in number theory, computer science (hash collisions are guaranteed once you exceed the table size), and combinatorics. Its power comes from converting 'there must be a coincidence' into a rigorous certainty."
+  },
+  {
+    "id": "log-0044",
+    "type": "concept",
+    "topic": "logic",
+    "headline": "Expected value: the long-run average outcome",
+    "body": "Multiply each outcome by its probability and sum — that's what you'd average over many trials.",
+    "more": "Expected value (EV) is the probability-weighted average of all possible outcomes. It's the single number that tells you whether a bet, game, or decision pays off in the long run, even though any single trial may differ wildly from it.\n\nConcrete example: a lottery ticket costs $2 and gives a 1-in-10-million chance to win $5 million. The EV of the prize is $5,000,000 / 10,000,000 = $0.50, far below the $2 cost — a losing bet on average. Conversely, a fair coin-flip game paying $3 on heads and costing $1 has EV = 0.5 x $3 - $1 = $0.50 per play, a winner.\n\nEV explains why casinos always win over time and why insurance can be rational despite negative EV (you're paying to avoid catastrophic variance). It ignores risk tolerance, which is why EV alone doesn't dictate every decision."
+  },
+  {
+    "id": "log-0045",
+    "type": "concept",
+    "topic": "logic",
+    "headline": "Simpson's paradox: trends that reverse when combined",
+    "body": "A treatment can look better in every subgroup yet worse overall — or vice versa.",
+    "more": "Simpson's paradox occurs when a trend appears in separate groups of data but reverses or disappears when the groups are pooled. It happens because a hidden variable (a confounder) is distributed unevenly across the groups, skewing the aggregate.\n\nConcrete example: a 1973 Berkeley admissions study seemed to show bias against women overall. But broken down by department, women were admitted at equal or higher rates in most departments. The catch: women applied disproportionately to highly competitive departments with low acceptance rates for everyone, dragging down their aggregate number.\n\nThe lesson: aggregated statistics can mislead. Whether to trust the pooled figure or the subgroup figures depends on the causal structure — you must ask what's driving the grouping before drawing a conclusion."
+  },
+  {
+    "id": "log-0046",
+    "type": "concept",
+    "topic": "logic",
+    "headline": "The conjunction fallacy: why 'and' feels more likely",
+    "body": "People judge a specific, detailed scenario as more probable than a general one — but it can never be.",
+    "more": "The conjunction fallacy is the mistaken belief that two events together (A and B) can be more probable than one of them alone (A). Mathematically impossible: adding a condition can only narrow the set of outcomes, so P(A and B) is always less than or equal to P(A).\n\nThe classic example is 'Linda': described as a bright, outspoken philosophy graduate concerned with social justice. Asked whether Linda is more likely to be (a) a bank teller, or (b) a bank teller who is active in the feminist movement, most people pick (b). But every feminist bank teller is also a bank teller, so (a) must be at least as likely.\n\nThe error arises because the detailed story feels representative and vivid, and our minds substitute 'how well does this fit?' for 'how probable is this?'. Plausibility is not probability."
+  },
+  {
+    "id": "log-0055",
+    "type": "rabbithole",
+    "topic": "logic",
+    "headline": "Statements that can't decide if they're true or false — a tour of self-reference →",
+    "body": "From a sentence calling itself a liar to a theorem that broke mathematics' dream of completeness.",
+    "threadId": "self-reference",
+    "threadOrder": 0
+  },
+  {
+    "id": "log-0056",
+    "type": "fact",
+    "topic": "logic",
+    "headline": "The Liar Paradox: 'This sentence is false.'",
+    "body": "If the sentence is true, then it's false as it claims; if it's false, then its claim is wrong, making it true. It can be neither consistently true nor false. Versions of this paradox date back to the ancient Greek Epimenides and have troubled logicians for over two millennia.",
+    "threadId": "self-reference",
+    "threadOrder": 1
+  },
+  {
+    "id": "log-0057",
+    "type": "fact",
+    "topic": "logic",
+    "headline": "Russell's Paradox: the set of all sets that don't contain themselves",
+    "body": "Does the set of all sets that are not members of themselves contain itself? If it does, it shouldn't; if it doesn't, it should. Discovered by Bertrand Russell in 1901, this paradox exposed a contradiction at the heart of naive set theory and forced mathematicians to rebuild its foundations with stricter axioms.",
+    "threadId": "self-reference",
+    "threadOrder": 2
+  },
+  {
+    "id": "log-0058",
+    "type": "fact",
+    "topic": "logic",
+    "headline": "Gödel turned self-reference into a theorem",
+    "body": "In 1931 Kurt Gödel encoded the sentence 'This statement cannot be proved' inside arithmetic itself. If the system is consistent, the statement is true but unprovable — showing that any sufficiently powerful, consistent formal system must contain true statements it cannot prove. Self-reference, once a parlour trick, became a permanent limit on mathematics.",
+    "threadId": "self-reference",
+    "threadOrder": 3
+  }
+]

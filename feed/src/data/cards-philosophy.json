@@ -1,0 +1,307 @@
+[
+  {
+    "id": "phi-0001",
+    "type": "fact",
+    "topic": "philosophy",
+    "headline": "Your body is a Ship of Theseus that finishes refitting every few years",
+    "body": "The ancient puzzle asks: if you replace every plank of a ship one by one, is it still the same ship? Your body runs this experiment for real. Most of your cells and nearly all the atoms in them are swapped out over a span of years. The 'you' reading this shares almost no physical material with the 'you' of a decade ago.",
+    "more": "The point isn't a trivia fact about cells. It's that personal identity can't be the matter you're made of, because the matter keeps changing while 'you' persist. So what does the continuity consist of? Candidates include the pattern (the arrangement, not the stuff), psychological continuity (overlapping chains of memory and intention), and bodily continuity (the same gradually-changing organism).\n\nThis matters in practice. It's why we hold people responsible for promises made years ago, why a teleporter that destroyed and rebuilt you would feel terrifying even if the copy were perfect, and why brain-continuity matters to us more than, say, kidney-continuity. The Ship of Theseus isn't solved by picking the 'right' answer; it's solved by noticing that 'same' is a word we apply for different purposes, and the purpose decides the answer."
+  },
+  {
+    "id": "phi-0002",
+    "type": "fact",
+    "topic": "philosophy",
+    "headline": "Chesterton's Fence: don't remove what you don't understand",
+    "body": "G.K. Chesterton imagined a fence across a road with no obvious purpose. The reformer says 'I see no use for this; let's clear it away.' The wiser reply: 'If you don't see its use, I won't let you remove it. Go away and think. Then when you can tell me you DO see its use, I may let you destroy it.'",
+    "more": "The rule isn't 'never change anything.' It's a sequencing rule: understand why a thing exists before you tear it out. Many rules, processes, and odd workarounds are scar tissue from a real problem someone already solved. Remove the fence and the bull comes back.\n\nIn engineering this is the legacy code you're tempted to delete because it 'looks pointless.' In organizations it's the approval step that seems like bureaucracy until you learn which disaster it was created to prevent. The practical move: when something seems dumb, treat that feeling as a flag that you're missing context, not as proof you're smarter. Find the original reason first. Sometimes the reason is genuinely obsolete and you remove the fence with confidence. Sometimes you discover the bull."
+  },
+  {
+    "id": "phi-0003",
+    "type": "fact",
+    "topic": "philosophy",
+    "headline": "The Experience Machine: would you plug in?",
+    "body": "Robert Nozick asked: imagine a machine that could give you any experience you desired, perfectly real from the inside, for the rest of your life. You'd never know you were plugged in. Pure bliss on tap. Would you do it? Most people recoil and say no.",
+    "more": "That refusal is the philosophical payload. If pleasure were the only thing we valued, plugging in would be a no-brainer. The fact that most people won't suggests we want more than the feeling of doing things; we want to actually do them, to actually connect with real people, to actually be a certain kind of person rather than just float in a tank believing we are.\n\nNozick used it as an argument against hedonism, the view that pleasure is the only good. The thought experiment is sharper today: streaming, games, and engineered feeds are partial experience machines. Noticing that you wouldn't plug in fully is a useful test for how much of your real life you're already trading for the feeling of a life."
+  },
+  {
+    "id": "phi-0004",
+    "type": "fact",
+    "topic": "philosophy",
+    "headline": "Mary's Room: knowing every fact about red, but never seeing it",
+    "body": "Frank Jackson imagined Mary, a brilliant scientist who knows every physical fact about color vision, all the wavelengths and neuroscience, but has lived her whole life in a black-and-white room. One day she walks outside and sees a red rose. Does she learn something new?",
+    "more": "Intuitively, yes: she learns what red looks like. But if she already knew every physical fact and still learned something, then there's a fact about experience that isn't captured by physics. This is the 'knowledge argument' against physicalism, the claim that everything is physical.\n\nThe debate is unresolved and contested. Some say Mary gains a new ability (to recognize, imagine, remember red) rather than a new fact. Some say she knew the fact in one form and now knows it 'from the inside.' Jackson himself later changed his mind and rejected his own argument. The lasting value is the wedge it drives into the 'consciousness is just information processing' story: knowing the full description of an experience seems different from having it, and nobody has cleanly explained why."
+  },
+  {
+    "id": "phi-0005",
+    "type": "fact",
+    "topic": "philosophy",
+    "headline": "Newcomb's Problem: a paradox that splits rational people in two",
+    "body": "Two boxes. Box A holds $1,000, visible. Box B holds either $1,000,000 or nothing. You may take both boxes, or just Box B. The catch: a near-perfect predictor already filled Box B with the million ONLY if it predicted you'd take B alone. It has already decided and left. What do you take?",
+    "more": "'Two-boxers' reason: the predictor is gone, the money is already in or out, so taking both strictly dominates. You get whatever's in B plus a guaranteed extra $1,000. This is the logic of causal decision theory: your choice now can't reach back and change a sealed box.\n\n'One-boxers' note that everyone who took both boxes walked away with $1,000, and everyone who took one walked away with $1,000,000. If you're the kind of agent who two-boxes, the predictor knew that and left B empty. The disagreement is genuine and deep; it's about whether rationality should track causation or correlation with your own decision-making. It surfaces in real life as 'voting feels pointless because one vote can't change the outcome' versus 'people like me deciding it's pointless is exactly how elections are lost.'"
+  },
+  {
+    "id": "phi-0006",
+    "type": "fact",
+    "topic": "philosophy",
+    "headline": "The Veil of Ignorance: design the world before you know who you'll be",
+    "body": "John Rawls asked: what rules for society would you choose if you didn't know who you'd be in it, your class, race, talents, health, or religion? Behind this 'veil of ignorance,' self-interest and fairness collapse into the same thing, because any group you disadvantage might turn out to be you.",
+    "more": "Rawls argued that rational people behind the veil would protect the worst-off positions, because they couldn't risk being stuck there. He called this the 'difference principle': inequalities are only justified if they improve the situation of the least advantaged. You'd accept doctors earning more if that incentive produces better healthcare for everyone, but not inequality that just entrenches privilege.\n\nAs a practical tool it's portable beyond grand politics. Designing a refund policy, a layoff process, a group's chore split? Ask what you'd choose if you didn't know which role you'd land in. It strips out the self-serving thumb on the scale. Critics note it may push people to be more risk-averse than real humans are, and that 'rational choice behind the veil' smuggles in assumptions. But as a debiasing move, it's one of the most useful inventions in modern ethics."
+  },
+  {
+    "id": "phi-0007",
+    "type": "fact",
+    "topic": "philosophy",
+    "headline": "The Trolley Problem isn't about trolleys",
+    "body": "A runaway trolley will kill five people. You can pull a lever to divert it to a track where it kills one. Most say pull. Now: the only way to stop it is to push a large stranger off a bridge into its path, killing him to save five. Same math, but most people refuse. Why?",
+    "more": "The numbers are identical; the intuition flips. Philippa Foot and Judith Jarvis Thomson used the contrast to expose that we don't reason about ethics by arithmetic alone. Something about using a person as a physical means to an end, touching them, treating them as a tool, feels categorically different from redirecting a harm that's already in motion.\n\nThis maps onto a real fault line: consequentialism (judge by outcomes) versus deontology (some acts are wrong regardless of outcome). The practical payoff isn't picking a side; it's recognizing that policy debates often hide a trolley problem. 'We could save more lives by reallocating this budget' is a lever-pull argument. 'But that means actively sacrificing those specific identifiable people' is the bridge. Knowing which one you're being asked to do clarifies a lot of arguments that otherwise feel like people talking past each other."
+  },
+  {
+    "id": "phi-0008",
+    "type": "fact",
+    "topic": "philosophy",
+    "headline": "Hume's guillotine: you can't derive an 'ought' from an 'is'",
+    "body": "David Hume noticed that arguments often slide from statements of fact ('this is how things are') to statements of value ('this is how things ought to be') without ever justifying the jump. No pile of facts, by itself, logically forces a conclusion about what you should do.",
+    "more": "This is why a debate about, say, immigration or diet never gets settled by data alone. The facts constrain the options, but they don't tell you which goal to weight. 'Natural' doesn't mean 'good.' 'It's efficient' doesn't mean 'do it' unless you've already valued efficiency. There's always a hidden value premise carrying the weight.\n\nThe practical skill is spotting the smuggled 'ought.' When someone says 'studies show X, therefore we must do Y,' find the missing premise: 'and we value Z.' Usually the real disagreement lives there, in the values, not the studies, which is why throwing more data at a values fight rarely works. It also inoculates you against the appeal-to-nature and appeal-to-science moves that dress a preference up as a fact."
+  },
+  {
+    "id": "phi-0009",
+    "type": "fact",
+    "topic": "philosophy",
+    "headline": "Pascal's Mugging: when tiny probabilities times huge payoffs break your math",
+    "body": "Pascal argued you should believe in God because even a small chance of infinite reward outweighs any finite cost. The 'mugging' version turns this against itself: a stranger says 'give me $5 or I'll use magic powers to cause unimaginable suffering to trillions.' The threat is absurd, but the stakes are so vast that any nonzero probability seems to demand you pay.",
+    "more": "It exposes a real bug in naive expected-value reasoning. If you multiply a tiny probability by a large enough payoff, the product can swamp everything, so a sufficiently grandiose claim can hijack your decisions. Con artists, fearmongers, and some apocalyptic arguments exploit exactly this shape.\n\nThe practical defense: be suspicious when someone scales the payoff toward infinity to make the probability irrelevant. Real reasoning needs a way to discount claims whose probability is itself only supported by the size of the prize. It also clarifies Pascal's original wager: the flaw isn't the logic of the bet but that you can construct infinitely many mutually exclusive infinite-payoff gods, and the argument gives you no way to choose between them."
+  },
+  {
+    "id": "phi-0010",
+    "type": "fact",
+    "topic": "philosophy",
+    "headline": "The Stoic dichotomy of control is a productivity tool in disguise",
+    "body": "Epictetus, who was born enslaved, taught that some things are 'up to us' (our judgments, choices, effort) and some are not (the weather, other people's opinions, outcomes). Nearly all suffering, he argued, comes from trying to control the second category and neglecting the first.",
+    "more": "This is not passive resignation. It's a sorting algorithm for attention. Spend your energy entirely on the move, not the result; on your preparation, not the verdict; on how you respond, not what happened. The outcome is the universe's business once you've done your part.\n\nModern cognitive behavioral therapy descends directly from this. The practical version for work: separate 'did I do good work and act with integrity' (yours) from 'did it get approved, did it go viral, did they like me' (not yours). Caring about results is fine; staking your peace on results you don't control is the trap. The Stoics didn't stop wanting things; they stopped letting the wanting hold their inner state hostage."
+  },
+  {
+    "id": "phi-0011",
+    "type": "fact",
+    "topic": "philosophy",
+    "headline": "The Halo Effect explains why we trust attractive liars",
+    "body": "One good trait bleeds into our judgment of unrelated traits. We rate good-looking people as more honest, competent, and kind, with no evidence for any of it. The effect was first documented in army officers rating soldiers: officers who were rated good at one thing got rated good at everything, in lockstep.",
+    "more": "It's a perception bug, not a moral failing, and it runs in reverse too (the 'horn effect'): one flaw taints everything. This is why confident, articulate people get away with weak arguments, why a polished slide deck makes a bad plan feel solid, and why a single typo can sink an otherwise excellent application.\n\nThe defense is to evaluate traits separately and deliberately. When hiring, score each competency on its own before forming an overall impression. When persuaded by someone, ask whether you're convinced by the argument or by the person's poise. The halo effect is also a tool you can use ethically: presentation genuinely shifts how content lands, so it's worth polishing the surface, just don't mistake the polish for the substance, in others or yourself."
+  },
+  {
+    "id": "phi-0012",
+    "type": "fact",
+    "topic": "philosophy",
+    "headline": "Wittgenstein: many philosophical problems are knots in language",
+    "body": "Wittgenstein came to believe that a huge share of philosophical puzzles aren't deep truths waiting to be uncovered but confusions produced by language idling, by words used outside the contexts that give them meaning. 'Philosophy is a battle against the bewitchment of our intelligence by means of language.'",
+    "more": "His example: 'What is time?' feels like a profound mystery, but we use 'time' competently all day. The mystery appears only when we yank the word out of its ordinary use and demand a single hidden essence behind it. Look instead at how the word actually works in the 'language games' where it lives, and the fog often clears.\n\nThe practical version: when an argument feels stuck and profound, check whether everyone's using a key word the same way. 'Are video games art?' 'Is a hot dog a sandwich?' 'Is this AI conscious?' Many such debates dissolve once you notice the word is being asked to do a job it was never built for, or that the parties have quietly defined it differently. Not every problem is verbal, but spotting the ones that are saves enormous wasted effort."
+  },
+  {
+    "id": "phi-0013",
+    "type": "fact",
+    "topic": "philosophy",
+    "headline": "The Allegory of the Cave is about the pain of updating",
+    "body": "Plato imagined prisoners chained facing a wall, seeing only shadows cast by objects behind them, mistaking the shadows for reality. One escapes, sees the real world and the sun, and returns to free the others. They don't thank him. Disoriented and threatened, they'd rather kill him than leave the wall.",
+    "more": "The usual reading is about enlightenment. The underrated part is the homecoming. The freed prisoner returns blinking and clumsy, worse at the shadow-game than those who never left, and the others take his confusion as proof that going up the cave ruins you. Truth doesn't arrive as triumphant clarity; it arrives as a period of looking foolish and being disbelieved.\n\nThis is the realistic shape of changing your mind, or trying to change someone else's. People who've genuinely updated often perform worse socially at first and meet hostility, not gratitude. And the prisoners aren't stupid; from inside the cave, the shadows really are all the evidence they have. The allegory is a warning to the would-be liberator as much as a promise of the light: expect resistance, and don't mistake it for proof you're wrong."
+  },
+  {
+    "id": "phi-0014",
+    "type": "fact",
+    "topic": "philosophy",
+    "headline": "Hanlon's Razor and its limits",
+    "body": "'Never attribute to malice that which is adequately explained by stupidity, or more charitably, by incompetence, haste, or simple constraints.' Most of the slights you take personally were never aimed at you. The late reply, the curt message, the overlooked invite, usually it's a busy distracted human, not a plot.",
+    "more": "The razor is a debiasing tool against our oversensitive threat-detection. We're wired to read agency and intent into events, so a neutral mishap feels like a deliberate strike. Defaulting to the boring explanation, overload, oversight, bad systems, saves enormous emotional energy and usually happens to be true.\n\nBut sharp tools cut their user. Hanlon's Razor fails when there's a pattern, when the 'mistakes' all conveniently benefit the same person, or when power makes 'incompetence' a free pass for the powerful. Used naively it can launder real malice as 'oh they just forgot.' The mature version: assume incompetence first, but track the pattern. One missed email is noise. The same person 'forgetting' only the inconvenient agreements is signal."
+  },
+  {
+    "id": "phi-0015",
+    "type": "fact",
+    "topic": "philosophy",
+    "headline": "Buridan's Ass: why a perfectly rational agent could starve",
+    "body": "Imagine a donkey placed exactly between two identical bales of hay, equally hungry for each. With no reason to prefer one, a purely rational chooser has no basis to move, and starves. The paradox skewers the idea that every action must be backed by a decisive reason.",
+    "more": "The resolution is that good agents include a tiebreaker: when reasons are balanced, just pick. Randomize, flip a coin, go with a gut nudge. Insisting on a 'best' reason for trivially-tied choices is itself irrational, because the cost of deliberating exceeds the difference between options.\n\nThis is wildly practical. Analysis paralysis is Buridan's Ass in real life: agonizing over choices that are genuinely close, where the deliberation costs more than the wrong pick ever could. The fix is a meta-rule: for low-stakes or closely-tied decisions, optimize for deciding fast, not for deciding perfectly. Reserve heavy deliberation for choices that are both high-stakes and where the options genuinely differ. Most aren't."
+  },
+  {
+    "id": "phi-0016",
+    "type": "fact",
+    "topic": "philosophy",
+    "headline": "The Paradox of Tolerance: unlimited tolerance destroys itself",
+    "body": "Karl Popper argued that a society tolerant without limit will eventually be seized by the intolerant. If you extend tolerance even to movements bent on destroying tolerance, you hand them the tools to win, and tolerance dies. So, paradoxically, a tolerant society may have to be intolerant of intolerance.",
+    "more": "Popper's version is more careful than the slogan it became. He did not say suppress every illiberal view. He argued we should counter intolerant philosophies by rational argument and keep them in check by public opinion as long as they're willing to engage at that level. Suppression is the last resort, justified only when a movement rejects argument entirely and answers reason with fists.\n\nThe distinction matters because the paradox is often misused to justify silencing mere disagreement. The real claim is narrow: tolerance is a reciprocal bargain, and you owe nothing to those who openly refuse the bargain and aim to end it by force. Where to draw that line, who counts as beyond argument, is exactly the hard and contested part the slogan skips."
+  },
+  {
+    "id": "phi-0017",
+    "type": "fact",
+    "topic": "philosophy",
+    "headline": "Sartre: you are condemned to be free",
+    "body": "For Sartre, there's no fixed human essence handed to you in advance; you exist first and define yourself through your choices. That sounds liberating until you feel its weight: you can't outsource the responsibility. Even refusing to choose is a choice. Even 'I had no choice' is usually a choice you're disowning.",
+    "more": "Sartre called dodging this 'bad faith': pretending you're not free, that your role, your circumstances, or your nature decided for you. The waiter who plays at being nothing but a waiter, the person who says 'that's just how I am,' are hiding from the vertigo of authorship.\n\nThe useful, non-melodramatic takeaway: most 'I have to' statements are really 'I'm choosing this because the alternative costs more than I'll admit.' You don't have to go to that job; you're choosing it over the consequences of quitting. Naming a constraint as a choice restores agency, sometimes you'll still choose the same thing, but now you own it, and ownership is where change becomes possible. Sartre's freedom is heavy precisely because it leaves you no one else to blame."
+  },
+  {
+    "id": "phi-0018",
+    "type": "fact",
+    "topic": "philosophy",
+    "headline": "Nietzsche's eternal recurrence is a values test, not a cosmology",
+    "body": "Nietzsche posed a demon's question: what if you had to live this exact life again and again, eternally, every pain and joy and boredom repeated forever in the same order? Would you curse the demon, or call it divine? He didn't claim time literally loops. He used the thought as a scale to weigh your life.",
+    "more": "The recurrence is a stress test for whether you can affirm your existence. If the thought of reliving your life fills you with dread, that's diagnostic: something is off, and you're living in a way you can't endorse. If you could embrace it, you've achieved what he called amor fati, love of fate, willing not just to accept your life but to want it exactly as it was.\n\nUsed practically, it's a clarifying question for decisions: would I want to be the kind of person who makes this choice, over and over, forever? It cuts through the temptation to live for some deferred payoff or to grit through a life you secretly reject. Nietzsche's bar is brutally high, but the question is portable and sharp: not 'is this tolerable once?' but 'would I sign up for this on infinite repeat?'"
+  },
+  {
+    "id": "phi-0019",
+    "type": "concept",
+    "topic": "philosophy",
+    "headline": "Occam's Razor, done right",
+    "body": "Occam's Razor is usually mangled as 'the simplest explanation is true.' It actually says: among hypotheses that explain the evidence equally well, prefer the one with the fewest assumptions. It's a tiebreaker, not a truth detector, and only fires when the candidates are otherwise equally good.",
+    "more": "The naive version causes real damage. Reality is often complicated, and the genuinely simplest story ('it was a coincidence,' 'one cause did it all') is frequently wrong. The razor doesn't say pick the simplest explanation full stop; it says don't multiply entities beyond necessity. If a complex explanation fits the evidence and the simple one doesn't, the complex one wins. Simplicity only breaks ties.\n\nA concrete modern case: a website goes down. 'The CDN, the database, and a deploy all failed at once' versus 'a single bad deploy caused all three symptoms.' If both fit the logs equally, the single-cause story is the better bet, fewer independent coincidences. But if the logs show the database was already failing before the deploy, you don't get to wave that away for being 'simpler.' The razor is about assumptions, not about which story is shorter or more comfortable."
+  },
+  {
+    "id": "phi-0020",
+    "type": "concept",
+    "topic": "philosophy",
+    "headline": "The is-ought gap: why data never settles a values fight",
+    "body": "You can establish every fact about a situation and still not have proven what anyone should do. Facts describe what is; conclusions about what we ought to do require at least one value premise. No amount of measurement bridges that gap on its own.",
+    "more": "This is the single most useful thing to know when watching arguments go in circles. Two people can fully agree on the data and still disagree on the policy, because they weight different values, liberty versus safety, present versus future, the individual versus the group. Piling on more evidence doesn't help, because the evidence was never the sticking point.\n\nConcrete example: 'Remote work reduces commute emissions by 30%' is a fact. 'Therefore we should be remote-first' is a conclusion that secretly assumes you value emissions reduction over, say, in-person collaboration or junior-employee mentorship. The skill is to surface the hidden 'ought': when someone reasons from a study straight to a should, ask which value is doing the lifting. That's where the honest debate actually is, and it's usually one nobody has stated out loud."
+  },
+  {
+    "id": "phi-0021",
+    "type": "concept",
+    "topic": "philosophy",
+    "headline": "Falsifiability: what separates science from astrology",
+    "body": "Karl Popper's criterion: a claim is scientific only if it could in principle be proven wrong. 'All swans are white' is scientific, one black swan kills it. 'Everything happens for a reason' is not, because no observation could ever count against it. A theory that explains every possible outcome explains nothing.",
+    "more": "The trap is theories that look powerful precisely because they can absorb any result. Astrology, certain conspiracy theories, and some psychological frameworks are unfalsifiable: whatever happens, the theory claims a win. 'The prediction failed because Mercury's influence was weak that week.' If nothing could ever disconfirm it, it makes no real bet about the world.\n\nModern test: when someone makes a confident claim, ask 'what would we expect to see if you were wrong, and have we checked?' A good forecaster, scientist, or analyst can answer crisply. A pseudo-expert can't, because their claim was built to be unsinkable. Note the nuance Popper's critics added: real science doesn't drop a theory at the first anomaly either; falsifiability is a spectrum and an ideal, not a guillotine. But 'could this ever be wrong, and how would we know?' remains one of the most clarifying questions you can ask."
+  },
+  {
+    "id": "phi-0022",
+    "type": "concept",
+    "topic": "philosophy",
+    "headline": "The map is not the territory",
+    "body": "Alfred Korzybski's line: a map is a useful simplification of terrain, but it is not the terrain, and confusing the two is a category error. Every model, metric, label, and word is a map. They're indispensable, and they always leave things out, including, sometimes, the thing that matters most.",
+    "more": "The failure mode is optimizing the map until it stops matching the territory. This is Goodhart's Law in action: when a measure becomes a target, it ceases to be a good measure. Teach to the test and test scores rise while learning doesn't. Reward lines of code and you get bloated code. Track 'tickets closed' and you get tickets closed, not problems solved. The metric was a map of value; people optimized the map and abandoned the territory.\n\nThe practical discipline: never fully trust a number you can't trace back to the real thing it stands for, and periodically go look at the territory directly, talk to the actual customer, read the actual code, watch the actual user. Diagnoses, job titles, org charts, and dashboards are all maps. They're powerful precisely because they simplify, and dangerous for the exact same reason. Keep one eye on whether the map still describes the ground."
+  },
+  {
+    "id": "phi-0023",
+    "type": "concept",
+    "topic": "philosophy",
+    "headline": "Dunning-Kruger, carefully (it's not what you think)",
+    "body": "The popular version, 'stupid people think they're geniuses,' is a misstatement. The actual finding is subtler: across many skills, low performers overestimate their ability and high performers slightly underestimate theirs, and almost everyone rates themselves as roughly above average. The core insight is about self-assessment, not about idiots.",
+    "more": "The real mechanism is 'dual burden': the same knowledge you'd need to be good at something is the knowledge you'd need to recognize you're bad at it. If you don't know the rules of grammar, you also can't see your own grammar errors. Incompetence is partly invisible from the inside. Crucially, the effect is modest, debated, and partly a statistical artifact, some of the pattern would appear even with random noise (regression to the mean). It is NOT a license to dismiss confident people as dumb.\n\nThe honest takeaway flips the usual smug reading. The lesson isn't 'look how clueless those overconfident people are', it's 'I am probably one of them in the domains I know least.' Your blind spots are, by definition, the places you can't see you're weak. The practical move: in any new field, assume your confidence is poorly calibrated, seek external feedback, and treat the feeling of 'this seems easy' as a possible warning sign rather than proof of talent."
+  },
+  {
+    "id": "phi-0024",
+    "type": "concept",
+    "topic": "philosophy",
+    "headline": "The Streetlight Effect: searching where the light is",
+    "body": "A drunk man searches for his keys under a streetlight. A passerby helps, then asks if he's sure he dropped them here. 'No, I dropped them in the park, but the light's better here.' We systematically look for answers where they're easy to look, not where they're likely to be found.",
+    "more": "It's everywhere data is available but the truth isn't. We measure what's easy to measure and then quietly redefine the problem to match. Companies optimize click-through rates because they're trackable, even when the real goal, customer satisfaction or long-term trust, is harder to see. Medicine long studied whichever diseases had easy markers. Researchers chase questions with available datasets rather than important ones.\n\nThe practical defense: separate 'what's important' from 'what's measurable' and notice when they've drifted apart. Before trusting an analysis, ask: is this addressing the real question, or just the part that happened to have good lighting? Sometimes the honest answer is 'the key data doesn't exist,' and acknowledging that beats a confident answer built entirely from the convenient subset. The streetlight isn't useless, the keys might be there. But systematically only searching the lit area guarantees you miss everything in the dark."
+  },
+  {
+    "id": "phi-0025",
+    "type": "concept",
+    "topic": "philosophy",
+    "headline": "The genetic fallacy: where an idea came from doesn't decide if it's true",
+    "body": "The genetic fallacy is judging a claim by its origin rather than its content. 'That idea came from a company trying to sell something, so it's false.' 'He's biased, so he's wrong.' The source may be a reason for suspicion, but it's not, by itself, a refutation. Bad people can state true things; good people can be wrong.",
+    "more": "It cuts both ways, including the flattering direction: 'this comes from a famous scientist, so it's true' is the same fallacy in reverse. The origin of a claim is evidence about how carefully to check it, not a substitute for checking it. A self-interested source warrants scrutiny; it doesn't settle the question.\n\nConcrete modern version: 'this health advice comes from a supplement company, ignore it.' The financial interest is a real red flag and a reason to verify independently, but the advice itself is either supported by evidence or not, and that's what determines the truth. The discipline is to use the source to set your level of scrutiny, then actually evaluate the content. Dismissing ideas purely by tribe, funding, or messenger feels like critical thinking but is often just a way to avoid engaging with an inconvenient argument."
+  },
+  {
+    "id": "phi-0026",
+    "type": "concept",
+    "topic": "philosophy",
+    "headline": "Survivorship bias: the data that didn't make it back",
+    "body": "In WWII, analysts examined returning bombers to decide where to add armor, marking the planes' bullet holes, concentrated on wings and tail. The instinct was to reinforce those spots. Statistician Abraham Wald saw the opposite: armor the UNHIT areas, the engines and cockpit. Planes hit there never came back to be studied.",
+    "more": "The returning planes were a biased sample, the survivors. The absence of damage in a spot didn't mean it was safe; it meant hits there were fatal. We constantly reason from survivors and forget the silent population that didn't make it into our dataset.\n\nThis is the hidden flaw in most success advice. 'Successful founders dropped out of college, so dropping out works' ignores the vastly larger group who dropped out and failed, who don't write books. 'These habits made me rich' studies only the rich. Old buildings seem better built, but we only see the ones that lasted. The practical reflex: whenever you're learning from a set of successes, ask 'where are the failures, and would I even be able to see them?' The most important data is often the data that, by its nature, never shows up."
+  },
+  {
+    "id": "phi-0027",
+    "type": "concept",
+    "topic": "philosophy",
+    "headline": "Steelmanning: argue against the best version, not the worst",
+    "body": "A straw man is a weak caricature of your opponent's view that's easy to knock down. Steelmanning is the opposite: before you disagree, reconstruct their argument in its strongest, most charitable form, sometimes stronger than they stated it, and then engage with that. You attack the steel, not the straw.",
+    "more": "It's not just politeness; it's epistemic self-interest. If you can only beat a weak version of the opposing view, you've learned nothing and proven nothing. If you can defeat the strongest version, your own position is genuinely robust, and if you can't, you've discovered you might be wrong, which is the whole point of thinking.\n\nPractically, steelmanning is a forcing function against the comfortable feeling of being obviously right. Before dismissing a coworker's proposal, a policy, or a rival approach, try to state the case for it so well that its advocates would say 'yes, exactly.' Often you'll find a real consideration you'd been ignoring. The bonus: people are far more willing to update when they feel understood first, so steelmanning is also the most persuasive way to disagree. The version of an argument worth defeating is the one a smart, honest person would actually make."
+  },
+  {
+    "id": "phi-0028",
+    "type": "concept",
+    "topic": "philosophy",
+    "headline": "Epistemic humility: calibrating confidence to evidence",
+    "body": "Epistemic humility isn't wishy-washy 'nobody can really know anything.' It's the discipline of matching your confidence to your actual evidence, being very sure where the evidence is strong, genuinely uncertain where it's thin, and able to say 'I don't know' without it feeling like defeat.",
+    "more": "The opposite is not confidence; it's miscalibration, being equally certain about things you've studied for years and things you skimmed once. Good thinkers hold beliefs with a 'confidence dial,' and they can tell you roughly how sure they are and what would change their mind. The phrase 'I might be wrong, and here's what would convince me' is a mark of strength, not weakness.\n\nConcrete practice: attach probabilities, even rough ones, to your predictions, and check them later. People who do this discover they're systematically overconfident, and improve. In a meeting, distinguish 'I'm 95% sure' from 'I'd guess, maybe 60%', it changes how others should weight you and how hard you should push. Real expertise often shows up as more hedging, not less, because experts can see the edges of what they know. Loud certainty is frequently a sign of not knowing where those edges are."
+  },
+  {
+    "id": "phi-0029",
+    "type": "concept",
+    "topic": "philosophy",
+    "headline": "The Sunk Cost Fallacy: the past is not a reason",
+    "body": "We keep pouring resources into failing endeavors because of what we've already spent, the half-finished project, the years in the wrong career, the movie we're not enjoying but already paid for. But spent resources are gone whatever you do next. Only future costs and benefits should drive the decision.",
+    "more": "The rational rule is brutally simple: ignore what's already invested; ask only 'from here forward, is continuing the best use of my remaining time and money?' What you've sunk is irrelevant to that question, because you can't get it back by either choice. Yet we feel that quitting would 'waste' the investment, when in fact continuing wastes even more.\n\nThe trap is wired deep, we hate admitting a loss, and stopping feels like confirming we were wrong. Governments do it with doomed mega-projects ('we've spent too much to stop now', which is exactly backwards). The practical antidote: imagine you were just handed the current situation fresh, with no history. Would you start this project today? If not, the only thing keeping you in is the sunk cost, and that's not a reason, it's a feeling wearing a reason's clothes. Note the honest caveat: reputation and commitment can be real future costs, those count. The fallacy is counting the past itself."
+  },
+  {
+    "id": "phi-0039",
+    "type": "puzzle",
+    "topic": "philosophy",
+    "headline": "Puzzle: The Sorites Paradox (the heap)",
+    "body": "A heap of sand has, say, a million grains. Remove one grain, it's still a heap. Removing a single grain never turns a heap into a non-heap. But repeat the step enough times and you reach one grain, or zero, clearly not a heap. Each step seems valid, yet the conclusion is absurd. Where does the reasoning break?",
+    "answer": "The paradox exposes that 'heap' is a vague predicate with no sharp boundary, and our logic quietly assumes every term has crisp edges. The flawed premise is 'removing one grain never changes a heap to a non-heap': stated as an absolute rule it's false, even if no single removal is the obvious culprit. There is no precise grain count where heap-ness switches off, because 'heap' was never defined that finely; it has a fuzzy borderline zone where 'heap' and 'not a heap' both half-apply. Several formal fixes exist, fuzzy logic assigns degrees of truth (a 30-grain pile is 'sort of' a heap); supervaluationism says it's indeterminate in the gray zone; the epistemic view holds there IS a sharp line but it's unknowable to us. The practical lesson is bigger than sand: most useful words, bald, tall, rich, addicted, fair, are sorites-vague, and demanding a precise cutoff ('exactly how many hairs make someone not bald?') is a confusion, not a deep question. Vagueness is a feature of language, not a flaw to be argued away."
+  },
+  {
+    "id": "phi-0040",
+    "type": "puzzle",
+    "topic": "philosophy",
+    "headline": "Puzzle: The Unexpected Hanging",
+    "body": "A judge tells a prisoner: 'You'll be hanged at noon on one weekday next week, but the day will be a surprise, you won't know which morning until the executioner comes.' The prisoner reasons: it can't be Friday, since by Thursday night I'd know. So not Thursday either, by the same logic. He eliminates every day, concludes he can't be hanged at all, and relaxes. Then on Wednesday they hang him, completely surprised. Where did his airtight logic go wrong?",
+    "answer": "This is one of philosophy's genuinely unresolved puzzles, no consensus fix exists, but the most compelling diagnosis is self-reference. The prisoner's elimination argument uses the assumption 'the sentence will be carried out' to prove the sentence can't be carried out, which is incoherent: if his reasoning were sound, it would refute its own premise, and then the premise it relied on collapses. Many logicians argue the judge's statement is subtly self-undermining, like 'this sentence is a surprise', it can't be fully known by the prisoner without becoming false, yet remains true from the judge's side. The cleanest practical reading: 'surprise' means the prisoner can't deduce the day with certainty in advance. The backward-induction argument feels like a proof but secretly requires the prisoner to already be certain of things he can't actually be certain of. Once he's 'proven' he's safe, that very confidence makes ANY day a surprise again, including the ones he ruled out. His error was trusting a chain of reasoning whose conclusion destroyed its own foundation. The deeper lesson: arguments that loop back to undermine their own premises can look valid step-by-step while being globally broken."
+  },
+  {
+    "id": "phi-0041",
+    "type": "puzzle",
+    "topic": "philosophy",
+    "headline": "Puzzle: The Liar Paradox",
+    "body": "Consider the sentence: 'This sentence is false.' If it's true, then what it says holds, so it's false. But if it's false, then it's not the case that it's false, so it's true. It flips endlessly, true implies false implies true. A single innocent sentence breaks the basic rule that every statement is either true or false. What's going on?",
+    "answer": "The liar shows that natural language lets you build sentences that talk about their own truth, and self-reference plus negation can produce a value that's neither stably true nor stably false. The standard modern responses don't 'solve' it so much as fence it off. Tarski argued that no consistent language can contain its own complete truth predicate; you need a hierarchy, statements at one level can only be called true or false from a higher level, which forbids the liar's self-application. Others reject bivalence (the assumption that every sentence must be exactly true OR false): the liar is simply neither, a truth-value 'gap,' or in dialetheist views, a rare sentence that's both at once. Kripke's influential approach treats such sentences as 'ungrounded', they never get a truth value because there's nothing to anchor them to. The shared insight: the paradox isn't a flaw in reality but a sign that 'true' and 'false' have limits, and a language flexible enough to discuss its own truth will inevitably contain sentences it cannot consistently evaluate. The practical echo shows up in computing as undecidability and the halting problem, the same self-reference trap, formalized."
+  },
+  {
+    "id": "phi-0042",
+    "type": "rabbithole",
+    "topic": "philosophy",
+    "headline": "Marcus Aurelius ran an empire and journaled to stay sane. His tools still work →",
+    "body": "The most powerful man in the Roman world wrote a private notebook he never meant anyone to read, reminders to himself on how to not be ruined by power, fear, anger, and other people. We call it the Meditations. It's less a treatise than a self-help log from someone with every excuse to become a monster who was trying hard not to. Four of his practical mental tools, ahead.",
+    "threadId": "marcus",
+    "threadOrder": 0
+  },
+  {
+    "id": "phi-0043",
+    "type": "fact",
+    "topic": "philosophy",
+    "headline": "Tool 1: The view from above",
+    "body": "When overwhelmed, Marcus would zoom out, mentally rising until cities looked like anthills, his lifespan a blink against geological time, his crisis one of countless that humans have weathered and forgotten. Not to feel small in despair, but to right-size a panic that had inflated to fill his whole sky.",
+    "more": "The technique works because anxiety collapses your perspective onto a single threat until it feels infinite. Deliberately widening the frame, this will matter little in a year, billions have faced worse, the sun will rise regardless, doesn't deny the problem; it restores proportion. A modern version: when a work crisis has your stomach in knots, ask where it ranks against the actual scale of your life and the world. Usually it shrinks to manageable. Marcus used cosmic scale to keep imperial-sized problems from feeling like the end of everything.",
+    "threadId": "marcus",
+    "threadOrder": 1
+  },
+  {
+    "id": "phi-0044",
+    "type": "fact",
+    "topic": "philosophy",
+    "headline": "Tool 2: Other people's faults are not your character",
+    "body": "Marcus's recurring morning rehearsal: 'Today I'll meet people who are ungrateful, arrogant, dishonest, jealous.' He prepared for the worst not to become cynical, but so that bad behavior couldn't ambush him, and so he could remember that another person's vice harms his own character only if he lets it provoke him into matching it.",
+    "more": "The insight is that you can't control who you'll deal with, but you control whether their behavior pulls you down to it. An idiot cutting you off in traffic only ruins your day if you hand them that power. Marcus kept returning to the idea that the best revenge, and the best self-protection, is to not be like the person who wronged you. He also pushed himself to consider that the offender often acts from ignorance, not malice, and genuinely believes they're in the right, which makes anger at them as misplaced as anger at someone who's simply mistaken.",
+    "threadId": "marcus",
+    "threadOrder": 2
+  },
+  {
+    "id": "phi-0045",
+    "type": "fact",
+    "topic": "philosophy",
+    "headline": "Tool 3: Objective description strips the drama",
+    "body": "Marcus practiced describing things in plain, deflated terms to see them without the story we layer on. Fine wine is 'fermented grape juice.' A luxurious feast is 'dead animals and plants.' Sex is 'friction and a spasm.' The point wasn't to ruin pleasure but to see how much of an object's grip on us comes from the narrative around it, not the thing itself.",
+    "more": "By stripping the marketing, the status, the hype, the manufactured longing, from a thing, you can judge whether you actually want it or just want what you've been told it means. It's a direct antidote to consumer craving and status anxiety: that watch is metal and gears; that promotion is a different label and a different set of headaches. Used in reverse, the same trick can de-escalate dread, the terrifying confrontation is 'two people exchanging sounds in a room.' Seeing things stripped of their inflated story gives you back the choice of how much they should move you.",
+    "threadId": "marcus",
+    "threadOrder": 3
+  },
+  {
+    "id": "phi-0046",
+    "type": "fact",
+    "topic": "philosophy",
+    "headline": "Tool 4: You only ever have the present",
+    "body": "Marcus kept reminding himself that no one loses the past or the future, since you can't lose what you don't have; you only ever possess this present moment. Even a person who lives a hundred years and one who dies young lose exactly the same thing when they die, the present, because that's all anyone ever has to lose.",
+    "more": "The practical force is twofold. First, almost all suffering is time-travel, dread of a future that hasn't come or regret over a past you can't touch. Returning attention to the only moment you can actually act in is where Stoicism and modern mindfulness shake hands. Second, it reframes mortality: if all you ever hold is the present, then a long life doesn't grant you 'more' of life to lose, only more present moments lived. It's a strangely steadying thought from a man who knew he could die of plague or assassination any day, and chose to spend his actual moments doing his duty rather than fearing their end.",
+    "threadId": "marcus",
+    "threadOrder": 4
+  }
+]
